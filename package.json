@@ -13,7 +13,8 @@
     "check": "npm run typecheck && npm run lint && npm run test && npm run build",
     "content:sync": "tsx scripts/content-sync.ts",
     "content:status": "tsx scripts/content-status.ts",
-    "content:verify": "tsx scripts/content-verify.ts"
+    "content:verify": "tsx scripts/content-verify.ts",
+    "validate:jsonld": "tsx scripts/validate-jsonld.ts"
   },
   "dependencies": {
     "next": "15.5.25",
