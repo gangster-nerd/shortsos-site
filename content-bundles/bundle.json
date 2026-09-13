@@ -1,9 +1,9 @@
 {
-  "bundleId": "bundle-642d72fa376908f0f24fadf0313c9c6de1c8273b",
-  "productRef": "642d72fa376908f0f24fadf0313c9c6de1c8273b",
+  "bundleId": "bundle-f01ac6110ec664aba31ee985a4c30d307de10b2f",
+  "productRef": "f01ac6110ec664aba31ee985a4c30d307de10b2f",
   "manifestSchemaVersion": 3,
   "manifestStatusVocabularyVersion": 4,
-  "manifestChecksum": "0f313d8b35c8a498dd99defaf7129ac4d0ac816bc90d5a92b886a12e4876a220",
+  "manifestChecksum": "b4bcc1095bb8dd8a36808f7f29e5f14ea4ab79504ff18302432a418547ee5239",
   "manifestEntityCount": 42,
   "impactRecords": [
     {
@@ -50,13 +50,6 @@
       "kind": "capability",
       "derivedPublicationStatus": "candidate",
       "claimCeiling": "A real JSON2Video native render (RenderRecipe -> movie spec -> polled render -> provider URL) has been proven once, end to end, against the real provider.",
-      "allowedSurfaces": []
-    },
-    {
-      "id": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
-      "kind": "capability",
-      "derivedPublicationStatus": "candidate",
-      "claimCeiling": "The full golden path — Produce -> Review -> Publish — has been run once for real, against a real render provider, real R2 storage and a real Instagram account, ending in a real published Reel with a captured permalink.",
       "allowedSurfaces": []
     },
     {

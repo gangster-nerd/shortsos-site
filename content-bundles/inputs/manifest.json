@@ -3,8 +3,8 @@
   "statusVocabularyVersion": 4,
   "entityCount": 42,
   "counts": {
-    "public_marketable": 0,
-    "candidate": 9,
+    "public_marketable": 1,
+    "candidate": 8,
     "internal_only": 30,
     "blocked": 3
   },
@@ -899,9 +899,15 @@
       "implementationStatus": "implemented",
       "runtimeProof": "real_run_proven",
       "availability": "operator_only",
-      "declaredPublicationStatus": "candidate",
-      "derivedPublicationStatus": "candidate",
-      "allowedSurfaces": [],
+      "declaredPublicationStatus": "public_marketable",
+      "derivedPublicationStatus": "public_marketable",
+      "allowedSurfaces": [
+        "cta",
+        "faq",
+        "homepage",
+        "how_it_works",
+        "proof"
+      ],
       "externalDependencies": [
         {
           "name": "instagram_meta_permissions",
@@ -935,15 +941,21 @@
           "resolved": true
         }
       ],
-      "claimCeiling": "The full golden path — Produce -> Review -> Publish — has been run once for real, against a real render provider, real R2 storage and a real Instagram account, ending in a real published Reel with a captured permalink.",
+      "claimCeiling": "ShortsOS has completed a real end-to-end Produce → Review → Publish workflow: from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. For pilots, the workflow is operated by the ShortsOS team.",
       "prohibitedClaims": [
+        "Any claim of automatic publishing without human review — the Review step is a mandatory human checkpoint in every real run to date.",
+        "Any claim of guaranteed creative quality.",
+        "Any claim of guaranteed performance or virality for any published content.",
         "Any claim of production-scale or repeated-volume proof beyond the one documented real run.",
+        "Any claim of universal availability — this workflow is operated by the ShortsOS team for pilots, never generally/instantly available.",
+        "Any claim that a customer can connect their own Instagram account to this workflow.",
+        "Any claim that a customer can publish directly themselves through this workflow.",
         "Any claim that any end user can self-serve run this loop today — it is operator-run, on one bound Instagram account."
       ],
       "knownLimits": [
         "Single real run is not a load or reliability proof; discovered Instagram adapter defects were fixed reactively against that one live run, not pre-emptively."
       ],
-      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+      "publicationDecision": "docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md"
     },
     {
       "id": "MEDIA-TECHNICAL-PROBE-V1",
