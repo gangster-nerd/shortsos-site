@@ -1,0 +1,7 @@
+{
+  "id": "CLIENT-WORKSPACE-ANALYTICS-V1",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "Read-only client workspace analytics, real DB-backed read model, no seeded metric — operator dashboard feature.",
+  "allowedSurfaces": []
+}

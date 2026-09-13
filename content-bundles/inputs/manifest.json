@@ -1,0 +1,1652 @@
+{
+  "schemaVersion": 3,
+  "statusVocabularyVersion": 4,
+  "entityCount": 42,
+  "counts": {
+    "public_marketable": 0,
+    "candidate": 9,
+    "internal_only": 30,
+    "blocked": 3
+  },
+  "entities": [
+    {
+      "id": "CLIENT-WORKSPACE-ANALYTICS-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "CLIENT-WORKSPACE-ANALYTICS-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/app/clients/[clientId]/page.tsx",
+            "src/server/data/client-analytics.ts"
+          ],
+          "tests": [
+            "src/server/data/client-analytics.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Read-only client workspace analytics, real DB-backed read model, no seeded metric — operator dashboard feature.",
+      "prohibitedClaims": [
+        "Any claim of predictive or AI-generated analytics beyond a plain read model."
+      ],
+      "knownLimits": [
+        "Operator-facing dashboard only, not exposed to an end customer."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "CONTENT-INVENTORY-SCHEMA-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "CONTENT-INVENTORY-SCHEMA-V1-evidence",
+          "commits": [],
+          "paths": [
+            "drizzle/0013_rare_mephisto.sql",
+            "src/db/schema.ts",
+            "src/domain/content-inventory/analysis-run.ts"
+          ],
+          "tests": [
+            "src/domain/content-inventory/analysis-run.test.ts"
+          ],
+          "decisions": [
+            "D-007",
+            "D-012",
+            "D-018",
+            "D-023-ASSET-OWNERSHIP"
+          ],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: schema and domain contracts for the content-inventory pipeline.",
+      "prohibitedClaims": [
+        "Any user-facing claim by this schema-only capability."
+      ],
+      "knownLimits": [
+        "Schema/contracts only; no UI, no provider call."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "DEMO-MEDIA-PREP-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "elevenlabs_api",
+          "state": "unknown",
+          "note": "No dated real-run proof of ElevenLabs TTS in session memory or capability text; conservatively unknown."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "DEMO-MEDIA-PREP-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/engine/media-prep/prepare-render-media.ts",
+            "src/providers/elevenlabs-speech-provider.ts"
+          ],
+          "tests": [
+            "src/engine/media-prep/prepare-render-media.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory: 'Demo clips are silent — public/demo has no usable audio; spa-massage.mp4 fakes it with a −91 dB track.' Confirms media prep's demo assets are not a real-audio proof point."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: media-prep plumbing (ffmpeg tools, voice catalog), no proven real TTS run.",
+      "prohibitedClaims": [
+        "Any claim of proven real-audio narration via this capability."
+      ],
+      "knownLimits": [
+        "Demo audio assets are known-silent/near-silent (session memory)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "DEMO-RENDER-FOUNDATION-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "DEMO-RENDER-FOUNDATION-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/render/render-recipe.ts",
+            "src/providers/contracts.ts"
+          ],
+          "tests": [
+            "src/domain/render/render-execution.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: rendering foundation, consumed by later render capabilities.",
+      "prohibitedClaims": [
+        "Any claim of a proven end-to-end real render by this capability alone."
+      ],
+      "knownLimits": [
+        "Foundation-only: RenderRecipe/engine scaffolding, no live provider call attributed to this id."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "DRIVE-IMPORT-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "google_drive_oauth",
+          "state": "unknown",
+          "note": "No dated real-run proof of a real Google account OAuth connect/import in session memory or capability text — the OAuth flow is implemented and tested, not proven against a real external Google account. See prohibited_concept google_drive_self_serve_connect."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "DRIVE-IMPORT-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/drive-import/drive-file.ts",
+            "src/server/data/drive-import/import-drive-file.ts"
+          ],
+          "tests": [
+            "src/server/data/drive-import/import-drive-file.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Drive OAuth client, folder browsing and batch import are implemented and unit/integration tested; not proven against a real external Google account.",
+      "prohibitedClaims": [
+        "Any claim of a general self-serve Drive connect flow — see prohibited_concept google_drive_self_serve_connect."
+      ],
+      "knownLimits": [
+        "No schema write; consumes existing capture_sessions/assets surfaces only."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "ENGINEERING-WORKFLOW-V3",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "ENGINEERING-WORKFLOW-V3-evidence",
+          "commits": [],
+          "paths": [
+            "AGENTS.md",
+            "docs/multi-agent/PROTOCOL.md"
+          ],
+          "tests": [
+            "tests/ops/cases/wave-admission.case.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Installed the V3.1/V3.2 multi-agent protocol as executable governance tooling; ops:admit/ops:scope/ops:capabilities-lint/ops:decisions-lint all run in this repository today."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: this is internal engineering process, never a customer-facing capability.",
+      "prohibitedClaims": [
+        "Any claim describing this as a product feature."
+      ],
+      "knownLimits": [
+        "Governance tooling, not product behavior."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-CAPTURE-TIME-TRUTH-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-CAPTURE-TIME-TRUTH-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/content-inventory/capture-time-precedence.ts",
+            "src/engine/media-probe/ffprobe-technical-probe.ts"
+          ],
+          "tests": [
+            "src/domain/content-inventory/capture-time-precedence.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: deterministic capture-time precedence and provenance, unit-tested.",
+      "prohibitedClaims": [
+        "Any claim of a resolved capture time where evidence is genuinely absent — UNKNOWN must render as UNKNOWN by design."
+      ],
+      "knownLimits": [
+        "capture_sessions.capturedOn aggregation policy is an explicit open decision, not resolved by this capability."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-COVERAGE-VOCABULARY-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-COVERAGE-VOCABULARY-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/content-inventory/coverage.ts",
+            "src/server/data/content-inventory/coverage-read-model.ts"
+          ],
+          "tests": [
+            "src/domain/content-inventory/coverage.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: internal coverage/vocabulary read model.",
+      "prohibitedClaims": [
+        "Any claim extrapolating opportunity inventory onto unanalyzed corpus — explicitly forbidden by this capability's own design."
+      ],
+      "knownLimits": [
+        "Read-model only, no narrative generation."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-NARRATIVE-TRUTH-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-NARRATIVE-TRUTH-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/content-inventory/opportunity-draft.ts"
+          ],
+          "tests": [
+            "src/domain/content-inventory/opportunity-draft.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: reconciles opportunity-cardinality rule (0-3 strong opportunities), no user-visible strength/truth/series copy ratified by this capability.",
+      "prohibitedClaims": [
+        "Any user-visible strength/truth/series copy — explicitly out of this capability's own scope."
+      ],
+      "knownLimits": [
+        "Does not admit the broader Narrative Discovery milestone (StoryBeat evidence binding, truth-class taxonomy)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-OPPORTUNITY-CALLER-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-OPPORTUNITY-CALLER-V1-evidence",
+          "commits": [
+            "bf8911400d168c282bedb541f7767a4c99c69831"
+          ],
+          "paths": [
+            "src/app/target/clients/[clientId]/media/page.tsx",
+            "src/server/data/content-inventory/request-opportunity-generation.ts"
+          ],
+          "tests": [
+            "src/app/target/clients/[clientId]/media/page.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "CAPABILITIES.yaml own text: P2 human-decision-experience checkpoint PASSED on re-review (candidate ec9cd1b) — a real product-experience judgment, not merely automated tests. Still no dated real end-to-end provider-call evidence attributed to this id specifically, so runtimeProof stays tested_only, fail-closed."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "The first capability making real opportunity generation reachable by a real operator, with a P2-passed human-decision experience (truthful error and zero-strong-story states).",
+      "prohibitedClaims": [
+        "Any claim of a self-serve public product surface — this is the internal target/ operator dashboard."
+      ],
+      "knownLimits": [
+        "P2 pass notes the error banner surfaces a raw provider-generated reason string, developer-phrased — acceptable but not polished customer copy."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-PROVIDER-ACCOUNTING-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-PROVIDER-ACCOUNTING-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/lib/run-provider.ts",
+            "src/server/context/content-inventory/generate-opportunities.ts"
+          ],
+          "tests": [
+            "src/server/context/content-inventory/generate-opportunities.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: routes two provider callers through the canonical runProvider()/provider_runs boundary.",
+      "prohibitedClaims": [
+        "Any claim of a new provider or new cost/idempotency architecture — this is additive wrapping only."
+      ],
+      "knownLimits": [
+        "Contract shape of src/providers/contracts.ts is explicitly untouched."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-REPEATED-TAKE-INTELLIGENCE-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-REPEATED-TAKE-INTELLIGENCE-V1-evidence",
+          "commits": [
+            "5509dfc266a8fb82a7de94f5405459bbfd31e79b"
+          ],
+          "paths": [
+            "src/domain/content-inventory/candidate-retrieval.ts",
+            "src/domain/content-inventory/near-duplicate-signal.ts"
+          ],
+          "tests": [
+            "src/domain/content-inventory/near-duplicate-signal.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: deterministic repeated-take/near-duplicate classification, retrieval-level only, no embeddings.",
+      "prohibitedClaims": [
+        "Any semantic-identity claim beyond available evidence — explicitly out of scope by this capability's own doctrine constraint."
+      ],
+      "knownLimits": [
+        "Never hard-excludes a candidate; groups instead, by design."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-RETRIEVAL-SAFETY-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-RETRIEVAL-SAFETY-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/server/data/media-probe/media-probe-repository.ts"
+          ],
+          "tests": [
+            "src/server/data/media-probe/media-probe-repository.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "CAPABILITIES.yaml own text: '4 independent tenant-isolation cases ... PASS against an isolated Neon test branch' — a real database, but a TEST branch used for automated verification, not a real-world production run; classified tested_only, fail-closed."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Fixes a real tenant-isolation/determinism bug in exact-duplicate lookup; proven against an isolated Neon TEST branch with four regression cases.",
+      "prohibitedClaims": [
+        "Any claim this proves production-scale tenant isolation under real multi-tenant load."
+      ],
+      "knownLimits": [
+        "Near-duplicate/repeated-take suppression explicitly out of scope for this capability."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-SHOW-ME-WHY-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "r2_write_credential",
+          "state": "granted",
+          "note": "Read access to signed R2 video URLs for evidence preview; write proof is dated 2026-09-01 per session memory, for the shortsos-media bucket."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "FDTS-SHOW-ME-WHY-V1-evidence",
+          "commits": [
+            "fd16d0762a6ba99fde99d85db38958e0f3b41473"
+          ],
+          "paths": [
+            "src/app/target/components/opportunity-shortlist.tsx",
+            "src/server/data/content-inventory/opportunities-read-model.ts"
+          ],
+          "tests": [
+            "src/app/target/components/opportunity-shortlist.test.tsx"
+          ],
+          "decisions": [],
+          "receipts": [
+            "CAPABILITIES.yaml own text: P2 checkpoint PASSED (candidate 00d9d0e) — 'the second capability in the program changing a real, canonical, user-facing screen.' Real signed R2 video URLs back the evidence preview (session memory: R2 render-handoff surface works), but no dated live-provider-call proof is attributed to this id, so runtimeProof stays tested_only, fail-closed."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Real evidence preview (source-moment video, timestamp ranges, rationale) with a durable zero-strong-opportunity empty state, P2-passed for the canonical operator dashboard.",
+      "prohibitedClaims": [
+        "Any claim of a public, self-serve 'show me why' experience — this is the internal target/ operator dashboard.",
+        "CaptureDeficit is explicitly out of scope for this capability — never claim it as delivered here."
+      ],
+      "knownLimits": [
+        "no_candidates is classified the same as 'never analyzed', a defensible but non-blocking ambiguity noted at P2."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FDTS-TEMPORAL-DECLARED-CONTEXT-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FDTS-TEMPORAL-DECLARED-CONTEXT-V1-evidence",
+          "commits": [
+            "da6c6beedec6e782e3b4fcf7c8f1a1034936d066"
+          ],
+          "paths": [
+            "src/domain/content-inventory/declared-context.ts",
+            "src/domain/content-inventory/temporal-relationship.ts"
+          ],
+          "tests": [
+            "src/domain/content-inventory/declared-context.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: declared-context and temporal-relationship classifiers, abstaining to UNKNOWN by design when data is missing or cross-tenant.",
+      "prohibitedClaims": [
+        "Any temporal/declared-context judgment across an organizationId/clientId boundary — never a silent comparison, by design."
+      ],
+      "knownLimits": [
+        "Never conflates an auto-generated Drive-import label with a real human declaration."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "FROM-DRIVE-TO-STORY-LIBRARY-RECONCILIATION-PREFLIGHT",
+      "kind": "capability",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "none",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "FROM-DRIVE-TO-STORY-LIBRARY-RECONCILIATION-PREFLIGHT-evidence",
+          "commits": [],
+          "paths": [
+            "docs/research/from-drive-to-story/LIBRARY-EXPERIENCE-RECONCILIATION.md"
+          ],
+          "tests": [],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim.",
+      "prohibitedClaims": [
+        "Any claim this preflight itself shipped a Library/Show-Me-Why UI feature."
+      ],
+      "knownLimits": [
+        "docs/research/** only."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "GEMINI-MEDIA-UNDERSTANDING-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "gemini_api",
+          "state": "unknown",
+          "note": "No dated, output-specific real-run proof found; conservatively unknown pending a clearer record."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "GEMINI-MEDIA-UNDERSTANDING-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/contracts.ts",
+            "src/providers/gemini/gemini-media-understanding-provider.ts"
+          ],
+          "tests": [
+            "src/providers/gemini/gemini-media-understanding-provider.test.ts"
+          ],
+          "decisions": [
+            "D-002",
+            "D-012"
+          ],
+          "receipts": [
+            "CAPABILITIES.yaml own text names 'real-Gemini commits' (74ec2ac, 82ed7d6, 0e5e753) as this capability's own continuation, but does not state a specific dated real-provider-call result (no request/response, no cost, no output artifact named) the way JSON2VIDEO-NATIVE-PROVIDER-TEST-V1 or SUBMAGIC-LIVE-CONTRACT-FIX-V1 do — ambiguous, so classified down to tested_only, fail-closed."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Gemini media-understanding provider contract and mock-first implementation exist and are unit-tested; no dated real-provider-call output is on record for this id.",
+      "prohibitedClaims": [
+        "Any claim of proven real Gemini analysis output for a specific asset."
+      ],
+      "knownLimits": [
+        "Mock-first: real key use requires PROVIDER_TEST pre-authorization, per AGENTS.md section 16."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "GOLDEN-RETRIEVAL-EVALUATION-V1",
+      "kind": "capability",
+      "implementationStatus": "partial",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "GOLDEN-RETRIEVAL-EVALUATION-V1-evidence",
+          "commits": [
+            "14831651f991895d2cba97ad3327b6f888192f2a"
+          ],
+          "paths": [
+            "src/domain/golden-benchmark/metrics/precision-at-k.ts"
+          ],
+          "tests": [
+            "scripts/eval/from-drive-to-story-retrieval/run-golden-eval.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Internal evaluation harness for four of twelve originally scoped retrieval metrics; the other eight remain blocked on upstream milestones by the capability's own admission text.",
+      "prohibitedClaims": [
+        "Any claim of a complete or externally-facing quality benchmark."
+      ],
+      "knownLimits": [
+        "Only Precision@K, evidence validity, exact-duplicate inflation and source/session diversity are implemented; before/after precision, false-relationship rate and narrative usefulness remain blocked."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "INSTAGRAM-CREDENTIAL-BINDING-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "instagram_meta_permissions",
+          "state": "granted",
+          "note": "Granted and exercised for exactly one operator-bound Instagram account during M1's real publish; never proven for an arbitrary end user's own account. See prohibited_concept instagram_self_serve_publishing."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "INSTAGRAM-CREDENTIAL-BINDING-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/instagram-social-publishing-provider.ts",
+            "src/server/context/social-oauth-config.ts"
+          ],
+          "tests": [
+            "src/providers/instagram-social-publishing-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory 'Instagram publish contract proven — real Reel published live' documents a real live Instagram publish, but that live call is attributed to M1-REAL-PRODUCE-REVIEW-PUBLISH's own intent text (publication step), not to this binding capability's own evidence — fail-closed: classified down to tested_only here rather than inherit the sibling's proof."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "This capability binds Instagram credentials at the provider boundary; it is a building block for the one proven operator-bound publish, not a general publish capability.",
+      "prohibitedClaims": [
+        "Any user-facing claim of self-serve Instagram account connection."
+      ],
+      "knownLimits": [
+        "`user_id` vs app-scoped `id` distinction; `me/permissions` endpoint does not exist (session memory)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "JSON2VIDEO-CAPTION-SEMANTICS-FIX-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "JSON2VIDEO-CAPTION-SEMANTICS-FIX-V1-evidence",
+          "commits": [
+            "8817192a0028bc8d7a613100b76be203f9f673e1"
+          ],
+          "paths": [
+            "src/providers/json2video-movie.ts"
+          ],
+          "tests": [
+            "src/providers/json2video-movie.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory 'Caption plate needs boxed-line — box-color is style-dependent; classic silently ignores it, and vendor example renders are free evidence.' The semantics were verified by reading vendor documentation/example renders, NOT by this capability running its own live JSON2Video render for captions specifically — classified down to tested_only, fail-closed."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Caption plate/scale semantics (solid plate exact, soft plate approximate, plate wins over scale) are implemented and unit-tested; not independently live-render-proven for captions.",
+      "prohibitedClaims": [
+        "Claiming an arbitrary non-black outline color is supported (explicit non-claim, ratified by the preflight this fix implements)."
+      ],
+      "knownLimits": [
+        "boxed-word is not an implementation of scale; outline color support is bounded to black."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "JSON2VIDEO-CAPTION-SEMANTICS-PREFLIGHT",
+      "kind": "capability",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "none",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "JSON2VIDEO-CAPTION-SEMANTICS-PREFLIGHT-evidence",
+          "commits": [
+            "1c4905b1c2a121026936ceacdf341536e5517500"
+          ],
+          "paths": [
+            "docs/research/json2video-caption-semantics-preflight.md"
+          ],
+          "tests": [],
+          "decisions": [],
+          "receipts": [
+            "Six caption/plate/scale product decisions ratified by T0 in this preflight's own text (not DECISIONS.md, which its guard forbids adding to).",
+            "This path does NOT exist at origin/main HEAD — verify-evidence.ts caught this during this mission's own build; the commit object (1c4905b) exists in the repository but is not an ancestor of HEAD. Pinned to that exact commit rather than HEAD."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: research-only, ratified decisions recorded in prose, not shipped code.",
+      "prohibitedClaims": [
+        "Any claim this preflight itself implemented caption semantics."
+      ],
+      "knownLimits": [
+        "docs/research/** only."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "JSON2VIDEO-NATIVE-PROVIDER-TEST-V1",
+      "kind": "capability",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "real_run_proven",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "json2video_account",
+          "state": "granted",
+          "note": "Free-tier account (600s/month quota) proven live for one real render on 2026-08-31 (session memory); not proof of production-volume rendering capacity."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "JSON2VIDEO-NATIVE-PROVIDER-TEST-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/json2video-movie.ts",
+            "src/providers/json2video-render-provider.ts"
+          ],
+          "tests": [
+            "src/providers/json2video-render-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "CAPABILITIES.yaml own text: RENDERS_CREATED=1, VIDEO_RENDERED=YES — a real PROVIDER_LIVE call against JSON2Video, real external cost, one real render produced (attested by T0 2026-08-31, matching session memory 'JSON2Video contract proven — real render succeeded')."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Internal evidence artifact: proves the JSON2Video native render path executed once against the real provider. No independent public claim — see JSON2VIDEO-NATIVE-RENDER-V1 for the capability this evidence backs.",
+      "prohibitedClaims": [
+        "General claim of unlimited or production-scale JSON2Video rendering."
+      ],
+      "knownLimits": [
+        "write_set is empty by design — zero product code, evidence only. Free-tier quota (600s/month) constrains real-world volume."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "JSON2VIDEO-NATIVE-RENDER-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "real_run_proven",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "json2video_account",
+          "state": "granted",
+          "note": "Free-tier account (600s/month), one real render proven 2026-08-31; not production-volume capacity."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "JSON2VIDEO-NATIVE-RENDER-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/json2video-movie.ts",
+            "src/providers/json2video-render-provider.ts"
+          ],
+          "tests": [
+            "src/providers/json2video-movie.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Real-run proof for this exact render path is JSON2VIDEO-NATIVE-PROVIDER-TEST-V1 (RENDERS_CREATED=1, VIDEO_RENDERED=YES) — an evidence-only sibling of this capability that proved the identical mapping this capability ships. Session memory 'JSON2Video contract proven' corroborates."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "A real JSON2Video native render (RenderRecipe -> movie spec -> polled render -> provider URL) has been proven once, end to end, against the real provider.",
+      "prohibitedClaims": [
+        "General claim of high-volume or unlimited real rendering (free-tier quota is 600s/month)."
+      ],
+      "knownLimits": [
+        "Free-tier account quota constrains real-world volume; voice mapping has 10 intentionally unassigned product cells (PRODUCT_VOICE=UNRATIFIED)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "real_run_proven",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "instagram_meta_permissions",
+          "state": "granted",
+          "note": "Proven for exactly one operator-bound account, one real publish. Not general self-serve — see prohibited_concept instagram_self_serve_publishing."
+        },
+        {
+          "name": "r2_write_credential",
+          "state": "granted",
+          "note": "Proven live 2026-09-01 for shortsos-media, all six storage ops (session memory)."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "M1-REAL-PRODUCE-REVIEW-PUBLISH-evidence",
+          "commits": [
+            "3147693366032d6d5a2fff12fa59d0884f3099d7"
+          ],
+          "paths": [
+            "src/app/actions.ts",
+            "src/providers/instagram-social-publishing-provider.ts",
+            "src/providers/r2-render-handoff-provider.ts"
+          ],
+          "tests": [
+            "src/domain/review/review-services.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "CAPABILITIES.yaml own text: 'deux correctifs d'adaptateur Instagram decouverts contre du live pendant la publication M1' — two Instagram adapter fixes were discovered AGAINST LIVE during M1's real publication, i.e. a real, non-mock Instagram publish occurred. Corroborated by session memory 'Instagram publish contract proven — real Reel published live' and 'R2 render-handoff surface works ... credential holds canonical write too'."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "The full golden path — Produce -> Review -> Publish — has been run once for real, against a real render provider, real R2 storage and a real Instagram account, ending in a real published Reel with a captured permalink.",
+      "prohibitedClaims": [
+        "Any claim of production-scale or repeated-volume proof beyond the one documented real run.",
+        "Any claim that any end user can self-serve run this loop today — it is operator-run, on one bound Instagram account."
+      ],
+      "knownLimits": [
+        "Single real run is not a load or reliability proof; discovered Instagram adapter defects were fixed reactively against that one live run, not pre-emptively."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "MEDIA-TECHNICAL-PROBE-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "MEDIA-TECHNICAL-PROBE-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/engine/media-probe/ffprobe-technical-probe.ts",
+            "src/server/data/media-probe/run-technical-probe.ts"
+          ],
+          "tests": [
+            "src/domain/media-probe/technical-probe.test.ts"
+          ],
+          "decisions": [
+            "D-012",
+            "D-020"
+          ],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: ffprobe-backed technical probe, internal plumbing.",
+      "prohibitedClaims": [
+        "Any claim of AI/creative understanding — this is deterministic technical probing only."
+      ],
+      "knownLimits": [
+        "Uses existing ffmpeg/ffprobe primitives, consumed not modified."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "MOCK-MEDIA-PUBLISHING-COMPAT-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "MOCK-MEDIA-PUBLISHING-COMPAT-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/mock.ts"
+          ],
+          "tests": [
+            "src/providers/mock.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: mock-provider compatibility fix, dev/test infrastructure only.",
+      "prohibitedClaims": [
+        "Any claim describing the mock provider as a real publishing path."
+      ],
+      "knownLimits": [
+        "By definition a mock, never a real external call."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "OPPORTUNITY-GENERATION-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "OPPORTUNITY-GENERATION-V1-evidence",
+          "commits": [
+            "87ab403e56791a6e6037115ddf457611d184043f"
+          ],
+          "paths": [
+            "src/server/context/content-inventory/generate-opportunities.ts"
+          ],
+          "tests": [
+            "src/server/context/content-inventory/generate-opportunities.test.ts"
+          ],
+          "decisions": [
+            "D-006",
+            "D-012"
+          ],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Deterministic evidence-bound opportunity generation is implemented and tested; user-reachability is a separate, later capability (FDTS-OPPORTUNITY-CALLER-V1).",
+      "prohibitedClaims": [
+        "Any claim this capability alone made opportunity generation reachable by a real user."
+      ],
+      "knownLimits": [
+        "No production caller existed at this capability's own admission; wiring is FDTS-OPPORTUNITY-CALLER-V1's contribution."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PRODUCTION-ORCHESTRATION-PREFLIGHT",
+      "kind": "capability",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "none",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "PRODUCTION-ORCHESTRATION-PREFLIGHT-evidence",
+          "commits": [
+            "9d4771f8bc74293f7add51d4a19375f64065e6a8"
+          ],
+          "paths": [
+            "docs/research/production-orchestration-preflight.md"
+          ],
+          "tests": [],
+          "decisions": [],
+          "receipts": [
+            "This path does NOT exist at origin/main HEAD — verify-evidence.ts caught this during this mission's own build; the commit object (9d4771f) exists in the repository but is not an ancestor of HEAD. Pinned to that exact commit rather than HEAD. Note: an untracked, uncommitted copy of this exact filename was independently observed sitting in a sibling worktree's working directory at this session's start — that copy is not this evidence and was never read or relied on by this mission."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim.",
+      "prohibitedClaims": [
+        "Any claim this preflight itself built orchestration."
+      ],
+      "knownLimits": [
+        "docs/research/** only."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PRODUCTION-ORCHESTRATION-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "PRODUCTION-ORCHESTRATION-V1-evidence",
+          "commits": [
+            "ae76da7f2233a0a168ed113f010635947b94a596"
+          ],
+          "paths": [
+            "src/lib/job-run-repository.ts",
+            "src/server/data/production-jobs.ts"
+          ],
+          "tests": [
+            "src/engine/produce-single-polish.test.ts"
+          ],
+          "decisions": [
+            "D-018",
+            "D-023-TTS-OWNERSHIP",
+            "D-041"
+          ],
+          "receipts": [
+            "CAPABILITIES.yaml own text: migration 0012 'Appliquee et verifiee sur le projet Neon isole shortsos-preview' — a real applied migration on a real isolated database. This proves the schema, not a full real end-to-end produce->review->publish run under this id (that full-loop real run is M1-REAL-PRODUCE-REVIEW-PUBLISH's own evidence) — classified down to tested_only for the orchestration behavior itself, fail-closed."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Durable Produce -> Review job orchestration (idempotent, crash-resumable, single-live-job-per-item) is implemented and tested; its schema was applied and verified on a real isolated preview database.",
+      "prohibitedClaims": [
+        "Any claim this capability alone proved a real publish — that is M1-REAL-PRODUCE-REVIEW-PUBLISH's evidence."
+      ],
+      "knownLimits": [
+        "No default/global TTS voice (PRODUCT_VOICE=UNRATIFIED); production database was never touched by this migration's proof, only the isolated preview project."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PROHIBITED-CREATIVE-QUALITY-CLAIMS",
+      "kind": "prohibited_concept",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "blocked",
+      "derivedPublicationStatus": "blocked",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "PROHIBITED-CREATIVE-QUALITY-CLAIMS-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/render/creative-policy.ts"
+          ],
+          "tests": [
+            "src/domain/render/render-execution.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "AGENTS.md section 15 (P2): 'Perceptible quality is part of the gate. A technically conformant but mediocre output fails P2.' Only two specific screens — FDTS-OPPORTUNITY-CALLER-V1 and FDTS-SHOW-ME-WHY-V1 — have actually received a P2 human-decision-experience checkpoint, and both are narrow dashboard screens, not a general creative-output quality judgment. The render/creative pipeline is technically proven end-to-end (M1, JSON2Video, Submagic) but perceptual/creative quality of the SHORT ITSELF has never been P2-judged as a general claim."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "None beyond AGENTS.md section 5's own doctrine: speak of viral readiness, creative fit, retention potential — never promise virality, never claim general creative quality.",
+      "prohibitedClaims": [
+        "\"Studio-quality\", \"broadcast-quality\", or any general creative-quality superlative.",
+        "Any implicit or explicit promise of virality or of guaranteed audience engagement.",
+        "Generalizing the two narrow P2-passed dashboard-screen checkpoints into a claim about output creative quality."
+      ],
+      "knownLimits": [
+        "Technically proven end-to-end pipeline; zero general perceptual/creative-quality P2 judgment exists for it."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT",
+      "kind": "prohibited_concept",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "blocked",
+      "derivedPublicationStatus": "blocked",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "google_drive_oauth",
+          "state": "unknown",
+          "note": "The OAuth flow is implemented and unit/integration tested (DRIVE-IMPORT-V1); no dated real external Google account connect-and-import run is on record in session memory or capability text."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT-evidence",
+          "commits": [],
+          "paths": [
+            "src/domain/drive-import/drive-oauth-state.ts",
+            "src/server/data/drive-import/drive-oauth-config.ts"
+          ],
+          "tests": [
+            "src/domain/drive-import/drive-oauth-state.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "None. Never claim a public, self-serve 'connect your Google Drive' flow.",
+      "prohibitedClaims": [
+        "\"Connect your own Google Drive in one click\" or any equivalent self-serve claim.",
+        "Any claim this OAuth flow has been proven against a real external Google account."
+      ],
+      "knownLimits": [
+        "Proven only internally (unit/integration tests, fixture/HTTP adapters); never run against a real external Drive account per available evidence."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING",
+      "kind": "prohibited_concept",
+      "implementationStatus": "partial",
+      "runtimeProof": "real_run_proven",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "blocked",
+      "derivedPublicationStatus": "blocked",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "instagram_meta_permissions",
+          "state": "unknown",
+          "note": "Unknown for any account other than the one operator-bound account already proven; general self-serve OAuth-connect-and-publish for an arbitrary end user has never been attempted or granted."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/instagram-social-publishing-provider.ts"
+          ],
+          "tests": [
+            "src/providers/instagram-social-publishing-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory: 'Instagram publish contract proven — real Reel published live; user_id vs app-scoped id, and me/permissions does not exist.' Exactly one real permalink-capture run is proven (M1-REAL-PRODUCE-REVIEW-PUBLISH, PUBLICATION-PERMALINK-CAPTURE-V1), for one operator-bound account — never a general, arbitrary-user, self-serve connect-and-publish capability."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "None. Never claim self-serve Instagram publishing for an end customer's own account.",
+      "prohibitedClaims": [
+        "\"Connect your Instagram and publish automatically\" or any equivalent self-serve claim.",
+        "Any claim of multi-account or general-audience publish capability."
+      ],
+      "knownLimits": [
+        "Only a single, operator-bound, real permalink-capture run is proven; the general capability does not exist."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PROTOCOL-V32-RATIFICATION",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "PROTOCOL-V32-RATIFICATION-evidence",
+          "commits": [],
+          "paths": [
+            "docs/multi-agent/ENFORCEMENT.md",
+            "docs/multi-agent/WAVES.md"
+          ],
+          "tests": [],
+          "decisions": [],
+          "receipts": [
+            "Materialized the V3.2 protocol text ratified by T0; published in main by d50e4dc per WAVES.md history."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: internal engineering process.",
+      "prohibitedClaims": [
+        "Any product-facing claim."
+      ],
+      "knownLimits": [
+        "Governance tooling, not product behavior."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "PUBLICATION-PERMALINK-CAPTURE-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "instagram_meta_permissions",
+          "state": "granted",
+          "note": "Proven for exactly one real, operator-bound Reel publish and permalink capture; not general self-serve. See prohibited_concept instagram_self_serve_publishing."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "PUBLICATION-PERMALINK-CAPTURE-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/instagram-social-publishing-provider.ts",
+            "src/server/data/publications.ts"
+          ],
+          "tests": [
+            "src/server/data/publications.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory 'Instagram publish contract proven — real Reel published live' names a single real permalink-capture run as proven, not general publish capability — this is the exact narrow proof this capability's identity fields (external_post_id, permalink) exist to record."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "Publication identity (external_post_id, permalink) is captured and durable for the one proven real Instagram publish.",
+      "prohibitedClaims": [
+        "Any claim that a customer can self-serve connect and publish to their own Instagram account."
+      ],
+      "knownLimits": [
+        "Proven for a single operator-bound account and a single real run, not a general publishing product."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "RENDER-MEDIA-HANDOFF-CONTRACT-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "RENDER-MEDIA-HANDOFF-CONTRACT-V1-evidence",
+          "commits": [],
+          "paths": [
+            "scripts/render-real.ts",
+            "src/providers/contracts.ts"
+          ],
+          "tests": [
+            "src/providers/json2video-render-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: internal render/media hand-off contract.",
+      "prohibitedClaims": [
+        "Any claim of a real render proven by this capability alone."
+      ],
+      "knownLimits": [
+        "Contract-only capability; live proof lives in JSON2VIDEO-NATIVE-PROVIDER-TEST-V1."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "RENDER-OUTPUT-INGEST-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "r2_write_credential",
+          "state": "granted",
+          "note": "Proven live 2026-09-01 for the shortsos-media bucket (session memory); this capability's own intent text predates that dated proof, so it is recorded conservatively as tested_only for the capability itself."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "RENDER-OUTPUT-INGEST-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/engine/render-media-handoff.ts",
+            "src/engine/render-output-ingest.ts"
+          ],
+          "tests": [
+            "src/engine/render-output-ingest.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory: 'R2 render-handoff surface works — bucket provisioned, Submagic fetched from it; the credential holds canonical write too.' Corroborates the R2 ingest path is real infrastructure, though the dated write-credential proof (2026-09-01) postdates this capability's own text."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: canonical R2 ingest plumbing for render outputs.",
+      "prohibitedClaims": [
+        "Any claim of unlimited R2 storage capacity or SLA."
+      ],
+      "knownLimits": [
+        "Acceptance semantics are strict: zero-byte or unreachable media never produces a canonical row (attested, not reproduced by this build)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "RENDER-OUTPUT-REDIRECT-HARDENING",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "RENDER-OUTPUT-REDIRECT-HARDENING-evidence",
+          "commits": [],
+          "paths": [
+            "src/engine/render-output-ingest.ts"
+          ],
+          "tests": [
+            "src/engine/render-output-ingest.test.ts",
+            "src/engine/render-output-redirect.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No independent public claim: regression coverage for RENDER-OUTPUT-INGEST-V1's existing production semantics, no new implementation.",
+      "prohibitedClaims": [
+        "Any claim of new redirect-handling behavior."
+      ],
+      "knownLimits": [
+        "TESTS_ONLY mission by its own classification; introduces no production module."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "RENDERER-VOICE-BINDING-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "RENDERER-VOICE-BINDING-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/engine/render-tts-ownership.test.ts",
+            "src/providers/json2video-voice.ts"
+          ],
+          "tests": [
+            "src/providers/json2video-voice.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory 'voice.mode comes from the vector, not has_voice' documents real product logic; no live-call proof attributed to this id specifically."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: freezes per-attempt voice binding; 10 of the discovered Azure voice-mapping cells remain intentionally unassigned (PRODUCT_VOICE=UNRATIFIED).",
+      "prohibitedClaims": [
+        "Any claim of a complete or default voice for every creative vector."
+      ],
+      "knownLimits": [
+        "PRODUCT_VOICE=UNRATIFIED — no global or default voice fallback exists by design."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "SUBMAGIC-ADAPTER-COMPAT-FIX-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "submagic_api",
+          "state": "unknown",
+          "note": "Own intent text names no live call; silence-removal contract alignment only."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "SUBMAGIC-ADAPTER-COMPAT-FIX-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/submagic-render-provider.ts"
+          ],
+          "tests": [
+            "src/providers/submagic-render-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: compatibility fix on the Submagic adapter.",
+      "prohibitedClaims": [
+        "Any claim of a proven real render by this fix alone."
+      ],
+      "knownLimits": [
+        "No live call attributed to this id."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "SUBMAGIC-DEMO-LANE-PREFLIGHT",
+      "kind": "capability",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "none",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [
+        {
+          "id": "SUBMAGIC-DEMO-LANE-PREFLIGHT-evidence",
+          "commits": [
+            "d7af6cb7ca64bfa63e6b73878cdc91329f94a67d"
+          ],
+          "paths": [
+            "docs/research/submagic-demo-lane-preflight.md"
+          ],
+          "tests": [],
+          "decisions": [],
+          "receipts": [
+            "This path does NOT exist at origin/main HEAD — verify-evidence.ts caught this during this mission's own build. The commit object itself (d7af6cb) exists in this repository and carries the path, but is not an ancestor of HEAD: the preflight doc was authored and never merged to main's line. Evidence is therefore pinned to that exact commit, never to HEAD, and this gap is disclosed rather than papered over."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: research-only audit, no product code shipped.",
+      "prohibitedClaims": [
+        "Any claim this preflight itself built or proved a Submagic feature."
+      ],
+      "knownLimits": [
+        "docs/research/** only, per PROTOCOL.md section 8."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "real_run_proven",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "candidate",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "submagic_api",
+          "state": "granted",
+          "note": "Proven for one real live project completion returning a real duration; not proof of general production volume or of the upload-endpoint flow specifically (that is a separate, later-dated proof in session memory)."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "SUBMAGIC-LIVE-CONTRACT-FIX-V1-evidence",
+          "commits": [
+            "bd5426cdd8d72d5219131c0dfb529ac2b0b825e5"
+          ],
+          "paths": [
+            "src/providers/submagic-render-provider.ts"
+          ],
+          "tests": [
+            "src/providers/submagic-render-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "CAPABILITIES.yaml own text: 'la reponse Submagic live a renvoye videoMetaData.duration=11.669' — an explicit real, non-mock Submagic API response attested by T0, corroborated by session memory's Submagic upload endpoint contract proof."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "A real Submagic render contract (duration field, no synthetic fallback) is proven live once, for one project.",
+      "prohibitedClaims": [
+        "General claim of unlimited or production-scale Submagic rendering."
+      ],
+      "knownLimits": [
+        "Single real-run data point; unknown-duration edge case is explicitly un-implemented by product decision (RenderOutput.durationSeconds stays non-nullable)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    },
+    {
+      "id": "SUBMAGIC-RENDER-ADAPTER-V1",
+      "kind": "capability",
+      "implementationStatus": "implemented",
+      "runtimeProof": "tested_only",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "internal_only",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [
+        {
+          "name": "submagic_api",
+          "state": "unknown",
+          "note": "No dated real-run proof attributed to this specific capability id; the dated live proof belongs to SUBMAGIC-LIVE-CONTRACT-FIX-V1."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "SUBMAGIC-RENDER-ADAPTER-V1-evidence",
+          "commits": [],
+          "paths": [
+            "src/providers/submagic-render-provider.ts"
+          ],
+          "tests": [
+            "src/providers/submagic-render-provider.test.ts"
+          ],
+          "decisions": [],
+          "receipts": [
+            "Session memory: 'Submagic requires an audio track — a silent source wedges the project in processing forever instead of erroring.' A real operational failure mode, not proof of a successful real render by this base adapter."
+          ],
+          "resolved": true
+        }
+      ],
+      "claimCeiling": "No public claim: base adapter, superseded in behavior by SUBMAGIC-ADAPTER-COMPAT-FIX-V1 and SUBMAGIC-LIVE-CONTRACT-FIX-V1.",
+      "prohibitedClaims": [
+        "Any claim of a proven real Submagic render by this base adapter alone."
+      ],
+      "knownLimits": [
+        "A silent source wedges Submagic in `processing` forever instead of erroring (session memory)."
+      ],
+      "publicationDecision": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md"
+    }
+  ]
+}

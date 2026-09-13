@@ -1,0 +1,7 @@
+{
+  "id": "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "A real Submagic render contract (duration field, no synthetic fallback) is proven live once, for one project.",
+  "allowedSurfaces": []
+}

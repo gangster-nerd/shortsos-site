@@ -1,0 +1,7 @@
+{
+  "id": "PUBLICATION-PERMALINK-CAPTURE-V1",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "Publication identity (external_post_id, permalink) is captured and durable for the one proven real Instagram publish.",
+  "allowedSurfaces": []
+}

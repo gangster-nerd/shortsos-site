@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 3,
+  "statusVocabularyVersion": 4,
+  "entityCount": 2,
+  "counts": {
+    "public_marketable": 0,
+    "candidate": 1,
+    "internal_only": 1,
+    "blocked": 0
+  },
+  "entities": [
+    {
+      "id": "EXAMPLE-PLACEHOLDER-CAPABILITY-1",
+      "kind": "capability",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "none",
+      "availability": "operator_only",
+      "declaredPublicationStatus": "candidate",
+      "derivedPublicationStatus": "internal_only",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [],
+      "claimCeiling": "PLACEHOLDER ONLY -- not a real product claim. This example entity exists solely to exercise the manifest loader and registries before the first real content:sync.",
+      "prohibitedClaims": [
+        "Any claim at all -- this entity is fake and must never be rendered as live product truth."
+      ],
+      "knownLimits": [
+        "This is a placeholder entity seeded by SOS-SITE-0. It does not describe any real ShortsOS capability."
+      ],
+      "publicationDecision": null
+    },
+    {
+      "id": "EXAMPLE-PLACEHOLDER-CAPABILITY-2",
+      "kind": "prohibited_concept",
+      "implementationStatus": "not_implemented",
+      "runtimeProof": "none",
+      "availability": "test_accounts_only",
+      "declaredPublicationStatus": "blocked",
+      "derivedPublicationStatus": "blocked",
+      "allowedSurfaces": [],
+      "externalDependencies": [],
+      "evidence": [],
+      "claimCeiling": "PLACEHOLDER ONLY -- not a real product claim.",
+      "prohibitedClaims": [
+        "Any claim at all -- this entity is fake."
+      ],
+      "knownLimits": [
+        "Placeholder seeded by SOS-SITE-0 to exercise a second, differently-shaped example entity (kind=prohibited_concept) in the loader and registries."
+      ],
+      "publicationDecision": null
+    }
+  ]
+}

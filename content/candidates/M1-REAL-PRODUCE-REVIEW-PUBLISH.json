@@ -1,0 +1,7 @@
+{
+  "id": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "The full golden path — Produce -> Review -> Publish — has been run once for real, against a real render provider, real R2 storage and a real Instagram account, ending in a real published Reel with a captured permalink.",
+  "allowedSurfaces": []
+}

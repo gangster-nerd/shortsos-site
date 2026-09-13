@@ -1,0 +1,7 @@
+{
+  "id": "FDTS-OPPORTUNITY-CALLER-V1",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "The first capability making real opportunity generation reachable by a real operator, with a P2-passed human-decision experience (truthful error and zero-strong-story states).",
+  "allowedSurfaces": []
+}

@@ -1,0 +1,34 @@
+{
+  "name": "shortsos-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static-first public site for ShortsOS. Pure consumer of a pinned, checksum-verified capability manifest artifact — no product runtime, no provider SDKs.",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run build",
+    "content:sync": "tsx scripts/content-sync.ts",
+    "content:status": "tsx scripts/content-status.ts",
+    "content:verify": "tsx scripts/content-verify.ts"
+  },
+  "dependencies": {
+    "next": "15.5.25",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.5.25",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  }
+}

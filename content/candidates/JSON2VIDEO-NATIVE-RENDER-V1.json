@@ -1,0 +1,7 @@
+{
+  "id": "JSON2VIDEO-NATIVE-RENDER-V1",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "A real JSON2Video native render (RenderRecipe -> movie spec -> polled render -> provider URL) has been proven once, end to end, against the real provider.",
+  "allowedSurfaces": []
+}

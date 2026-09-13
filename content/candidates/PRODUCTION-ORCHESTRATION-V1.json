@@ -1,0 +1,7 @@
+{
+  "id": "PRODUCTION-ORCHESTRATION-V1",
+  "kind": "capability",
+  "derivedPublicationStatus": "candidate",
+  "claimCeiling": "Durable Produce -> Review job orchestration (idempotent, crash-resumable, single-live-job-per-item) is implemented and tested; its schema was applied and verified on a real isolated preview database.",
+  "allowedSurfaces": []
+}

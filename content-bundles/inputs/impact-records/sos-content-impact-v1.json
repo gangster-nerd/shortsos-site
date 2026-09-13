@@ -1,0 +1,17 @@
+{
+  "changeId": "sos-content-impact-v1",
+  "baseRef": "76f3a2ef7b8083809420a90daf7524f2a49a51b5",
+  "headRef": "fa51630b4f7ce9251f030700122aba625966f434",
+  "entities": [],
+  "qualification": "no_public_content",
+  "surfacesImpacted": [],
+  "reason": "This range is SOS-CONTENT-IMPACT-V1's own candidate content commit: it adds deterministic internal governance tooling (src/public-truth/impact/schema.ts, verify-impact.ts, resolve-content-candidates.ts, scripts/impact-verify.ts, scripts/content-candidates-build.ts, changes/content-impact/README.md, OWNERSHIP.yaml). It changes no src/public-truth/declaration.ts entity's implementationStatus, runtimeProof, availability, publicationStatus or claimCeiling -- it only adds a mechanism that will act on FUTURE changes to those axes. No LLM call, no network call beyond git itself, no user-visible screen, no golden-path step, no publication target. This is the same reasoning SOS-PUBLIC-TRUTH-V1 used to justify CAPABILITY_GATE over RELEASE_GATE for itself (docs/multi-agent/waves/WAVE-008-SOS-PUBLIC-TRUTH.yaml's own D7 narrative): internal governance tooling gets no public claim of its own. publication_policy_review was considered and rejected -- that qualification is for a change to publication-policy.ts, schema.ts or declaration.ts (or to GOVERNED_PATH_PATTERNS / the qualification vocabulary) themselves; this mission introduces the impact-tracking layer for the first time without modifying any of those three files. KNOWN LIMITATION, disclosed rather than solved recursively: this record's headRef is the candidate content commit only. The separate, later governance-close commit that updates CAPABILITIES.yaml (a governed path) to flip this same capability to status=done is NOT covered by this record -- see changes/content-impact/README.md section 6 for why every future CAPABILITIES.yaml-only governance-close commit is not, in V1, required to carry its own change-impact record.",
+  "governedPathsTouched": [
+    "src/public-truth/impact/resolve-content-candidates.test.ts",
+    "src/public-truth/impact/resolve-content-candidates.ts",
+    "src/public-truth/impact/schema.test.ts",
+    "src/public-truth/impact/schema.ts",
+    "src/public-truth/impact/verify-impact.test.ts",
+    "src/public-truth/impact/verify-impact.ts"
+  ]
+}

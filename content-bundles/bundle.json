@@ -1,0 +1,85 @@
+{
+  "bundleId": "bundle-642d72fa376908f0f24fadf0313c9c6de1c8273b",
+  "productRef": "642d72fa376908f0f24fadf0313c9c6de1c8273b",
+  "manifestSchemaVersion": 3,
+  "manifestStatusVocabularyVersion": 4,
+  "manifestChecksum": "0f313d8b35c8a498dd99defaf7129ac4d0ac816bc90d5a92b886a12e4876a220",
+  "manifestEntityCount": 42,
+  "impactRecords": [
+    {
+      "changeId": "sos-content-impact-v1",
+      "baseRef": "76f3a2ef7b8083809420a90daf7524f2a49a51b5",
+      "headRef": "fa51630b4f7ce9251f030700122aba625966f434",
+      "entities": [],
+      "qualification": "no_public_content",
+      "surfacesImpacted": []
+    }
+  ],
+  "impactedSurfaces": [],
+  "candidateEntities": [
+    {
+      "id": "CLIENT-WORKSPACE-ANALYTICS-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "Read-only client workspace analytics, real DB-backed read model, no seeded metric — operator dashboard feature.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "FDTS-OPPORTUNITY-CALLER-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "The first capability making real opportunity generation reachable by a real operator, with a P2-passed human-decision experience (truthful error and zero-strong-story states).",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "FDTS-SHOW-ME-WHY-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "Real evidence preview (source-moment video, timestamp ranges, rationale) with a durable zero-strong-opportunity empty state, P2-passed for the canonical operator dashboard.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "INSTAGRAM-CREDENTIAL-BINDING-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "This capability binds Instagram credentials at the provider boundary; it is a building block for the one proven operator-bound publish, not a general publish capability.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "JSON2VIDEO-NATIVE-RENDER-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "A real JSON2Video native render (RenderRecipe -> movie spec -> polled render -> provider URL) has been proven once, end to end, against the real provider.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "The full golden path — Produce -> Review -> Publish — has been run once for real, against a real render provider, real R2 storage and a real Instagram account, ending in a real published Reel with a captured permalink.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "PRODUCTION-ORCHESTRATION-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "Durable Produce -> Review job orchestration (idempotent, crash-resumable, single-live-job-per-item) is implemented and tested; its schema was applied and verified on a real isolated preview database.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "PUBLICATION-PERMALINK-CAPTURE-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "Publication identity (external_post_id, permalink) is captured and durable for the one proven real Instagram publish.",
+      "allowedSurfaces": []
+    },
+    {
+      "id": "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+      "kind": "capability",
+      "derivedPublicationStatus": "candidate",
+      "claimCeiling": "A real Submagic render contract (duration field, no synthetic fallback) is proven live once, for one project.",
+      "allowedSurfaces": []
+    }
+  ],
+  "sourceDisclosure": "Built by shelling out to `npm run public-truth:build` in a local checkout of the product repository at the path given to content:sync, then reading its .artifacts output directly off disk. No network call. No published/CI manifest artifact exists yet to fetch instead."
+}
