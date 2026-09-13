@@ -161,12 +161,28 @@ export const FAQ_ITEMS: FaqItem[] = [
 
 export const CHANGELOG_INTRO =
   "This is process/methodology history, not a customer-facing feature list. It records how ShortsOS's " +
-  "own governance program decides what may be claimed publicly — not a log of shipped product features.";
+  "own governance program decides what may be claimed publicly — not a log of shipped product features. " +
+  "Every entry below is a historical statement about engineering or governance work that already happened, " +
+  "cited by real commit and date in one of the two repositories behind this site. A historical entry about " +
+  "a capability that is still `candidate`, `internal_only`, or `blocked` today describes past engineering " +
+  "work only — never a current offer to use that capability.";
 
 export interface ChangelogEntry {
   date: string;
   title: string;
   body: string;
+  /** Which repository the cited commit lives in. */
+  repo: "shortsos" | "shortsos-site";
+  /** The real, git-verifiable commit SHA this entry is sourced from — never invented. */
+  sha: string;
+  /**
+   * Every changelog entry is, by construction, a statement about the past. This flag is
+   * carried explicitly (rather than left implicit) so the copy-safety/current-truth check
+   * can assert, mechanically, that nothing in this array is ever read by a current-truth
+   * page (`/`, `/how-it-works`, `/proof`, `/faq`, `/request-pilot`) — see
+   * `tests/site-content.test.ts`.
+   */
+  historicalClaimOnly: true;
 }
 
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
@@ -174,35 +190,121 @@ export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
     date: "2026-09-13",
     title: "M1 Produce → Review → Publish ratified as the one public claim (SOS-PUBLICATION-DECISION-M1-V1)",
     body: "Of nine internally-reviewed candidates, exactly one — the end-to-end Produce → Review → Publish workflow — was ratified for a public claim, with an explicit, narrow claim ceiling and eight prohibited-claim guardrails.",
+    repo: "shortsos",
+    sha: "f01ac6110ec664aba31ee985a4c30d307de10b2f",
+    historicalClaimOnly: true,
   },
   {
     date: "2026-09-13",
     title: "This site synced to the ratified manifest (SOS-CATCHUP-V1)",
     body: "The public site you're reading was rebuilt from the ratified manifest: one public_marketable capability, eight still-candidate, thirty internal-only, three explicitly blocked from ever being claimed.",
+    repo: "shortsos-site",
+    sha: "1571d67",
+    historicalClaimOnly: true,
   },
   {
-    date: "2026-09-12",
+    date: "2026-09-13",
     title: "Managed-service publication policy amended (SOS-PUBLIC-TRUTH-POLICY-V1)",
     body: "The publication policy was amended to allow an operator-run capability to be claimed publicly under a managed-service framing — never under independent-access wording.",
+    repo: "shortsos",
+    sha: "ea607bd",
+    historicalClaimOnly: true,
   },
   {
     date: "2026-09-12",
     title: "Public Truth manifest introduced (SOS-PUBLIC-TRUTH-V1)",
     body: "ShortsOS's internal capability inventory was first classified on a four-way public/candidate/internal/blocked scale, fail-closed by default — every capability started internal-only until explicitly promoted.",
+    repo: "shortsos",
+    sha: "eb7446b",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-12",
+    title: "\"Show Me Why\" capability chain closed (FDTS-SHOW-ME-WHY-V1)",
+    body: "Internal engineering work, prior to this site's own governance train: the content-inventory UI was given real evidence controls, capture-session identity, and a durable zero-story state — the first capability in this program to be reviewed and closed across two consecutive missions. This was engineering-only work; no public claim followed from it.",
+    repo: "shortsos",
+    sha: "fd55820",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-12",
+    title: "Opportunity generation wired to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)",
+    body: "Internal engineering history: the story-opportunity generator was connected to a real production LLM caller (previously a mock), closing out WAVE-006 of the earlier \"From Drive to Story\" build program. This is the same opportunity-generation stage later described, in past tense, on the /how-it-works page as pipeline architecture — it remains internal-only, not independently claimed here.",
+    repo: "shortsos",
+    sha: "d2268dc",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-11",
+    title: "Tenant-safe duplicate-clip detection fixed (FDTS-RETRIEVAL-SAFETY-V1)",
+    body: "A real defect — a media-probe lookup that did not scope duplicate detection by tenant — was found and fixed. Internal engineering record only; retrieval safety is not a capability marketed on this site.",
+    repo: "shortsos",
+    sha: "3803d15",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-06-21",
+    title: "ShortsOS engineering begins (Sprint 0)",
+    body: "The product repository's first commit: canonical docs, architecture decision records, and a target-architecture roadmap, months before any of the capabilities referenced elsewhere on this site existed in any form.",
+    repo: "shortsos",
+    sha: "e476b1c",
+    historicalClaimOnly: true,
   },
 ];
 
-export const GLOSSARY_ENTRIES: { term: string; definition: string }[] = [
-  { term: "Public Truth manifest", definition: "ShortsOS's internal, checksum-verified inventory of every capability and what may honestly be claimed about it publicly." },
-  { term: "public_marketable", definition: "A capability that has cleared every gate to be claimed on a public surface. Exactly one capability holds this status today." },
-  { term: "candidate", definition: "A capability that is real and implemented, but has not yet been reviewed and ratified for a public claim." },
-  { term: "internal_only", definition: "A capability that exists and may be implemented, but makes no public claim of any kind — internal engineering only." },
-  { term: "blocked", definition: "A concept explicitly prohibited from ever being claimed publicly, regardless of implementation status." },
-  { term: "Claim ceiling", definition: "The exact, ratified upper bound of what may be said publicly about a capability — never exceeded, never blended with stronger wording." },
-  { term: "Prohibited claims", definition: "An explicit list of specific things that must never be implied about a capability, even if the claim ceiling wording could be stretched to suggest them." },
-  { term: "Operator-run / operator-bound", definition: "Run by the ShortsOS team on a client's behalf, on accounts and infrastructure the team controls — not operated directly by the client with their own credentials." },
-  { term: "content:sync", definition: "The tool that reads the ratified manifest from the product repository and produces this site's own copy-safe content bundle." },
-  { term: "Pilot", definition: "A direct, operator-run engagement with a client, requested through this site rather than started via independent signup." },
+export interface GlossaryEntry {
+  term: string;
+  definition: string;
+  /**
+   * true only for entries that describe a past engineering program, a sunset/superseded
+   * name, or an internal mechanism recounted for historical color — never a live claim
+   * about what a visitor can currently do or buy. false for the site's own live governance
+   * vocabulary (still-accurate definitions of terms this site currently uses).
+   */
+  historicalClaimOnly: boolean;
+}
+
+export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
+  { term: "Public Truth manifest", definition: "ShortsOS's internal, checksum-verified inventory of every capability and what may honestly be claimed about it publicly.", historicalClaimOnly: false },
+  { term: "public_marketable", definition: "A capability that has cleared every gate to be claimed on a public surface. Exactly one capability holds this status today.", historicalClaimOnly: false },
+  { term: "candidate", definition: "A capability that is real and implemented, but has not yet been reviewed and ratified for a public claim.", historicalClaimOnly: false },
+  { term: "internal_only", definition: "A capability that exists and may be implemented, but makes no public claim of any kind — internal engineering only.", historicalClaimOnly: false },
+  { term: "blocked", definition: "A concept explicitly prohibited from ever being claimed publicly, regardless of implementation status.", historicalClaimOnly: false },
+  { term: "Claim ceiling", definition: "The exact, ratified upper bound of what may be said publicly about a capability — never exceeded, never blended with stronger wording.", historicalClaimOnly: false },
+  { term: "Prohibited claims", definition: "An explicit list of specific things that must never be implied about a capability, even if the claim ceiling wording could be stretched to suggest them.", historicalClaimOnly: false },
+  { term: "Operator-run / operator-bound", definition: "Run by the ShortsOS team on a client's behalf, on accounts and infrastructure the team controls — not operated directly by the client with their own credentials.", historicalClaimOnly: false },
+  { term: "content:sync", definition: "The tool that reads the ratified manifest from the product repository and produces this site's own copy-safe content bundle.", historicalClaimOnly: false },
+  { term: "Pilot", definition: "A direct, operator-run engagement with a client, requested through this site rather than started via independent signup.", historicalClaimOnly: false },
+  {
+    term: "From Drive to Story (FDTS)",
+    definition:
+      "The internal engineering program name (WAVE-001 through WAVE-011, June–September 2026) under which most of ShortsOS's content-inventory, retrieval, and production-orchestration engineering was built, before the separate \"Commit-to-Content\" governance train that produced this site's own manifest sync. Historical program name only — not a current product or feature.",
+    historicalClaimOnly: true,
+  },
+  {
+    term: "Wave (governance)",
+    definition:
+      "A governance-admitted batch of one or more missions in ShortsOS's internal build process, opened (\"admitted\") and later closed as a unit — e.g. WAVE-006 through WAVE-011. An internal process artifact, not anything a visitor interacts with.",
+    historicalClaimOnly: true,
+  },
+  {
+    term: "Sprint 0",
+    definition:
+      "The name of the product repository's first commit (June 21, 2026): canonical docs, architecture decision records, and an initial roadmap, months before any of the capabilities described elsewhere on this site existed. Historical marker only.",
+    historicalClaimOnly: true,
+  },
+  {
+    term: "Commit-to-Content train",
+    definition:
+      "The internal name for the four-mission governance sequence — SOS-PUBLIC-TRUTH-V1, SOS-CONTENT-IMPACT-V1, SOS-PUBLIC-TRUTH-POLICY-V1, and SOS-PUBLICATION-DECISION-M1-V1 — that produced the ratified manifest this site is synced to, plus the two site-build missions that turned that manifest into this public site.",
+    historicalClaimOnly: true,
+  },
+  {
+    term: "merged_dormant (capability lifecycle)",
+    definition:
+      "One of four internal engineering states a real provider integration passes through before it is allowed to run against a live external account: implemented → tested_locally → merged_dormant → activated. Describes internal engineering maturity only; it is a distinct axis from this site's public/candidate/internal/blocked claim status, and no page infers a public claim from it.",
+    historicalClaimOnly: true,
+  },
 ];
 
 export const REQUEST_PILOT_COPY = {

@@ -20,7 +20,7 @@ export default function ChangelogPage() {
           {CHANGELOG_ENTRIES.map((entry) => (
             <div key={entry.title} className="faq-item">
               <p className="eyebrow" style={{ marginBottom: 6 }}>
-                {entry.date}
+                {entry.date} · {entry.repo}@{entry.sha}
               </p>
               <h3>{entry.title}</h3>
               <p>{entry.body}</p>
