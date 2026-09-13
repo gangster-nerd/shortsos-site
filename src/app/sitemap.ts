@@ -6,11 +6,21 @@ import { SITE_ORIGIN } from "@/lib/config/site-config";
 // (and must) be emitted as a fixed static file rather than a server route.
 export const dynamic = "force-static";
 
+const ROUTES = [
+  "/",
+  "/how-it-works",
+  "/methodology",
+  "/proof",
+  "/faq",
+  "/changelog",
+  "/glossary",
+  "/request-pilot",
+  "/request-pilot/received",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: SITE_ORIGIN,
-      lastModified: new Date(0),
-    },
-  ];
+  return ROUTES.map((route) => ({
+    url: `${SITE_ORIGIN}${route}`,
+    lastModified: new Date(0),
+  }));
 }

@@ -30,7 +30,7 @@ export const CTA_REGISTRY: Record<CtaId, CtaDefinition> = {
   request_pilot: {
     id: "request_pilot",
     label: "Request a pilot",
-    href: "/contact",
+    href: "/request-pilot",
     enabled: true,
     // The one active CTA has no manifest gate: it is an operator-mediated conversation,
     // not a self-serve capability claim, so it carries no capability-activation signal.
