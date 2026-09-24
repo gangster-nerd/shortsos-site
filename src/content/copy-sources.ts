@@ -193,6 +193,30 @@ export interface ChangelogEntry {
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
   {
     date: "2026-09-24",
+    title: "Calls to action for customer-run access tied to general availability",
+    body: "The site's rule for ever showing a call to action that would let a customer run a capability without the team was aligned with the product's own: that capability must be generally available, not only cleared for a public claim under a managed-service framing. No capability qualified at the time, and no such call to action was shown.",
+    repo: "shortsos-site",
+    sha: "919bf28",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-24",
+    title: "Official address chosen and indexing opened",
+    body: "The owner chose https://shortsos-site.vercel.app as this site's official address and opened it to search engines, once every published article had been reviewed and cleared for the public web. Each page now declares its canonical address on that origin.",
+    repo: "shortsos-site",
+    sha: "7b58905",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-24",
+    title: "Insights reviewed; engineering notes cleared for the public web",
+    body: "The owner reviewed the five Insights articles and cleared the evidence behind the three engineering notes for public use. The notes were checked again with that clearance and moved from a controlled preview to the public web; their wording did not change.",
+    repo: "shortsos-site",
+    sha: "763de47",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-24",
     title: "Insights opened: engineering notes and answers (SOS-NOTES-V1)",
     body: "Five articles were published under Insights. Three engineering notes, each written from cited product commits, record past engineering and governance work and claim no capability. Two answers take buyer questions this site did not yet answer in depth, and answer them only with wording the owner ratified for public use. Every article passed an automated claim check before publication; human editorial review of each one is pending.",
     repo: "shortsos-site",
