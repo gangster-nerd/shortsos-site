@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-import { requestPilotLink } from "@/lib/registries/cta-registry";
+import { CTA_REGISTRY } from "@/lib/registries/cta-registry";
 import { buildOrganizationJsonLd } from "@/lib/seo/json-ld";
 import { HOME_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
 import { SITE_ORIGIN } from "@/lib/config/site-config";
 
 export default function HomePage() {
-  const requestPilot = requestPilotLink("home-hero");
+  const requestPilot = CTA_REGISTRY.request_pilot;
   const m1 = getM1ForSurface("homepage");
   const claim = splitM1Claim(m1.claimCeiling);
 
@@ -25,7 +25,7 @@ export default function HomePage() {
           <p className="eyebrow">Video production, evidence-first</p>
           <h1>From raw footage to a published, reviewed short.</h1>
           <p className="lede">{HOME_INTRO}</p>
-          {requestPilot ? (
+          {requestPilot.enabled ? (
             <div style={{ marginTop: 28 }}>
               <Link href={requestPilot.href} className="btn btn-primary">
                 {requestPilot.label}

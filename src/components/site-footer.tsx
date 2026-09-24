@@ -1,9 +1,6 @@
 import Link from "next/link";
 
-import { requestPilotLink } from "@/lib/registries/cta-registry";
-
 export function SiteFooter() {
-  const requestPilot = requestPilotLink("footer");
   return (
     <footer className="footer">
       <div className="shell footer-row">
@@ -19,8 +16,7 @@ export function SiteFooter() {
           <Link href="/glossary">Glossary</Link>
           <Link href="/changelog">Changelog</Link>
           <Link href="/faq">FAQ</Link>
-          <Link href="/privacy">Privacy</Link>
-          {requestPilot ? <Link href={requestPilot.href}>{requestPilot.label}</Link> : null}
+          <Link href="/request-pilot">Request a pilot</Link>
         </nav>
       </div>
     </footer>

@@ -18,7 +18,6 @@ const ROUTES = [
   "/request-pilot",
   "/request-pilot/received",
   "/insights",
-  "/privacy",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { requestPilotLink } from "@/lib/registries/cta-registry";
+import { CTA_REGISTRY } from "@/lib/registries/cta-registry";
 
 const NAV_LINKS: { href: string; label: string }[] = [
   { href: "/how-it-works", label: "How it works" },
@@ -12,7 +12,7 @@ const NAV_LINKS: { href: string; label: string }[] = [
 ];
 
 export function SiteNav() {
-  const requestPilot = requestPilotLink("nav");
+  const requestPilot = CTA_REGISTRY.request_pilot;
   return (
     <header className="nav">
       <div className="shell nav-row">
@@ -26,7 +26,7 @@ export function SiteNav() {
             </Link>
           ))}
         </nav>
-        {requestPilot ? (
+        {requestPilot.enabled ? (
           <Link href={requestPilot.href} className="btn btn-primary nav-cta">
             {requestPilot.label}
           </Link>

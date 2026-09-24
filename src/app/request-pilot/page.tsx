@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { PilotRequestForm } from "@/components/pilot-request-form";
-import { PILOT_REQUEST_FORM_COPY, REQUEST_PILOT_COPY } from "@/content/copy-sources";
-import { pilotRequestCapability } from "@/lib/config/pilot-request-config";
+import { REQUEST_PILOT_COPY } from "@/content/copy-sources";
 
 export const metadata: Metadata = { title: "Request a pilot" };
 
+const CONTACT_EMAIL = "pilots@shortsos.example";
+const DEFAULT_SUBJECT = "Pilot request";
+const DEFAULT_BODY =
+  "Company:\nWhat you'd like to produce:\nWhere your source footage lives:\nBest way to reach you:\n";
+
 export default function RequestPilotPage() {
-  const capability = pilotRequestCapability;
   return (
     <main>
       <section className="section">
@@ -20,21 +23,32 @@ export default function RequestPilotPage() {
 
       <section className="section">
         <div className="shell">
-          {capability.state === "configured" ? (
-            <>
-              <div className="notice">
-                <strong>How this actually works:</strong> {REQUEST_PILOT_COPY.mechanism}
-              </div>
-              <PilotRequestForm
-                endpoint={capability.endpoint}
-                controllerName={capability.controllerName}
-                contactEmail={capability.contactEmail}
-                copy={PILOT_REQUEST_FORM_COPY}
-              />
-            </>
-          ) : (
-            <div className="notice">{REQUEST_PILOT_COPY.unavailable}</div>
-          )}
+          <div className="notice">
+            <strong>How this actually works:</strong> {REQUEST_PILOT_COPY.mechanism}
+          </div>
+
+          <form className="pilot-form" method="get" action={`mailto:${CONTACT_EMAIL}`}>
+            <label>
+              Subject
+              <input type="text" name="subject" defaultValue={DEFAULT_SUBJECT} />
+            </label>
+            <label>
+              Message
+              <textarea name="body" defaultValue={DEFAULT_BODY} />
+            </label>
+            <button type="submit" className="btn btn-primary" style={{ justifySelf: "start" }}>
+              Open email to {CONTACT_EMAIL}
+            </button>
+          </form>
+
+          <p className="prose" style={{ marginTop: 24 }}>
+            Prefer to write it yourself?{" "}
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(DEFAULT_SUBJECT)}`}>
+              Email {CONTACT_EMAIL} directly
+            </a>
+            . Once you&apos;ve sent it,{" "}
+            <Link href="/request-pilot/received">see what happens next</Link>.
+          </p>
         </div>
       </section>
     </main>
