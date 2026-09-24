@@ -510,4 +510,18 @@ form.pilot-form textarea {
   .footer-row {
     flex-direction: column;
   }
+  /* Phones: links on their own full-width row, and a header that scrolls away instead of
+     covering a quarter of the screen. */
+  .nav {
+    position: static;
+  }
+  .nav-row {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .nav-links {
+    order: 3;
+    flex-basis: 100%;
+    gap: 8px 18px;
+  }
 }
