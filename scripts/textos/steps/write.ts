@@ -130,7 +130,28 @@ async function main(): Promise<void> {
   const outcome = await textos.writeGroundedSlots(adapted.plan, provider);
   writeJson(join(runDir, "writer-outcome.json"), outcome);
   if (outcome.status !== "written") {
-    throw new Error(`write: TextOS refused ${articleId} — ${outcome.reason} (slot ${outcome.slotId ?? "<document>"}): ${outcome.detail}`);
+    // TextOS's `detail` joins the blocking reasons without the text they apply to; its structured
+    // verdict has that text (`unit`) but no slot. Name the slot whose answer contains it.
+    const flat = (t: string) => t.toLowerCase().replace(/\s+/g, " ").trim();
+    const answerText = (slotId: string): string => {
+      const file = join(runDir, "responses", responseFileName(slotId));
+      if (!existsSync(file)) return "";
+      const strings: string[] = [];
+      const walk = (v: unknown): void => {
+        if (typeof v === "string") strings.push(v);
+        else if (Array.isArray(v)) v.forEach(walk);
+        else if (v && typeof v === "object") Object.values(v).forEach(walk);
+      };
+      walk(JSON.parse(readFileSync(file, "utf8")));
+      return flat(strings.join("\n"));
+    };
+    const located = (outcome.truthCheck?.contradictions ?? []).map((c) => {
+      const slot = (adapted.plan.slots as GeoWriterSlot[]).find((s) => answerText(s.id).includes(flat(c.unit)));
+      return `\n  [${c.severity}] slot ${slot?.id ?? "?"}: «${c.unit}» — ${c.reason}`;
+    });
+    throw new Error(
+      `write: TextOS refused ${articleId} — ${outcome.reason} (slot ${outcome.slotId ?? "<document>"}): ${outcome.detail}${located.join("")}`,
+    );
   }
   if (outcome.result.truthCheck.verdict !== "pass") {
     throw new Error(
