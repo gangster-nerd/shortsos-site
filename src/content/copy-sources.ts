@@ -187,6 +187,22 @@ export interface ChangelogEntry {
 
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-09-24",
+    title: "Insights opened: engineering notes and answers (SOS-NOTES-V1)",
+    body: "Five articles were published under Insights. Three engineering notes, each written from cited product commits, record past engineering and governance work and claim no capability. Two answers take buyer questions this site did not yet answer in depth, and answer them only with wording the owner ratified for public use. Every article passed an automated claim check before publication; human editorial review of each one is pending.",
+    repo: "shortsos-site",
+    sha: "1a50fa8",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-24",
+    title: "This site re-synced to the repaired product manifest (SOS-CTC-V3)",
+    body: "The manifest this site is built from was re-pinned to the product commit that repaired its evidence citations. Only the evidence records of six capabilities changed: no publication status, claim wording or prohibited claim moved.",
+    repo: "shortsos-site",
+    sha: "2168cc7",
+    historicalClaimOnly: true,
+  },
+  {
     date: "2026-09-16",
     title: "Evidence citations repaired after pinned commits vanished (T0-PUBLIC-TRUTH-BASELINE-REPAIR)",
     body: "Six evidence records behind the product's capability statuses cited commits that no longer existed in its history, so a fresh copy of the code could not verify them; one of them belonged to the capability ratified for the public claim. The citations were repointed or dropped. No claim wording, prohibited claim or publication status changed.",
