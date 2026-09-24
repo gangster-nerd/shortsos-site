@@ -375,9 +375,54 @@ export const REQUEST_PILOT_COPY = {
     "There is no independent signup. Requesting a pilot starts a direct conversation with the " +
     "ShortsOS team about a real engagement.",
   mechanism:
-    "This form composes an email in your own email client (a mailto: link) — nothing is submitted " +
-    "to a ShortsOS server or database from this page. If your device doesn't open a mail client " +
-    "automatically, send the same details directly to the address below.",
+    "This form sends your request through Formspree, the form service the ShortsOS team uses. " +
+    "Nothing starts automatically: a person on the team reads it and replies by email.",
+  unavailable:
+    "Pilot requests cannot be sent from this page right now. Rather than show a form that would " +
+    "deliver nothing, this page shows none.",
+};
+
+export const PILOT_REQUEST_FORM_COPY = {
+  footageLabel: "What footage do you have, and where does it live?",
+  footagePlaceholder: "For example: about two hours of event recordings a month, in a shared folder.",
+  publishLabel: "Where do you publish short videos today?",
+  publishPlaceholder: "For example: Instagram, TikTok or YouTube",
+  sent: "Request sent. A person on the ShortsOS team will reply by email; nothing has started yet.",
+  failed: "Your request was not sent. Try again, or write to",
+  privacy: "Your request goes through Formspree, the form service we use, and is read only by the ShortsOS team to reply to you.",
+};
+
+export const REQUEST_PILOT_RECEIVED_COPY = {
+  lede:
+    "A request sent from the form reaches the ShortsOS team through Formspree. When the form said " +
+    "“Request sent”, Formspree accepted it: that is the only confirmation this site can give.",
+  next:
+    "A person on the ShortsOS team reads each request and replies by email, usually within a few " +
+    "business days. Nothing starts automatically: a pilot begins only after that conversation.",
+  failed:
+    "If the form said your request was not sent, nothing reached us. Try again, or write to the " +
+    "address shown under the form.",
+};
+
+export const PRIVACY_COPY = {
+  collected:
+    "Only what you type into the pilot request form: your email address and company, and if you " +
+    "give them, your name, the footage you describe, where you publish and your message. When the " +
+    "link that brought you to the form named the page or campaign it came from, that name is kept too.",
+  purpose:
+    "To reply to your request and discuss a possible pilot. Nothing else: no mailing list, no " +
+    "resale, no profiling.",
+  basis: "Steps you asked us to take before a possible agreement (GDPR, Article 6(1)(b)).",
+  processors:
+    "Formspree, Inc. (United States) receives and stores form submissions for us. Vercel Inc. " +
+    "(United States) hosts this site and processes technical request data, such as IP addresses, " +
+    "to serve its pages.",
+  retention: "A request is kept only as long as needed to handle it and any pilot that follows, then deleted.",
+  rights:
+    "You can ask to see, correct or delete your data, or object to its use. You can also complain " +
+    "to a data protection authority.",
+  cookies: "This site sets no cookies and runs no analytics or tracking scripts.",
+  noForm: "This site collects no personal data: it has no working form, sets no cookies and runs no analytics.",
 };
 
 export const HOME_PAGE_COPY: CopySource = {
@@ -442,7 +487,19 @@ export const INSIGHTS_COPY: CopySource = {
 
 export const REQUEST_PILOT_PAGE_COPY: CopySource = {
   id: "request-pilot-page",
-  text: [REQUEST_PILOT_COPY.intro, REQUEST_PILOT_COPY.mechanism].join("\n"),
+  text: [
+    REQUEST_PILOT_COPY.intro,
+    REQUEST_PILOT_COPY.mechanism,
+    REQUEST_PILOT_COPY.unavailable,
+    ...Object.values(PILOT_REQUEST_FORM_COPY),
+    ...Object.values(REQUEST_PILOT_RECEIVED_COPY),
+  ].join("\n"),
+  relatedEntityIds: [],
+};
+
+export const PRIVACY_PAGE_COPY: CopySource = {
+  id: "privacy-page",
+  text: Object.values(PRIVACY_COPY).join("\n"),
   relatedEntityIds: [],
 };
 
@@ -455,5 +512,6 @@ export const SITE_COPY_SOURCES: CopySource[] = [
   CHANGELOG_COPY,
   GLOSSARY_COPY,
   REQUEST_PILOT_PAGE_COPY,
+  PRIVACY_PAGE_COPY,
   INSIGHTS_COPY,
 ];

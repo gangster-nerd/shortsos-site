@@ -4,7 +4,9 @@ import type { NextConfig } from "next";
 // server runtime. This site is a pure consumer of a pinned manifest artifact — there is no
 // server-side data fetching, no API routes, no product DB, no provider SDKs. If a future
 // mission needs an actual server (e.g. a form POST handler), that is a deliberate,
-// documented departure from this default, not an incidental one.
+// documented departure from this default, not an incidental one. The pilot request form posts to a
+// third-party form service (Formspree, see src/lib/config/pilot-request-config.ts), so the site
+// stays static.
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
