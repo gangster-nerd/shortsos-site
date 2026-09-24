@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HOW_IT_WORKS_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
 import { pageMetadata } from "@/lib/seo/page-metadata";
+import { PilotCta } from "@/components/pilot-cta";
 
 export const metadata: Metadata = pageMetadata({ path: "/how-it-works/", title: "How it works" });
 
@@ -59,6 +60,8 @@ export default function HowItWorksPage() {
           </p>
         </div>
       </section>
+
+      <PilotCta host="how_it_works" />
     </main>
   );
 }

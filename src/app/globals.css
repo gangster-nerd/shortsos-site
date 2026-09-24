@@ -554,3 +554,14 @@ form.pilot-form textarea {
     padding: 10px 8px;
   }
 }
+
+/* ---- End-of-page pilot CTA (How it works, Proof, FAQ) ---- */
+.cta-band {
+  background: var(--bg-raised);
+}
+.cta-band .lede {
+  margin: 0;
+}
+.cta-band-action {
+  margin-top: 28px;
+}

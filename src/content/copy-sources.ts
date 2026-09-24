@@ -385,6 +385,15 @@ export const REQUEST_PILOT_COPY = {
     "automatically, send the same details directly to the address below.",
 };
 
+/** The end-of-page pilot CTA on How it works, Proof and FAQ (src/components/pilot-cta.tsx). */
+export const PILOT_CTA_COPY = {
+  eyebrow: "Pilots",
+  heading: "Talk to the team about a pilot",
+  body:
+    "ShortsOS is operated by the ShortsOS team for pilots. Requesting one starts a direct conversation " +
+    "about your footage and the shorts you have in mind. There is no independent signup.",
+};
+
 export const HOME_PAGE_COPY: CopySource = {
   id: "home-page",
   text: [HOME_INTRO, ...PIPELINE_NARRATIVE.map((s) => `${s.title}: ${s.body}`)].join("\n"),
@@ -451,6 +460,12 @@ export const REQUEST_PILOT_PAGE_COPY: CopySource = {
   relatedEntityIds: [],
 };
 
+export const PILOT_CTA_BLOCK_COPY: CopySource = {
+  id: "pilot-cta-block",
+  text: [PILOT_CTA_COPY.eyebrow, PILOT_CTA_COPY.heading, PILOT_CTA_COPY.body].join("\n"),
+  relatedEntityIds: [M1_ENTITY_ID],
+};
+
 export const SITE_METADATA_COPY: CopySource = {
   id: "site-metadata",
   text: SITE_DESCRIPTION,
@@ -467,5 +482,6 @@ export const SITE_COPY_SOURCES: CopySource[] = [
   CHANGELOG_COPY,
   GLOSSARY_COPY,
   REQUEST_PILOT_PAGE_COPY,
+  PILOT_CTA_BLOCK_COPY,
   INSIGHTS_COPY,
 ];

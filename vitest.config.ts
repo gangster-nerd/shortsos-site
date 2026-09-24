@@ -6,6 +6,8 @@ export default defineConfig({
     include: ["tests/**/*.test.ts"],
     environment: "node",
   },
+  // Components are plain functions a test can call; Next compiles JSX for the app itself.
+  esbuild: { jsx: "automatic" },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),

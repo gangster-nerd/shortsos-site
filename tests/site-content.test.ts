@@ -17,6 +17,7 @@ import { loadSiteManifest } from "../src/lib/manifest/site-manifest";
 import { findUnjustifiedActiveCtas } from "../src/lib/registries/cta-registry";
 import { getM1ForSurface, splitM1Claim, M1_ENTITY_ID } from "../src/lib/content/m1";
 import { getEntity } from "../src/lib/registries/capability-registry";
+import { PilotCta } from "../src/components/pilot-cta";
 
 describe("real synced manifest", () => {
   it("loads, verifies, and has exactly the ratified counts", () => {
@@ -59,6 +60,13 @@ describe("real synced manifest", () => {
 
   it("getM1ForSurface refuses a surface the manifest did not authorize", () => {
     expect(() => getM1ForSurface("methodology")).toThrow(/does not authorize/);
+  });
+
+  it("the end-of-page pilot CTA renders on M1's surfaces and refuses any other page", () => {
+    for (const host of ["how_it_works", "proof", "faq"] as const) {
+      expect(PilotCta({ host })).not.toBeNull();
+    }
+    expect(() => PilotCta({ host: "methodology" })).toThrow(/does not authorize/);
   });
 
   it("FAQ copy contains no verbatim overlap with a prohibited claim's forbidden wording", () => {

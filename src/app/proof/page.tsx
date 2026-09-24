@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { PROOF_INTRO, PROOF_WHAT_HAPPENED, PROOF_WHAT_THIS_IS_NOT } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
 import { pageMetadata } from "@/lib/seo/page-metadata";
+import { PilotCta } from "@/components/pilot-cta";
 
 export const metadata: Metadata = pageMetadata({ path: "/proof/", title: "Proof" });
 
@@ -74,6 +75,8 @@ export default function ProofPage() {
           </p>
         </div>
       </section>
+
+      <PilotCta host="proof" />
     </main>
   );
 }
