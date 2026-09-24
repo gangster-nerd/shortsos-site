@@ -1,0 +1,33 @@
+{
+  "text": "When you hand your raw material to a production partner, the moment that matters is the last one: who approves what goes out under your name. With ShortsOS, that approval is a person, not a setting: the review step is a mandatory human checkpoint before anything is published.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "When you hand your raw material to a production partner, the moment that matters is the last one: who approves what goes out under your name.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "With ShortsOS, that approval is a person, not a setting: the review step is a mandatory human checkpoint before anything is published.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "planId": "short form video service with human review before publishing",
+  "executionPlanHash": "96b7f84da6245f288bbe51977ab1b24a86963138ecd1eaf1238884ca4f611a63",
+  "ctcHandoffHash": "42cb0b1abacf4d780353b6502a1d27185b021e02cdd0e545041b5ac929f9f3ce",
+  "promptHashes": {
+    "title": "a287bb538a168be446bef5ac2b16027e2bd66f3b918647a4d184a3064fa0954d",
+    "meta": "96f0a483062d511a6b56ba4562e51297291b7349b5adaa87eb8e29c3c07e8acc",
+    "lead": "35ce337975a78f9a9162d2241f03a013715067fab07a784d4ec75a46b932bd65",
+    "answer": "4f76d3f3ff9d29c1d7902c3afbc35d115e9e3d866710ae60f33aca6ffb88bc4b",
+    "section-1": "704b90a8cad963e5c6230bd16eb8d2c5eaba6e822386bfd435571d605c3d8265",
+    "section-2": "fc262a3e975e9f19201736231097a20c94deba0c18f6725c92bc25f504959acf"
+  }
+}

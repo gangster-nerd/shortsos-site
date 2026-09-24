@@ -1,0 +1,21 @@
+{
+  "text": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

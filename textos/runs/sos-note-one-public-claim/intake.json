@@ -1,0 +1,705 @@
+{
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "public-truth-manifest-2026-09-12",
+        "sourceCommits": [
+          "eaec19fba3732c80674ed9958248553db75d9b17"
+        ]
+      },
+      {
+        "groupId": "content-impact-2026-09-12",
+        "sourceCommits": [
+          "4f06ff98211fdb3b97dd5de9c7d4ce0d92d88af0"
+        ]
+      },
+      {
+        "groupId": "policy-amendment-2026-09-13",
+        "sourceCommits": [
+          "3c461a0e0631ff3ca852ca25b976d1fac35faf8f"
+        ]
+      },
+      {
+        "groupId": "m1-ratification-2026-09-13",
+        "sourceCommits": [
+          "abd07346faa1009088bb4d3c25db67fc63950bf0"
+        ]
+      }
+    ],
+    "buyerQuestion": "Why would a video production vendor make only one public claim about what it can do?",
+    "targetQuery": "why a vendor limits its public claims to what it has proven",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "public-claim-governance",
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+  },
+  "locale": "en-US",
+  "policy": {
+    "mode": "grounded_tracked_brand_authorized",
+    "trackedEntityId": "shortsos",
+    "trackedBrandNames": [
+      "ShortsOS"
+    ],
+    "forbiddenProductNames": []
+  },
+  "publicationContext": {
+    "channel": "controlled_preview",
+    "briefId": "sos-note-one-public-claim",
+    "locale": "en-US"
+  },
+  "claimProfile": {
+    "id": "shortsos-operated-short-form-video",
+    "version": "0.1",
+    "claimTypes": [
+      "publication",
+      "human_review",
+      "production",
+      "footage_input",
+      "availability",
+      "evidence_governance",
+      "story_selection"
+    ],
+    "lexicon": {
+      "publication": [
+        "publish",
+        "publishes",
+        "published",
+        "publishing",
+        "publication",
+        "instagram",
+        "reel",
+        "reels",
+        "permalink"
+      ],
+      "human_review": [
+        "human review",
+        "reviewed",
+        "reviews",
+        "review step",
+        "checkpoint"
+      ],
+      "production": [
+        "render",
+        "renders",
+        "rendered",
+        "caption",
+        "captions",
+        "captioned",
+        "voice",
+        "voiced"
+      ],
+      "footage_input": [
+        "raw footage",
+        "footage",
+        "source video"
+      ],
+      "availability": [
+        "self-serve",
+        "self serve",
+        "sign up",
+        "pilot",
+        "pilots",
+        "operated by",
+        "available"
+      ],
+      "evidence_governance": [
+        "public claim",
+        "public claims",
+        "claim ceiling",
+        "evidence",
+        "manifest",
+        "ratified"
+      ],
+      "story_selection": [
+        "story",
+        "stories",
+        "opportunity",
+        "opportunities"
+      ]
+    }
+  },
+  "roster": [
+    {
+      "name": "ShortsOS",
+      "aliases": [
+        "ShortsOS"
+      ],
+      "matchedTrackedEntityId": "shortsos",
+      "role": "tracked"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-n2-01",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit eaec19f: feat(public-truth): build SOS-PUBLIC-TRUTH-V1 four-axis product manifest",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T21:31:00+02:00",
+      "contentHash": "a8a78490732c1e7b06b37fff409ceb1846f6627f619b22b83cb10bcaf76fcd90",
+      "excerpt": "Builds a governance-owned public-product manifest over the 39 done capabilities of CAPABILITIES.yaml: a four-axis truth model (implementationStatus / runtimeProof / availability / publicationStatus, kept deliberately separate), a fail-closed publication-ceiling policy, a real-git evidence verifier that admits no phantom commit/path/decision reference",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-02",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit eaec19f: feat(public-truth): build SOS-PUBLIC-TRUTH-V1 four-axis product manifest",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T21:31:00+02:00",
+      "contentHash": "7bb9eb6221e45c2d82c7a479f9d040699072691d0c8234512d20d8858ad2e16d",
+      "excerpt": "Result: 0 public_marketable, 9 candidate, 30 internal_only, 3 blocked (prohibited_concept entries for Instagram self-serve publishing, Google Drive self-serve connect, and general creative-quality claims).",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-03",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 3c461a0: feat(public-truth): amend publication-policy for operator_only managed-service allowance (SOS-PUBLIC-TRUTH-POLICY-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T10:16:39+02:00",
+      "contentHash": "1164aa2a26d9e707944452d36c194fef0d9b849e67c41f49ea4e5fe00c06a15a",
+      "excerpt": "Amends derivePublicationCeiling so operator_only availability no longer categorically blocks public_marketable, matching ShortsOS V1's ratified managed/agency-operated go-to-market (request_pilot, never self-serve).",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-04",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 3c461a0: feat(public-truth): amend publication-policy for operator_only managed-service allowance (SOS-PUBLIC-TRUTH-POLICY-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T10:16:39+02:00",
+      "contentHash": "a587ef9dd76d9a062bd06b53b165a44f29c118d00c2a9ce3445a08b6dd085971",
+      "excerpt": "The gate now also clears when availability=operator_only AND the entity own claimCeiling carries no self-serve wording AND its prohibitedClaims already bans self-serve-style claims explicitly (managedServiceFramingHolds).",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-05",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit abd0734: feat(public-truth): promote M1-REAL-PRODUCE-REVIEW-PUBLISH to public_marketable (SOS-PUBLICATION-DECISION-M1-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T12:56:56+02:00",
+      "contentHash": "a09a190a5c055c544f727822e97a568c332a995d75f72f41e6e63a94d380c770",
+      "excerpt": "Human-ratified promotion (T0/Marc): M1-REAL-PRODUCE-REVIEW-PUBLISH moves from publicationStatus candidate to public_marketable, the sole entity of the nine SOS-PUBLIC-TRUTH-POLICY-V1 candidates whose own wording already clears the amended managed-service gate.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-06",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit abd0734: feat(public-truth): promote M1-REAL-PRODUCE-REVIEW-PUBLISH to public_marketable (SOS-PUBLICATION-DECISION-M1-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T12:56:56+02:00",
+      "contentHash": "8b3bdc93e781e802bc832242615f9faff629d783b4444e10c970d130e75c93c7",
+      "excerpt": "rejecting an earlier draft's stronger \"runs your full pipeline for you\" framing as overreaching the one-run evidence ceiling.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-07",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit abd0734: feat(public-truth): promote M1-REAL-PRODUCE-REVIEW-PUBLISH to public_marketable (SOS-PUBLICATION-DECISION-M1-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T12:56:56+02:00",
+      "contentHash": "d1cf52ebacb6d0930a5957d35c5c789fc778065c64d3f90ca23e7633711e9d25",
+      "excerpt": "prohibitedClaims extended from 2 to 8 entries (the original 2 kept byte-identical) naming every forbidden implication: self-serve access, connecting your own Instagram account, publishing directly yourself, automatic publishing without review, universal availability, unproven repeated volume, guaranteed creative quality, guaranteed performance or virality.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-08",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit abd0734: feat(public-truth): promote M1-REAL-PRODUCE-REVIEW-PUBLISH to public_marketable (SOS-PUBLICATION-DECISION-M1-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T12:56:56+02:00",
+      "contentHash": "0d31d830094d545769ab593d188fd52ebae3c049f1b35803fa75c2e8ca071dfd",
+      "excerpt": "two of them are one prohibitedClaims wording edit from also clearing the gate, but T0 explicitly ruled that is not sufficient reason to promote them now: they are provider-level implementation evidence, not necessary public product capabilities for V1.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-09",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file changes/content-impact/README.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "a6e0fa691a1fcd414c9d7a29556e297380dee5f7a99a18d0cb1cd9732c96868f",
+      "excerpt": "when the codebase changes, does that change have a public-content consequence, and did anyone say so on purpose?",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-10",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file changes/content-impact/README.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "a9125329b2fbeb89c8fff36d7f8e5d24d2f5e171dbd32ccee9476de7b79f414b",
+      "excerpt": "No record for a governed change is a hard failure, never a warning.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-11",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "0885e52fc620f32d15c9e3cf857546c631b51121bd76c97f5d311c97d881ea88",
+      "excerpt": "the only axis that is *derived*, never hand-set.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-12",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "6a69695c105dad2e96b6e70939f8ce0e0fde65672b819a4f28c6f3447dee7624",
+      "excerpt": "Any single failing condition caps the capability **below** `public_marketable` — never averaged toward it, never rounded up.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n2-13",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "b182cf216f1a5f91537f5b6825b537b07f7e21bd98244bc2c2d57885731b189e",
+      "excerpt": "no amount of attached evidence is allowed to promote a concept the mandate names as never-claimable",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-one-public-claim"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the decision, as a grounded fact about ShortsOS.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n2-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence for a search result: how many capabilities were classified, and that exactly one was ratified, with guardrails.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-05",
+        "ev-n2-07"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open on the buyer's problem — telling what a vendor has built from what it has proven — then say ShortsOS answered it for itself.",
+      "buyerIntent": "Which of a vendor's claims can I rely on?",
+      "allowedEvidenceIds": [
+        "ev-n2-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "Why only one public claim?",
+      "writingObjective": "Answer directly with the numbers of the first classification, the rule change, and the single ratification.",
+      "buyerIntent": "Why so few claims?",
+      "allowedEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 900,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Four facts kept apart for each capability",
+      "writingObjective": "Explain the four separate facts, that the public one is derived and fails closed, and the three concepts blocked whatever the evidence.",
+      "buyerIntent": "How is a claim decided?",
+      "allowedEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-11",
+        "ev-n2-12",
+        "ev-n2-13"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1300,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "The rule change, and the one promotion",
+      "writingObjective": "Tell the amendment for team-operated capabilities, its conditions, the single capability that cleared, and the two left out on purpose.",
+      "buyerIntent": "What changed to allow a claim at all?",
+      "allowedEvidenceIds": [
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05",
+        "ev-n2-08"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1300,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What was refused, in writing",
+      "writingObjective": "Show the rejected wording, the eight prohibited claims, and the rule that every governed change must say whether it affects public content.",
+      "buyerIntent": "What stops the claim from growing later?",
+      "allowedEvidenceIds": [
+        "ev-n2-06",
+        "ev-n2-07",
+        "ev-n2-09",
+        "ev-n2-10"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1300,
+      "evidenceRequired": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "contentSchemaVersion": "content-document@1",
+  "identity": {
+    "documentId": "shortsos:sos-note-evidence-repair",
+    "contentType": "ARTICLE",
+    "slug": "keeping-the-proof-behind-a-public-claim-checkable",
+    "language": "en-US",
+    "title": "How ShortsOS repaired evidence records that pointed at vanished commits",
+    "description": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was."
+  },
+  "editorial": {
+    "authorIds": [],
+    "reviewerIds": [],
+    "topicIds": []
+  },
+  "truth": {
+    "statusVocabulary": "geo-writer",
+    "statusVocabularyVersion": "geo-writer@0.2",
+    "sourceStatus": "truthCheck:pass",
+    "publicationStatus": "draft",
+    "allowedSurfaces": [
+      "reference"
+    ],
+    "claimIds": [],
+    "evidenceRefs": [
+      "ev-n1-01",
+      "ev-n1-05",
+      "ev-n1-08",
+      "ev-n1-02",
+      "ev-n1-04",
+      "ev-n1-09",
+      "ev-n1-03",
+      "ev-n1-06",
+      "ev-n1-07"
+    ],
+    "capabilityIds": []
+  },
+  "provenance": {
+    "sourceAuthority": "UNCERTIFIED",
+    "sourceEvidenceDigest": "dbbe7772b7f5e8f9292f9b4b6b0bafe34e2335c54afeeb09ba9b5d9088068eae"
+  },
+  "body": [
+    {
+      "id": "lead",
+      "kind": "paragraph",
+      "data": {
+        "text": "What a vendor says in public is only as trustworthy as the record that lets someone check it. When that record points at something nobody can retrieve anymore, the claim still reads the same, yet no fresh check can confirm it. In mid-September 2026, ShortsOS found that gap in its own claim records and reproduced it on an untouched copy of its main code line."
+      }
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "data": {
+        "text": "Six of the records ShortsOS uses to verify its capability claims cited commits that no longer existed anywhere in its code history, not even as leftovers. A fresh copy of the code, which ShortsOS treats as the authority for verification, cannot fetch a commit that nothing points to, so those records could not be checked there. The repair pointed three of the records at the register entry that documents them, and let the other three check files that still exist in the current code. No public claim, prohibited claim or publication status changed; only the citations used to check them did."
+      }
+    },
+    {
+      "id": "section-1",
+      "kind": "paragraph",
+      "data": {
+        "text": "Three days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim. One of the six broken records belonged to that very capability. On a fresh copy of the code, that broken record silently pushed the capability back to candidate status. A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim. The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue. A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed."
+      }
+    },
+    {
+      "id": "section-2",
+      "kind": "paragraph",
+      "data": {
+        "text": "Three of the records described research documents that were never merged into the main code line and carried no public claim. ShortsOS pointed those three at the register entry that names each document and its gap. The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today. Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say. While verifying the repair, the team also found a second, unrelated defect on the untouched main code line. Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match."
+      }
+    },
+    {
+      "id": "section-3",
+      "kind": "paragraph",
+      "data": {
+        "text": "When you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced. ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong. Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it."
+      }
+    }
+  ],
+  "relationships": {
+    "relatedContentIds": []
+  },
+  "conversion": {
+    "conversionAllowed": false
+  },
+  "lifecycle": {},
+  "seo": {
+    "indexingIntent": "noindex"
+  }
+}

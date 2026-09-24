@@ -1,0 +1,66 @@
+{
+  "text": "ShortsOS has run this workflow once, end to end, for real, and that single documented run is the whole of its public proof. One run is not a load or reliability proof, and the defects found in the Instagram connection during it were fixed reactively, against that live run, not beforehand. The review is a checkpoint on what gets published, not a promise of creative quality, performance or virality. When you compare vendors, ask each one to show you its review step in a real run, not only in a diagram.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS has run this workflow once, end to end, for real, and that single documented run is the whole of its public proof.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a1-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "One run is not a load or reliability proof, and the defects found in the Instagram connection during it were fixed reactively, against that live run, not beforehand.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a1-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The review is a checkpoint on what gets published, not a promise of creative quality, performance or virality.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-07",
+        "ev-a1-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "When you compare vendors, ask each one to show you its review step in a real run, not only in a diagram.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

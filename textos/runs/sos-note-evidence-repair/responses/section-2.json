@@ -1,0 +1,101 @@
+{
+  "text": "Three of the records described research documents that were never merged into the main code line and carried no public claim. ShortsOS pointed those three at the register entry that names each document and its gap. The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today. Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say. While verifying the repair, the team also found a second, unrelated defect on the untouched main code line. Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Three of the records described research documents that were never merged into the main code line and carried no public claim.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "ShortsOS pointed those three at the register entry that names each document and its gap.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "While verifying the repair, the team also found a second, unrelated defect on the untouched main code line.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s6",
+      "text": "Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

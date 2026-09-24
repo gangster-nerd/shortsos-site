@@ -1,0 +1,29 @@
+{
+  "toolRecordVersion": 1,
+  "usage": "TextOS is used strictly as a tool by ShortsOS. The ShortsOS drivers under scripts/textos/** import TextOS modules from a separate, pinned, read-only checkout; nothing is ever written into that checkout and nothing is ever committed or pushed to a TextOS repository. scripts/textos/run.ts refuses to start unless the checkout sits at exactly the SHA pinned for that step with a clean working tree, and re-checks the tree is still clean after the step.",
+  "repository": "gangster-nerd/textos-v0",
+  "writer": {
+    "branch": "feat/ctc-r1-pilot-a",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+    "committedAt": "2026-09-23T23:17:53+02:00",
+    "why": "Integration tip of the latest TextOS article line: the CTC intake seam (ctc-geo-writer-adapter@0.1), the geo-writer with per-slot statement-id namespacing (geo-writer@0.2), grounded tracked-brand subjects, the public editorial voice (geo-writer-slot@0.3 prompt), governed evidence approval and human public-use clearance, and the promoted content-surface core (ContentDocument@1 bridge, surface resolution, headless JSON adapter). Site Intelligence (crawl + extraction) is run from this same checkout."
+  },
+  "clientFlow": {
+    "branch": "feat/pa-draft-integration-1",
+    "sha": "61aea32a992492aa29d5272e71ce3a50dff092d0",
+    "committedAt": "2026-09-23T23:57:39+02:00",
+    "why": "Latest TextOS client flow (the PA client line): operator question proposals with canonical intent / buyerStage / commercialIntent metadata, human approval before any measurement, and the rule that no article is proposed before a measured opportunity exists. ShortsOS follows that flow as a client; this ref is referenced for the proposal contract only and is not executed here."
+  },
+  "surfacePolish": {
+    "repository": "gangster-nerd/textos-site",
+    "branch": "feat/cmo-surface-polish-1",
+    "sha": "bd8ae46bec43f734980a9baafa7331d32613bcbb",
+    "committedAt": "2026-09-18T23:21:48+02:00",
+    "why": "CMO surface polish of the content-surface engine, not merged into any trunk at this ref. Two generic parts are used: the A2R render-parity oracle (exported HTML against each document's semantic tree) and the derived conversion plan with its related-content ranking. The commercial capability is always passed as \"unconfigured\", so no commercial CTA, and none of the campaign copy that module carries, can come out of it: only the editorial next step."
+  },
+  "contentDocumentContract": {
+    "version": "content-document@1",
+    "fingerprint": "4cefe8c6ed8917180870a37a3f3dbf5d2ff3d9395563dc683fc189b4e47b7e7b",
+    "fingerprintSource": "packages/content-surface/CSE_CORE_MANIFEST.json at the writer ref (sha256 of schema/content-document@1.schema.json)"
+  }
+}

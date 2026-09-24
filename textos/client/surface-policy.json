@@ -1,0 +1,31 @@
+{
+  "note": "ShortsOS's own SurfacePolicy objects (TextOS surface-policy@1 contract, validated with TextOS's SurfacePolicySchema at write time). A policy may only downgrade indexing and deny CTAs; it never changes what a document says.",
+  "policies": {
+    "developer_note": {
+      "policyVersion": "surface-policy@1",
+      "surface": "reference",
+      "policyId": "shortsos-site.developer-note.v1",
+      "blockVisibility": [],
+      "slotBindings": [],
+      "navigation": { "showBreadcrumbs": true, "showTableOfContents": false, "showRelatedContent": false },
+      "authorDisplay": { "showAuthor": false, "showReviewers": false },
+      "conversion": { "allowCta": false },
+      "metadata": { "emitSchemaOrg": true, "schemaTypeOverride": "TechArticle" },
+      "indexability": { "allowIndex": false },
+      "analytics": {}
+    },
+    "faq": {
+      "policyVersion": "surface-policy@1",
+      "surface": "reference",
+      "policyId": "shortsos-site.faq-answer.v1",
+      "blockVisibility": [],
+      "slotBindings": [],
+      "navigation": { "showBreadcrumbs": true, "showTableOfContents": false, "showRelatedContent": false },
+      "authorDisplay": { "showAuthor": false, "showReviewers": false },
+      "conversion": { "allowCta": false },
+      "metadata": { "emitSchemaOrg": true, "schemaTypeOverride": "Article" },
+      "indexability": { "allowIndex": false },
+      "analytics": {}
+    }
+  }
+}

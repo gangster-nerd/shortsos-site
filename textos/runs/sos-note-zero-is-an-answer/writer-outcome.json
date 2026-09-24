@@ -1,0 +1,578 @@
+{
+  "status": "written",
+  "result": {
+    "planId": "can ai make short videos from existing footage without inventing a story",
+    "planHash": "55f36b2f202558426e6ad83ef1137699d9bb764a2711c08c35f8819a081c7f9f",
+    "slots": [
+      {
+        "slotId": "title",
+        "role": "title",
+        "headingLevel": null,
+        "heading": null,
+        "text": "Why ShortsOS made zero a valid answer when searching footage for stories",
+        "statementIds": [
+          "stmt:5:title:2:s1"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-01"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-01"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "meta",
+        "role": "meta_description",
+        "headingLevel": null,
+        "heading": null,
+        "text": "In September 2026, ShortsOS let its story search report no strong story, stopped reading file dates as filming dates and fixed a cross-client lookup.",
+        "statementIds": [
+          "stmt:4:meta:2:s1"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-01",
+          "ev-n3-04",
+          "ev-n3-06"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-01",
+          "ev-n3-04",
+          "ev-n3-06"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "lead",
+        "role": "lead",
+        "headingLevel": null,
+        "heading": null,
+        "text": "Anyone who has handed a pile of raw clips to a tool knows the risk: the tool finds something, whether or not it is really there. ShortsOS changed its own story search so that finding no strong story became an honest result rather than an error. Its register lists this work as internal engineering with no independent public claim, so read it as history, not as a feature list.",
+        "statementIds": [
+          "stmt:4:lead:2:s1",
+          "stmt:4:lead:2:s2",
+          "stmt:4:lead:2:s3"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-01",
+          "ev-n3-03",
+          "ev-n3-08",
+          "ev-n3-08b",
+          "ev-n3-08c"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-01",
+          "ev-n3-03",
+          "ev-n3-08",
+          "ev-n3-08b",
+          "ev-n3-08c"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "answer",
+        "role": "answer",
+        "headingLevel": 2,
+        "heading": "What changed, in short?",
+        "text": "The story search in ShortsOS was moved from expecting three to seven strong stories to a rule of zero to three, where zero is a distinct, honest outcome. Technical failures, unfinished analysis and runs paused for budget stay separate outcomes, so a failure is not reported as a weak story. Two related fixes followed the same logic: filming dates are no longer guessed from file dates, and duplicate checks no longer look across clients.",
+        "statementIds": [
+          "stmt:6:answer:2:s1",
+          "stmt:6:answer:2:s2",
+          "stmt:6:answer:2:s3"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-01",
+          "ev-n3-03",
+          "ev-n3-02",
+          "ev-n3-04",
+          "ev-n3-05",
+          "ev-n3-06",
+          "ev-n3-11"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-01",
+          "ev-n3-02",
+          "ev-n3-03",
+          "ev-n3-04",
+          "ev-n3-05",
+          "ev-n3-06",
+          "ev-n3-11"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "section-1",
+        "role": "section",
+        "headingLevel": 2,
+        "heading": "Why no story can be the right answer",
+        "text": "Before the change, a search that found only one or two stories backed by the footage was rejected, and a search that found none was filed under the same rejection. After it, one, two or three stories backed by evidence are accepted, capped at three only once the evidence check has run, and zero gets its own outcome: no strong story available. The same change keeps technical trouble apart from editorial judgement, so a failed or paused run is not presented as footage without a story. For a brand, that distinction decides whether a no is information about its footage or noise from a system.",
+        "statementIds": [
+          "stmt:9:section-1:2:s1",
+          "stmt:9:section-1:2:s2",
+          "stmt:9:section-1:2:s3",
+          "stmt:9:section-1:2:s4"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-01",
+          "ev-n3-02"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-01",
+          "ev-n3-02"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "section-2",
+        "role": "section",
+        "headingLevel": 2,
+        "heading": "Dates and duplicates, fixed for the same reason",
+        "text": "ShortsOS used to record a clip's filming time straight from the date the file was last modified in Google Drive, a date that changes whenever a file is copied, re-shared or re-uploaded. The fix reads the time embedded in the video first, then explicit metadata, then what the client declared, and otherwise marks the date as unknown, recording disagreements instead of averaging them. Where no reliable date exists, the product is built to show unknown rather than invent one. A separate check that spots duplicate clips compared files across all clients with no filter, so one client's clip could be reported as a duplicate of another client's. The corrected check only looks within the client that owns the clip. That fix was proven against an isolated test database with four regression cases, which is not proof of isolation under real load across many clients.",
+        "statementIds": [
+          "stmt:9:section-2:2:s1",
+          "stmt:9:section-2:2:s2",
+          "stmt:9:section-2:2:s3",
+          "stmt:9:section-2:2:s4",
+          "stmt:9:section-2:2:s5",
+          "stmt:9:section-2:2:s6"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-04",
+          "ev-n3-05",
+          "ev-n3-09",
+          "ev-n3-06",
+          "ev-n3-11",
+          "ev-n3-12",
+          "ev-n3-10"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-04",
+          "ev-n3-05",
+          "ev-n3-09",
+          "ev-n3-06",
+          "ev-n3-11",
+          "ev-n3-10",
+          "ev-n3-12"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "section-3",
+        "role": "section",
+        "headingLevel": 2,
+        "heading": "Similar takes are grouped, not thrown away",
+        "text": "When a shoot produces several takes of the same moment, ShortsOS groups them rather than excluding any clip merely because it looks similar to another. All clips still appear in the results, and supporting evidence is counted by distinct group, so three takes of one moment do not pass for three separate proofs. The grouping relies on signals the system already recorded, uses no AI similarity model, and does not judge what two clips mean. Taken together, these fixes make the pipeline readier to say what it does not know.",
+        "statementIds": [
+          "stmt:9:section-3:2:s1",
+          "stmt:9:section-3:2:s2",
+          "stmt:9:section-3:2:s3",
+          "stmt:9:section-3:2:s4"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n3-07",
+          "ev-n3-13"
+        ],
+        "usableEvidenceIds": [
+          "ev-n3-07",
+          "ev-n3-13"
+        ],
+        "excludedEvidence": []
+      }
+    ],
+    "document": {
+      "title": "Why ShortsOS made zero a valid answer when searching footage for stories",
+      "slug": "why-shortsos-made-zero-a-valid-answer-when-searching-footage-for-stories",
+      "metaDescription": "In September 2026, ShortsOS let its story search report no strong story, stopped reading file dates as filming dates and fixed a cross-client lookup.",
+      "body": "Anyone who has handed a pile of raw clips to a tool knows the risk: the tool finds something, whether or not it is really there. ShortsOS changed its own story search so that finding no strong story became an honest result rather than an error. Its register lists this work as internal engineering with no independent public claim, so read it as history, not as a feature list.\n\nBefore the change, a search that found only one or two stories backed by the footage was rejected, and a search that found none was filed under the same rejection. After it, one, two or three stories backed by evidence are accepted, capped at three only once the evidence check has run, and zero gets its own outcome: no strong story available. The same change keeps technical trouble apart from editorial judgement, so a failed or paused run is not presented as footage without a story. For a brand, that distinction decides whether a no is information about its footage or noise from a system.\n\nShortsOS used to record a clip's filming time straight from the date the file was last modified in Google Drive, a date that changes whenever a file is copied, re-shared or re-uploaded. The fix reads the time embedded in the video first, then explicit metadata, then what the client declared, and otherwise marks the date as unknown, recording disagreements instead of averaging them. Where no reliable date exists, the product is built to show unknown rather than invent one. A separate check that spots duplicate clips compared files across all clients with no filter, so one client's clip could be reported as a duplicate of another client's. The corrected check only looks within the client that owns the clip. That fix was proven against an isolated test database with four regression cases, which is not proof of isolation under real load across many clients.\n\nWhen a shoot produces several takes of the same moment, ShortsOS groups them rather than excluding any clip merely because it looks similar to another. All clips still appear in the results, and supporting evidence is counted by distinct group, so three takes of one moment do not pass for three separate proofs. The grouping relies on signals the system already recorded, uses no AI similarity model, and does not judge what two clips mean. Taken together, these fixes make the pipeline readier to say what it does not know.",
+      "faq": [
+        {
+          "question": "What changed, in short?",
+          "answer": "The story search in ShortsOS was moved from expecting three to seven strong stories to a rule of zero to three, where zero is a distinct, honest outcome. Technical failures, unfinished analysis and runs paused for budget stay separate outcomes, so a failure is not reported as a weak story. Two related fixes followed the same logic: filming dates are no longer guessed from file dates, and duplicate checks no longer look across clients."
+        }
+      ],
+      "statementLedger": [
+        {
+          "id": "stmt:5:title:2:s1",
+          "text": "Why ShortsOS made zero a valid answer when searching footage for stories",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-01"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:meta:2:s1",
+          "text": "In September 2026, ShortsOS let its story search report no strong story, stopped reading file dates as filming dates and fixed a cross-client lookup.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-01",
+            "ev-n3-04",
+            "ev-n3-06"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:lead:2:s1",
+          "text": "Anyone who has handed a pile of raw clips to a tool knows the risk: the tool finds something, whether or not it is really there.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:lead:2:s2",
+          "text": "ShortsOS changed its own story search so that finding no strong story became an honest result rather than an error.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-01",
+            "ev-n3-03"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:lead:2:s3",
+          "text": "Its register lists this work as internal engineering with no independent public claim, so read it as history, not as a feature list.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-08",
+            "ev-n3-08b",
+            "ev-n3-08c"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s1",
+          "text": "The story search in ShortsOS was moved from expecting three to seven strong stories to a rule of zero to three, where zero is a distinct, honest outcome.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-01",
+            "ev-n3-03"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s2",
+          "text": "Technical failures, unfinished analysis and runs paused for budget stay separate outcomes, so a failure is not reported as a weak story.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-02"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s3",
+          "text": "Two related fixes followed the same logic: filming dates are no longer guessed from file dates, and duplicate checks no longer look across clients.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-04",
+            "ev-n3-05",
+            "ev-n3-06",
+            "ev-n3-11"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s1",
+          "text": "Before the change, a search that found only one or two stories backed by the footage was rejected, and a search that found none was filed under the same rejection.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-01"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s2",
+          "text": "After it, one, two or three stories backed by evidence are accepted, capped at three only once the evidence check has run, and zero gets its own outcome: no strong story available.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-01"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s3",
+          "text": "The same change keeps technical trouble apart from editorial judgement, so a failed or paused run is not presented as footage without a story.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "story_selection"
+          ],
+          "evidenceIds": [
+            "ev-n3-02"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s4",
+          "text": "For a brand, that distinction decides whether a no is information about its footage or noise from a system.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s1",
+          "text": "ShortsOS used to record a clip's filming time straight from the date the file was last modified in Google Drive, a date that changes whenever a file is copied, re-shared or re-uploaded.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-04"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s2",
+          "text": "The fix reads the time embedded in the video first, then explicit metadata, then what the client declared, and otherwise marks the date as unknown, recording disagreements instead of averaging them.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-05"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s3",
+          "text": "Where no reliable date exists, the product is built to show unknown rather than invent one.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-09"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s4",
+          "text": "A separate check that spots duplicate clips compared files across all clients with no filter, so one client's clip could be reported as a duplicate of another client's.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-06"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s5",
+          "text": "The corrected check only looks within the client that owns the clip.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-11"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s6",
+          "text": "That fix was proven against an isolated test database with four regression cases, which is not proof of isolation under real load across many clients.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-12",
+            "ev-n3-10"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s1",
+          "text": "When a shoot produces several takes of the same moment, ShortsOS groups them rather than excluding any clip merely because it looks similar to another.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-07"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s2",
+          "text": "All clips still appear in the results, and supporting evidence is counted by distinct group, so three takes of one moment do not pass for three separate proofs.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-07"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s3",
+          "text": "The grouping relies on signals the system already recorded, uses no AI similarity model, and does not judge what two clips mean.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "footage_input"
+          ],
+          "evidenceIds": [
+            "ev-n3-13"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s4",
+          "text": "Taken together, these fixes make the pipeline readier to say what it does not know.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        }
+      ],
+      "claimsExcluded": [],
+      "sections": [
+        {
+          "key": "lead",
+          "heading": "",
+          "body": "Anyone who has handed a pile of raw clips to a tool knows the risk: the tool finds something, whether or not it is really there. ShortsOS changed its own story search so that finding no strong story became an honest result rather than an error. Its register lists this work as internal engineering with no independent public claim, so read it as history, not as a feature list."
+        },
+        {
+          "key": "section-1",
+          "heading": "Why no story can be the right answer",
+          "body": "Before the change, a search that found only one or two stories backed by the footage was rejected, and a search that found none was filed under the same rejection. After it, one, two or three stories backed by evidence are accepted, capped at three only once the evidence check has run, and zero gets its own outcome: no strong story available. The same change keeps technical trouble apart from editorial judgement, so a failed or paused run is not presented as footage without a story. For a brand, that distinction decides whether a no is information about its footage or noise from a system."
+        },
+        {
+          "key": "section-2",
+          "heading": "Dates and duplicates, fixed for the same reason",
+          "body": "ShortsOS used to record a clip's filming time straight from the date the file was last modified in Google Drive, a date that changes whenever a file is copied, re-shared or re-uploaded. The fix reads the time embedded in the video first, then explicit metadata, then what the client declared, and otherwise marks the date as unknown, recording disagreements instead of averaging them. Where no reliable date exists, the product is built to show unknown rather than invent one. A separate check that spots duplicate clips compared files across all clients with no filter, so one client's clip could be reported as a duplicate of another client's. The corrected check only looks within the client that owns the clip. That fix was proven against an isolated test database with four regression cases, which is not proof of isolation under real load across many clients."
+        },
+        {
+          "key": "section-3",
+          "heading": "Similar takes are grouped, not thrown away",
+          "body": "When a shoot produces several takes of the same moment, ShortsOS groups them rather than excluding any clip merely because it looks similar to another. All clips still appear in the results, and supporting evidence is counted by distinct group, so three takes of one moment do not pass for three separate proofs. The grouping relies on signals the system already recorded, uses no AI similarity model, and does not judge what two clips mean. Taken together, these fixes make the pipeline readier to say what it does not know."
+        }
+      ]
+    },
+    "structuredContentHash": "0d480a0ec96fc15f9acbd34aafd2af540dd4b936c7a3f1bcfb3d4e74c2dc68ea",
+    "writerMethodVersion": "geo-writer@0.2",
+    "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+    "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+    "truthCheck": {
+      "verdict": "pass",
+      "contradictions": []
+    }
+  }
+}

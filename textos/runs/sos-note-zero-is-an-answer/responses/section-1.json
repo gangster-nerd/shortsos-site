@@ -1,0 +1,65 @@
+{
+  "text": "Before the change, a search that found only one or two stories backed by the footage was rejected, and a search that found none was filed under the same rejection. After it, one, two or three stories backed by evidence are accepted, capped at three only once the evidence check has run, and zero gets its own outcome: no strong story available. The same change keeps technical trouble apart from editorial judgement, so a failed or paused run is not presented as footage without a story. For a brand, that distinction decides whether a no is information about its footage or noise from a system.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Before the change, a search that found only one or two stories backed by the footage was rejected, and a search that found none was filed under the same rejection.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "After it, one, two or three stories backed by evidence are accepted, capped at three only once the evidence check has run, and zero gets its own outcome: no strong story available.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The same change keeps technical trouble apart from editorial judgement, so a failed or paused run is not presented as footage without a story.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "For a brand, that distinction decides whether a no is information about its footage or noise from a system.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

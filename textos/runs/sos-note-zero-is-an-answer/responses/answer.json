@@ -1,0 +1,57 @@
+{
+  "text": "The story search in ShortsOS was moved from expecting three to seven strong stories to a rule of zero to three, where zero is a distinct, honest outcome. Technical failures, unfinished analysis and runs paused for budget stay separate outcomes, so a failure is not reported as a weak story. Two related fixes followed the same logic: filming dates are no longer guessed from file dates, and duplicate checks no longer look across clients.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The story search in ShortsOS was moved from expecting three to seven strong stories to a rule of zero to three, where zero is a distinct, honest outcome.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-01",
+        "ev-n3-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "Technical failures, unfinished analysis and runs paused for budget stay separate outcomes, so a failure is not reported as a weak story.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Two related fixes followed the same logic: filming dates are no longer guessed from file dates, and duplicate checks no longer look across clients.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-04",
+        "ev-n3-05",
+        "ev-n3-06",
+        "ev-n3-11"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

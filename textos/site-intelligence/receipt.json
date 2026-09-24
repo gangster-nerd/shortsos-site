@@ -1,0 +1,88 @@
+{
+  "receiptVersion": 1,
+  "tool": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+    "capability": "SITE-INTELLIGENCE-1 (ADR-020)"
+  },
+  "observedSurface": {
+    "description": "Static export (out/) of shortsos-site served read-only on a fixed local origin — the site has no public deployment yet.",
+    "rootUrl": "http://127.0.0.1:4317/",
+    "siteCommit": "2168cc760e2510c6eb6620976cbfd19c7fc88295",
+    "siteCommitNote": "The observed build included uncommitted changes on top of siteCommit (the commit that lands them is the one carrying this receipt)."
+  },
+  "crawlRunId": "shortsos-site-si-2168cc760e25",
+  "snapshotHash": "f622fd101cf419ee86c2991fb9738509adb6611f0eccd4e27e69297c50e779d9",
+  "siteInventoryMethodVersion": "156f3e864afaf2d0d82aa3b34430244f5d8995b6",
+  "robots": {
+    "url": "http://127.0.0.1:4317/robots.txt",
+    "httpStatus": 200,
+    "decision": "rules_applied",
+    "reason": "robots.txt 200 — règles appliquées",
+    "sitemapDeclarations": [
+      "https://shortsos-site.example/sitemap.xml"
+    ]
+  },
+  "counts": {
+    "discovered": 9,
+    "crawled": 9,
+    "blocked": 0,
+    "notAvailable": 0
+  },
+  "pages": [
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/methodology/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/proof/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/faq/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/changelog/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/glossary/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    },
+    {
+      "normalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+      "crawlState": {
+        "kind": "crawled"
+      }
+    }
+  ]
+}

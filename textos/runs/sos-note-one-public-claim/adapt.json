@@ -1,0 +1,16 @@
+{
+  "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "planId": "why a vendor limits its public claims to what it has proven",
+  "executionPlanHash": "f71c96f8464b40a8ddc638c4ef2516dddcc3606c960519d6af54362a5d4f5235",
+  "ctcHandoffHash": "b8aebdda2bb0db007f10a1170515ac346abb5879200a1a4d8a002acef26c140d",
+  "promptHashes": {
+    "title": "8af83b7ccf47b6990c6517d84331f5c7edf3f3b9b3ea7a1327c6ad73f176ea0c",
+    "meta": "dd21de14ad32c3d2774f6a6e346dd2565006b2d363ed2fedc3aa8feb782987f7",
+    "lead": "c9312851a99bbdac17796d36264ca301bb6fd453936b0c56a8534e4c41e6031a",
+    "answer": "ccd2da45e0332bfbe15f91fa2b0ca17cbf63b06964f1964b17c838c3bf70c842",
+    "section-1": "ecec68702c3a49c529d1e12b9587a68dac75607d8b9f96f27f9a4004c80f1b00",
+    "section-2": "4fd16958d592badd0cb94f9c9b126567a6db60a7a256eae5f75454e614021bff",
+    "section-3": "49060abcdc9ccb70090dcaeed5d13a4018d9f115dd240f3280ab33d74d382cf6"
+  }
+}

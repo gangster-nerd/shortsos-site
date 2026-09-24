@@ -1,0 +1,15 @@
+{
+  "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "planId": "operated pilot to turn existing footage into short form video",
+  "executionPlanHash": "c41ef498913cbde72dbfc55269f42e5c19c14cc352c651881718c8f317e95dbc",
+  "ctcHandoffHash": "6934d4c8c6363318da6ce73f51a1b11a60b35e99659e038d97688c9eb6ceecb8",
+  "promptHashes": {
+    "title": "662783ee9e2be0178d302b19d6e9ed4cde603d15ee327f891a476573cd894fd5",
+    "meta": "917a5c0fee42828564c9d2da22cc84e0366add95fda201df06dc6721d4d5a0ef",
+    "lead": "b10e94597fd1fb20de469a7e6bcc63f1b897daccef51e5083a6deefb1dbdc427",
+    "answer": "4bfb0cb67dc21abe343044434aad8a2476cc83d07cc9414184d30fbded527ba1",
+    "section-1": "fe97804f3f293f7151f3ef10b40b0292de7a4af9af50bf43e45ae2258a9f47ab",
+    "section-2": "418d2db6139f0bd12671badef2f8c37edde39508cb51564e6cba92de8e6a85b4"
+  }
+}

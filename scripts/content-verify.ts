@@ -10,6 +10,12 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
+import { collectProductCommitCitations } from "../src/lib/commit-to-content/citations";
+import {
+  assertLedgerHoldsExactlyCitations,
+  assertLedgerMatchesPin,
+  parseProductCommitLedger,
+} from "../src/lib/commit-to-content/commit-ledger";
 import { runSyncEngine, type RawImpactRecordFile } from "../src/lib/commit-to-content/sync-engine";
 
 const REPO_ROOT = resolve(import.meta.dirname, "..");
@@ -87,10 +93,29 @@ function main(): void {
     }
   }
 
+  // SOS-NOTES-V1: the commit ledger every commit citation resolves against must describe the
+  // exact same product ref as the manifest pin, be in canonical (unedited) form, and hold exactly
+  // the commits this site cites — no fewer (a citation would not resolve), no more (this
+  // repository is public; the product repository is not).
+  const ledgerPath = join(INPUTS_DIR, "product-commits.json");
+  if (!existsSync(ledgerPath)) {
+    fail(`no commit ledger at ${ledgerPath}. Run \`npm run content:commits -- --product-ref ${productRef}\`.`);
+  }
+  let commitCount = 0;
+  try {
+    const ledger = parseProductCommitLedger(readFileSync(ledgerPath, "utf8"));
+    assertLedgerMatchesPin(ledger, productRef);
+    assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations(REPO_ROOT));
+    commitCount = ledger.commitCount;
+  } catch (err) {
+    fail(`commit ledger failed re-verification: ${(err as Error).message}`);
+  }
+
   console.log("content-verify: OK");
   console.log(`  product ref:        ${productRef}`);
   console.log(`  manifest checksum:  ${output.manifestChecksum}`);
   console.log(`  candidate entities: ${output.bundle.candidateEntities.length}`);
+  console.log(`  ledger commits:     ${commitCount} (cited commits and the pinned tip)`);
 }
 
 main();

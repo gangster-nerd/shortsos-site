@@ -1,0 +1,3256 @@
+{
+  "crawlRunId": "shortsos-site-si-2168cc760e25",
+  "rootOrigin": "http://127.0.0.1:4317",
+  "siteInventoryMethodVersion": "156f3e864afaf2d0d82aa3b34430244f5d8995b6",
+  "snapshotHash": "f622fd101cf419ee86c2991fb9738509adb6611f0eccd4e27e69297c50e779d9",
+  "startedAt": "2026-09-24T00:31:20.815Z",
+  "completedAt": "2026-09-24T00:31:29.943Z",
+  "crawlPolicy": {
+    "version": "site-crawl-policy@0.2",
+    "userAgent": "TextOS-SiteIntelligence/0.1 (+read-only structural inventory)",
+    "maxPages": 60,
+    "maxDepth": 4,
+    "maxRedirects": 5,
+    "maxResponseBytes": 5000000,
+    "maxTotalRawEvidenceBytes": 200000000,
+    "requestTimeoutMs": 20000,
+    "minRequestIntervalMs": 1000,
+    "maxConcurrency": 1,
+    "contentTypeAllowlist": [
+      "text/html",
+      "application/xhtml+xml",
+      "text/xml",
+      "application/xml",
+      "text/plain"
+    ],
+    "fetchCrossOriginMedia": false
+  },
+  "robotsStatus": {
+    "url": "http://127.0.0.1:4317/robots.txt",
+    "httpStatus": 200,
+    "decision": "rules_applied",
+    "reason": "robots.txt 200 — règles appliquées",
+    "sitemapDeclarations": [
+      "https://shortsos-site.example/sitemap.xml"
+    ]
+  },
+  "pages": [
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "From raw footage to a published, reviewed short."
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "From raw footage to a published, reviewed short."
+        },
+        {
+          "level": 2,
+          "text": "What actually happens to a client's footage"
+        },
+        {
+          "level": 3,
+          "text": "Existing footage"
+        },
+        {
+          "level": 3,
+          "text": "Inventory"
+        },
+        {
+          "level": 3,
+          "text": "Understanding"
+        },
+        {
+          "level": 3,
+          "text": "Evidence"
+        },
+        {
+          "level": 3,
+          "text": "Story opportunities"
+        },
+        {
+          "level": 3,
+          "text": "Human selection"
+        },
+        {
+          "level": 3,
+          "text": "Production"
+        },
+        {
+          "level": 3,
+          "text": "Review"
+        },
+        {
+          "level": 3,
+          "text": "Publication Proven, real run"
+        },
+        {
+          "level": 2,
+          "text": "The one thing we can show, not just describe"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_present",
+        "value": "Organization"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Video production, evidence-first",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "From raw footage to a published, reviewed short.",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "ShortsOS turns a client's own raw footage into a produced, human-reviewed short — and, when genuinely ready, gets it published with a captured permalink. The steps below are the shape of the pipeline; the publication step is the one we have run for real, end to end.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "The pipeline",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "heading",
+          "text": "What actually happens to a client's footage",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "heading",
+          "text": "Existing footage",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 5
+        },
+        {
+          "type": "paragraph",
+          "text": "A client's raw footage — the material already sitting in their own storage — is the starting point. Nothing is generated from a prompt.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 6
+        },
+        {
+          "type": "heading",
+          "text": "Inventory",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "type": "paragraph",
+          "text": "Footage is technically inspected (duration, resolution, audio presence) and organized into a searchable inventory, so nothing usable gets lost in a folder.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "type": "heading",
+          "text": "Understanding",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 9
+        },
+        {
+          "type": "paragraph",
+          "text": "Each clip is analyzed for what it actually shows — the moments, not just the file names — to build a record of what evidence exists.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 10
+        },
+        {
+          "type": "heading",
+          "text": "Evidence",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 11
+        },
+        {
+          "type": "paragraph",
+          "text": "Every story candidate is tied back to the specific source moments that support it, with timestamps — so a decision can be checked against the footage, not taken on faith.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 12
+        },
+        {
+          "type": "heading",
+          "text": "Story opportunities",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 13
+        },
+        {
+          "type": "paragraph",
+          "text": "Candidate short-form stories are drafted from that evidence, never invented independently of it.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 14
+        },
+        {
+          "type": "heading",
+          "text": "Human selection",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 15
+        },
+        {
+          "type": "paragraph",
+          "text": "A person decides which opportunity is worth producing. This is a decision checkpoint, not an automatic pipeline.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 16
+        },
+        {
+          "type": "heading",
+          "text": "Production",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 17
+        },
+        {
+          "type": "paragraph",
+          "text": "The selected story is rendered into video, voiced, and captioned.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 18
+        },
+        {
+          "type": "heading",
+          "text": "Review",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 19
+        },
+        {
+          "type": "paragraph",
+          "text": "A human reviews the produced short before anything goes out. Every real run to date has included this checkpoint.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 20
+        },
+        {
+          "type": "heading",
+          "text": "Publication Proven, real run",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 21
+        },
+        {
+          "type": "paragraph",
+          "text": "When a client is genuinely ready, the reviewed short is published — with a captured, checkable permalink.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 22
+        },
+        {
+          "type": "paragraph",
+          "text": "What's proven",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 23
+        },
+        {
+          "type": "heading",
+          "text": "The one thing we can show, not just describe",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 24
+        },
+        {
+          "type": "paragraph",
+          "text": "ShortsOS has completed a real end-to-end Produce → Review → Publish workflow: from source video and render, through human review, to a live Instagram Reel with a captured publication permalink.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 25
+        },
+        {
+          "type": "paragraph",
+          "text": "For pilots, the workflow is operated by the ShortsOS team.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 26
+        },
+        {
+          "type": "paragraph",
+          "text": "See the full proof →",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 27
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "See the full proof →",
+          "rel": [],
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 11
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 12
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [
+          "Organization"
+        ],
+        "jsonLdBlockCount": 1,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/",
+      "finalUrl": "http://127.0.0.1:4317/",
+      "normalizedUrl": "http://127.0.0.1:4317/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "root",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:21.863Z",
+        "bodyBytes": 18370,
+        "bodyHash": "0da7b65e609724c60d1c6290930aed7c4eb625a9f8ea91fc64959101385ad779",
+        "bodyRef": "raw:0da7b65e609724c60d1c6290930aed7c4eb625a9f8ea91fc64959101385ad779",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "How it works — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "The pipeline, stage by stage"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "The pipeline, stage by stage"
+        },
+        {
+          "level": 3,
+          "text": "Existing footage Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Inventory Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Understanding Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Evidence Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Story opportunities Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Human selection Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Production Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Review Pipeline architecture"
+        },
+        {
+          "level": 3,
+          "text": "Publication Proven, real run"
+        },
+        {
+          "level": 2,
+          "text": "The proven claim"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "How it works",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "The pipeline, stage by stage",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the same pipeline shown on the homepage, in more detail. Most of these stages are real, shipped engineering inside ShortsOS — but only the final Produce → Review → Publish loop has been run end to end against real providers, for a real client, with a captured result. That is the one claim this page makes as proven; every earlier stage is described honestly as pipeline architecture, not as a separately proven or independently available capability.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "heading",
+          "text": "Existing footage Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "A client's raw footage — the material already sitting in their own storage — is the starting point. Nothing is generated from a prompt.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "heading",
+          "text": "Inventory Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 5
+        },
+        {
+          "type": "paragraph",
+          "text": "Footage is technically inspected (duration, resolution, audio presence) and organized into a searchable inventory, so nothing usable gets lost in a folder.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 6
+        },
+        {
+          "type": "heading",
+          "text": "Understanding Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "type": "paragraph",
+          "text": "Each clip is analyzed for what it actually shows — the moments, not just the file names — to build a record of what evidence exists.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "type": "heading",
+          "text": "Evidence Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 9
+        },
+        {
+          "type": "paragraph",
+          "text": "Every story candidate is tied back to the specific source moments that support it, with timestamps — so a decision can be checked against the footage, not taken on faith.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 10
+        },
+        {
+          "type": "heading",
+          "text": "Story opportunities Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 11
+        },
+        {
+          "type": "paragraph",
+          "text": "Candidate short-form stories are drafted from that evidence, never invented independently of it.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 12
+        },
+        {
+          "type": "heading",
+          "text": "Human selection Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 13
+        },
+        {
+          "type": "paragraph",
+          "text": "A person decides which opportunity is worth producing. This is a decision checkpoint, not an automatic pipeline.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 14
+        },
+        {
+          "type": "heading",
+          "text": "Production Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 15
+        },
+        {
+          "type": "paragraph",
+          "text": "The selected story is rendered into video, voiced, and captioned.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 16
+        },
+        {
+          "type": "heading",
+          "text": "Review Pipeline architecture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 17
+        },
+        {
+          "type": "paragraph",
+          "text": "A human reviews the produced short before anything goes out. Every real run to date has included this checkpoint.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 18
+        },
+        {
+          "type": "heading",
+          "text": "Publication Proven, real run",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 19
+        },
+        {
+          "type": "paragraph",
+          "text": "When a client is genuinely ready, the reviewed short is published — with a captured, checkable permalink.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 20
+        },
+        {
+          "type": "heading",
+          "text": "The proven claim",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 21
+        },
+        {
+          "type": "paragraph",
+          "text": "ShortsOS has completed a real end-to-end Produce → Review → Publish workflow: from source video and render, through human review, to a live Instagram Reel with a captured publication permalink.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 22
+        },
+        {
+          "type": "paragraph",
+          "text": "For pilots, the workflow is operated by the ShortsOS team.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 23
+        },
+        {
+          "type": "paragraph",
+          "text": "Read the full evidence on the Proof page, or the deeper internal architecture on the Methodology page.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 24
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof page",
+          "rel": [],
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology page",
+          "rel": [],
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 11
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 12
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/how-it-works/",
+      "finalUrl": "http://127.0.0.1:4317/how-it-works/",
+      "normalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/how-it-works/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/how-it-works/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:22.878Z",
+        "bodyBytes": 19278,
+        "bodyHash": "8e295b180b11484b0ef9deba2123623f06a56d5ce3f64b99f2d75c025010997d",
+        "bodyRef": "raw:8e295b180b11484b0ef9deba2123623f06a56d5ce3f64b99f2d75c025010997d",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "Methodology — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "How the pipeline is built, internally"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "How the pipeline is built, internally"
+        },
+        {
+          "level": 2,
+          "text": "Internal architecture"
+        },
+        {
+          "level": 3,
+          "text": "Drive import & inventory"
+        },
+        {
+          "level": 3,
+          "text": "Media understanding"
+        },
+        {
+          "level": 3,
+          "text": "Opportunity generation"
+        },
+        {
+          "level": 3,
+          "text": "Human decision checkpoint"
+        },
+        {
+          "level": 3,
+          "text": "Production orchestration"
+        },
+        {
+          "level": 3,
+          "text": "Render & caption providers"
+        },
+        {
+          "level": 3,
+          "text": "Review"
+        },
+        {
+          "level": 3,
+          "text": "Publish & permalink capture"
+        },
+        {
+          "level": 2,
+          "text": "What this program actually claims publicly"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Methodology",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "How the pipeline is built, internally",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "ShortsOS is operated, not self-directed: an agency team runs the pipeline on a client's behalf. This page describes how that pipeline is architected internally — for transparency about the mechanism, not as a menu of features available to a visitor. Most of what is described here is internal engineering: implemented and tested, but not a capability a customer can invoke directly, and not independently marketed as its own product claim.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "heading",
+          "text": "Internal architecture",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "heading",
+          "text": "Drive import & inventory",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "paragraph",
+          "text": "Footage is imported from a client's own storage and organized into a technical inventory (duration, resolution, audio presence).",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 5
+        },
+        {
+          "type": "heading",
+          "text": "Media understanding",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 6
+        },
+        {
+          "type": "paragraph",
+          "text": "Clips are analyzed for what they show, building an evidence record used by every later stage.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "type": "heading",
+          "text": "Opportunity generation",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "type": "paragraph",
+          "text": "Candidate short-form stories are drafted from that evidence, with the source moments cited alongside each one.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 9
+        },
+        {
+          "type": "heading",
+          "text": "Human decision checkpoint",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 10
+        },
+        {
+          "type": "paragraph",
+          "text": "An operator reviews the candidate opportunities and their supporting evidence before anything is produced.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 11
+        },
+        {
+          "type": "heading",
+          "text": "Production orchestration",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 12
+        },
+        {
+          "type": "paragraph",
+          "text": "The selected opportunity moves through a durable, resumable job pipeline: render, voice, caption.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 13
+        },
+        {
+          "type": "heading",
+          "text": "Render & caption providers",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 14
+        },
+        {
+          "type": "paragraph",
+          "text": "Rendering and captioning are handled by third-party providers behind the pipeline; ShortsOS owns the orchestration and the content decisions, not the underlying video/caption engines.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 15
+        },
+        {
+          "type": "heading",
+          "text": "Review",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 16
+        },
+        {
+          "type": "paragraph",
+          "text": "A human reviews the produced short before publication — a mandatory checkpoint, not an optional one.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 17
+        },
+        {
+          "type": "heading",
+          "text": "Publish & permalink capture",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 18
+        },
+        {
+          "type": "paragraph",
+          "text": "When ready, the reviewed short is published and its permalink is captured and recorded.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 19
+        },
+        {
+          "type": "heading",
+          "text": "What this program actually claims publicly",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 20
+        },
+        {
+          "type": "paragraph",
+          "text": "As of this program's most recent internal review, the underlying capability inventory behind this pipeline is tracked on a four-way scale — proven-and-public, candidate, internal-only, and blocked — and exactly one capability has cleared the bar for a public claim: the end-to-end Produce → Review → Publish workflow described on the Proof page. Everything else described on this page is internal architecture context, not an independent public claim.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 21
+        },
+        {
+          "type": "table_cell",
+          "text": "Status",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 22
+        },
+        {
+          "type": "table_cell",
+          "text": "Count",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 23
+        },
+        {
+          "type": "table_cell",
+          "text": "Meaning",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 24
+        },
+        {
+          "type": "table_cell",
+          "text": "public_marketable",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 25
+        },
+        {
+          "type": "table_cell",
+          "text": "1",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 26
+        },
+        {
+          "type": "table_cell",
+          "text": "Cleared for a public claim — see the Proof page.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 27
+        },
+        {
+          "type": "table_cell",
+          "text": "candidate",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 28
+        },
+        {
+          "type": "table_cell",
+          "text": "8",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 29
+        },
+        {
+          "type": "table_cell",
+          "text": "Real, implemented, internally reviewed — not yet ratified for a public claim.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 30
+        },
+        {
+          "type": "table_cell",
+          "text": "internal_only",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 31
+        },
+        {
+          "type": "table_cell",
+          "text": "30",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 32
+        },
+        {
+          "type": "table_cell",
+          "text": "Internal engineering, no public claim of any kind.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 33
+        },
+        {
+          "type": "table_cell",
+          "text": "blocked",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 34
+        },
+        {
+          "type": "table_cell",
+          "text": "3",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 35
+        },
+        {
+          "type": "table_cell",
+          "text": "Explicitly prohibited from ever being claimed publicly.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 36
+        },
+        {
+          "type": "paragraph",
+          "text": "Nothing in the candidate or internal_only rows above is available to a visitor of this site today — they describe internal engineering behind the one proven, publicly claimed capability, not additional features you can use.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 37
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof page",
+          "rel": [],
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 11
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/methodology/",
+      "finalUrl": "http://127.0.0.1:4317/methodology/",
+      "normalizedUrl": "http://127.0.0.1:4317/methodology/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/methodology/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/methodology/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:23.888Z",
+        "bodyBytes": 17744,
+        "bodyHash": "784022c11e815f3ee4d5162b16c569ed2b18c71e7c0dcf8b97318c3fc16f6eb6",
+        "bodyRef": "raw:784022c11e815f3ee4d5162b16c569ed2b18c71e7c0dcf8b97318c3fc16f6eb6",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "Proof — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "One real, end-to-end run — not a demo"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "One real, end-to-end run — not a demo"
+        },
+        {
+          "level": 2,
+          "text": "The claim, exactly as ratified"
+        },
+        {
+          "level": 2,
+          "text": "What happened"
+        },
+        {
+          "level": 3,
+          "text": "What this is not"
+        },
+        {
+          "level": 2,
+          "text": "Known limits"
+        },
+        {
+          "level": 2,
+          "text": "Never claimed"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Proof",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "One real, end-to-end run — not a demo",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the one thing ShortsOS has proven end to end, for real: a single client's raw footage went through production, a human review, and publication — resulting in a live Instagram Reel with a permalink we captured. It is one documented run, not a demonstration reel and not a repeated or automated process.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "heading",
+          "text": "The claim, exactly as ratified",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "ShortsOS has completed a real end-to-end Produce → Review → Publish workflow: from source video and render, through human review, to a live Instagram Reel with a captured publication permalink.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "paragraph",
+          "text": "For pilots, the workflow is operated by the ShortsOS team.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 5
+        },
+        {
+          "type": "heading",
+          "text": "What happened",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 6
+        },
+        {
+          "type": "paragraph",
+          "text": "Source footage was rendered into a short, reviewed by a person, and published to a real, operator-bound Instagram account. The published post's permalink was captured and stored as the durable record of that publication. Two real adapter defects were found and fixed against the live Instagram integration during this run — evidence that the run was against the real provider, not a mock.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "type": "heading",
+          "text": "What this is not",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not a portfolio of many published shorts, not a rendered demo reel, and not a claim about how the finished video looks or performs. It is a record that the mechanism — from source footage to a captured, checkable publication permalink — has actually run once, for real.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 9
+        },
+        {
+          "type": "heading",
+          "text": "Known limits",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 10
+        },
+        {
+          "type": "list_item",
+          "text": "Single real run is not a load or reliability proof; discovered Instagram adapter defects were fixed reactively against that one live run, not pre-emptively.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 11
+        },
+        {
+          "type": "heading",
+          "text": "Never claimed",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 12
+        },
+        {
+          "type": "paragraph",
+          "text": "The following are explicitly out of bounds for this claim, by ratified governance decision — not just informal caution:",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 13
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim of automatic publishing without human review — the Review step is a mandatory human checkpoint in every real run to date.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 14
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim of guaranteed creative quality.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 15
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim of guaranteed performance or virality for any published content.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 16
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim of production-scale or repeated-volume proof beyond the one documented real run.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 17
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim of universal availability — this workflow is operated by the ShortsOS team for pilots, never generally/instantly available.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 18
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim that a customer can connect their own Instagram account to this workflow.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 19
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim that a customer can publish directly themselves through this workflow.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 20
+        },
+        {
+          "type": "list_item",
+          "text": "Any claim that any end user can self-serve run this loop today — it is operator-run, on one bound Instagram account.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 21
+        },
+        {
+          "type": "paragraph",
+          "text": "Governance record: docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md (in the ShortsOS product repository).",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 22
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/proof/",
+      "finalUrl": "http://127.0.0.1:4317/proof/",
+      "normalizedUrl": "http://127.0.0.1:4317/proof/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/proof/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/proof/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:24.899Z",
+        "bodyBytes": 17571,
+        "bodyHash": "5cfa8a9b866b0c9d6b809d0505ef46ff62f1ef684e2bb55f351fde8349873db4",
+        "bodyRef": "raw:5cfa8a9b866b0c9d6b809d0505ef46ff62f1ef684e2bb55f351fde8349873db4",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "FAQ — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "Honest answers, including the ones that are \"no\""
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "Honest answers, including the ones that are \"no\""
+        },
+        {
+          "level": 3,
+          "text": "Can I connect my own Instagram account?"
+        },
+        {
+          "level": 3,
+          "text": "Can I publish directly myself, without going through ShortsOS?"
+        },
+        {
+          "level": 3,
+          "text": "Does ShortsOS publish automatically, without anyone reviewing it first?"
+        },
+        {
+          "level": 3,
+          "text": "Is this available to anyone right now?"
+        },
+        {
+          "level": 3,
+          "text": "Has this been done many times, or at scale?"
+        },
+        {
+          "level": 3,
+          "text": "Do you guarantee the video will be good, or that it will perform well?"
+        },
+        {
+          "level": 3,
+          "text": "What exactly is proven, then?"
+        },
+        {
+          "level": 3,
+          "text": "How do I actually start working with ShortsOS?"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_present",
+        "value": "FAQPage"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "FAQ",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "Honest answers, including the ones that are \"no\"",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "heading",
+          "text": "Can I connect my own Instagram account?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Not yet. The one real publish we have run used a single account operated by the ShortsOS team. There is no independent account connection today.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "heading",
+          "text": "Can I publish directly myself, without going through ShortsOS?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "paragraph",
+          "text": "No. Publishing happens through the ShortsOS team as part of an operated pilot, not as something a customer triggers directly.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 5
+        },
+        {
+          "type": "heading",
+          "text": "Does ShortsOS publish automatically, without anyone reviewing it first?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 6
+        },
+        {
+          "type": "paragraph",
+          "text": "No. A human reviews every produced short before it is published. That review step has been part of every real run to date, and it is not optional.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "type": "heading",
+          "text": "Is this available to anyone right now?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "type": "paragraph",
+          "text": "No. ShortsOS is currently operated by the team for pilots — it is not a generally or instantly available product.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 9
+        },
+        {
+          "type": "heading",
+          "text": "Has this been done many times, or at scale?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 10
+        },
+        {
+          "type": "paragraph",
+          "text": "No. What is proven is one documented, real, end-to-end run. We do not claim production-scale or repeated-volume proof beyond that.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 11
+        },
+        {
+          "type": "heading",
+          "text": "Do you guarantee the video will be good, or that it will perform well?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 12
+        },
+        {
+          "type": "paragraph",
+          "text": "No. We make no guarantee of creative quality, performance, or virality for any published content.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 13
+        },
+        {
+          "type": "heading",
+          "text": "What exactly is proven, then?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 14
+        },
+        {
+          "type": "paragraph",
+          "text": "That the full Produce → Review → Publish workflow can run for real: source footage in, a real render, a human review, and a live Instagram Reel out, with its permalink captured.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 15
+        },
+        {
+          "type": "heading",
+          "text": "How do I actually start working with ShortsOS?",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 16
+        },
+        {
+          "type": "paragraph",
+          "text": "Request a pilot. The ShortsOS team will follow up directly to scope a real engagement — there is no independent signup.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 17
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [
+          "FAQPage"
+        ],
+        "jsonLdBlockCount": 1,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/faq/",
+      "finalUrl": "http://127.0.0.1:4317/faq/",
+      "normalizedUrl": "http://127.0.0.1:4317/faq/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/faq/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/faq/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:25.908Z",
+        "bodyBytes": 18312,
+        "bodyHash": "2fc3ffa0940304f048fe16134ffabb05d0d8e2ac4eb9fe3d260ff43ba708c80e",
+        "bodyRef": "raw:2fc3ffa0940304f048fe16134ffabb05d0d8e2ac4eb9fe3d260ff43ba708c80e",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "Changelog — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "Governance history, not a feature list"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "Governance history, not a feature list"
+        },
+        {
+          "level": 3,
+          "text": "M1 Produce → Review → Publish ratified as the one public claim (SOS-PUBLICATION-DECISION-M1-V1)"
+        },
+        {
+          "level": 3,
+          "text": "This site synced to the ratified manifest (SOS-CATCHUP-V1)"
+        },
+        {
+          "level": 3,
+          "text": "Managed-service publication policy amended (SOS-PUBLIC-TRUTH-POLICY-V1)"
+        },
+        {
+          "level": 3,
+          "text": "Public Truth manifest introduced (SOS-PUBLIC-TRUTH-V1)"
+        },
+        {
+          "level": 3,
+          "text": "\"Show Me Why\" capability chain closed (FDTS-SHOW-ME-WHY-V1)"
+        },
+        {
+          "level": 3,
+          "text": "Opportunity generation wired to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)"
+        },
+        {
+          "level": 3,
+          "text": "Tenant-safe duplicate-clip detection fixed (FDTS-RETRIEVAL-SAFETY-V1)"
+        },
+        {
+          "level": 3,
+          "text": "ShortsOS engineering begins (Sprint 0)"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Changelog",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "Governance history, not a feature list",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This is process/methodology history, not a customer-facing feature list. It records how ShortsOS's own governance program decides what may be claimed publicly — not a log of shipped product features. Every entry below is a historical statement about engineering or governance work that already happened, cited by real commit and date in one of the two repositories behind this site. A historical entry about a capability that is still `candidate`, `internal_only`, or `blocked` today describes past engineering work only — never a current offer to use that capability.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-13 · shortsos@f01ac6110ec664aba31ee985a4c30d307de10b2f",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "heading",
+          "text": "M1 Produce → Review → Publish ratified as the one public claim (SOS-PUBLICATION-DECISION-M1-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "paragraph",
+          "text": "Of nine internally-reviewed candidates, exactly one — the end-to-end Produce → Review → Publish workflow — was ratified for a public claim, with an explicit, narrow claim ceiling and eight prohibited-claim guardrails.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 5
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-13 · shortsos-site@1571d67",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 6
+        },
+        {
+          "type": "heading",
+          "text": "This site synced to the ratified manifest (SOS-CATCHUP-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "type": "paragraph",
+          "text": "The public site you're reading was rebuilt from the ratified manifest: one public_marketable capability, eight still-candidate, thirty internal-only, three explicitly blocked from ever being claimed.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-13 · shortsos@ea607bd",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 9
+        },
+        {
+          "type": "heading",
+          "text": "Managed-service publication policy amended (SOS-PUBLIC-TRUTH-POLICY-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 10
+        },
+        {
+          "type": "paragraph",
+          "text": "The publication policy was amended to allow an operator-run capability to be claimed publicly under a managed-service framing — never under independent-access wording.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 11
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-12 · shortsos@eb7446b",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 12
+        },
+        {
+          "type": "heading",
+          "text": "Public Truth manifest introduced (SOS-PUBLIC-TRUTH-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 13
+        },
+        {
+          "type": "paragraph",
+          "text": "ShortsOS's internal capability inventory was first classified on a four-way public/candidate/internal/blocked scale, fail-closed by default — every capability started internal-only until explicitly promoted.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 14
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-12 · shortsos@fd55820",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 15
+        },
+        {
+          "type": "heading",
+          "text": "\"Show Me Why\" capability chain closed (FDTS-SHOW-ME-WHY-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 16
+        },
+        {
+          "type": "paragraph",
+          "text": "Internal engineering work, prior to this site's own governance train: the content-inventory UI was given real evidence controls, capture-session identity, and a durable zero-story state — the first capability in this program to be reviewed and closed across two consecutive missions. This was engineering-only work; no public claim followed from it.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 17
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-12 · shortsos@d2268dc",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 18
+        },
+        {
+          "type": "heading",
+          "text": "Opportunity generation wired to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 19
+        },
+        {
+          "type": "paragraph",
+          "text": "Internal engineering history: the story-opportunity generator was connected to a real production LLM caller (previously a mock), closing out WAVE-006 of the earlier \"From Drive to Story\" build program. This is the same opportunity-generation stage later described, in past tense, on the /how-it-works page as pipeline architecture — it remains internal-only, not independently claimed here.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 20
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-09-11 · shortsos@3803d15",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 21
+        },
+        {
+          "type": "heading",
+          "text": "Tenant-safe duplicate-clip detection fixed (FDTS-RETRIEVAL-SAFETY-V1)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 22
+        },
+        {
+          "type": "paragraph",
+          "text": "A real defect — a media-probe lookup that did not scope duplicate detection by tenant — was found and fixed. Internal engineering record only; retrieval safety is not a capability marketed on this site.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 23
+        },
+        {
+          "type": "paragraph",
+          "text": "2026-06-21 · shortsos@e476b1c",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 24
+        },
+        {
+          "type": "heading",
+          "text": "ShortsOS engineering begins (Sprint 0)",
+          "headingLevel": 3,
+          "region": "main",
+          "ordinal": 25
+        },
+        {
+          "type": "paragraph",
+          "text": "The product repository's first commit: canonical docs, architecture decision records, and a target-architecture roadmap, months before any of the capabilities referenced elsewhere on this site existed in any form.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 26
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/changelog/",
+      "finalUrl": "http://127.0.0.1:4317/changelog/",
+      "normalizedUrl": "http://127.0.0.1:4317/changelog/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/changelog/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/changelog/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:26.917Z",
+        "bodyBytes": 19490,
+        "bodyHash": "ea0b162d6031392de978f56589dfcf1d3f51479ca65d5d129679abe7452cdd6f",
+        "bodyRef": "raw:ea0b162d6031392de978f56589dfcf1d3f51479ca65d5d129679abe7452cdd6f",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "Request a pilot — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "Talk to the team directly"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "Talk to the team directly"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Request a pilot",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "Talk to the team directly",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "There is no independent signup. Requesting a pilot starts a direct conversation with the ShortsOS team about a real engagement.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "paragraph",
+          "text": "Prefer to write it yourself? Email pilots@shortsos.example directly. Once you've sent it, see what happens next.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 3
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "mailto:pilots@shortsos.example?subject=Pilot%20request",
+          "targetResolvedUrl": "mailto:pilots@shortsos.example?subject=Pilot%20request",
+          "targetNormalizedUrl": null,
+          "isInternal": false,
+          "anchorText": "Email pilots@shortsos.example directly",
+          "rel": [],
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/request-pilot/received/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "isInternal": true,
+          "anchorText": "see what happens next",
+          "rel": [],
+          "region": "main",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 11
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 12
+        }
+      ],
+      "media": [],
+      "actionElements": [
+        {
+          "type": "form",
+          "label": "",
+          "target": "mailto:pilots@shortsos.example",
+          "htmlSemantics": {
+            "submit": true,
+            "role": null,
+            "ariaLabel": null
+          },
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "button",
+          "label": "Open email to pilots@shortsos.example",
+          "target": null,
+          "htmlSemantics": {
+            "submit": true,
+            "role": null,
+            "ariaLabel": null
+          },
+          "region": "main",
+          "ordinal": 1
+        }
+      ],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/request-pilot/",
+      "finalUrl": "http://127.0.0.1:4317/request-pilot/",
+      "normalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/request-pilot/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/request-pilot/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:27.926Z",
+        "bodyBytes": 11715,
+        "bodyHash": "d435f04346ff2202787e2a8c7ad6d8e71835b776d9ba569420631c3f9fa35616",
+        "bodyRef": "raw:d435f04346ff2202787e2a8c7ad6d8e71835b776d9ba569420631c3f9fa35616",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "Glossary — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "Terms used across this site"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "Terms used across this site"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Glossary",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "Terms used across this site",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/glossary/",
+      "finalUrl": "http://127.0.0.1:4317/glossary/",
+      "normalizedUrl": "http://127.0.0.1:4317/glossary/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/glossary/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/glossary/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:28.936Z",
+        "bodyBytes": 17686,
+        "bodyHash": "aab592ca77366f748cd6e42d56f056a7657685e17ad974bef8f0d68e9edddd42",
+        "bodyRef": "raw:aab592ca77366f748cd6e42d56f056a7657685e17ad974bef8f0d68e9edddd42",
+        "outcome": "ok"
+      }
+    },
+    {
+      "title": {
+        "status": "observed_present",
+        "value": "After you email us — ShortsOS"
+      },
+      "h1": {
+        "status": "observed_present",
+        "value": [
+          "Thanks for reaching out"
+        ]
+      },
+      "headingOutline": [
+        {
+          "level": 1,
+          "text": "Thanks for reaching out"
+        },
+        {
+          "level": 2,
+          "text": "What happens next"
+        }
+      ],
+      "metaDescription": {
+        "status": "observed_present",
+        "value": "ShortsOS turns raw footage into a reviewed, published short — with a real, proven Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots."
+      },
+      "robotsMeta": "noindex, nofollow",
+      "lang": {
+        "status": "observed_present",
+        "value": "en"
+      },
+      "declaredCanonicalUrl": null,
+      "declaredPageType": {
+        "status": "observed_absent"
+      },
+      "documentText": [
+        {
+          "type": "paragraph",
+          "text": "Request a pilot",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 0
+        },
+        {
+          "type": "heading",
+          "text": "Thanks for reaching out",
+          "headingLevel": 1,
+          "region": "main",
+          "ordinal": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This page confirms what happens next — it is not a submission receipt. This site has no server or database behind it, so it has no way to confirm an email actually reached us; that confirmation lives in your own email client's sent folder, not here.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 2
+        },
+        {
+          "type": "heading",
+          "text": "What happens next",
+          "headingLevel": 2,
+          "region": "main",
+          "ordinal": 3
+        },
+        {
+          "type": "paragraph",
+          "text": "If you emailed us from the Request a pilot page, someone from the ShortsOS team will reply directly to that email, usually within a few business days.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 4
+        },
+        {
+          "type": "paragraph",
+          "text": "If you don't hear back, check your sent folder to confirm the email actually went out, and feel free to send it again — there is no automated queue or ticketing system on our side that could silently drop it, but there is also no automated acknowledgment.",
+          "headingLevel": null,
+          "region": "main",
+          "ordinal": 5
+        }
+      ],
+      "links": [
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/",
+          "isInternal": true,
+          "anchorText": "ShortsOS",
+          "rel": [],
+          "region": "header",
+          "ordinal": 0
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/how-it-works/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/how-it-works/",
+          "isInternal": true,
+          "anchorText": "How it works",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 1
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/methodology/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/methodology/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/methodology/",
+          "isInternal": true,
+          "anchorText": "Methodology",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 2
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/proof/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/proof/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/proof/",
+          "isInternal": true,
+          "anchorText": "Proof",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 3
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 4
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 5
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "header",
+          "ordinal": 6
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "main",
+          "ordinal": 7
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/glossary/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/glossary/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/glossary/",
+          "isInternal": true,
+          "anchorText": "Glossary",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 8
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/changelog/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/changelog/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/changelog/",
+          "isInternal": true,
+          "anchorText": "Changelog",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 9
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/faq/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/faq/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/faq/",
+          "isInternal": true,
+          "anchorText": "FAQ",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 10
+        },
+        {
+          "sourceNormalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+          "targetRawHref": "/request-pilot/",
+          "targetResolvedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "targetNormalizedUrl": "http://127.0.0.1:4317/request-pilot/",
+          "isInternal": true,
+          "anchorText": "Request a pilot",
+          "rel": [],
+          "region": "nav",
+          "ordinal": 11
+        }
+      ],
+      "media": [],
+      "actionElements": [],
+      "structuredData": {
+        "jsonLdTypes": [],
+        "jsonLdBlockCount": 0,
+        "openGraph": {},
+        "twitter": {},
+        "hreflang": []
+      },
+      "requestedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+      "finalUrl": "http://127.0.0.1:4317/request-pilot/received/",
+      "normalizedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+      "httpStatus": 200,
+      "crawlState": {
+        "kind": "crawled"
+      },
+      "discoverySource": "internal_link",
+      "rawEvidence": {
+        "requestedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+        "redirectChain": [],
+        "lastFetchedUrl": "http://127.0.0.1:4317/request-pilot/received/",
+        "terminalRedirectTarget": null,
+        "redirectExitedOrigin": false,
+        "httpStatus": 200,
+        "contentType": "text/html; charset=utf-8",
+        "retrievedAt": "2026-09-24T00:31:29.943Z",
+        "bodyBytes": 11023,
+        "bodyHash": "3589e908e02ce00d509a7e044b8eaa3c66bd9ab0e67684d227682d5dba0e8f07",
+        "bodyRef": "raw:3589e908e02ce00d509a7e044b8eaa3c66bd9ab0e67684d227682d5dba0e8f07",
+        "outcome": "ok"
+      }
+    }
+  ],
+  "counts": {
+    "discovered": 9,
+    "crawled": 9,
+    "blocked": 0,
+    "notAvailable": 0
+  }
+}

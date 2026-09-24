@@ -1,0 +1,37 @@
+{
+  "receiptVersion": 1,
+  "articleId": "sos-answer-human-review",
+  "textos": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
+  },
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "executionPlanHash": "96b7f84da6245f288bbe51977ab1b24a86963138ecd1eaf1238884ca4f611a63",
+  "ctcHandoffHash": "42cb0b1abacf4d780353b6502a1d27185b021e02cdd0e545041b5ac929f9f3ce",
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "64ee54f27247df7ec7b458416986f777ec2852175699ba21ec416d8af97d4f7f",
+  "truthCheckVerdict": "pass",
+  "publicationChannel": "public_web",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+  "promptHashes": {
+    "title": "a287bb538a168be446bef5ac2b16027e2bd66f3b918647a4d184a3064fa0954d",
+    "meta": "96f0a483062d511a6b56ba4562e51297291b7349b5adaa87eb8e29c3c07e8acc",
+    "lead": "35ce337975a78f9a9162d2241f03a013715067fab07a784d4ec75a46b932bd65",
+    "answer": "4f76d3f3ff9d29c1d7902c3afbc35d115e9e3d866710ae60f33aca6ffb88bc4b",
+    "section-1": "704b90a8cad963e5c6230bd16eb8d2c5eaba6e822386bfd435571d605c3d8265",
+    "section-2": "fc262a3e975e9f19201736231097a20c94deba0c18f6725c92bc25f504959acf"
+  },
+  "responseHashes": {
+    "title": "dd1613f29dcb2f684a0c9d0a27bbfb1ac220a2afd475e156041bc2018cfd9907",
+    "meta": "ad802032d35e2e64c78bee41ee8b71d9c1e0c0029c8e7cce9b139b949adbd837",
+    "lead": "f56c947e3b1452244227c901795b274b4b2bfcb0423091d589fd9b0a9e601ae4",
+    "answer": "1587849ee3f1109afa0d0714106e1219cfe7f47db3f1dcf557d9b0eeac84d015",
+    "section-1": "8ae806f3c5f6c94cb58c5c7301caccad25b5cd45a748818adb1c6a3e8cbd85b6",
+    "section-2": "35b3d365842a06641fb02ff0af18026d2dc259ae2542ce8ac2abdf1c097f65de"
+  },
+  "contentDocumentSha256": "4e8f9557eaec18160d5d1e0298f313b3e6c613cebdb8f4ade7a8274eb2773266",
+  "resolvedSurfaceSha256": "51d78fbeb2a7298aea87e02a243c8910c4edd61424e0879f0dec642305a8d2cf",
+  "humanReview": "pending"
+}

@@ -1,0 +1,566 @@
+{
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "evidence-repair-2026-09-16",
+        "sourceCommits": [
+          "36122a2c153228d74d03557da93b8d335360a5bf",
+          "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+        ]
+      },
+      {
+        "groupId": "ratification-context-2026-09-13",
+        "sourceCommits": [
+          "abd07346faa1009088bb4d3c25db67fc63950bf0"
+        ]
+      }
+    ],
+    "buyerQuestion": "If a vendor makes a public claim, how do you know the proof behind it still holds?",
+    "targetQuery": "how to check the proof behind a vendor's public claim still holds",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "public-claim-governance",
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+  },
+  "locale": "en-US",
+  "policy": {
+    "mode": "grounded_tracked_brand_authorized",
+    "trackedEntityId": "shortsos",
+    "trackedBrandNames": [
+      "ShortsOS"
+    ],
+    "forbiddenProductNames": []
+  },
+  "publicationContext": {
+    "channel": "controlled_preview",
+    "briefId": "sos-note-evidence-repair",
+    "locale": "en-US"
+  },
+  "claimProfile": {
+    "id": "shortsos-operated-short-form-video",
+    "version": "0.1",
+    "claimTypes": [
+      "publication",
+      "human_review",
+      "production",
+      "footage_input",
+      "availability",
+      "evidence_governance",
+      "story_selection"
+    ],
+    "lexicon": {
+      "publication": [
+        "publish",
+        "publishes",
+        "published",
+        "publishing",
+        "publication",
+        "instagram",
+        "reel",
+        "reels",
+        "permalink"
+      ],
+      "human_review": [
+        "human review",
+        "reviewed",
+        "reviews",
+        "review step",
+        "checkpoint"
+      ],
+      "production": [
+        "render",
+        "renders",
+        "rendered",
+        "caption",
+        "captions",
+        "captioned",
+        "voice",
+        "voiced"
+      ],
+      "footage_input": [
+        "raw footage",
+        "footage",
+        "source video"
+      ],
+      "availability": [
+        "self-serve",
+        "self serve",
+        "sign up",
+        "pilot",
+        "pilots",
+        "operated by",
+        "available"
+      ],
+      "evidence_governance": [
+        "public claim",
+        "public claims",
+        "claim ceiling",
+        "evidence",
+        "manifest",
+        "ratified"
+      ],
+      "story_selection": [
+        "story",
+        "stories",
+        "opportunity",
+        "opportunities"
+      ]
+    }
+  },
+  "roster": [
+    {
+      "name": "ShortsOS",
+      "aliases": [
+        "ShortsOS"
+      ],
+      "matchedTrackedEntityId": "shortsos",
+      "role": "tracked"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-n1-01",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 36122a2: fix(public-truth): repair evidence bundles pinned to vanished commits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:06+02:00",
+      "contentHash": "c0178bb2efb3dd8403f20a8a072e1dd36502f95457582a1ded482a535d786971",
+      "excerpt": "Root cause: six evidence bundles (SUBMAGIC-DEMO-LANE-PREFLIGHT, JSON2VIDEO-CAPTION-SEMANTICS-PREFLIGHT, PRODUCTION-ORCHESTRATION-PREFLIGHT, SUBMAGIC-LIVE-CONTRACT-FIX-V1, JSON2VIDEO-CAPTION-SEMANTICS-FIX-V1, and M1-REAL-PRODUCE-REVIEW-PUBLISH itself) pinned evidence to commit SHAs that do not exist anywhere in this repository's object store: not merged to main, not reachable from any ref, not even a surviving dangling object.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Commit message written by the product team for its own repair; it describes the defect, it does not independently prove it."
+      ],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-02",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 36122a2: fix(public-truth): repair evidence bundles pinned to vanished commits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:06+02:00",
+      "contentHash": "3735a32fbbfd72066d0e184c3ff26bffe5a7b2f186e456f7455b4176bf150a11",
+      "excerpt": "a fresh disposable clone (the authoritative verification environment) never fetches an unreachable commit, so these bundles could never truly resolve there, baseline debt notwithstanding.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-03",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 36122a2: fix(public-truth): repair evidence bundles pinned to vanished commits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:06+02:00",
+      "contentHash": "59cfafc5df448c3fab6cbf107e0d5637616100cfdec942fbc305f3998264be3c",
+      "excerpt": "Critically, M1-REAL-PRODUCE-REVIEW-PUBLISH phantom pin was silently failing its own evidence bundle, which in turn silently forced derivePublicationCeiling back to candidate -- a live regression of the ratified SOS-PUBLICATION-DECISION-M1-V1 promotion, not a cosmetic data issue.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-04",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 36122a2: fix(public-truth): repair evidence bundles pinned to vanished commits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:06+02:00",
+      "contentHash": "f87a163f325e85363281f42feb5ec266ba8d65fcbeb468509289e380fdb42070",
+      "excerpt": "For the three preflight entries (research docs never merged to main, no product code, no public claim), evidence is repointed to CAPABILITIES.yaml own SOS-PUBLIC-TRUTH-V1 entry, which documents each preflight and its disclosed gap by name. For the three entries whose cited paths/tests are real, current-tree files, the phantom commit pin is dropped so resolution falls back to HEAD, per verify-evidence.ts own path-resolution rule.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-05",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 36122a2: fix(public-truth): repair evidence bundles pinned to vanished commits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:06+02:00",
+      "contentHash": "eed87136f6c8e6e2a96543f6569db54ec2d1c00a9a34852819c5ba74e6abad23",
+      "excerpt": "Every claimCeiling/prohibitedClaims/publicationStatus value is unchanged; only the evidence citations used to verify those claims are repaired.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-06",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 22e31cd: fix(ops): repair scope-check/wave-admission fixtures after journal reissue",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "9061d7d065efcf211344e6b75f9eebac55bf6199e88f96f2021c31124a18c8f1",
+      "excerpt": "found ops:test RED on pristine canonical main (bd25233) as well, independent of the public-truth issue -- a second, separately-diagnosed baseline defect.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-07",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 22e31cd: fix(ops): repair scope-check/wave-admission fixtures after journal reissue",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "6b30c973779c7df2638c5e18812e74ee1f2c41c42db495f3516fa3e8a6b73bec",
+      "excerpt": "Both fixtures' own doc comments say they must break the day the real grant changes rather than silently keep passing -- they broke, correctly, and this is that break repaired",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-08",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 36122a2: fix(public-truth): repair evidence bundles pinned to vanished commits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:06+02:00",
+      "contentHash": "1ba6f2971de34438694814dd9158e50e1159a65986a20312f59b52272fdbceac",
+      "excerpt": "declaration.test.ts's integration smoke and the M1 public_marketable derivation both failed on pristine canonical main (bd25233), reproduced with zero FDTS product changes present.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n1-09",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit abd0734: feat(public-truth): promote M1-REAL-PRODUCE-REVIEW-PUBLISH to public_marketable (SOS-PUBLICATION-DECISION-M1-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-13T12:56:56+02:00",
+      "contentHash": "dded0b2562e7e8ae14621e351fd565287809c5b03a8b332fae47184a9e677193",
+      "excerpt": "Human-ratified promotion (T0/Marc): M1-REAL-PRODUCE-REVIEW-PUBLISH moves from publicationStatus candidate to public_marketable",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+      "approvedAt": "2026-09-24",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-evidence-repair"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the repair in plain words, as a grounded fact about ShortsOS.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n1-01",
+        "ev-n1-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: what was repaired, and that no public claim changed.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n1-01",
+        "ev-n1-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake — a claim is only as good as the record behind it — then say that ShortsOS found such a gap in its own records.",
+      "buyerIntent": "Can I trust that a vendor's proof can still be checked?",
+      "allowedEvidenceIds": [
+        "ev-n1-08",
+        "ev-n1-01"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What broke, and what was repaired?",
+      "writingObjective": "Answer directly: what the defect was, why a fresh copy could not check it, what the repair changed and what it left untouched.",
+      "buyerIntent": "What exactly went wrong?",
+      "allowedEvidenceIds": [
+        "ev-n1-01",
+        "ev-n1-02",
+        "ev-n1-04",
+        "ev-n1-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Why a quiet failure mattered",
+      "writingObjective": "Explain that one broken record belonged to the capability ratified for the public claim, and that on a fresh copy it silently pushed that capability back to candidate status.",
+      "buyerIntent": "Did the defect affect what the vendor was allowed to claim?",
+      "allowedEvidenceIds": [
+        "ev-n1-03",
+        "ev-n1-09"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "How the repair was scoped",
+      "writingObjective": "Describe the two kinds of fix, that no claim wording or status changed, and the second, separate defect repaired the same day.",
+      "buyerIntent": "Was the fix narrow, or did it rewrite the claims?",
+      "allowedEvidenceIds": [
+        "ev-n1-04",
+        "ev-n1-05",
+        "ev-n1-06",
+        "ev-n1-07"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What it means if you rely on the claim",
+      "writingObjective": "Bring it back to the buyer: proof has to be re-checkable by someone who was not there; say how ShortsOS reproduced the failure before fixing it and what each repaired record now points at.",
+      "buyerIntent": "What should I ask any vendor about its proof?",
+      "allowedEvidenceIds": [
+        "ev-n1-08",
+        "ev-n1-04"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 1000,
+      "evidenceRequired": false
+    }
+  ]
+}

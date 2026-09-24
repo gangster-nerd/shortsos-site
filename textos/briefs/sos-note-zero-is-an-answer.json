@@ -1,0 +1,460 @@
+{
+  "briefVersion": 1,
+  "articleId": "sos-note-zero-is-an-answer",
+  "flow": "commit_to_content",
+  "slug": "why-no-strong-story-is-a-valid-answer",
+  "locale": "en-US",
+  "publicationChannel": "controlled_preview",
+  "entityIds": [
+    "FDTS-NARRATIVE-TRUTH-V1",
+    "FDTS-CAPTURE-TIME-TRUTH-V1",
+    "FDTS-RETRIEVAL-SAFETY-V1",
+    "FDTS-REPEATED-TAKE-INTELLIGENCE-V1"
+  ],
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "narrative-truth-2026-09-12",
+        "sourceCommits": [
+          "5f845dcff677961641ee658f95fa5943b79a197d"
+        ]
+      },
+      {
+        "groupId": "capture-time-truth-2026-09-12",
+        "sourceCommits": [
+          "31b705bdf9fd060762c1f442088cc06bee0646db"
+        ]
+      },
+      {
+        "groupId": "retrieval-safety-2026-09-11",
+        "sourceCommits": [
+          "3803d15e341391fbf3e67ee63bb5c061f7229199"
+        ]
+      },
+      {
+        "groupId": "repeated-take-2026-09-12",
+        "sourceCommits": [
+          "5509dfc266a8fb82a7de94f5405459bbfd31e79b"
+        ]
+      }
+    ],
+    "buyerQuestion": "Will an AI video pipeline invent a story when my footage does not really support one?",
+    "targetQuery": "can ai make short videos from existing footage without inventing a story",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "footage-to-story-engineering"
+  },
+  "siteObservation": null,
+  "approval": {
+    "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+    "approvedAt": "2026-09-24"
+  },
+  "clearances": [],
+  "evidence": [
+    {
+      "id": "ev-n3-01",
+      "source": {
+        "kind": "product_commit",
+        "sha": "5f845dcff677961641ee658f95fa5943b79a197d",
+        "quote": "stops rejecting generations that produce 1 or 2 evidence-proven opportunities; caps the evidence-proven draft set at 3 after the evidence gate, never before; replaces the drafts.length===0 \"rejected\" branch with a distinct no_strong_story_available outcome, kept separate from provider failure (\"failed\")"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-02",
+      "source": {
+        "kind": "product_commit",
+        "sha": "5f845dcff677961641ee658f95fa5943b79a197d",
+        "quote": "provider failure, incomplete analysis, and budget pause remain separate operational outcomes, never relabelled as weak storytelling."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-03",
+      "source": {
+        "kind": "product_commit",
+        "sha": "5f845dcff677961641ee658f95fa5943b79a197d",
+        "quote": "Reconciles the ratified 0-3 strong-opportunity cardinality rule (FROM-DRIVE-TO-STORY-MANIFEST.md section 3.A) against the 3-7 implementation."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-04",
+      "source": {
+        "kind": "product_commit",
+        "sha": "31b705bdf9fd060762c1f442088cc06bee0646db",
+        "quote": "assets.capturedAt was written straight from Google Drive's modifiedTime with no provenance tag distinguishing it from a measured capture time -- modifiedTime changes on copy/re-share/re-upload, unrelated to when footage was actually shot."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-05",
+      "source": {
+        "kind": "product_commit",
+        "sha": "31b705bdf9fd060762c1f442088cc06bee0646db",
+        "quote": "Adds a pure resolveCaptureTime precedence function (embedded > explicit_metadata > declared > unknown; implausible/future-dated timestamps treated as absent; disagreements over 24h recorded, never averaged or silently dropped)"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-06",
+      "source": {
+        "kind": "product_commit",
+        "sha": "3803d15e341391fbf3e67ee63bb5c061f7229199",
+        "quote": "findDuplicateAssetId() matched fileHash across the entire media_probe_results table with no organization/client filter and no ORDER BY before .limit(1) — a P0 cross-tenant data leak (one client's asset could be reported as a duplicate of another client's asset on a hash collision) plus non-deterministic tie resolution."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-07",
+      "source": {
+        "kind": "product_commit",
+        "sha": "5509dfc266a8fb82a7de94f5405459bbfd31e79b",
+        "quote": "Doctrine: never hard-exclude a candidate merely on weak semantic similarity -- every input candidate appears in the output, grouped via a deterministic groupId, so a downstream evidence-counter can count distinct groups instead of distinct segments."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-08",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-NARRATIVE-TRUTH-V1",
+        "field": "claimCeiling",
+        "quote": "No independent public claim"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-08b",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-CAPTURE-TIME-TRUTH-V1",
+        "field": "claimCeiling",
+        "quote": "No independent public claim"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-08c",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-REPEATED-TAKE-INTELLIGENCE-V1",
+        "field": "claimCeiling",
+        "quote": "No independent public claim"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-09",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-CAPTURE-TIME-TRUTH-V1",
+        "field": "prohibitedClaims",
+        "quote": "UNKNOWN must render as UNKNOWN by design."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-10",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-RETRIEVAL-SAFETY-V1",
+        "field": "prohibitedClaims",
+        "quote": "Any claim this proves production-scale tenant isolation under real multi-tenant load."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-11",
+      "source": {
+        "kind": "product_commit",
+        "sha": "3803d15e341391fbf3e67ee63bb5c061f7229199",
+        "quote": "findDuplicateAssetId now takes a required { organizationId, clientId } scope, joins media_probe_results to assets, and filters to the owning tenant."
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-12",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-RETRIEVAL-SAFETY-V1",
+        "field": "claimCeiling",
+        "quote": "proven against an isolated Neon TEST branch with four regression cases"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n3-13",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-REPEATED-TAKE-INTELLIGENCE-V1",
+        "field": "claimCeiling",
+        "quote": "deterministic repeated-take/near-duplicate classification, retrieval-level only, no embeddings"
+      },
+      "claimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change as a grounded fact about ShortsOS: zero strong stories became a valid answer.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n3-01"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence for a search result covering the three truth fixes.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n3-01",
+        "ev-n3-04",
+        "ev-n3-06"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open on the buyer's fear that a tool finds a story whether or not the footage holds one; state the change and that this is internal engineering history, not a feature.",
+      "buyerIntent": "Will the tool invent a story?",
+      "allowedEvidenceIds": [
+        "ev-n3-01",
+        "ev-n3-03",
+        "ev-n3-08",
+        "ev-n3-08b",
+        "ev-n3-08c"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 650,
+      "evidenceRequired": true
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What changed, in short?",
+      "writingObjective": "Answer directly: the story rule moved from three-to-seven to zero-to-three with zero as its own outcome, failures stay separate, and two related fixes.",
+      "buyerIntent": "What exactly changed?",
+      "allowedEvidenceIds": [
+        "ev-n3-01",
+        "ev-n3-02",
+        "ev-n3-03",
+        "ev-n3-04",
+        "ev-n3-05",
+        "ev-n3-06",
+        "ev-n3-11"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 900,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Why no story can be the right answer",
+      "writingObjective": "Before and after the change, and why technical trouble must not read as editorial judgement.",
+      "buyerIntent": "Why would zero be acceptable?",
+      "allowedEvidenceIds": [
+        "ev-n3-01",
+        "ev-n3-02"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Dates and duplicates, fixed for the same reason",
+      "writingObjective": "The filming-date fix and the cross-client duplicate fix, with the honest limit of what the second was proven on.",
+      "buyerIntent": "Can I trust dates and duplicate checks?",
+      "allowedEvidenceIds": [
+        "ev-n3-04",
+        "ev-n3-05",
+        "ev-n3-09",
+        "ev-n3-06",
+        "ev-n3-11",
+        "ev-n3-10",
+        "ev-n3-12"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1400,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Similar takes are grouped, not thrown away",
+      "writingObjective": "Repeated takes are grouped rather than excluded, evidence counts distinct groups, and the method makes no claim about meaning.",
+      "buyerIntent": "What happens to near-identical takes?",
+      "allowedEvidenceIds": [
+        "ev-n3-07",
+        "ev-n3-13"
+      ],
+      "requiredClaimTypes": [
+        "story_selection",
+        "footage_input"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1100,
+      "evidenceRequired": true
+    }
+  ],
+  "publication": {
+    "publishedOn": "2026-09-24",
+    "mandate": "The ShortsOS owner's instruction of 2026-09-24 to produce and publish these articles on ShortsOS-site.",
+    "humanReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedOn": null
+    }
+  }
+}

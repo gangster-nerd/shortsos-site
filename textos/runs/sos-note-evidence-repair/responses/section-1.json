@@ -1,0 +1,93 @@
+{
+  "text": "Three days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim. One of the six broken records belonged to that very capability. On a fresh copy of the code, that broken record silently pushed the capability back to candidate status. A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim. The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue. A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Three days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "One of the six broken records belonged to that very capability.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "On a fresh copy of the code, that broken record silently pushed the capability back to candidate status.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s6",
+      "text": "A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

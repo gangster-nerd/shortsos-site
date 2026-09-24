@@ -1,0 +1,579 @@
+{
+  "status": "written",
+  "result": {
+    "planId": "how to check the proof behind a vendor's public claim still holds",
+    "planHash": "a85809383abdfb6fc833af02eb24394e1d6db4fa05f80d159ec0bf3d67749eae",
+    "slots": [
+      {
+        "slotId": "title",
+        "role": "title",
+        "headingLevel": null,
+        "heading": null,
+        "text": "How ShortsOS repaired evidence records that pointed at vanished commits",
+        "statementIds": [
+          "stmt:5:title:2:s1"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-01",
+          "ev-n1-05"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-01",
+          "ev-n1-05"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "meta",
+        "role": "meta_description",
+        "headingLevel": null,
+        "heading": null,
+        "text": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was.",
+        "statementIds": [
+          "stmt:4:meta:2:s1"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-01",
+          "ev-n1-05"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-01",
+          "ev-n1-05"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "lead",
+        "role": "lead",
+        "headingLevel": null,
+        "heading": null,
+        "text": "What a vendor says in public is only as trustworthy as the record that lets someone check it. When that record points at something nobody can retrieve anymore, the claim still reads the same, yet no fresh check can confirm it. In mid-September 2026, ShortsOS found that gap in its own claim records and reproduced it on an untouched copy of its main code line.",
+        "statementIds": [
+          "stmt:4:lead:2:s1",
+          "stmt:4:lead:2:s2",
+          "stmt:4:lead:2:s3"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-08",
+          "ev-n1-01"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-08",
+          "ev-n1-01"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "answer",
+        "role": "answer",
+        "headingLevel": 2,
+        "heading": "What broke, and what was repaired?",
+        "text": "Six of the records ShortsOS uses to verify its capability claims cited commits that no longer existed anywhere in its code history, not even as leftovers. A fresh copy of the code, which ShortsOS treats as the authority for verification, cannot fetch a commit that nothing points to, so those records could not be checked there. The repair pointed three of the records at the register entry that documents them, and let the other three check files that still exist in the current code. No public claim, prohibited claim or publication status changed; only the citations used to check them did.",
+        "statementIds": [
+          "stmt:6:answer:2:s1",
+          "stmt:6:answer:2:s2",
+          "stmt:6:answer:2:s3",
+          "stmt:6:answer:2:s4"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-01",
+          "ev-n1-02",
+          "ev-n1-04",
+          "ev-n1-05"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-01",
+          "ev-n1-02",
+          "ev-n1-04",
+          "ev-n1-05"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "section-1",
+        "role": "section",
+        "headingLevel": 2,
+        "heading": "Why a quiet failure mattered",
+        "text": "Three days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim. One of the six broken records belonged to that very capability. On a fresh copy of the code, that broken record silently pushed the capability back to candidate status. A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim. The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue. A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed.",
+        "statementIds": [
+          "stmt:9:section-1:2:s1",
+          "stmt:9:section-1:2:s2",
+          "stmt:9:section-1:2:s3",
+          "stmt:9:section-1:2:s4",
+          "stmt:9:section-1:2:s5",
+          "stmt:9:section-1:2:s6"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-09",
+          "ev-n1-03"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-03",
+          "ev-n1-09"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "section-2",
+        "role": "section",
+        "headingLevel": 2,
+        "heading": "How the repair was scoped",
+        "text": "Three of the records described research documents that were never merged into the main code line and carried no public claim. ShortsOS pointed those three at the register entry that names each document and its gap. The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today. Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say. While verifying the repair, the team also found a second, unrelated defect on the untouched main code line. Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match.",
+        "statementIds": [
+          "stmt:9:section-2:2:s1",
+          "stmt:9:section-2:2:s2",
+          "stmt:9:section-2:2:s3",
+          "stmt:9:section-2:2:s4",
+          "stmt:9:section-2:2:s5",
+          "stmt:9:section-2:2:s6"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-04",
+          "ev-n1-05",
+          "ev-n1-06",
+          "ev-n1-07"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-04",
+          "ev-n1-05",
+          "ev-n1-06",
+          "ev-n1-07"
+        ],
+        "excludedEvidence": []
+      },
+      {
+        "slotId": "section-3",
+        "role": "section",
+        "headingLevel": 2,
+        "heading": "What it means if you rely on the claim",
+        "text": "When you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced. ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong. Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it.",
+        "statementIds": [
+          "stmt:9:section-3:2:s1",
+          "stmt:9:section-3:2:s2",
+          "stmt:9:section-3:2:s3"
+        ],
+        "evidenceIdsUsed": [
+          "ev-n1-08",
+          "ev-n1-04"
+        ],
+        "usableEvidenceIds": [
+          "ev-n1-08",
+          "ev-n1-04"
+        ],
+        "excludedEvidence": []
+      }
+    ],
+    "document": {
+      "title": "How ShortsOS repaired evidence records that pointed at vanished commits",
+      "slug": "how-shortsos-repaired-evidence-records-that-pointed-at-vanished-commits",
+      "metaDescription": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was.",
+      "body": "What a vendor says in public is only as trustworthy as the record that lets someone check it. When that record points at something nobody can retrieve anymore, the claim still reads the same, yet no fresh check can confirm it. In mid-September 2026, ShortsOS found that gap in its own claim records and reproduced it on an untouched copy of its main code line.\n\nThree days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim. One of the six broken records belonged to that very capability. On a fresh copy of the code, that broken record silently pushed the capability back to candidate status. A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim. The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue. A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed.\n\nThree of the records described research documents that were never merged into the main code line and carried no public claim. ShortsOS pointed those three at the register entry that names each document and its gap. The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today. Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say. While verifying the repair, the team also found a second, unrelated defect on the untouched main code line. Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match.\n\nWhen you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced. ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong. Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it.",
+      "faq": [
+        {
+          "question": "What broke, and what was repaired?",
+          "answer": "Six of the records ShortsOS uses to verify its capability claims cited commits that no longer existed anywhere in its code history, not even as leftovers. A fresh copy of the code, which ShortsOS treats as the authority for verification, cannot fetch a commit that nothing points to, so those records could not be checked there. The repair pointed three of the records at the register entry that documents them, and let the other three check files that still exist in the current code. No public claim, prohibited claim or publication status changed; only the citations used to check them did."
+        }
+      ],
+      "statementLedger": [
+        {
+          "id": "stmt:5:title:2:s1",
+          "text": "How ShortsOS repaired evidence records that pointed at vanished commits",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-01",
+            "ev-n1-05"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:meta:2:s1",
+          "text": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-01",
+            "ev-n1-05"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:lead:2:s1",
+          "text": "What a vendor says in public is only as trustworthy as the record that lets someone check it.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:lead:2:s2",
+          "text": "When that record points at something nobody can retrieve anymore, the claim still reads the same, yet no fresh check can confirm it.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:4:lead:2:s3",
+          "text": "In mid-September 2026, ShortsOS found that gap in its own claim records and reproduced it on an untouched copy of its main code line.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-08",
+            "ev-n1-01"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s1",
+          "text": "Six of the records ShortsOS uses to verify its capability claims cited commits that no longer existed anywhere in its code history, not even as leftovers.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-01"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s2",
+          "text": "A fresh copy of the code, which ShortsOS treats as the authority for verification, cannot fetch a commit that nothing points to, so those records could not be checked there.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-02"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s3",
+          "text": "The repair pointed three of the records at the register entry that documents them, and let the other three check files that still exist in the current code.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-04"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:6:answer:2:s4",
+          "text": "No public claim, prohibited claim or publication status changed; only the citations used to check them did.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-05"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s1",
+          "text": "Three days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-09"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s2",
+          "text": "One of the six broken records belonged to that very capability.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-03"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s3",
+          "text": "On a fresh copy of the code, that broken record silently pushed the capability back to candidate status.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-03"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s4",
+          "text": "A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s5",
+          "text": "The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-03"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-1:2:s6",
+          "text": "A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s1",
+          "text": "Three of the records described research documents that were never merged into the main code line and carried no public claim.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-04"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s2",
+          "text": "ShortsOS pointed those three at the register entry that names each document and its gap.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-04"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s3",
+          "text": "The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-04"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s4",
+          "text": "Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-05"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s5",
+          "text": "While verifying the repair, the team also found a second, unrelated defect on the untouched main code line.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-06"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-2:2:s6",
+          "text": "Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-07"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s1",
+          "text": "When you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced.",
+          "kind": "editorial",
+          "subject": {
+            "kind": "general_domain",
+            "name": null
+          },
+          "claimTypes": [],
+          "evidenceIds": [],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s2",
+          "text": "ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-08"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        },
+        {
+          "id": "stmt:9:section-3:2:s3",
+          "text": "Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it.",
+          "kind": "factual",
+          "subject": {
+            "kind": "tracked_brand",
+            "name": "ShortsOS"
+          },
+          "claimTypes": [
+            "evidence_governance"
+          ],
+          "evidenceIds": [
+            "ev-n1-04"
+          ],
+          "evidenceStrengthRequired": "descriptive"
+        }
+      ],
+      "claimsExcluded": [],
+      "sections": [
+        {
+          "key": "lead",
+          "heading": "",
+          "body": "What a vendor says in public is only as trustworthy as the record that lets someone check it. When that record points at something nobody can retrieve anymore, the claim still reads the same, yet no fresh check can confirm it. In mid-September 2026, ShortsOS found that gap in its own claim records and reproduced it on an untouched copy of its main code line."
+        },
+        {
+          "key": "section-1",
+          "heading": "Why a quiet failure mattered",
+          "body": "Three days before the repair, on 13 September 2026, the ShortsOS owner ratified one capability, its real produce, review and publish workflow, for a public claim. One of the six broken records belonged to that very capability. On a fresh copy of the code, that broken record silently pushed the capability back to candidate status. A candidate, in this governance vocabulary, is real work that has not been cleared for a public claim. The team logged the problem as a live regression of a ratified decision, not as a cosmetic data issue. A check that breaks loudly tends to get fixed quickly; one that quietly lowers a claim can sit unnoticed."
+        },
+        {
+          "key": "section-2",
+          "heading": "How the repair was scoped",
+          "body": "Three of the records described research documents that were never merged into the main code line and carried no public claim. ShortsOS pointed those three at the register entry that names each document and its gap. The other three cited files that are real and current, so ShortsOS dropped the dead commit reference and let the check read those files as they stand today. Every claim wording and every publication status stayed the same, which kept the repair narrow: it fixed how claims are checked, not what they say. While verifying the repair, the team also found a second, unrelated defect on the untouched main code line. Two governance test fixtures had been written to break on the day a permission they check changed; they broke as designed, and were updated to match."
+        },
+        {
+          "key": "section-3",
+          "heading": "What it means if you rely on the claim",
+          "body": "When you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced. ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong. Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it."
+        }
+      ]
+    },
+    "structuredContentHash": "dbbe7772b7f5e8f9292f9b4b6b0bafe34e2335c54afeeb09ba9b5d9088068eae",
+    "writerMethodVersion": "geo-writer@0.2",
+    "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+    "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+    "truthCheck": {
+      "verdict": "pass",
+      "contradictions": []
+    }
+  }
+}

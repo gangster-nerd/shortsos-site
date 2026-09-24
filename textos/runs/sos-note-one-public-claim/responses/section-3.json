@@ -1,0 +1,81 @@
+{
+  "text": "The owner rejected an earlier draft saying the team “runs your full pipeline for you”, judging it stronger than one real run can support. The ratified capability carries eight prohibited claims, among them any suggestion that a customer runs it alone, publishes directly, or receives guaranteed quality, performance or virality. Alongside the classification, ShortsOS added a rule that asks, whenever governed product code changes, whether the change has a public-content consequence and whether anyone said so on purpose. A governed change that arrives without such a record is treated as a hard failure, not as a warning. For a buyer, the useful sign is not how many claims a vendor makes, but whether each one can be traced to the evidence behind it.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The owner rejected an earlier draft saying the team “runs your full pipeline for you”, judging it stronger than one real run can support.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The ratified capability carries eight prohibited claims, among them any suggestion that a customer runs it alone, publishes directly, or receives guaranteed quality, performance or virality.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Alongside the classification, ShortsOS added a rule that asks, whenever governed product code changes, whether the change has a public-content consequence and whether anyone said so on purpose.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "A governed change that arrives without such a record is treated as a hard failure, not as a warning.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "For a buyer, the useful sign is not how many claims a vendor makes, but whether each one can be traced to the evidence behind it.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

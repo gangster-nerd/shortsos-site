@@ -1,0 +1,157 @@
+{
+  "slotProvenance": [
+    {
+      "slotId": "title",
+      "role": "title",
+      "headingLevel": null,
+      "heading": null,
+      "text": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+      "statementIds": [
+        "stmt:5:title:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-a2-02"
+      ],
+      "usableEvidenceIds": [
+        "ev-a2-02"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "meta",
+      "role": "meta_description",
+      "headingLevel": null,
+      "heading": null,
+      "text": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone.",
+      "statementIds": [
+        "stmt:4:meta:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "lead",
+      "role": "lead",
+      "headingLevel": null,
+      "heading": null,
+      "text": "Before you commit time to any production partner, you want to know who does the work and what you are actually buying. A ShortsOS pilot is operated by the ShortsOS team, and the workflow is not generally or instantly available to anyone who asks.",
+      "statementIds": [
+        "stmt:4:lead:2:s1",
+        "stmt:4:lead:2:s2"
+      ],
+      "evidenceIdsUsed": [
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "answer",
+      "role": "answer",
+      "headingLevel": 2,
+      "heading": "What does a pilot involve?",
+      "text": "In a ShortsOS pilot, the ShortsOS team operates the workflow; the one real run completed so far went from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. The review step before publication is a mandatory human checkpoint. Customers do not link their own Instagram account or publish directly through this workflow.",
+      "statementIds": [
+        "stmt:6:answer:2:s1",
+        "stmt:6:answer:2:s2",
+        "stmt:6:answer:2:s3"
+      ],
+      "evidenceIdsUsed": [
+        "ev-a2-02",
+        "ev-a2-01",
+        "ev-a2-08",
+        "ev-a2-03",
+        "ev-a2-04"
+      ],
+      "usableEvidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-03",
+        "ev-a2-04",
+        "ev-a2-08"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-1",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "Who does what",
+      "text": "For pilots, the ShortsOS team operates the workflow on the customer's behalf, from production through review to publication. In the one real run so far, publication went through a single Instagram account bound to the operating team. That run started from source video, went through a render and a human review, and ended with a live Instagram Reel whose permalink was captured. The workflow is not open for anyone to start alone: it runs as a pilot operated by the team.",
+      "statementIds": [
+        "stmt:9:section-1:2:s1",
+        "stmt:9:section-1:2:s2",
+        "stmt:9:section-1:2:s3",
+        "stmt:9:section-1:2:s4"
+      ],
+      "evidenceIdsUsed": [
+        "ev-a2-02",
+        "ev-a2-06",
+        "ev-a2-01",
+        "ev-a2-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-05",
+        "ev-a2-06"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-2",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "What a pilot does not include",
+      "text": "ShortsOS does not offer this workflow as a generally or instantly available product. A pilot does not include linking your own Instagram account, and it does not let a customer publish directly. It also carries no proof of repeated volume: what has been shown is one documented real run. No pilot comes with a promise of creative quality, performance or virality. If a vendor promises you more than it can show, that gap is worth naming before any work starts.",
+      "statementIds": [
+        "stmt:9:section-2:2:s1",
+        "stmt:9:section-2:2:s2",
+        "stmt:9:section-2:2:s3",
+        "stmt:9:section-2:2:s4",
+        "stmt:9:section-2:2:s5"
+      ],
+      "evidenceIdsUsed": [
+        "ev-a2-05",
+        "ev-a2-03",
+        "ev-a2-04",
+        "ev-a2-07",
+        "ev-a2-09",
+        "ev-a2-10"
+      ],
+      "usableEvidenceIds": [
+        "ev-a2-03",
+        "ev-a2-04",
+        "ev-a2-05",
+        "ev-a2-07",
+        "ev-a2-09",
+        "ev-a2-10"
+      ],
+      "excludedEvidence": []
+    }
+  ],
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "3bcf214b0cd415d5369570ec53c12e10395210770a4069884db17355ab8c6af9",
+  "truthCheck": {
+    "verdict": "pass",
+    "contradictions": []
+  },
+  "planId": "operated pilot to turn existing footage into short form video",
+  "planHash": "c41ef498913cbde72dbfc55269f42e5c19c14cc352c651881718c8f317e95dbc",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+}

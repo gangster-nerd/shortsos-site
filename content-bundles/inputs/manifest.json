@@ -745,9 +745,7 @@
       "evidence": [
         {
           "id": "JSON2VIDEO-CAPTION-SEMANTICS-FIX-V1-evidence",
-          "commits": [
-            "8817192a0028bc8d7a613100b76be203f9f673e1"
-          ],
+          "commits": [],
           "paths": [
             "src/providers/json2video-movie.ts"
           ],
@@ -756,7 +754,8 @@
           ],
           "decisions": [],
           "receipts": [
-            "Session memory 'Caption plate needs boxed-line — box-color is style-dependent; classic silently ignores it, and vendor example renders are free evidence.' The semantics were verified by reading vendor documentation/example renders, NOT by this capability running its own live JSON2Video render for captions specifically — classified down to tested_only, fail-closed."
+            "Session memory 'Caption plate needs boxed-line — box-color is style-dependent; classic silently ignores it, and vendor example renders are free evidence.' The semantics were verified by reading vendor documentation/example renders, NOT by this capability running its own live JSON2Video render for captions specifically — classified down to tested_only, fail-closed.",
+            "T0-PUBLIC-TRUTH-BASELINE-REPAIR (canonical main, 2026-09-16): the commit this bundle previously pinned (8817192) no longer exists as an object in this repository at all — not merged to main, not reachable from any ref, not even a surviving dangling object; pinning to it was unsound for the same reason documented on SUBMAGIC-LIVE-CONTRACT-FIX-V1 above. The provider and its test are current-tree facts and resolve at HEAD without any commit pin, per verify-evidence.ts's own path-resolution rule; the point-in-time citation is dropped rather than repaired to a fictional SHA. The proven claim and its ceiling are unchanged."
           ],
           "resolved": true
         }
@@ -783,17 +782,15 @@
       "evidence": [
         {
           "id": "JSON2VIDEO-CAPTION-SEMANTICS-PREFLIGHT-evidence",
-          "commits": [
-            "1c4905b1c2a121026936ceacdf341536e5517500"
-          ],
+          "commits": [],
           "paths": [
-            "docs/research/json2video-caption-semantics-preflight.md"
+            "CAPABILITIES.yaml"
           ],
           "tests": [],
           "decisions": [],
           "receipts": [
             "Six caption/plate/scale product decisions ratified by T0 in this preflight's own text (not DECISIONS.md, which its guard forbids adding to).",
-            "This path does NOT exist at origin/main HEAD — verify-evidence.ts caught this during this mission's own build; the commit object (1c4905b) exists in the repository but is not an ancestor of HEAD. Pinned to that exact commit rather than HEAD."
+            "T0-PUBLIC-TRUTH-BASELINE-REPAIR (canonical main, 2026-09-16): the commit this bundle previously pinned (1c4905b) no longer exists as an object in this repository at all — not merged to main, not reachable from any ref, not even a surviving dangling object. Pinning evidence to a commit that was never part of publishable history was unsound from the start: a fresh disposable clone (the authoritative verification environment) never fetches unreachable commits, so this bundle could never have resolved there even at SOS-PUBLIC-TRUTH-V1's original build time. The underlying preflight document is likewise absent from canonical history. Evidence is repointed to CAPABILITIES.yaml's own SOS-PUBLIC-TRUTH-V1 entry, which documents this preflight, its disclosed gap, and its now-vanished commit by name — the one durable, resolvable record of the fact. This entity's classification (not_implemented, internal_only, no public claim) is unchanged."
           ],
           "resolved": true
         }
@@ -923,9 +920,7 @@
       "evidence": [
         {
           "id": "M1-REAL-PRODUCE-REVIEW-PUBLISH-evidence",
-          "commits": [
-            "3147693366032d6d5a2fff12fa59d0884f3099d7"
-          ],
+          "commits": [],
           "paths": [
             "src/app/actions.ts",
             "src/providers/instagram-social-publishing-provider.ts",
@@ -936,7 +931,8 @@
           ],
           "decisions": [],
           "receipts": [
-            "CAPABILITIES.yaml own text: 'deux correctifs d'adaptateur Instagram decouverts contre du live pendant la publication M1' — two Instagram adapter fixes were discovered AGAINST LIVE during M1's real publication, i.e. a real, non-mock Instagram publish occurred. Corroborated by session memory 'Instagram publish contract proven — real Reel published live' and 'R2 render-handoff surface works ... credential holds canonical write too'."
+            "CAPABILITIES.yaml own text: 'deux correctifs d'adaptateur Instagram decouverts contre du live pendant la publication M1' — two Instagram adapter fixes were discovered AGAINST LIVE during M1's real publication, i.e. a real, non-mock Instagram publish occurred. Corroborated by session memory 'Instagram publish contract proven — real Reel published live' and 'R2 render-handoff surface works ... credential holds canonical write too'.",
+            "T0-PUBLIC-TRUTH-BASELINE-REPAIR (canonical main, 2026-09-16): the commit this bundle previously pinned (3147693) no longer exists as an object in this repository at all — not merged to main, not reachable from any ref, not even a surviving dangling object; pinning to it was unsound for the same reason documented on SUBMAGIC-LIVE-CONTRACT-FIX-V1 and JSON2VIDEO-CAPTION-SEMANTICS-FIX-V1 above. This is the ratified public_marketable entity: the phantom pin was silently failing every path and test in this bundle closed, which in turn silently forced derivePublicationCeiling back to candidate — a live regression of the ratified SOS-PUBLICATION-DECISION-M1-V1 promotion, not a cosmetic data issue. All three paths and the test are current-tree facts and resolve at HEAD without any commit pin, per verify-evidence.ts's own path-resolution rule; the point-in-time citation is dropped rather than repaired to a fictional SHA. The proven claim and its ceiling are unchanged."
           ],
           "resolved": true
         }
@@ -1081,16 +1077,14 @@
       "evidence": [
         {
           "id": "PRODUCTION-ORCHESTRATION-PREFLIGHT-evidence",
-          "commits": [
-            "9d4771f8bc74293f7add51d4a19375f64065e6a8"
-          ],
+          "commits": [],
           "paths": [
-            "docs/research/production-orchestration-preflight.md"
+            "CAPABILITIES.yaml"
           ],
           "tests": [],
           "decisions": [],
           "receipts": [
-            "This path does NOT exist at origin/main HEAD — verify-evidence.ts caught this during this mission's own build; the commit object (9d4771f) exists in the repository but is not an ancestor of HEAD. Pinned to that exact commit rather than HEAD. Note: an untracked, uncommitted copy of this exact filename was independently observed sitting in a sibling worktree's working directory at this session's start — that copy is not this evidence and was never read or relied on by this mission."
+            "T0-PUBLIC-TRUTH-BASELINE-REPAIR (canonical main, 2026-09-16): the commit this bundle previously pinned (9d4771f) no longer exists as an object in this repository at all — not merged to main, not reachable from any ref, not even a surviving dangling object. Pinning evidence to a commit that was never part of publishable history was unsound from the start: a fresh disposable clone (the authoritative verification environment) never fetches unreachable commits, so this bundle could never have resolved there even at SOS-PUBLIC-TRUTH-V1's original build time. The underlying preflight document is likewise absent from canonical history. Evidence is repointed to CAPABILITIES.yaml's own SOS-PUBLIC-TRUTH-V1 entry, which documents this preflight, its disclosed gap, and its now-vanished commit by name — the one durable, resolvable record of the fact. Note: an untracked, uncommitted copy of this exact filename was independently observed sitting in a sibling worktree's working directory at this session's start — that copy is not this evidence and was never read or relied on by this mission. This entity's classification (not_implemented, internal_only, no public claim) is unchanged."
           ],
           "resolved": true
         }
@@ -1551,16 +1545,14 @@
       "evidence": [
         {
           "id": "SUBMAGIC-DEMO-LANE-PREFLIGHT-evidence",
-          "commits": [
-            "d7af6cb7ca64bfa63e6b73878cdc91329f94a67d"
-          ],
+          "commits": [],
           "paths": [
-            "docs/research/submagic-demo-lane-preflight.md"
+            "CAPABILITIES.yaml"
           ],
           "tests": [],
           "decisions": [],
           "receipts": [
-            "This path does NOT exist at origin/main HEAD — verify-evidence.ts caught this during this mission's own build. The commit object itself (d7af6cb) exists in this repository and carries the path, but is not an ancestor of HEAD: the preflight doc was authored and never merged to main's line. Evidence is therefore pinned to that exact commit, never to HEAD, and this gap is disclosed rather than papered over."
+            "T0-PUBLIC-TRUTH-BASELINE-REPAIR (canonical main, 2026-09-16): the commit this bundle previously pinned (d7af6cb) no longer exists as an object in this repository at all — not merged to main, not reachable from any ref, not even a surviving dangling object. Pinning evidence to a commit that was never part of publishable history was unsound from the start: a fresh disposable clone (the authoritative verification environment) never fetches unreachable commits, so this bundle could never have resolved there even at SOS-PUBLIC-TRUTH-V1's original build time. The underlying preflight document is likewise absent from canonical history. Evidence is repointed to CAPABILITIES.yaml's own SOS-PUBLIC-TRUTH-V1 entry, which documents this preflight, its disclosed gap, and its now-vanished commit by name — the one durable, resolvable record of the fact. This entity's classification (not_implemented, internal_only, no public claim) is unchanged."
           ],
           "resolved": true
         }
@@ -1593,9 +1585,7 @@
       "evidence": [
         {
           "id": "SUBMAGIC-LIVE-CONTRACT-FIX-V1-evidence",
-          "commits": [
-            "bd5426cdd8d72d5219131c0dfb529ac2b0b825e5"
-          ],
+          "commits": [],
           "paths": [
             "src/providers/submagic-render-provider.ts"
           ],
@@ -1604,7 +1594,8 @@
           ],
           "decisions": [],
           "receipts": [
-            "CAPABILITIES.yaml own text: 'la reponse Submagic live a renvoye videoMetaData.duration=11.669' — an explicit real, non-mock Submagic API response attested by T0, corroborated by session memory's Submagic upload endpoint contract proof."
+            "CAPABILITIES.yaml own text: 'la reponse Submagic live a renvoye videoMetaData.duration=11.669' — an explicit real, non-mock Submagic API response attested by T0, corroborated by session memory's Submagic upload endpoint contract proof.",
+            "T0-PUBLIC-TRUTH-BASELINE-REPAIR (canonical main, 2026-09-16): the commit this bundle previously pinned (bd5426c) no longer exists as an object in this repository at all — not merged to main, not reachable from any ref, not even a surviving dangling object; pinning to it was unsound for the same reason documented on the three preflight entities above. The provider and its test are current-tree facts and resolve at HEAD without any commit pin, per verify-evidence.ts's own path-resolution rule; the point-in-time citation is dropped rather than repaired to a fictional SHA. The proven claim and its ceiling are unchanged."
           ],
           "resolved": true
         }

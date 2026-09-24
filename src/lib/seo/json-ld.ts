@@ -50,3 +50,67 @@ export function buildFaqPageJsonLd(items: { q: string; a: string }[]): FaqPageJs
     })),
   };
 }
+
+/**
+ * Article / TechArticle JSON-LD for `/insights/<slug>/` (SOS-NOTES-V1). Mirrors only what the page
+ * visibly shows: headline, description, language, the publication date printed on the page, and
+ * the organization as author and publisher. No `url` / `@id`: the site is not indexable and its
+ * origin is a placeholder — an unknown value is left absent, never faked.
+ */
+export interface ArticleJsonLd {
+  "@context": "https://schema.org";
+  "@type": "Article" | "TechArticle";
+  headline: string;
+  description: string;
+  inLanguage: string;
+  datePublished: string;
+  author: { "@type": "Organization"; name: string };
+  publisher: { "@type": "Organization"; name: string };
+}
+
+export function buildArticleJsonLd(params: {
+  schemaType: string;
+  headline: string;
+  description: string;
+  inLanguage: string;
+  datePublished: string;
+}): ArticleJsonLd {
+  const type = params.schemaType === "TechArticle" ? "TechArticle" : "Article";
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    headline: params.headline,
+    description: params.description,
+    inLanguage: params.inLanguage,
+    datePublished: params.datePublished,
+    author: { "@type": "Organization", name: "ShortsOS" },
+    publisher: { "@type": "Organization", name: "ShortsOS" },
+  };
+}
+
+/** CollectionPage JSON-LD for the `/insights/` index — one part per listed article. */
+export interface CollectionPageJsonLd {
+  "@context": "https://schema.org";
+  "@type": "CollectionPage";
+  name: string;
+  description: string;
+  hasPart: { "@type": "Article" | "TechArticle"; headline: string; datePublished: string }[];
+}
+
+export function buildCollectionPageJsonLd(params: {
+  name: string;
+  description: string;
+  parts: { schemaType: string; headline: string; datePublished: string }[];
+}): CollectionPageJsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: params.name,
+    description: params.description,
+    hasPart: params.parts.map((p) => ({
+      "@type": p.schemaType === "TechArticle" ? "TechArticle" : "Article",
+      headline: p.headline,
+      datePublished: p.datePublished,
+    })),
+  };
+}

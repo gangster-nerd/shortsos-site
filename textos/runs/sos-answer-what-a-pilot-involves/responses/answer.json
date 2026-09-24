@@ -1,0 +1,55 @@
+{
+  "text": "In a ShortsOS pilot, the ShortsOS team operates the workflow; the one real run completed so far went from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. The review step before publication is a mandatory human checkpoint. Customers do not link their own Instagram account or publish directly through this workflow.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "In a ShortsOS pilot, the ShortsOS team operates the workflow; the one real run completed so far went from source video and render, through human review, to a live Instagram Reel with a captured publication permalink.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-02",
+        "ev-a2-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The review step before publication is a mandatory human checkpoint.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a2-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Customers do not link their own Instagram account or publish directly through this workflow.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a2-03",
+        "ev-a2-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

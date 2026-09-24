@@ -1,0 +1,55 @@
+{
+  "text": "When ShortsOS first classified its 39 finished capabilities against its own evidence, none of them qualified for a public claim, nine became candidates, 30 stayed internal and three concepts were blocked outright. The rule was then amended so that a capability the ShortsOS team operates for its clients could qualify, on the condition that it is not described as something customers run on their own. Of the nine candidates, exactly one already met that bar in its own wording, and the owner ratified it on 13 September 2026.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "When ShortsOS first classified its 39 finished capabilities against its own evidence, none of them qualified for a public claim, nine became candidates, 30 stayed internal and three concepts were blocked outright.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The rule was then amended so that a capability the ShortsOS team operates for its clients could qualify, on the condition that it is not described as something customers run on their own.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-03",
+        "ev-n2-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Of the nine candidates, exactly one already met that bar in its own wording, and the owner ratified it on 13 September 2026.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

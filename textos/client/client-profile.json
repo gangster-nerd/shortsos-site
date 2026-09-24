@@ -1,0 +1,73 @@
+{
+  "clientProfileVersion": 1,
+  "client": "ShortsOS",
+  "relationship": "ShortsOS is onboarded as a client of TextOS and uses TextOS strictly as a tool (textos/tool.json). This file is ShortsOS's own onboarding record; nothing here is written into TextOS.",
+  "ownedSurface": {
+    "site": "shortsos-site",
+    "repository": "gangster-nerd/shortsos-site",
+    "surfaceKind": "source_controlled_components",
+    "materialization": "A TextOS ContentDocument@1 and its resolved surface are committed under textos/runs/** and rendered by ShortsOS's own components; the commit that lands them is the draft deposit.",
+    "deployment": "none yet — static export, noindex (SITE_ALLOWS_INDEXING=false), SITE_ORIGIN is a placeholder",
+    "effectiveChannel": "controlled_preview",
+    "effectiveChannelReason": "The site is not indexed and exists for direct pilot conversations only; that is TextOS's controlled_preview channel, not public_web."
+  },
+  "trackedSubject": {
+    "trackedEntityId": "shortsos",
+    "name": "ShortsOS",
+    "aliases": [
+      "ShortsOS"
+    ]
+  },
+  "roster": [
+    {
+      "name": "ShortsOS",
+      "aliases": [
+        "ShortsOS"
+      ],
+      "matchedTrackedEntityId": "shortsos",
+      "role": "tracked"
+    }
+  ],
+  "competitors": [],
+  "generationPolicy": {
+    "mode": "grounded_tracked_brand_authorized",
+    "trackedEntityId": "shortsos",
+    "trackedBrandNames": [
+      "ShortsOS"
+    ],
+    "forbiddenProductNames": []
+  },
+  "evidencePolicy": "TextOS CONSERVATIVE_EVIDENCE_POLICY, not relaxed: on public_web every statement class needs client_validated or public_source evidence with an explicit public-use clearance.",
+  "claimProfile": {
+    "file": "textos/client/claim-profile.json",
+    "governance": "Client-supplied data passed in the CTC intake. It is NOT a TextOS-governed catalog profile: adding one is a TextOS change, which ShortsOS does not make.",
+    "governedCatalogCategory": {
+      "key": "agency-content-services@0.1",
+      "label": "Agence de contenu",
+      "status": "Closest governed category, declared for a future self-serve binding; its French lexicon would not see ShortsOS's English copy, so it is not used by these runs."
+    }
+  },
+  "productTruth": {
+    "manifest": "content-bundles/inputs/manifest.json",
+    "commitLedger": "content-bundles/inputs/product-commits.json",
+    "canonicalProductShaSource": "content-bundles/inputs/pin.json"
+  },
+  "measurement": {
+    "status": "not_run",
+    "reason": "TextOS measures what answer engines say only after a human approves the question panel, and a live observation needs a PERPLEXITY_API_KEY. Neither exists here, so no authority gap and no measured opportunity exists for ShortsOS. Following TextOS's own rule, no article in this batch is presented as coming from a measured opportunity.",
+    "proposals": "textos/client/operator-question-proposals.json",
+    "demandEvidence": "NOT_MEASURED — no Semrush export, no DataForSEO connection"
+  },
+  "articleFlows": {
+    "commit_to_content": {
+      "route": "/insights/<slug>/",
+      "manifestSurface": "developer_note",
+      "why": "A product change + product truth + CMO interpretation → buyer question → target query (TextOS CTC seam). Historical engineering record; no capability claim."
+    },
+    "site_intelligence": {
+      "route": "/insights/<slug>/",
+      "manifestSurface": "faq",
+      "why": "TextOS Site Intelligence inventory of the owned surface + the operator's buyer questions → answer pages where the inventory shows no in-depth answer. Grounded only in client-validated, ratified public wording."
+    }
+  }
+}

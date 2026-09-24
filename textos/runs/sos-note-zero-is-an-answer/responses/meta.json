@@ -1,0 +1,23 @@
+{
+  "text": "In September 2026, ShortsOS let its story search report no strong story, stopped reading file dates as filming dates and fixed a cross-client lookup.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "In September 2026, ShortsOS let its story search report no strong story, stopped reading file dates as filming dates and fixed a cross-client lookup.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-01",
+        "ev-n3-04",
+        "ev-n3-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

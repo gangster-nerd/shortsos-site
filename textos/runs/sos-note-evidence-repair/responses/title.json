@@ -1,0 +1,22 @@
+{
+  "text": "How ShortsOS repaired evidence records that pointed at vanished commits",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "How ShortsOS repaired evidence records that pointed at vanished commits",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-01",
+        "ev-n1-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

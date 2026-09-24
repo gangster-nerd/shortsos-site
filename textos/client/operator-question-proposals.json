@@ -1,0 +1,52 @@
+{
+  "scopeAliases": ["ShortsOS", "shortsos", "shortsos-site"],
+  "locale": "en-US",
+  "horizonDays": 90,
+  "questions": [
+    {
+      "question": "Which services can turn a brand's existing raw footage into short-form videos?",
+      "rationale": "Supplier search for the job ShortsOS does for pilots: measure whether ShortsOS is cited among services that work from footage a brand already has.",
+      "demandExpression": "raw footage to short form video service",
+      "intent": "market_mapping",
+      "buyerStage": "supplier_shortlist",
+      "commercialIntent": "high",
+      "targetTransition": "absent_to_cited"
+    },
+    {
+      "question": "What are the alternatives to filming new content for Instagram Reels?",
+      "rationale": "Buyers who already hold footage look for an alternative to a new shoot: measure whether ShortsOS appears as that alternative.",
+      "demandExpression": "repurpose existing footage into reels",
+      "intent": "alternative",
+      "buyerStage": "solution_aware",
+      "commercialIntent": "medium",
+      "targetTransition": "absent_to_cited"
+    },
+    {
+      "question": "Which short-form video services keep a human review before anything is published?",
+      "rationale": "Validation question where ShortsOS's mandatory review checkpoint is the relevant fact: measure whether ShortsOS is cited when buyers ask about review before publication.",
+      "demandExpression": "human review before publishing short form video",
+      "intent": "proof_seeking",
+      "buyerStage": "vendor_validation",
+      "commercialIntent": "medium",
+      "targetTransition": "absent_to_cited"
+    },
+    {
+      "question": "Which video tools build short videos from existing footage rather than from a text prompt?",
+      "rationale": "Comparison between prompt-generated video and work on real footage: measure whether ShortsOS is cited on the footage-first side.",
+      "demandExpression": "ai video editor from raw footage",
+      "intent": "comparison",
+      "buyerStage": "supplier_shortlist",
+      "commercialIntent": "high",
+      "targetTransition": "absent_to_cited"
+    },
+    {
+      "question": "How can a brand check that a short-form video vendor has really published for a client?",
+      "rationale": "Proof-seeking before choosing a vendor: measure whether ShortsOS is cited when buyers ask for verifiable publication, since its one public claim includes a captured permalink.",
+      "demandExpression": "verify short form video vendor published",
+      "intent": "proof_seeking",
+      "buyerStage": "vendor_validation",
+      "commercialIntent": "medium",
+      "targetTransition": "absent_to_cited"
+    }
+  ]
+}

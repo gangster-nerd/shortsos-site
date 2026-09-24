@@ -1,0 +1,150 @@
+{
+  "conversionPlanVersion": 1,
+  "articleId": "sos-answer-human-review",
+  "tool": {
+    "repository": "gangster-nerd/textos-site",
+    "sha": "bd8ae46bec43f734980a9baafa7331d32613bcbb",
+    "functions": [
+      "resolveRelatedContent",
+      "findSourceRelatedSection",
+      "deriveResolvedConversionPlan"
+    ]
+  },
+  "inputs": {
+    "contentDocumentSha256": "4e8f9557eaec18160d5d1e0298f313b3e6c613cebdb8f4ade7a8274eb2773266",
+    "resolvedSurfaceSha256": "51d78fbeb2a7298aea87e02a243c8910c4edd61424e0879f0dec642305a8d2cf",
+    "commercialCapability": "unconfigured",
+    "cta": null,
+    "newsletterEnabled": false,
+    "corpus": [
+      {
+        "documentId": "shortsos:sos-answer-human-review",
+        "slug": "is-there-a-human-review-before-publication",
+        "channel": "public_web",
+        "primaryTopicId": "operated-pilot",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-answer-what-a-pilot-involves",
+        "slug": "what-a-shortsos-pilot-involves",
+        "channel": "public_web",
+        "primaryTopicId": "operated-pilot",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-evidence-repair",
+        "slug": "keeping-the-proof-behind-a-public-claim-checkable",
+        "channel": "controlled_preview",
+        "primaryTopicId": "public-claim-governance",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-one-public-claim",
+        "slug": "why-shortsos-makes-one-public-claim",
+        "channel": "controlled_preview",
+        "primaryTopicId": "public-claim-governance",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+          "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+          "JSON2VIDEO-NATIVE-RENDER-V1",
+          "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING",
+          "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT",
+          "PROHIBITED-CREATIVE-QUALITY-CLAIMS"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-zero-is-an-answer",
+        "slug": "why-no-strong-story-is-a-valid-answer",
+        "channel": "controlled_preview",
+        "primaryTopicId": "footage-to-story-engineering",
+        "capabilityIds": [
+          "FDTS-NARRATIVE-TRUTH-V1",
+          "FDTS-CAPTURE-TIME-TRUTH-V1",
+          "FDTS-RETRIEVAL-SAFETY-V1",
+          "FDTS-REPEATED-TAKE-INTELLIGENCE-V1"
+        ]
+      }
+    ],
+    "corpusNote": "The committed ContentDocuments, with capabilityIds, primaryTopicId/topicIds and publicationStatus filled from each brief (entityIds, provenance.topicCluster, publication record)."
+  },
+  "related": [
+    {
+      "documentId": "shortsos:sos-answer-what-a-pilot-involves",
+      "slug": "what-a-shortsos-pilot-involves",
+      "title": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+      "description": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone.",
+      "href": "/insights/what-a-shortsos-pilot-involves",
+      "isDraft": false,
+      "reasons": [
+        "shared primary topic",
+        "1 shared topic",
+        "1 shared capability"
+      ],
+      "score": 30
+    },
+    {
+      "documentId": "shortsos:sos-note-evidence-repair",
+      "slug": "keeping-the-proof-behind-a-public-claim-checkable",
+      "title": "How ShortsOS repaired evidence records that pointed at vanished commits",
+      "description": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was.",
+      "href": "/insights/keeping-the-proof-behind-a-public-claim-checkable",
+      "isDraft": false,
+      "reasons": [
+        "1 shared capability"
+      ],
+      "score": 10
+    },
+    {
+      "documentId": "shortsos:sos-note-one-public-claim",
+      "slug": "why-shortsos-makes-one-public-claim",
+      "title": "Why ShortsOS chose to make one public claim, not nine",
+      "description": "ShortsOS classified 39 capabilities, found nine candidates and ratified exactly one for a public claim, with eight guardrails on how it may be described.",
+      "href": "/insights/why-shortsos-makes-one-public-claim",
+      "isDraft": false,
+      "reasons": [
+        "1 shared capability"
+      ],
+      "score": 10
+    }
+  ],
+  "excludedByChannel": [
+    {
+      "documentId": "shortsos:sos-note-evidence-repair",
+      "reason": "only checked for controlled_preview: its title and description may not appear on a public_web article"
+    },
+    {
+      "documentId": "shortsos:sos-note-one-public-claim",
+      "reason": "only checked for controlled_preview: its title and description may not appear on a public_web article"
+    }
+  ],
+  "plan": {
+    "commercial": {
+      "enabled": false,
+      "header": null,
+      "contextual": null,
+      "final": null
+    },
+    "editorialNextStep": {
+      "label": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+      "href": "/insights/what-a-shortsos-pilot-involves",
+      "description": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone.",
+      "source": "computed-related"
+    },
+    "retention": {
+      "enabled": false
+    }
+  },
+  "editorialNextStep": {
+    "targetArticleId": "sos-answer-what-a-pilot-involves",
+    "route": "/insights/what-a-shortsos-pilot-involves/",
+    "label": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+    "description": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone.",
+    "source": "computed-related"
+  }
+}

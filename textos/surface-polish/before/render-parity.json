@@ -1,0 +1,332 @@
+{
+  "receiptVersion": 1,
+  "label": "before",
+  "tool": {
+    "repository": "gangster-nerd/textos-site",
+    "sha": "bd8ae46bec43f734980a9baafa7331d32613bcbb",
+    "function": "evaluateRenderParity (A2R-SURFACE-SEAL-1)"
+  },
+  "observed": {
+    "siteCommit": "4d0d8890d847493040cf42860d496628c6b4cb1e",
+    "siteCommitNote": "Saved copy of a build of siteCommit.",
+    "layout": "saved copy (<slug>.html)"
+  },
+  "method": "Parity view of each committed ContentDocument: visible resolved blocks in render order, section headings as mdast headings at the writer's level, texts as mdast paragraphs. Non-vacuity: one word changed inside a checked block must be reported. The rendered h1 must equal the document title.",
+  "summary": {
+    "articles": 5,
+    "passed": 0
+  },
+  "articles": [
+    {
+      "articleId": "sos-answer-human-review",
+      "slug": "is-there-a-human-review-before-publication",
+      "htmlSha256": "542e1dc7331dfbc6b98875b7ff93c76d1b402b1d27890111739ada3ee3914288",
+      "blocksInView": 7,
+      "blocksChecked": 7,
+      "passed": false,
+      "diffCount": 7,
+      "diffs": [
+        {
+          "blockId": "lead",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"lead\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2\" not present in rendered HTML"
+        }
+      ],
+      "mutationCaught": null,
+      "titleMatches": true
+    },
+    {
+      "articleId": "sos-answer-what-a-pilot-involves",
+      "slug": "what-a-shortsos-pilot-involves",
+      "htmlSha256": "0c572e784f8d026e331bb8bdcb5fd1d6af7c2be93ca909fac63870fa1c030d38",
+      "blocksInView": 7,
+      "blocksChecked": 7,
+      "passed": false,
+      "diffCount": 7,
+      "diffs": [
+        {
+          "blockId": "lead",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"lead\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2\" not present in rendered HTML"
+        }
+      ],
+      "mutationCaught": null,
+      "titleMatches": true
+    },
+    {
+      "articleId": "sos-note-evidence-repair",
+      "slug": "keeping-the-proof-behind-a-public-claim-checkable",
+      "htmlSha256": "0be50a53404a34e62f670ce8534f95eef1bdfec42a23247a313cf1eb7326384b",
+      "blocksInView": 9,
+      "blocksChecked": 9,
+      "passed": false,
+      "diffCount": 9,
+      "diffs": [
+        {
+          "blockId": "lead",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"lead\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-3--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-3--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-3",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-3\" not present in rendered HTML"
+        }
+      ],
+      "mutationCaught": null,
+      "titleMatches": true
+    },
+    {
+      "articleId": "sos-note-one-public-claim",
+      "slug": "why-shortsos-makes-one-public-claim",
+      "htmlSha256": "80d84d83edaf17501f2add4f47511c98409deb0221afec8c1c0988f7faf561c3",
+      "blocksInView": 9,
+      "blocksChecked": 9,
+      "passed": false,
+      "diffCount": 9,
+      "diffs": [
+        {
+          "blockId": "lead",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"lead\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-3--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-3--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-3",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-3\" not present in rendered HTML"
+        }
+      ],
+      "mutationCaught": null,
+      "titleMatches": true
+    },
+    {
+      "articleId": "sos-note-zero-is-an-answer",
+      "slug": "why-no-strong-story-is-a-valid-answer",
+      "htmlSha256": "4ad9c7eccf1d82000ce9512831b1ecc9ffa3d1e070e35e325f69693752ea1c76",
+      "blocksInView": 9,
+      "blocksChecked": 9,
+      "passed": false,
+      "diffCount": 9,
+      "diffs": [
+        {
+          "blockId": "lead",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"lead\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "answer",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"answer\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-1",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-1\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-2",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-2\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-3--heading",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-3--heading\" not present in rendered HTML"
+        },
+        {
+          "blockId": "section-3",
+          "differenceKind": "block-missing-in-html",
+          "path": [],
+          "message": "block \"section-3\" not present in rendered HTML"
+        }
+      ],
+      "mutationCaught": null,
+      "titleMatches": true
+    }
+  ]
+}

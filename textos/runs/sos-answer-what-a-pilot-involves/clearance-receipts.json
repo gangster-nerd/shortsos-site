@@ -1,0 +1,252 @@
+[
+  {
+    "evidenceId": "ev-a2-01",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-02",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-03",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-04",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-05",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-06",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-07",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-08",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-09",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  },
+  {
+    "evidenceId": "ev-a2-10",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+    "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-answer-what-a-pilot-involves"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+  }
+]

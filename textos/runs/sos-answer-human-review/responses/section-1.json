@@ -1,0 +1,71 @@
+{
+  "text": "ShortsOS has completed a real end-to-end workflow that goes from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. The review comes after production and before publication, and it is a checkpoint a person has to clear, not a default that can be skipped. In that run, publication went through one Instagram account bound to the ShortsOS operator, not through an account a customer linked. For a brand, that means a person looks at the short before your audience does.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS has completed a real end-to-end workflow that goes from source video and render, through human review, to a live Instagram Reel with a captured publication permalink.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a1-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The review comes after production and before publication, and it is a checkpoint a person has to clear, not a default that can be skipped.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-01",
+        "ev-a1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "In that run, publication went through one Instagram account bound to the ShortsOS operator, not through an account a customer linked.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a1-04",
+        "ev-a1-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "For a brand, that means a person looks at the short before your audience does.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

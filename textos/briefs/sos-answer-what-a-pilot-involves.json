@@ -1,0 +1,429 @@
+{
+  "briefVersion": 1,
+  "articleId": "sos-answer-what-a-pilot-involves",
+  "flow": "site_intelligence",
+  "slug": "what-a-shortsos-pilot-involves",
+  "locale": "en-US",
+  "publicationChannel": "public_web",
+  "entityIds": [
+    "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+  ],
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "m1-public-claim-ratification-2026-09-13",
+        "sourceCommits": [
+          "abd07346faa1009088bb4d3c25db67fc63950bf0",
+          "f01ac6110ec664aba31ee985a4c30d307de10b2f"
+        ]
+      }
+    ],
+    "buyerQuestion": "What does a ShortsOS pilot involve, and what does it not include?",
+    "targetQuery": "operated pilot to turn existing footage into short form video",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "commercial_investigation",
+    "topicCluster": "operated-pilot"
+  },
+  "siteObservation": {
+    "snapshotHash": "f622fd101cf419ee86c2991fb9738509adb6611f0eccd4e27e69297c50e779d9",
+    "proposalQuestion": "Which services can turn a brand's existing raw footage into short-form videos?",
+    "pagesConsulted": [
+      "http://127.0.0.1:4317/request-pilot/",
+      "http://127.0.0.1:4317/request-pilot/received/",
+      "http://127.0.0.1:4317/faq/"
+    ],
+    "finding": "The observed /request-pilot/ page carries one h1 ('Talk to the team directly') and an email action; /request-pilot/received/ has one h2 ('What happens next'); /faq/ answers 'How do I actually start working with ShortsOS?' in one line. No observed page says who does what during a pilot or what a pilot does not include.",
+    "interventionMode": "create"
+  },
+  "approval": {
+    "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles on ShortsOS-site",
+    "approvedAt": "2026-09-24"
+  },
+  "clearances": [
+    {
+      "evidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-03",
+        "ev-a2-04",
+        "ev-a2-05",
+        "ev-a2-06",
+        "ev-a2-07",
+        "ev-a2-08",
+        "ev-a2-09",
+        "ev-a2-10"
+      ],
+      "decision": "APPROVE_PUBLIC_USE",
+      "clientValidation": "CLIENT_VALIDATE",
+      "actor": "operator:claude-code (ShortsOS CTO/CMO), applying a recorded owner decision",
+      "actorCapacity": "Applies the ShortsOS owner's ratification of 2026-09-13 (SOS-PUBLICATION-DECISION-M1-V1, docs/governance/publication/2026-09-13-m1-public-marketable-ratification.md in the product repository), which approved this exact wording for public claims on the homepage, how_it_works, proof, faq and cta surfaces. The client validation recorded here is that ratification, not a new review.",
+      "decidedAt": "2026-09-24",
+      "reason": "Public use of ratified wording on the faq surface, which the manifest authorizes for this capability. No new human decision was taken for this article; its per-article human review is pending."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-a2-01",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "claimCeiling",
+        "quote": "ShortsOS has completed a real end-to-end Produce → Review → Publish workflow: from source video and render, through human review, to a live Instagram Reel with a captured publication permalink."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-02",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "claimCeiling",
+        "quote": "For pilots, the workflow is operated by the ShortsOS team."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-03",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "Any claim that a customer can connect their own Instagram account to this workflow."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-04",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "Any claim that a customer can publish directly themselves through this workflow."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-05",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "Any claim of universal availability — this workflow is operated by the ShortsOS team for pilots, never generally/instantly available."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-06",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "it is operator-run, on one bound Instagram account."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-07",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "Any claim of production-scale or repeated-volume proof beyond the one documented real run."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-08",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "the Review step is a mandatory human checkpoint in every real run to date."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-09",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "Any claim of guaranteed creative quality."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    },
+    {
+      "id": "ev-a2-10",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+        "field": "prohibitedClaims",
+        "quote": "Any claim of guaranteed performance or virality for any published content."
+      },
+      "claimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Ratified public wording for one documented real run; it states what happened, not what every future run will produce."
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name what a ShortsOS pilot is, as a grounded fact.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-a2-02"
+      ],
+      "requiredClaimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "unsupportedClaimTypes": [
+        "story_selection"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One search-result sentence: operated by the team, what the one real run went through, and what it is not.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "requiredClaimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "unsupportedClaimTypes": [
+        "story_selection"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open on the buyer's need to know who does the work, then state the operated model.",
+      "buyerIntent": "Who does the work in a pilot?",
+      "allowedEvidenceIds": [
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "requiredClaimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "unsupportedClaimTypes": [
+        "story_selection"
+      ],
+      "minChars": 150,
+      "maxChars": 500,
+      "evidenceRequired": true
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What does a pilot involve?",
+      "writingObjective": "Answer directly: the team operates the workflow; keep the proven run separate from the pilot model; review is mandatory; customers do not link accounts or publish directly.",
+      "buyerIntent": "What happens in a pilot?",
+      "allowedEvidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-03",
+        "ev-a2-04",
+        "ev-a2-08"
+      ],
+      "requiredClaimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "unsupportedClaimTypes": [
+        "story_selection"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Who does what",
+      "writingObjective": "Describe the operated model and the one real run, and how a pilot starts.",
+      "buyerIntent": "What is my part and what is theirs?",
+      "allowedEvidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-05",
+        "ev-a2-06"
+      ],
+      "requiredClaimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "unsupportedClaimTypes": [
+        "story_selection"
+      ],
+      "minChars": 250,
+      "maxChars": 1100,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What a pilot does not include",
+      "writingObjective": "List what a pilot is not, each item grounded: not generally available, no own-account linking or direct publishing, no volume proof, no promise of quality or performance.",
+      "buyerIntent": "What should I not expect?",
+      "allowedEvidenceIds": [
+        "ev-a2-03",
+        "ev-a2-04",
+        "ev-a2-05",
+        "ev-a2-07",
+        "ev-a2-09",
+        "ev-a2-10"
+      ],
+      "requiredClaimTypes": [
+        "human_review",
+        "publication",
+        "availability",
+        "production"
+      ],
+      "unsupportedClaimTypes": [
+        "story_selection"
+      ],
+      "minChars": 250,
+      "maxChars": 1100,
+      "evidenceRequired": true
+    }
+  ],
+  "publication": {
+    "publishedOn": "2026-09-24",
+    "mandate": "The ShortsOS owner's instruction of 2026-09-24 to produce and publish these articles on ShortsOS-site.",
+    "humanReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedOn": null
+    }
+  }
+}
