@@ -27,9 +27,9 @@ import { join } from "node:path";
 import { SITE_ALLOWS_INDEXING } from "../config/site-config";
 import { parseProductCommitLedger, resolveCitedCommit, type ProductCommit, type ProductCommitLedger } from "../commit-to-content/commit-ledger";
 import type { CapabilityManifest, ManifestEntity, PublicationStatus, Surface } from "../manifest/schema";
-import { FLOW_SURFACE, INSIGHTS_ROUTE_PREFIX, headingBlockId, type ArticleBrief, type ArticleFlow } from "./brief";
+import { FLOW_LABEL, FLOW_SURFACE, INSIGHTS_ROUTE_PREFIX, headingBlockId, type ArticleBrief, type ArticleFlow } from "./brief";
 
-export { headingBlockId };
+export { FLOW_LABEL, headingBlockId };
 
 export class ArticleIntegrityError extends Error {
   constructor(articleId: string, message: string) {

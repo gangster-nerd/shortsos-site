@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CTA_REGISTRY } from "@/lib/registries/cta-registry";
 import { buildOrganizationJsonLd } from "@/lib/seo/json-ld";
-import { HOME_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
+import { HOME_HERO, HOME_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
 import { SITE_ORIGIN } from "@/lib/config/site-config";
+import { pageMetadata } from "@/lib/seo/page-metadata";
+
+export const metadata: Metadata = pageMetadata({ path: "/" });
 
 export default function HomePage() {
   const requestPilot = CTA_REGISTRY.request_pilot;
@@ -19,11 +23,11 @@ export default function HomePage() {
   });
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
-          <p className="eyebrow">Video production, evidence-first</p>
-          <h1>From raw footage to a published, reviewed short.</h1>
+          <p className="eyebrow">{HOME_HERO.eyebrow}</p>
+          <h1>{HOME_HERO.headline}</h1>
           <p className="lede">{HOME_INTRO}</p>
           {requestPilot.enabled ? (
             <div style={{ marginTop: 28 }}>

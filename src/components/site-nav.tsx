@@ -19,7 +19,7 @@ export function SiteNav() {
         <Link href="/" className="brand">
           ShortsOS
         </Link>
-        <nav className="nav-links">
+        <nav className="nav-links" aria-label="Main">
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href}>
               {link.label}

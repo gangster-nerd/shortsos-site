@@ -38,7 +38,7 @@ import { execSync } from "node:child_process";
 import { join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { FORBIDDEN_SELF_SERVE_PHRASES } from "../src/lib/safety/copy-safety";
+import { findForbiddenSelfServePhrases } from "../src/lib/safety/copy-safety";
 
 const REPO_ROOT = resolve(import.meta.dirname, "..");
 const OUT_DIR = join(REPO_ROOT, "out");
@@ -138,8 +138,7 @@ export function validateRootShape(parsed: unknown): string[] {
 /** Scans the raw (unparsed) JSON-LD text for any of copy-safety.ts's forbidden phrases —
  *  catches a disallowed claim smuggled into structured data past the visible-copy checker. */
 export function findForbiddenPhrasesInText(rawText: string): string[] {
-  const lower = rawText.toLowerCase();
-  return FORBIDDEN_SELF_SERVE_PHRASES.filter((phrase) => lower.includes(phrase.toLowerCase()));
+  return findForbiddenSelfServePhrases(rawText).map((hit) => hit.phrase);
 }
 
 /** Extracts every `<script type="application/ld+json">` block's inner text from one HTML

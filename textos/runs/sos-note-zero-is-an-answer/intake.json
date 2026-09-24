@@ -46,7 +46,7 @@
     "forbiddenProductNames": []
   },
   "publicationContext": {
-    "channel": "controlled_preview",
+    "channel": "public_web",
     "briefId": "sos-note-zero-is-an-answer",
     "locale": "en-US"
   },
@@ -151,8 +151,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -161,7 +161,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -183,8 +183,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -193,7 +193,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -215,8 +215,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -225,7 +225,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -247,8 +247,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -257,7 +257,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -279,8 +279,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -289,7 +289,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -311,8 +311,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -321,7 +321,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -343,8 +343,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -353,7 +353,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -375,8 +375,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -385,7 +385,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -407,8 +407,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -417,7 +417,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -439,8 +439,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -449,7 +449,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -471,8 +471,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -481,7 +481,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -503,8 +503,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -513,7 +513,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -535,8 +535,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -545,7 +545,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -567,8 +567,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -577,7 +577,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     },
     {
@@ -599,8 +599,8 @@
       ],
       "maxSupportStrength": "descriptive",
       "limitations": [],
-      "epistemicStatus": "operator_supplied",
-      "publicUse": "pending",
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
       "approvedForGeneration": true,
       "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
       "approvedAt": "2026-09-24",
@@ -609,7 +609,7 @@
           "sos-note-zero-is-an-answer"
         ],
         "locale": "en-US",
-        "channel": "controlled_preview"
+        "channel": "public_web"
       }
     }
   ],

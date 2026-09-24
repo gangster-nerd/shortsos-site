@@ -7,11 +7,10 @@ export function SiteFooter() {
         <div>
           <div>ShortsOS</div>
           <div style={{ marginTop: 4 }}>
-            Operator-run video production. This site is not indexed and is currently for direct pilot
-            conversations only.
+            Operator-run video production, offered through direct pilot conversations with the team.
           </div>
         </div>
-        <nav className="footer-links">
+        <nav className="footer-links" aria-label="Footer">
           <Link href="/insights">Insights</Link>
           <Link href="/glossary">Glossary</Link>
           <Link href="/changelog">Changelog</Link>

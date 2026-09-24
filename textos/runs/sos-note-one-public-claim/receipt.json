@@ -6,14 +6,14 @@
     "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
   },
   "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
-  "executionPlanHash": "f71c96f8464b40a8ddc638c4ef2516dddcc3606c960519d6af54362a5d4f5235",
-  "ctcHandoffHash": "b8aebdda2bb0db007f10a1170515ac346abb5879200a1a4d8a002acef26c140d",
+  "executionPlanHash": "0e323983e1cd2f7541c70c7742dbb95d8e64e5d70c1a81faaceb0e8a0f621bd5",
+  "ctcHandoffHash": "c969fff314916dc0762b684c94cfe3056973076edbbcf0d228e7877eaca2df4c",
   "writerMethodVersion": "geo-writer@0.2",
   "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
   "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
   "structuredContentHash": "c404c170fcc93e9a7d7fec918445f217150cfdd9b99036ffa709972f8ebc2166",
   "truthCheckVerdict": "pass",
-  "publicationChannel": "controlled_preview",
+  "publicationChannel": "public_web",
   "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
   "promptHashes": {
     "title": "8af83b7ccf47b6990c6517d84331f5c7edf3f3b9b3ea7a1327c6ad73f176ea0c",

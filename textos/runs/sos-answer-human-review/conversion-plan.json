@@ -38,7 +38,7 @@
       {
         "documentId": "shortsos:sos-note-evidence-repair",
         "slug": "keeping-the-proof-behind-a-public-claim-checkable",
-        "channel": "controlled_preview",
+        "channel": "public_web",
         "primaryTopicId": "public-claim-governance",
         "capabilityIds": [
           "M1-REAL-PRODUCE-REVIEW-PUBLISH"
@@ -47,7 +47,7 @@
       {
         "documentId": "shortsos:sos-note-one-public-claim",
         "slug": "why-shortsos-makes-one-public-claim",
-        "channel": "controlled_preview",
+        "channel": "public_web",
         "primaryTopicId": "public-claim-governance",
         "capabilityIds": [
           "M1-REAL-PRODUCE-REVIEW-PUBLISH",
@@ -61,7 +61,7 @@
       {
         "documentId": "shortsos:sos-note-zero-is-an-answer",
         "slug": "why-no-strong-story-is-a-valid-answer",
-        "channel": "controlled_preview",
+        "channel": "public_web",
         "primaryTopicId": "footage-to-story-engineering",
         "capabilityIds": [
           "FDTS-NARRATIVE-TRUTH-V1",
@@ -113,16 +113,7 @@
       "score": 10
     }
   ],
-  "excludedByChannel": [
-    {
-      "documentId": "shortsos:sos-note-evidence-repair",
-      "reason": "only checked for controlled_preview: its title and description may not appear on a public_web article"
-    },
-    {
-      "documentId": "shortsos:sos-note-one-public-claim",
-      "reason": "only checked for controlled_preview: its title and description may not appear on a public_web article"
-    }
-  ],
+  "excludedByChannel": [],
   "plan": {
     "commercial": {
       "enabled": false,

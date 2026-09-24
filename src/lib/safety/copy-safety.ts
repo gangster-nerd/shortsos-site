@@ -27,7 +27,77 @@ export const FORBIDDEN_SELF_SERVE_PHRASES: string[] = [
   "start for free",
   "create your account",
   "log in to publish",
+  // "self-serve" is not a substring of "self-service".
+  "self-service",
+  "self service",
 ];
+
+/**
+ * The same guard for French copy (the site is going bilingual). Matching ignores case, accents,
+ * apostrophe and dash variants and non-breaking spaces (see `normalizeForPhraseMatch`), so
+ * "Créez votre compte" and "creez votre compte" are one phrase. Like the English list, it holds
+ * affirmative wording: an honest "no" ("il n'y a pas d'inscription") must stay sayable.
+ */
+export const FORBIDDEN_SELF_SERVE_PHRASES_FR: string[] = [
+  "inscrivez-vous",
+  "inscris-toi",
+  "créez votre compte",
+  "créez un compte",
+  "créer votre compte",
+  "connectez votre drive",
+  "connectez votre compte",
+  "connectez vos comptes",
+  "connectez votre propre",
+  "connectez vos propres",
+  "connectez-vous pour publier",
+  "publiez vous-même",
+  "publiez-le vous-même",
+  "publiez directement",
+  "faites-le vous-même",
+  "libre-service",
+  "en autonomie",
+  "en toute autonomie",
+  "sans opérateur",
+  "entièrement automatisé",
+  "commencez gratuitement",
+  "démarrez gratuitement",
+  "essai gratuit",
+  "essayez gratuitement",
+];
+
+/**
+ * Folds the variations a phrase lint must not depend on: case, accents, typographic
+ * apostrophes, hyphens and dashes (read as spaces), and runs of spaces, including the
+ * non-breaking ones French typography puts before punctuation. Newlines are kept, one for one.
+ */
+export function normalizeForPhraseMatch(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/[\u2018\u2019\u02bc\u2032]/g, "'")
+    .replace(/[-\u2010-\u2015\u2212]/g, " ")
+    .replace(/[^\S\n]+/g, " ");
+}
+
+const PHRASE_KEYS: { phrase: string; key: string }[] = [];
+for (const phrase of [...FORBIDDEN_SELF_SERVE_PHRASES, ...FORBIDDEN_SELF_SERVE_PHRASES_FR]) {
+  const key = normalizeForPhraseMatch(phrase);
+  if (!PHRASE_KEYS.some((k) => k.key === key)) PHRASE_KEYS.push({ phrase, key });
+}
+
+/** Every forbidden phrase (English or French) the text contains, with the line of its first occurrence. */
+export function findForbiddenSelfServePhrases(text: string): { phrase: string; line: number }[] {
+  const normalized = normalizeForPhraseMatch(text);
+  const hits: { phrase: string; line: number }[] = [];
+  for (const { phrase, key } of PHRASE_KEYS) {
+    const idx = normalized.indexOf(key);
+    if (idx !== -1) {
+      hits.push({ phrase, line: normalized.slice(0, idx).split("\n").length - 1 });
+    }
+  }
+  return hits;
+}
 
 export interface CopySafetyViolation {
   sourceId: string;
@@ -69,19 +139,9 @@ export function checkCopySafety(sources: CopySource[], manifest: CapabilityManif
       continue;
     }
 
-    const lowerText = source.text.toLowerCase();
-    for (const phrase of FORBIDDEN_SELF_SERVE_PHRASES) {
-      const idx = lowerText.indexOf(phrase.toLowerCase());
-      if (idx !== -1) {
-        const lineStart = source.text.lastIndexOf("\n", idx) + 1;
-        const lineEndIdx = source.text.indexOf("\n", idx);
-        const lineEnd = lineEndIdx === -1 ? source.text.length : lineEndIdx;
-        violations.push({
-          sourceId: source.id,
-          phrase,
-          context: source.text.slice(lineStart, lineEnd).trim(),
-        });
-      }
+    const lines = source.text.split("\n");
+    for (const { phrase, line } of findForbiddenSelfServePhrases(source.text)) {
+      violations.push({ sourceId: source.id, phrase, context: (lines[line] ?? "").trim() });
     }
   }
 

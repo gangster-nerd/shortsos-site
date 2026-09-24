@@ -33,8 +33,9 @@ question → TextOS CTC intake → geo-writer → TruthCheck → ContentDocument
 
 - Output: engineering notes under `/insights/`, on the manifest surface `developer_note`.
 - No capability is claimable on that surface, so these notes make historical statements only.
-- Evidence quotes commit messages verbatim. It is checked for `controlled_preview`: commit-derived
-  facts carry no human public-use clearance yet.
+- Evidence quotes commit messages, product files and manifest fields verbatim. The owner cleared
+  every piece of it for public use on 2026-09-24, through TextOS's `clearEvidenceForPublicUse`
+  (recorded in each brief's `clearances`), so the notes are checked for `public_web`.
 
 **Site Intelligence (client flow).** The chain is: TextOS Site Intelligence crawl of this site →
 where the site gives no in-depth answer to an operator-proposed buyer question → same writer and
@@ -165,13 +166,17 @@ What it does carry, because the articles are built on it: the evidence quotes in
 intake (excerpts of cited commit messages, product files and manifest fields), TextOS's artefact
 formats, and the TextOS refs in `tool.json`.
 
+## Review, clearance and indexing
+
+The owner reviewed every published article on 2026-09-24 (`publication.humanReview` in each brief;
+`HUMAN-REVIEW.md` is the reviewer's packet). The same day, the owner cleared the evidence of the
+engineering notes for public use and turned indexing on (`SITE_ALLOWS_INDEXING`). The article
+loader still refuses indexing while any published article is only checked for `controlled_preview`.
+
 ## Not done, on purpose
 
 - **No live model call.** There was no key; see "Who wrote the slots".
 - **No measurement.** A human must approve the question panel, and the live provider is absent.
-- **Human review is still pending for every article.** Publication was mandated by the owner.
-  `HUMAN-REVIEW.md` is the reviewer's packet. `publication.humanReview` in each brief records the
-  outcome once a reviewer has read the article.
 - **No automatic trigger on product commits.** The product side emits almost no change-impact
   records yet (one record exists), so there is nothing to select candidates from.
 - **Nothing written to any TextOS repository.**

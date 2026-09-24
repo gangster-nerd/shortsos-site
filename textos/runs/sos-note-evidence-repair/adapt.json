@@ -2,8 +2,8 @@
   "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
   "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
   "planId": "how to check the proof behind a vendor's public claim still holds",
-  "executionPlanHash": "a85809383abdfb6fc833af02eb24394e1d6db4fa05f80d159ec0bf3d67749eae",
-  "ctcHandoffHash": "8876158ac8b9e48ed53b15baa7bab5e06766058b66fff4396921c0071b3dc98b",
+  "executionPlanHash": "3410aa2dd3191a1835349307e1cbdd349c48e46ea4686e3c873cbc7d28265c56",
+  "ctcHandoffHash": "fe07b28cf6ee3be099821cf7ca1b669741de33d63d5b81a32d2c4b161ac044dd",
   "promptHashes": {
     "title": "d3104dd61b55904259ed60454a5200196a925472669b55e155a40c6dab2345e7",
     "meta": "9915c8dc8a6e4da6b66dea0598f40ec1d87c87a3bcbcd0d67a29aedc47722a4f",

@@ -4,7 +4,7 @@
   "flow": "commit_to_content",
   "slug": "why-no-strong-story-is-a-valid-answer",
   "locale": "en-US",
-  "publicationChannel": "controlled_preview",
+  "publicationChannel": "public_web",
   "entityIds": [
     "FDTS-NARRATIVE-TRUTH-V1",
     "FDTS-CAPTURE-TIME-TRUTH-V1",
@@ -52,7 +52,33 @@
     "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
     "approvedAt": "2026-09-24"
   },
-  "clearances": [],
+  "clearances": [
+    {
+      "evidenceIds": [
+        "ev-n3-01",
+        "ev-n3-02",
+        "ev-n3-03",
+        "ev-n3-04",
+        "ev-n3-05",
+        "ev-n3-06",
+        "ev-n3-07",
+        "ev-n3-08",
+        "ev-n3-08b",
+        "ev-n3-08c",
+        "ev-n3-09",
+        "ev-n3-10",
+        "ev-n3-11",
+        "ev-n3-12",
+        "ev-n3-13"
+      ],
+      "decision": "APPROVE_PUBLIC_USE",
+      "clientValidation": "CLIENT_VALIDATE",
+      "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+      "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+      "decidedAt": "2026-09-24",
+      "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+    }
+  ],
   "evidence": [
     {
       "id": "ev-n3-01",
@@ -452,9 +478,9 @@
     "publishedOn": "2026-09-24",
     "mandate": "The ShortsOS owner's instruction of 2026-09-24 to produce and publish these articles on ShortsOS-site.",
     "humanReview": {
-      "status": "pending",
-      "reviewer": null,
-      "reviewedOn": null
+      "status": "done",
+      "reviewer": "Marc Prp",
+      "reviewedOn": "2026-09-24"
     }
   }
 }

@@ -3,15 +3,17 @@ import Link from "next/link";
 
 import { HOW_IT_WORKS_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
+import { pageMetadata } from "@/lib/seo/page-metadata";
+import { PilotCta } from "@/components/pilot-cta";
 
-export const metadata: Metadata = { title: "How it works" };
+export const metadata: Metadata = pageMetadata({ path: "/how-it-works/", title: "How it works" });
 
 export default function HowItWorksPage() {
   const m1 = getM1ForSurface("how_it_works");
   const claim = splitM1Claim(m1.claimCeiling);
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">How it works</p>
@@ -58,6 +60,8 @@ export default function HowItWorksPage() {
           </p>
         </div>
       </section>
+
+      <PilotCta host="how_it_works" />
     </main>
   );
 }

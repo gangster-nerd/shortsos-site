@@ -64,6 +64,11 @@ export const PIPELINE_NARRATIVE: { title: string; body: string; proven: boolean 
   },
 ];
 
+export const HOME_HERO = {
+  eyebrow: "Video production, evidence-first",
+  headline: "From raw footage to a published, reviewed short.",
+};
+
 export const HOME_INTRO =
   "ShortsOS turns a client's own raw footage into a produced, human-reviewed short — and, when " +
   "genuinely ready, gets it published with a captured permalink. The steps below are the shape " +
@@ -186,6 +191,30 @@ export interface ChangelogEntry {
 }
 
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
+  {
+    date: "2026-09-24",
+    title: "Calls to action for customer-run access tied to general availability",
+    body: "The site's rule for ever showing a call to action that would let a customer run a capability without the team was aligned with the product's own: that capability must be generally available, not only cleared for a public claim under a managed-service framing. No capability qualified at the time, and no such call to action was shown.",
+    repo: "shortsos-site",
+    sha: "919bf28",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-24",
+    title: "Official address chosen and indexing opened",
+    body: "The owner chose https://shortsos-site.vercel.app as this site's official address and opened it to search engines, once every published article had been reviewed and cleared for the public web. Each page now declares its canonical address on that origin.",
+    repo: "shortsos-site",
+    sha: "7b58905",
+    historicalClaimOnly: true,
+  },
+  {
+    date: "2026-09-24",
+    title: "Insights reviewed; engineering notes cleared for the public web",
+    body: "The owner reviewed the five Insights articles and cleared the evidence behind the three engineering notes for public use. The notes were checked again with that clearance and moved from a controlled preview to the public web; their wording did not change.",
+    repo: "shortsos-site",
+    sha: "763de47",
+    historicalClaimOnly: true,
+  },
   {
     date: "2026-09-24",
     title: "Insights opened: engineering notes and answers (SOS-NOTES-V1)",
@@ -370,6 +399,21 @@ export const INSIGHTS_AUTHORSHIP: Record<"pending" | "done", string> = {
   done: "Drafted by an AI agent working for the ShortsOS team, then reviewed by a member of the team.",
 };
 
+/** The page shown for an address that does not exist (src/app/not-found.tsx). */
+export const NOT_FOUND_COPY = {
+  eyebrow: "404",
+  heading: "This page does not exist",
+  body: "The address may be mistyped, or the page may have moved. These pages are a good place to start.",
+};
+
+/** The closing line of every share image (src/app/og/[image]/route.tsx). */
+export const SHARE_IMAGE_LINE = "Operated by the ShortsOS team for pilots.";
+
+/** The site's default description (meta description, Open Graph, llms.txt). */
+export const SITE_DESCRIPTION =
+  "ShortsOS turns raw footage into a reviewed, published short — with a real, proven " +
+  "Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots.";
+
 export const REQUEST_PILOT_COPY = {
   intro:
     "There is no independent signup. Requesting a pilot starts a direct conversation with the " +
@@ -380,9 +424,18 @@ export const REQUEST_PILOT_COPY = {
     "automatically, send the same details directly to the address below.",
 };
 
+/** The end-of-page pilot CTA on How it works, Proof and FAQ (src/components/pilot-cta.tsx). */
+export const PILOT_CTA_COPY = {
+  eyebrow: "Pilots",
+  heading: "Talk to the team about a pilot",
+  body:
+    "ShortsOS is operated by the ShortsOS team for pilots. Requesting one starts a direct conversation " +
+    "about your footage and the shorts you have in mind. There is no independent signup.",
+};
+
 export const HOME_PAGE_COPY: CopySource = {
   id: "home-page",
-  text: [HOME_INTRO, ...PIPELINE_NARRATIVE.map((s) => `${s.title}: ${s.body}`)].join("\n"),
+  text: [HOME_HERO.eyebrow, HOME_HERO.headline, HOME_INTRO, ...PIPELINE_NARRATIVE.map((s) => `${s.title}: ${s.body}`)].join("\n"),
   relatedEntityIds: [M1_ENTITY_ID],
 };
 
@@ -446,7 +499,26 @@ export const REQUEST_PILOT_PAGE_COPY: CopySource = {
   relatedEntityIds: [],
 };
 
+export const PILOT_CTA_BLOCK_COPY: CopySource = {
+  id: "pilot-cta-block",
+  text: [PILOT_CTA_COPY.eyebrow, PILOT_CTA_COPY.heading, PILOT_CTA_COPY.body].join("\n"),
+  relatedEntityIds: [M1_ENTITY_ID],
+};
+
+export const NOT_FOUND_PAGE_COPY: CopySource = {
+  id: "not-found-page",
+  text: [NOT_FOUND_COPY.eyebrow, NOT_FOUND_COPY.heading, NOT_FOUND_COPY.body].join("\n"),
+  relatedEntityIds: [],
+};
+
+export const SITE_METADATA_COPY: CopySource = {
+  id: "site-metadata",
+  text: [SITE_DESCRIPTION, SHARE_IMAGE_LINE].join("\n"),
+  relatedEntityIds: [],
+};
+
 export const SITE_COPY_SOURCES: CopySource[] = [
+  SITE_METADATA_COPY,
   HOME_PAGE_COPY,
   HOW_IT_WORKS_COPY,
   METHODOLOGY_COPY,
@@ -455,5 +527,7 @@ export const SITE_COPY_SOURCES: CopySource[] = [
   CHANGELOG_COPY,
   GLOSSARY_COPY,
   REQUEST_PILOT_PAGE_COPY,
+  PILOT_CTA_BLOCK_COPY,
+  NOT_FOUND_PAGE_COPY,
   INSIGHTS_COPY,
 ];

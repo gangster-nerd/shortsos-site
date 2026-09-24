@@ -54,8 +54,7 @@ export function buildFaqPageJsonLd(items: { q: string; a: string }[]): FaqPageJs
 /**
  * Article / TechArticle JSON-LD for `/insights/<slug>/` (SOS-NOTES-V1). Mirrors only what the page
  * visibly shows: headline, description, language, the publication date printed on the page, and
- * the organization as author and publisher. No `url` / `@id`: the site is not indexable and its
- * origin is a placeholder — an unknown value is left absent, never faked.
+ * the organization as author and publisher, and the page's canonical URL on the official origin.
  */
 export interface ArticleJsonLd {
   "@context": "https://schema.org";
@@ -66,6 +65,8 @@ export interface ArticleJsonLd {
   datePublished: string;
   author: { "@type": "Organization"; name: string };
   publisher: { "@type": "Organization"; name: string };
+  url: string;
+  mainEntityOfPage: { "@type": "WebPage"; "@id": string };
 }
 
 export function buildArticleJsonLd(params: {
@@ -74,6 +75,7 @@ export function buildArticleJsonLd(params: {
   description: string;
   inLanguage: string;
   datePublished: string;
+  url: string;
 }): ArticleJsonLd {
   const type = params.schemaType === "TechArticle" ? "TechArticle" : "Article";
   return {
@@ -85,6 +87,8 @@ export function buildArticleJsonLd(params: {
     datePublished: params.datePublished,
     author: { "@type": "Organization", name: "ShortsOS" },
     publisher: { "@type": "Organization", name: "ShortsOS" },
+    url: params.url,
+    mainEntityOfPage: { "@type": "WebPage", "@id": params.url },
   };
 }
 

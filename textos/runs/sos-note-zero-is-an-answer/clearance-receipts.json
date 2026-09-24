@@ -1,1 +1,377 @@
-[]
+[
+  {
+    "evidenceId": "ev-n3-01",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-02",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-03",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-04",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-05",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-06",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-07",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-08",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-08b",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-08c",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-09",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-10",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-11",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-12",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  },
+  {
+    "evidenceId": "ev-n3-13",
+    "decision": "APPROVE_PUBLIC_USE",
+    "clientValidationDecision": "CLIENT_VALIDATE",
+    "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+    "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+    "decidedAt": "2026-09-24",
+    "scope": {
+      "channel": "public_web",
+      "candidateId": "sos-note-zero-is-an-answer"
+    },
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+    "before": {
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "publicExcerpt": null
+    },
+    "after": {
+      "epistemicStatus": "client_validated",
+      "publicUse": "allowed",
+      "publicExcerpt": null
+    },
+    "approvedPublicWording": null,
+    "reason": "The owner authorized public use of the excerpts this engineering note quotes (manifest field, product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+  }
+]

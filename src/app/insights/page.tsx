@@ -4,8 +4,9 @@ import Link from "next/link";
 import { INSIGHTS_INTRO } from "@/content/copy-sources";
 import { buildCollectionPageJsonLd } from "@/lib/seo/json-ld";
 import { loadInsightArticles, type InsightArticle } from "@/lib/textos/articles";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "Insights" };
+export const metadata: Metadata = pageMetadata({ path: "/insights/", title: "Insights" });
 
 const SECTIONS: { flow: InsightArticle["flow"]; eyebrow: string; title: string }[] = [
   { flow: "site_intelligence", eyebrow: "Answers", title: "Questions this site now answers in depth" },
@@ -21,7 +22,7 @@ export default function InsightsIndexPage() {
   });
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Insights</p>
