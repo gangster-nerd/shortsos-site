@@ -1,0 +1,91 @@
+{
+  "conversionPlanVersion": 1,
+  "articleId": "sos-note-zero-is-an-answer",
+  "tool": {
+    "repository": "gangster-nerd/textos-site",
+    "sha": "bd8ae46bec43f734980a9baafa7331d32613bcbb",
+    "functions": [
+      "resolveRelatedContent",
+      "findSourceRelatedSection",
+      "deriveResolvedConversionPlan"
+    ]
+  },
+  "inputs": {
+    "contentDocumentSha256": "1535b60b10d2273deaab2c78aa759e5597b8146b33a659b8afe4de75015168ae",
+    "resolvedSurfaceSha256": "30a5db371b200ca583a04901fe3637b762d4a763a2e8f9afd76ca66b75b55b8e",
+    "commercialCapability": "unconfigured",
+    "cta": null,
+    "newsletterEnabled": false,
+    "corpus": [
+      {
+        "documentId": "shortsos:sos-answer-human-review",
+        "slug": "is-there-a-human-review-before-publication",
+        "channel": "public_web",
+        "primaryTopicId": "operated-pilot",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-answer-what-a-pilot-involves",
+        "slug": "what-a-shortsos-pilot-involves",
+        "channel": "public_web",
+        "primaryTopicId": "operated-pilot",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-evidence-repair",
+        "slug": "keeping-the-proof-behind-a-public-claim-checkable",
+        "channel": "controlled_preview",
+        "primaryTopicId": "public-claim-governance",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-one-public-claim",
+        "slug": "why-shortsos-makes-one-public-claim",
+        "channel": "controlled_preview",
+        "primaryTopicId": "public-claim-governance",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+          "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+          "JSON2VIDEO-NATIVE-RENDER-V1",
+          "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING",
+          "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT",
+          "PROHIBITED-CREATIVE-QUALITY-CLAIMS"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-zero-is-an-answer",
+        "slug": "why-no-strong-story-is-a-valid-answer",
+        "channel": "controlled_preview",
+        "primaryTopicId": "footage-to-story-engineering",
+        "capabilityIds": [
+          "FDTS-NARRATIVE-TRUTH-V1",
+          "FDTS-CAPTURE-TIME-TRUTH-V1",
+          "FDTS-RETRIEVAL-SAFETY-V1",
+          "FDTS-REPEATED-TAKE-INTELLIGENCE-V1"
+        ]
+      }
+    ],
+    "corpusNote": "The committed ContentDocuments, with capabilityIds, primaryTopicId/topicIds and publicationStatus filled from each brief (entityIds, provenance.topicCluster, publication record)."
+  },
+  "related": [],
+  "excludedByChannel": [],
+  "plan": {
+    "commercial": {
+      "enabled": false,
+      "header": null,
+      "contextual": null,
+      "final": null
+    },
+    "editorialNextStep": null,
+    "retention": {
+      "enabled": false
+    }
+  },
+  "editorialNextStep": null
+}

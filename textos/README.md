@@ -9,7 +9,7 @@ source, and nothing is ever written to a TextOS repository.
 `scripts/textos/run.ts` is the only way ShortsOS code reaches TextOS code. Before a step runs, it
 checks that the TextOS checkout passed with `--textos-path`:
 
-- sits at exactly the writer SHA pinned in `tool.json`;
+- sits at exactly the SHA `tool.json` pins for that step;
 - has a clean working tree (no tracked change, no untracked file).
 
 The step then runs under TextOS's own `tsx` and `tsconfig.json`, importing TextOS modules
@@ -20,6 +20,7 @@ step, the working tree is checked again, and a step that left any trace in the c
 |---|---|---|
 | writer | `feat/ctc-r1-pilot-a` @ `a0f6591` (2026-09-23) | CTC seam, geo-writer@0.2, editorial-voice prompt `geo-writer-slot@0.3`, evidence approval and public-use clearance, TruthCheck, ContentDocument@1 bridge, surface resolution, headless JSON. Site Intelligence runs from the same checkout. |
 | clientFlow | `feat/pa-draft-integration-1` @ `61aea32` (2026-09-23) | Contract reference only: operator question proposals and their canonical metadata. Not executed. |
+| surfacePolish | textos-site `feat/cmo-surface-polish-1` @ `bd8ae46` (2026-09-18) | CMO surface polish of the content-surface engine: the render-parity oracle and the conversion plan. Not merged into any trunk. |
 
 ## Two flows, one editorial plan
 
@@ -87,6 +88,11 @@ npm run textos -- write --article <articleId> --textos-path <...>
 
 # 4. Record the brief's commits in the public ledger (the build fails until they are there).
 npm run content:commits -- --product-ref <same sha> --product-repo-path <same clone>
+
+# 5. CMO surface polish, from a textos-site checkout at the surfacePolish SHA.
+npm run textos -- conversion-plan --textos-path <textos-site checkout>
+npm run build
+npm run textos -- render-parity --label after --require-pass --textos-path <textos-site checkout>
 ```
 
 `prepare` fails if any evidence quote is not verbatim in its source. The sources are a commit
@@ -102,6 +108,7 @@ is packaged.
 |---|---|
 | `intake.json`, `evidence-usability.json`, `clearance-receipts.json`, `adapt.json` (with the prompt hashes) | `prepare` (TextOS approval, clearance, CTC adapter, prompt builder) |
 | `responses/` | the operator |
+| `conversion-plan.json` | `conversion-plan` (TextOS related-content ranking and conversion plan) |
 | `writer-outcome.json`, `lineage.json`, `content-document.json`, `resolved-surface.json`, `article-structure.json`, `receipt.json`, `HUMAN-REVIEW.md` | `write` (TextOS writer, TruthCheck, bridge, surface resolution, headless JSON) |
 
 ## What the site checks without TextOS (CI, tests, build)
@@ -115,7 +122,35 @@ is packaged.
 - every named entity is in the manifest;
 - a `faq` answer names only entities that authorize `faq`;
 - no developer note restates a claim ceiling;
-- the site is not indexable while any preview-only article is published.
+- the site is not indexable while any preview-only article is published;
+- the conversion plan comes from the pinned surface polish, was computed on the committed document
+  and surface, and carries no commercial slot;
+- a next step shows its target's own title and description, and a `public_web` answer never points
+  to a note only checked for `controlled_preview`.
+
+## CMO surface polish
+
+Two generic parts of TextOS's CMO surface polish run on the published articles. The rest of that
+layer (its renderer, and the commercial slots with the campaign copy they carry for TextOS's own
+site) does not apply here.
+
+**Conversion plan.** TextOS's `resolveRelatedContent` ranks the other articles against each one.
+It reads its corpus from `content/managed-corpus/` under the working directory, so
+`conversion-plan` runs it from a temporary directory that holds ShortsOS's committed
+ContentDocuments. The relation inputs the writer's bridge leaves empty are filled from each brief:
+capabilities from `entityIds`, topic from `provenance.topicCluster`, and the publication record.
+`deriveResolvedConversionPlan` then runs with the commercial capability `"unconfigured"` and no CTA,
+so only the editorial next step can come out. The answers point to each other, and so do the two
+claim-governance notes. The footage note shares nothing with the others, so it gets no next step.
+
+**Render parity.** The oracle compares each block's semantic tree with the element marked
+`data-cse-block-id` in the exported page. The writer's bridge emits text-only blocks, and the
+oracle skips any block without a tree: on the committed documents as they are, it would check
+nothing and pass. So `render-parity` checks a parity view built from the committed resolved
+surface and lineage: each heading at the writer's level, then each text. It also changes one word
+inside a checked block and requires the oracle to report it. Receipts are written to
+`surface-polish/<label>/render-parity.json`. Before the page carried the markers, no block could
+be found (`before`). With them, every block matches (`after`).
 
 ## What this public repository does not carry
 

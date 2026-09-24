@@ -501,6 +501,31 @@ form.pilot-form textarea {
 .article-sources table.kv td {
   font-size: 0.92rem;
 }
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.next-step {
+  max-width: 760px;
+  display: grid;
+  gap: 6px;
+}
+.next-step p {
+  margin: 0;
+}
+.next-step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.next-step-title a {
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+}
+.next-step-description {
+  color: var(--ink-soft);
+  max-width: 68ch;
+}
 
 @media (max-width: 640px) {
   .claim-row {
@@ -523,5 +548,9 @@ form.pilot-form textarea {
     order: 3;
     flex-basis: 100%;
     gap: 8px 18px;
+  }
+  .article-sources table.kv th,
+  .article-sources table.kv td {
+    padding: 10px 8px;
   }
 }

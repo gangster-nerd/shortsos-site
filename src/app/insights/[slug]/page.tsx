@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { INSIGHTS_AUTHORSHIP, INSIGHTS_NOTE_NOTICE, INSIGHTS_PROVENANCE } from "@/content/copy-sources";
+import { INSIGHTS_AUTHORSHIP, INSIGHTS_NEXT_STEP_LABEL, INSIGHTS_NOTE_NOTICE, INSIGHTS_PROVENANCE } from "@/content/copy-sources";
 import { buildArticleJsonLd } from "@/lib/seo/json-ld";
-import { STATUS_MEANING, getInsightArticle, loadInsightArticles } from "@/lib/textos/articles";
+import { STATUS_MEANING, getInsightArticle, headingBlockId, loadInsightArticles, type ArticleBlock } from "@/lib/textos/articles";
 
 // Static export: one page per published article, nothing resolved at request time.
 export const dynamicParams = false;
@@ -22,6 +22,18 @@ const FLOW_LABEL = {
   commit_to_content: "Engineering note",
   site_intelligence: "Answer",
 } as const;
+
+// Each block carries the id the render-parity check looks for: the heading at the writer's level,
+// then the text, both exactly as written.
+function BlockContent({ block }: { block: ArticleBlock }) {
+  const Heading = block.headingLevel === 3 ? "h3" : "h2";
+  return (
+    <>
+      {block.heading ? <Heading data-cse-block-id={headingBlockId(block.slotId)}>{block.heading}</Heading> : null}
+      <p data-cse-block-id={block.slotId}>{block.text}</p>
+    </>
+  );
+}
 
 export default async function InsightArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -55,19 +67,33 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
             block.role === "answer" ? (
               <div key={block.slotId} className="short-answer">
                 <p className="claim-label">In short</p>
-                {block.heading ? <h2>{block.heading}</h2> : null}
-                <p>{block.text}</p>
+                <BlockContent block={block} />
               </div>
             ) : (
               <div key={block.slotId}>
-                {block.heading ? <h2>{block.heading}</h2> : null}
-                <p>{block.text}</p>
+                <BlockContent block={block} />
               </div>
             ),
           )}
           </div>
         </div>
       </section>
+
+      {article.nextStep ? (
+        <section className="section">
+          <div className="shell">
+            <aside className="next-step" aria-labelledby="next-step-label">
+              <p className="claim-label" id="next-step-label">
+                {INSIGHTS_NEXT_STEP_LABEL}
+              </p>
+              <p className="next-step-title">
+                <Link href={article.nextStep.route}>{article.nextStep.label}</Link>
+              </p>
+              <p className="next-step-description">{article.nextStep.description}</p>
+            </aside>
+          </div>
+        </section>
+      ) : null}
 
       <section className="section">
         <div className="shell article-sources">
@@ -97,6 +123,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
           ) : null}
 
           <h2 style={{ marginTop: 40 }}>What may be claimed today</h2>
+          <div className="table-scroll">
           <table className="kv">
             <thead>
               <tr>
@@ -117,6 +144,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
               ))}
             </tbody>
           </table>
+          </div>
 
           <h2 style={{ marginTop: 40 }}>How this page was made</h2>
           <p className="prose">{INSIGHTS_PROVENANCE[article.flow]}</p>

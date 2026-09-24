@@ -118,3 +118,11 @@ export function promptFileName(slotId: string): string {
 export function responseFileName(slotId: string): string {
   return `${slotId}.json`;
 }
+
+/**
+ * The `data-cse-block-id` an article page puts on each rendered block, so TextOS's render-parity
+ * oracle can find it: the slot id on the text, and this id on the section heading above it.
+ */
+export function headingBlockId(slotId: string): string {
+  return `${slotId}--heading`;
+}

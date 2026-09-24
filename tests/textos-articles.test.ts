@@ -81,6 +81,40 @@ describe("TextOS-produced articles (SOS-NOTES-V1)", () => {
   });
 });
 
+describe("CMO surface polish: conversion plan and next steps", () => {
+  const byId = new Map(articles.map((a) => [a.articleId, a]));
+
+  it("derives next steps from the pinned surface polish, with no commercial slot on any page", () => {
+    for (const a of articles) {
+      const plan = JSON.parse(readFileSync(join(REPO_ROOT, "textos", "runs", a.articleId, "conversion-plan.json"), "utf8")) as {
+        tool: { sha: string };
+        inputs: { commercialCapability: string };
+        plan: { commercial: { enabled: boolean } };
+      };
+      expect(plan.tool.sha).toBe(ctx.pinnedSurfacePolishSha);
+      expect(plan.inputs.commercialCapability).toBe("unconfigured");
+      expect(plan.plan.commercial.enabled).toBe(false);
+    }
+    // The pinned ranking on this corpus: shared topic and capability pair the two answers and the
+    // two claim-governance notes; the footage note shares nothing, so it gets no next step.
+    expect(Object.fromEntries(articles.map((a) => [a.articleId, a.nextStep?.targetArticleId ?? null]))).toEqual({
+      "sos-answer-human-review": "sos-answer-what-a-pilot-involves",
+      "sos-answer-what-a-pilot-involves": "sos-answer-human-review",
+      "sos-note-evidence-repair": "sos-note-one-public-claim",
+      "sos-note-one-public-claim": "sos-note-evidence-repair",
+      "sos-note-zero-is-an-answer": null,
+    });
+  });
+
+  it("shows each target as it reads, and never lowers a page's channel", () => {
+    for (const a of articles.filter((x) => x.nextStep)) {
+      const target = byId.get(a.nextStep!.targetArticleId)!;
+      expect(a.nextStep).toEqual({ targetArticleId: target.articleId, route: target.route, label: target.title, description: target.description });
+      if (a.channel === "public_web") expect(target.channel).toBe("public_web");
+    }
+  });
+});
+
 describe("integrity failures are refused, not rendered", () => {
   const brief = briefs.find((b) => b.articleId === "sos-note-evidence-repair")!;
 
@@ -117,6 +151,41 @@ describe("integrity failures are refused, not rendered", () => {
     expect(() => loadArticle(tampered, ctx)).toThrow(/does not authorize a public claim on faq/);
   });
 
+  it("refuses a conversion plan that carries a commercial slot", () => {
+    const dir = sandbox();
+    sandboxes.push(dir);
+    const file = join(dir, "textos", "runs", brief.articleId, "conversion-plan.json");
+    const plan = JSON.parse(readFileSync(file, "utf8")) as { plan: { commercial: { enabled: boolean } } };
+    plan.plan.commercial.enabled = true;
+    writeFileSync(file, JSON.stringify(plan));
+    expect(() => loadArticle(brief, { ...ctx, root: dir })).toThrow(/commercial slot/);
+  });
+
+  it("refuses a conversion plan from another tool than the pinned surface polish", () => {
+    expect(() => loadArticle(brief, { ...ctx, pinnedSurfacePolishSha: "0".repeat(40) })).toThrow(/pinned surface polish/);
+  });
+
+  it("refuses a public_web answer whose next step is a preview-only note, even shown as it reads", () => {
+    const dir = sandbox();
+    sandboxes.push(dir);
+    const note = articles.find((a) => a.articleId === brief.articleId)!;
+    const file = join(dir, "textos", "runs", "sos-answer-human-review", "conversion-plan.json");
+    const plan = JSON.parse(readFileSync(file, "utf8")) as { editorialNextStep: Record<string, string> };
+    plan.editorialNextStep = { ...plan.editorialNextStep, targetArticleId: note.articleId, route: note.route, label: note.title, description: note.description };
+    writeFileSync(file, JSON.stringify(plan));
+    expect(() => loadInsightArticles({ ...ctx, root: dir })).toThrow(/only for controlled_preview/);
+  });
+
+  it("refuses a next step that does not show its target as that article reads", () => {
+    const dir = sandbox();
+    sandboxes.push(dir);
+    const file = join(dir, "textos", "runs", brief.articleId, "conversion-plan.json");
+    const plan = JSON.parse(readFileSync(file, "utf8")) as { editorialNextStep: { label: string } };
+    plan.editorialNextStep.label = "A better title than the article has";
+    writeFileSync(file, JSON.stringify(plan));
+    expect(() => loadInsightArticles({ ...ctx, root: dir })).toThrow(/as that article reads/);
+  });
+
   it("refuses an unpublished brief", () => {
     const unpublished: ArticleBrief = { ...brief, publication: undefined };
     expect(() => loadArticle(unpublished, ctx)).toThrow(/no publication record/);
@@ -124,10 +193,15 @@ describe("integrity failures are refused, not rendered", () => {
 });
 
 describe("the TextOS client record", () => {
-  const tool = JSON.parse(readFileSync(join(REPO_ROOT, "textos", "tool.json"), "utf8")) as { writer: { sha: string } };
+  const tool = JSON.parse(readFileSync(join(REPO_ROOT, "textos", "tool.json"), "utf8")) as {
+    writer: { sha: string };
+    surfacePolish: { repository: string; sha: string };
+  };
 
   it("pins full SHAs, and every committed run receipt names the pinned writer", () => {
     expect(tool.writer.sha).toMatch(/^[0-9a-f]{40}$/);
+    expect(tool.surfacePolish.sha).toMatch(/^[0-9a-f]{40}$/);
+    expect(tool.surfacePolish.repository).toBe("gangster-nerd/textos-site");
     for (const id of readdirSync(join(REPO_ROOT, "textos", "runs"))) {
       const receipt = JSON.parse(readFileSync(join(REPO_ROOT, "textos", "runs", id, "receipt.json"), "utf8")) as {
         textos: { sha: string };
@@ -137,6 +211,23 @@ describe("the TextOS client record", () => {
       expect(receipt.textos.sha).toBe(tool.writer.sha);
       // The provider identity says who actually wrote the slots — never the API model that did not run.
       expect(receipt.slotProviderMethodVersion).toMatch(/^operator:claude-code\|geo-writer-slot@/);
+    }
+  });
+
+  it("commits a render-parity receipt from the pinned surface polish that checked every block of every article", () => {
+    const receipt = JSON.parse(readFileSync(join(REPO_ROOT, "textos", "surface-polish", "after", "render-parity.json"), "utf8")) as {
+      tool: { sha: string };
+      summary: { articles: number; passed: number };
+      articles: { articleId: string; passed: boolean; blocksChecked: number; blocksInView: number; mutationCaught: boolean | null; titleMatches: boolean }[];
+    };
+    expect(receipt.tool.sha).toBe(tool.surfacePolish.sha);
+    expect(receipt.articles.map((a) => a.articleId).sort()).toEqual(articles.map((a) => a.articleId).sort());
+    expect(receipt.summary).toEqual({ articles: articles.length, passed: articles.length });
+    for (const a of receipt.articles) {
+      // Not vacuous: every block of the parity view was found and compared, and a one-word change was caught.
+      expect(a.passed && a.titleMatches && a.mutationCaught === true).toBe(true);
+      expect(a.blocksChecked).toBeGreaterThan(0);
+      expect(a.blocksChecked).toBe(a.blocksInView);
     }
   });
 

@@ -363,6 +363,8 @@ export const INSIGHTS_PROVENANCE: Record<"commit_to_content" | "site_intelligenc
     "was checked for unsupported, overstated or undeclared statements before it was added to this site.",
 };
 
+export const INSIGHTS_NEXT_STEP_LABEL = "Read next";
+
 export const INSIGHTS_AUTHORSHIP: Record<"pending" | "done", string> = {
   pending: "Drafted by an AI agent working for the ShortsOS team. Human editorial review of this article is pending.",
   done: "Drafted by an AI agent working for the ShortsOS team, then reviewed by a member of the team.",
@@ -426,7 +428,15 @@ export const GLOSSARY_COPY: CopySource = {
 
 export const INSIGHTS_COPY: CopySource = {
   id: "insights-pages",
-  text: [INSIGHTS_INTRO, INSIGHTS_NOTE_NOTICE, INSIGHTS_PROVENANCE.commit_to_content, INSIGHTS_PROVENANCE.site_intelligence, INSIGHTS_AUTHORSHIP.pending, INSIGHTS_AUTHORSHIP.done].join("\n"),
+  text: [
+    INSIGHTS_INTRO,
+    INSIGHTS_NOTE_NOTICE,
+    INSIGHTS_PROVENANCE.commit_to_content,
+    INSIGHTS_PROVENANCE.site_intelligence,
+    INSIGHTS_AUTHORSHIP.pending,
+    INSIGHTS_AUTHORSHIP.done,
+    INSIGHTS_NEXT_STEP_LABEL,
+  ].join("\n"),
   relatedEntityIds: [],
 };
 

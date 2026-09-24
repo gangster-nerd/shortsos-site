@@ -12,7 +12,11 @@
  *  - every entity it names exists in the pinned manifest, and a `faq`-surface article only names
  *    public_marketable entities that authorize `faq`;
  *  - its evidence was cleared for the channel it was written for, and the site's indexing switch
- *    is not on while any published article was only checked for `controlled_preview`.
+ *    is not on while any published article was only checked for `controlled_preview`;
+ *  - its conversion plan comes from the pinned CMO surface polish, was computed on exactly these
+ *    committed artefacts, carries no commercial slot, and its editorial next step (if any) is
+ *    another published article, shown with that article's own title and description, and never
+ *    one only checked for `controlled_preview` from an article checked for `public_web`.
  *
  * Nothing here reaches TextOS: this is ShortsOS reading its own committed artefacts.
  */
@@ -23,7 +27,9 @@ import { join } from "node:path";
 import { SITE_ALLOWS_INDEXING } from "../config/site-config";
 import { parseProductCommitLedger, resolveCitedCommit, type ProductCommit, type ProductCommitLedger } from "../commit-to-content/commit-ledger";
 import type { CapabilityManifest, ManifestEntity, PublicationStatus, Surface } from "../manifest/schema";
-import { FLOW_SURFACE, INSIGHTS_ROUTE_PREFIX, type ArticleBrief, type ArticleFlow } from "./brief";
+import { FLOW_SURFACE, INSIGHTS_ROUTE_PREFIX, headingBlockId, type ArticleBrief, type ArticleFlow } from "./brief";
+
+export { headingBlockId };
 
 export class ArticleIntegrityError extends Error {
   constructor(articleId: string, message: string) {
@@ -95,6 +101,15 @@ interface IntakeEvidence {
   approvalScope: { channel: string; briefIds: string[] };
 }
 
+interface ConversionPlanFile {
+  conversionPlanVersion: number;
+  articleId: string;
+  tool: { repository: string; sha: string };
+  inputs: { contentDocumentSha256: string; resolvedSurfaceSha256: string; commercialCapability: string; cta: null };
+  plan: { commercial: { enabled: boolean; header: unknown; contextual: unknown; final: unknown } };
+  editorialNextStep: { targetArticleId: string; route: string; label: string; description: string; source: string } | null;
+}
+
 // ── What pages render ───────────────────────────────────────────────────────────────────────────
 
 export interface ArticleBlock {
@@ -119,6 +134,14 @@ export interface ArticleEntityStatus {
   allowedSurfaces: Surface[];
 }
 
+/** "Read next": derived by the CMO surface polish, checked against the target article. */
+export interface ArticleNextStep {
+  targetArticleId: string;
+  route: string;
+  label: string;
+  description: string;
+}
+
 export interface InsightArticle {
   articleId: string;
   flow: ArticleFlow;
@@ -139,6 +162,7 @@ export interface InsightArticle {
   entityStatuses: ArticleEntityStatus[];
   channel: "controlled_preview" | "public_web";
   siteObservation: ArticleBrief["siteObservation"];
+  nextStep: ArticleNextStep | null;
   /** Every piece of text the page shows, for copy-safety and wording checks. */
   allText: string[];
 }
@@ -159,6 +183,7 @@ export interface ArticleLoadContext {
   manifest: CapabilityManifest;
   ledger: ProductCommitLedger;
   pinnedTextosSha: string;
+  pinnedSurfacePolishSha: string;
   surfacePolicyIds: Record<string, string>;
   indexingAllowed: boolean;
 }
@@ -177,6 +202,7 @@ export function loadArticle(brief: ArticleBrief, ctx: ArticleLoadContext): Insig
   const resolved = JSON.parse(resolvedRaw) as ResolvedSurfaceFile;
   const lineage = readJson<LineageFile>(join(runDir, "lineage.json"), id);
   const intake = readJson<{ evidence: IntakeEvidence[] }>(join(runDir, "intake.json"), id);
+  const conversion = readJson<ConversionPlanFile>(join(runDir, "conversion-plan.json"), id);
 
   const publication = brief.publication;
   if (!publication) fail("has no publication record — unpublished briefs are never rendered");
@@ -289,6 +315,36 @@ export function loadArticle(brief: ArticleBrief, ctx: ArticleLoadContext): Insig
     }
   }
 
+  // Conversion plan: the pinned CMO surface polish, on these artefacts, never commercial.
+  if (conversion.articleId !== id) fail(`conversion plan names ${conversion.articleId}`);
+  if (conversion.tool.sha !== ctx.pinnedSurfacePolishSha) {
+    fail(`conversion plan comes from ${conversion.tool.sha}, the pinned surface polish is ${ctx.pinnedSurfacePolishSha}`);
+  }
+  if (
+    conversion.inputs.contentDocumentSha256 !== receipt.contentDocumentSha256 ||
+    conversion.inputs.resolvedSurfaceSha256 !== receipt.resolvedSurfaceSha256
+  ) {
+    fail("conversion plan was computed on other artefacts than the committed document and surface");
+  }
+  const { commercial } = conversion.plan;
+  if (
+    conversion.inputs.commercialCapability !== "unconfigured" ||
+    conversion.inputs.cta !== null ||
+    commercial.enabled ||
+    commercial.header !== null ||
+    commercial.contextual !== null ||
+    commercial.final !== null
+  ) {
+    fail("conversion plan carries a commercial slot; insights pages carry none");
+  }
+  const step = conversion.editorialNextStep;
+  if (step && (step.targetArticleId === id || !step.route.startsWith(INSIGHTS_ROUTE_PREFIX))) {
+    fail(`next step ${step.route} is not another insights article`);
+  }
+  const nextStep: ArticleNextStep | null = step
+    ? { targetArticleId: step.targetArticleId, route: step.route, label: step.label, description: step.description }
+    : null;
+
   const manifestSources = [...new Set(brief.evidence.flatMap((e) => (e.source.kind === "manifest_field" ? [e.source.entityId] : [])))].map(
     (entityId) => ({
       entityId,
@@ -316,7 +372,8 @@ export function loadArticle(brief: ArticleBrief, ctx: ArticleLoadContext): Insig
     entityStatuses,
     channel: brief.publicationChannel,
     siteObservation: brief.siteObservation,
-    allText,
+    nextStep,
+    allText: nextStep ? [...allText, nextStep.label, nextStep.description] : allText,
   };
 }
 
@@ -331,7 +388,10 @@ export function readBriefs(root: string): ArticleBrief[] {
 
 export function defaultArticleContext(root: string = process.cwd()): ArticleLoadContext {
   const inputs = join(root, "content-bundles", "inputs");
-  const tool = JSON.parse(readFileSync(join(root, "textos", "tool.json"), "utf8")) as { writer: { sha: string } };
+  const tool = JSON.parse(readFileSync(join(root, "textos", "tool.json"), "utf8")) as {
+    writer: { sha: string };
+    surfacePolish: { sha: string };
+  };
   const policies = JSON.parse(readFileSync(join(root, "textos", "client", "surface-policy.json"), "utf8")) as {
     policies: Record<string, { policyId: string }>;
   };
@@ -340,6 +400,7 @@ export function defaultArticleContext(root: string = process.cwd()): ArticleLoad
     manifest: JSON.parse(readFileSync(join(inputs, "manifest.json"), "utf8")) as CapabilityManifest,
     ledger: parseProductCommitLedger(readFileSync(join(inputs, "product-commits.json"), "utf8")),
     pinnedTextosSha: tool.writer.sha,
+    pinnedSurfacePolishSha: tool.surfacePolish.sha,
     surfacePolicyIds: Object.fromEntries(Object.entries(policies.policies).map(([surface, p]) => [surface, p.policyId])),
     indexingAllowed: SITE_ALLOWS_INDEXING,
   };
@@ -358,6 +419,18 @@ export function loadInsightArticles(ctx: ArticleLoadContext = defaultArticleCont
   for (const a of articles) {
     if (slugs.has(a.slug)) throw new ArticleIntegrityError(a.articleId, `duplicate slug ${a.slug}`);
     slugs.add(a.slug);
+  }
+  // A next step shows its target's own words, and never lowers the channel a page was checked for.
+  for (const a of articles) {
+    if (!a.nextStep) continue;
+    const target = articles.find((t) => t.articleId === a.nextStep!.targetArticleId);
+    if (!target) throw new ArticleIntegrityError(a.articleId, `next step ${a.nextStep.targetArticleId} is not a published article`);
+    if (a.nextStep.route !== target.route || a.nextStep.label !== target.title || a.nextStep.description !== target.description) {
+      throw new ArticleIntegrityError(a.articleId, `next step does not show ${target.articleId} as that article reads`);
+    }
+    if (a.channel === "public_web" && target.channel !== "public_web") {
+      throw new ArticleIntegrityError(a.articleId, `is checked for public_web but its next step ${target.articleId} only for ${target.channel}`);
+    }
   }
   if (ctx.root === process.cwd()) cached = articles;
   return articles;
