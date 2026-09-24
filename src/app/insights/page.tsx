@@ -22,7 +22,7 @@ export default function InsightsIndexPage() {
   });
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Insights</p>

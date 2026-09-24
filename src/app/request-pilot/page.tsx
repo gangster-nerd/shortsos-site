@@ -13,7 +13,7 @@ const DEFAULT_BODY =
 
 export default function RequestPilotPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Request a pilot</p>

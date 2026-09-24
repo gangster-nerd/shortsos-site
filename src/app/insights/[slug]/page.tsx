@@ -56,7 +56,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
   });
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell article-head">
           <p className="eyebrow">

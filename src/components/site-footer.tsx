@@ -10,7 +10,7 @@ export function SiteFooter() {
             Operator-run video production, offered through direct pilot conversations with the team.
           </div>
         </div>
-        <nav className="footer-links">
+        <nav className="footer-links" aria-label="Footer">
           <Link href="/insights">Insights</Link>
           <Link href="/glossary">Glossary</Link>
           <Link href="/changelog">Changelog</Link>

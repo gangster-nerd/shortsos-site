@@ -6,7 +6,7 @@ export const metadata: Metadata = pageMetadata({ path: "/request-pilot/received/
 
 export default function RequestPilotReceivedPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Request a pilot</p>

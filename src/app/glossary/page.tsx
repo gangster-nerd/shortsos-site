@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata({ path: "/glossary/", title: "Glo
 
 export default function GlossaryPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Glossary</p>

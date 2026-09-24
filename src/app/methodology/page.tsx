@@ -11,7 +11,7 @@ export default function MethodologyPage() {
   const { manifest } = loadSiteManifest();
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Methodology</p>

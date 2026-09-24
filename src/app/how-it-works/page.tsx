@@ -13,7 +13,7 @@ export default function HowItWorksPage() {
   const claim = splitM1Claim(m1.claimCeiling);
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">How it works</p>

@@ -23,7 +23,7 @@ export default function HomePage() {
   });
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Video production, evidence-first</p>

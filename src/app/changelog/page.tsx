@@ -7,7 +7,7 @@ export const metadata: Metadata = pageMetadata({ path: "/changelog/", title: "Ch
 
 export default function ChangelogPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Changelog</p>

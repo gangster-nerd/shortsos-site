@@ -16,7 +16,7 @@ export default function FaqPage() {
   const jsonLd = buildFaqPageJsonLd(FAQ_ITEMS);
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">FAQ</p>
