@@ -22,6 +22,16 @@ artifact excluded by `.gitignore`.
   - `inputs/pin.json` — just `{ "productRef": "<sha>" }`, the deterministic half of the pin
     (kept separate from the human-facing `pin.json` above specifically so it carries no
     timestamp and `content:verify` never needs one).
+  - `inputs/product-commits.json` — the commit ledger (`npm run content:commits`, SOS-NOTES-V1):
+    the product commits this site cites (changelog entries, TextOS briefs and their runs), plus
+    the pinned tip, each with author date and subject only. `content:commits` resolves every
+    citation with `git` and refuses any commit that is not in the history of the pinned ref.
+    This repository is public and the product repository is not, so the ledger carries no
+    uncited commit, no changed path and no commit body. `content:verify` fails if it is not in
+    canonical form, not written from the same ref as the manifest pin, or not exactly the set of
+    commits the site cites. Run it after `content:sync`, against the same checkout, and again
+    whenever a citation is added. It refuses a shallow clone, where real commits would look
+    unreachable.
 
 `../content/candidates/*.json` (one file per manifest entity currently at
 `derivedPublicationStatus === "candidate"`) is the sibling committed output — see that

@@ -1,0 +1,102 @@
+{
+  "text": "ShortsOS used to record a clip's filming time straight from the date the file was last modified in Google Drive, a date that changes whenever a file is copied, re-shared or re-uploaded. The fix reads the time embedded in the video first, then explicit metadata, then what the client declared, and otherwise marks the date as unknown, recording disagreements instead of averaging them. Where no reliable date exists, the product is built to show unknown rather than invent one. A separate check that spots duplicate clips compared files across all clients with no filter, so one client's clip could be reported as a duplicate of another client's. The corrected check only looks within the client that owns the clip. That fix was proven against an isolated test database with four regression cases, which is not proof of isolation under real load across many clients.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS used to record a clip's filming time straight from the date the file was last modified in Google Drive, a date that changes whenever a file is copied, re-shared or re-uploaded.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The fix reads the time embedded in the video first, then explicit metadata, then what the client declared, and otherwise marks the date as unknown, recording disagreements instead of averaging them.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Where no reliable date exists, the product is built to show unknown rather than invent one.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "A separate check that spots duplicate clips compared files across all clients with no filter, so one client's clip could be reported as a duplicate of another client's.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "The corrected check only looks within the client that owns the clip.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-11"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s6",
+      "text": "That fix was proven against an isolated test database with four regression cases, which is not proof of isolation under real load across many clients.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-12",
+        "ev-n3-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

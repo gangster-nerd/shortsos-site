@@ -1,0 +1,105 @@
+{
+  "authorship": {
+    "authorIds": [],
+    "reviewerIds": [],
+    "showAuthor": false,
+    "showReviewers": false
+  },
+  "blocks": [
+    {
+      "block": {
+        "data": {
+          "text": "When you hand your raw material to a production partner, the moment that matters is the last one: who approves what goes out under your name. With ShortsOS, that approval is a person, not a setting: the review step is a mandatory human checkpoint before anything is published."
+        },
+        "id": "lead",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 0,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "Yes: in every real ShortsOS run to date, a person reviewed the short before it was published, and that review step is mandatory rather than optional. ShortsOS does not publish automatically without that human checkpoint. For pilots, the workflow is operated by the ShortsOS team, so the review happens inside an operated engagement rather than in a tool a customer runs alone."
+        },
+        "id": "answer",
+        "kind": "answer"
+      },
+      "hiddenReason": null,
+      "order": 1,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "ShortsOS has completed a real end-to-end workflow that goes from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. The review comes after production and before publication, and it is a checkpoint a person has to clear, not a default that can be skipped. In that run, publication went through one Instagram account bound to the ShortsOS operator, not through an account a customer linked. For a brand, that means a person looks at the short before your audience does."
+        },
+        "id": "section-1",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 2,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "ShortsOS has run this workflow once, end to end, for real, and that single documented run is the whole of its public proof. One run is not a load or reliability proof, and the defects found in the Instagram connection during it were fixed reactively, against that live run, not beforehand. The review is a checkpoint on what gets published, not a promise of creative quality, performance or virality. When you compare vendors, ask each one to show you its review step in a real run, not only in a diagram."
+        },
+        "id": "section-2",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 3,
+      "region": null,
+      "visible": true
+    }
+  ],
+  "compositionSignature": "content-document@1::shortsos:sos-answer-human-review::is-there-a-human-review-before-publication::draft::reference::surface-policy@1::shortsos-site.faq-answer.v1::reference::0:lead:v|1:answer:v|2:section-1:v|3:section-2:v",
+  "contentSchemaVersion": "content-document@1",
+  "contentType": "ARTICLE",
+  "conversion": {
+    "ctaIntentId": null,
+    "ctaSuppressedReason": "document.conversionAllowed=false",
+    "effectiveCtaAllowed": false
+  },
+  "description": "ShortsOS's one real end-to-end run went from source video through a mandatory human review to a live Instagram Reel; nothing was published automatically.",
+  "documentId": "shortsos:sos-answer-human-review",
+  "language": "en-US",
+  "metadata": {
+    "analyticsSurfaceTag": null,
+    "canonicalPath": null,
+    "effectiveIndexing": "noindex",
+    "emitSchemaOrg": true,
+    "indexingDowngraded": false,
+    "schemaType": "Article"
+  },
+  "navigation": {
+    "relatedContentIds": [],
+    "showBreadcrumbs": true,
+    "showRelatedContent": false,
+    "showTableOfContents": false
+  },
+  "policyId": "shortsos-site.faq-answer.v1",
+  "policyVersion": "surface-policy@1",
+  "readingTimeMinutes": 2,
+  "resolvedSchemaVersion": "resolved-content-surface@1",
+  "slug": "is-there-a-human-review-before-publication",
+  "surface": "reference",
+  "title": "In ShortsOS, a human review is a mandatory step before publication",
+  "truth": {
+    "allowedSurfaces": [
+      "reference"
+    ],
+    "publicationStatus": "draft",
+    "sourceAuthority": "UNCERTIFIED"
+  },
+  "visibleBlockKinds": [
+    "paragraph",
+    "answer"
+  ]
+}

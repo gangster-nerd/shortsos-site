@@ -1,0 +1,21 @@
+{
+  "text": "In ShortsOS, a human review is a mandatory step before publication",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "In ShortsOS, a human review is a mandatory step before publication",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

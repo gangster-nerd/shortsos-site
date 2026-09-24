@@ -1,0 +1,83 @@
+{
+  "text": "ShortsOS does not offer this workflow as a generally or instantly available product. A pilot does not include linking your own Instagram account, and it does not let a customer publish directly. It also carries no proof of repeated volume: what has been shown is one documented real run. No pilot comes with a promise of creative quality, performance or virality. If a vendor promises you more than it can show, that gap is worth naming before any work starts.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS does not offer this workflow as a generally or instantly available product.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "A pilot does not include linking your own Instagram account, and it does not let a customer publish directly.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a2-03",
+        "ev-a2-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "It also carries no proof of repeated volume: what has been shown is one documented real run.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a2-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "No pilot comes with a promise of creative quality, performance or virality.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "production"
+      ],
+      "evidenceIds": [
+        "ev-a2-09",
+        "ev-a2-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "If a vendor promises you more than it can show, that gap is worth naming before any work starts.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

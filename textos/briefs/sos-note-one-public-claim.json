@@ -1,0 +1,404 @@
+{
+  "briefVersion": 1,
+  "articleId": "sos-note-one-public-claim",
+  "flow": "commit_to_content",
+  "slug": "why-shortsos-makes-one-public-claim",
+  "locale": "en-US",
+  "publicationChannel": "controlled_preview",
+  "entityIds": [
+    "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+    "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+    "JSON2VIDEO-NATIVE-RENDER-V1",
+    "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING",
+    "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT",
+    "PROHIBITED-CREATIVE-QUALITY-CLAIMS"
+  ],
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "public-truth-manifest-2026-09-12",
+        "sourceCommits": [
+          "eaec19fba3732c80674ed9958248553db75d9b17"
+        ]
+      },
+      {
+        "groupId": "content-impact-2026-09-12",
+        "sourceCommits": [
+          "4f06ff98211fdb3b97dd5de9c7d4ce0d92d88af0"
+        ]
+      },
+      {
+        "groupId": "policy-amendment-2026-09-13",
+        "sourceCommits": [
+          "3c461a0e0631ff3ca852ca25b976d1fac35faf8f"
+        ]
+      },
+      {
+        "groupId": "m1-ratification-2026-09-13",
+        "sourceCommits": [
+          "abd07346faa1009088bb4d3c25db67fc63950bf0"
+        ]
+      }
+    ],
+    "buyerQuestion": "Why would a video production vendor make only one public claim about what it can do?",
+    "targetQuery": "why a vendor limits its public claims to what it has proven",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "public-claim-governance"
+  },
+  "siteObservation": null,
+  "approval": {
+    "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
+    "approvedAt": "2026-09-24"
+  },
+  "clearances": [],
+  "evidence": [
+    {
+      "id": "ev-n2-01",
+      "source": {
+        "kind": "product_commit",
+        "sha": "eaec19fba3732c80674ed9958248553db75d9b17",
+        "quote": "Builds a governance-owned public-product manifest over the 39 done capabilities of CAPABILITIES.yaml: a four-axis truth model (implementationStatus / runtimeProof / availability / publicationStatus, kept deliberately separate), a fail-closed publication-ceiling policy, a real-git evidence verifier that admits no phantom commit/path/decision reference"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-02",
+      "source": {
+        "kind": "product_commit",
+        "sha": "eaec19fba3732c80674ed9958248553db75d9b17",
+        "quote": "Result: 0 public_marketable, 9 candidate, 30 internal_only, 3 blocked (prohibited_concept entries for Instagram self-serve publishing, Google Drive self-serve connect, and general creative-quality claims)."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-03",
+      "source": {
+        "kind": "product_commit",
+        "sha": "3c461a0e0631ff3ca852ca25b976d1fac35faf8f",
+        "quote": "Amends derivePublicationCeiling so operator_only availability no longer categorically blocks public_marketable, matching ShortsOS V1's ratified managed/agency-operated go-to-market (request_pilot, never self-serve)."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-04",
+      "source": {
+        "kind": "product_commit",
+        "sha": "3c461a0e0631ff3ca852ca25b976d1fac35faf8f",
+        "quote": "The gate now also clears when availability=operator_only AND the entity own claimCeiling carries no self-serve wording AND its prohibitedClaims already bans self-serve-style claims explicitly (managedServiceFramingHolds)."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-05",
+      "source": {
+        "kind": "product_commit",
+        "sha": "abd07346faa1009088bb4d3c25db67fc63950bf0",
+        "quote": "Human-ratified promotion (T0/Marc): M1-REAL-PRODUCE-REVIEW-PUBLISH moves from publicationStatus candidate to public_marketable, the sole entity of the nine SOS-PUBLIC-TRUTH-POLICY-V1 candidates whose own wording already clears the amended managed-service gate."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-06",
+      "source": {
+        "kind": "product_commit",
+        "sha": "abd07346faa1009088bb4d3c25db67fc63950bf0",
+        "quote": "rejecting an earlier draft's stronger \"runs your full pipeline for you\" framing as overreaching the one-run evidence ceiling."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-07",
+      "source": {
+        "kind": "product_commit",
+        "sha": "abd07346faa1009088bb4d3c25db67fc63950bf0",
+        "quote": "prohibitedClaims extended from 2 to 8 entries (the original 2 kept byte-identical) naming every forbidden implication: self-serve access, connecting your own Instagram account, publishing directly yourself, automatic publishing without review, universal availability, unproven repeated volume, guaranteed creative quality, guaranteed performance or virality."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-08",
+      "source": {
+        "kind": "product_commit",
+        "sha": "abd07346faa1009088bb4d3c25db67fc63950bf0",
+        "quote": "two of them are one prohibitedClaims wording edit from also clearing the gate, but T0 explicitly ruled that is not sufficient reason to promote them now: they are provider-level implementation evidence, not necessary public product capabilities for V1."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-09",
+      "source": {
+        "kind": "product_file",
+        "path": "changes/content-impact/README.md",
+        "quote": "when the codebase changes, does that change have a public-content consequence, and did anyone say so on purpose?"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-10",
+      "source": {
+        "kind": "product_file",
+        "path": "changes/content-impact/README.md",
+        "quote": "No record for a governed change is a hard failure, never a warning."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-11",
+      "source": {
+        "kind": "product_file",
+        "path": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md",
+        "quote": "the only axis that is *derived*, never hand-set."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-12",
+      "source": {
+        "kind": "product_file",
+        "path": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md",
+        "quote": "Any single failing condition caps the capability **below** `public_marketable` — never averaged toward it, never rounded up."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n2-13",
+      "source": {
+        "kind": "product_file",
+        "path": "docs/governance/publication/2026-09-12-sos-public-truth-v1-baseline.md",
+        "quote": "no amount of attached evidence is allowed to promote a concept the mandate names as never-claimable"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the decision, as a grounded fact about ShortsOS.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n2-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence for a search result: how many capabilities were classified, and that exactly one was ratified, with guardrails.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-05",
+        "ev-n2-07"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open on the buyer's problem — telling what a vendor has built from what it has proven — then say ShortsOS answered it for itself.",
+      "buyerIntent": "Which of a vendor's claims can I rely on?",
+      "allowedEvidenceIds": [
+        "ev-n2-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "Why only one public claim?",
+      "writingObjective": "Answer directly with the numbers of the first classification, the rule change, and the single ratification.",
+      "buyerIntent": "Why so few claims?",
+      "allowedEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 900,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Four facts kept apart for each capability",
+      "writingObjective": "Explain the four separate facts, that the public one is derived and fails closed, and the three concepts blocked whatever the evidence.",
+      "buyerIntent": "How is a claim decided?",
+      "allowedEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-11",
+        "ev-n2-12",
+        "ev-n2-13"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1300,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "The rule change, and the one promotion",
+      "writingObjective": "Tell the amendment for team-operated capabilities, its conditions, the single capability that cleared, and the two left out on purpose.",
+      "buyerIntent": "What changed to allow a claim at all?",
+      "allowedEvidenceIds": [
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05",
+        "ev-n2-08"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1300,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What was refused, in writing",
+      "writingObjective": "Show the rejected wording, the eight prohibited claims, and the rule that every governed change must say whether it affects public content.",
+      "buyerIntent": "What stops the claim from growing later?",
+      "allowedEvidenceIds": [
+        "ev-n2-06",
+        "ev-n2-07",
+        "ev-n2-09",
+        "ev-n2-10"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 300,
+      "maxChars": 1300,
+      "evidenceRequired": true
+    }
+  ],
+  "publication": {
+    "publishedOn": "2026-09-24",
+    "mandate": "The ShortsOS owner's instruction of 2026-09-24 to produce and publish these articles on ShortsOS-site.",
+    "humanReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedOn": null
+    }
+  }
+}

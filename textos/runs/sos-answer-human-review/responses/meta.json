@@ -1,0 +1,23 @@
+{
+  "text": "ShortsOS's one real end-to-end run went from source video through a mandatory human review to a live Instagram Reel; nothing was published automatically.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS's one real end-to-end run went from source video through a mandatory human review to a live Instagram Reel; nothing was published automatically.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-01",
+        "ev-a1-02",
+        "ev-a1-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "text": "ShortsOS keeps four facts about each capability apart on purpose: whether it is built, how strongly a real run proves it, who can reach it today, and what may be said about it in public. The last of those four is never set by hand; it is derived, and any single failing condition keeps a capability below a public claim instead of being averaged away. Three concepts sit in a blocked column that no amount of evidence can lift: customers publishing to Instagram without the team, customers linking their own Google Drive, and general promises about creative quality.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS keeps four facts about each capability apart on purpose: whether it is built, how strongly a real run proves it, who can reach it today, and what may be said about it in public.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The last of those four is never set by hand; it is derived, and any single failing condition keeps a capability below a public claim instead of being averaged away.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-11",
+        "ev-n2-12"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Three concepts sit in a blocked column that no amount of evidence can lift: customers publishing to Instagram without the team, customers linking their own Google Drive, and general promises about creative quality.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-02",
+        "ev-n2-13"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

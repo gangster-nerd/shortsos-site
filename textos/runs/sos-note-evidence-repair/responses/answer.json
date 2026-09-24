@@ -1,0 +1,69 @@
+{
+  "text": "Six of the records ShortsOS uses to verify its capability claims cited commits that no longer existed anywhere in its code history, not even as leftovers. A fresh copy of the code, which ShortsOS treats as the authority for verification, cannot fetch a commit that nothing points to, so those records could not be checked there. The repair pointed three of the records at the register entry that documents them, and let the other three check files that still exist in the current code. No public claim, prohibited claim or publication status changed; only the citations used to check them did.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Six of the records ShortsOS uses to verify its capability claims cited commits that no longer existed anywhere in its code history, not even as leftovers.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "A fresh copy of the code, which ShortsOS treats as the authority for verification, cannot fetch a commit that nothing points to, so those records could not be checked there.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The repair pointed three of the records at the register entry that documents them, and let the other three check files that still exist in the current code.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "No public claim, prohibited claim or publication status changed; only the citations used to check them did.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

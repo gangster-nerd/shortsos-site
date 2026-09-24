@@ -7,6 +7,7 @@ const NAV_LINKS: { href: string; label: string }[] = [
   { href: "/methodology", label: "Methodology" },
   { href: "/proof", label: "Proof" },
   { href: "/faq", label: "FAQ" },
+  { href: "/insights", label: "Insights" },
   { href: "/changelog", label: "Changelog" },
 ];
 

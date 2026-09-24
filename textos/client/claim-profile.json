@@ -1,0 +1,22 @@
+{
+  "id": "shortsos-operated-short-form-video",
+  "version": "0.1",
+  "claimTypes": [
+    "publication",
+    "human_review",
+    "production",
+    "footage_input",
+    "availability",
+    "evidence_governance",
+    "story_selection"
+  ],
+  "lexicon": {
+    "publication": ["publish", "publishes", "published", "publishing", "publication", "instagram", "reel", "reels", "permalink"],
+    "human_review": ["human review", "reviewed", "reviews", "review step", "checkpoint"],
+    "production": ["render", "renders", "rendered", "caption", "captions", "captioned", "voice", "voiced"],
+    "footage_input": ["raw footage", "footage", "source video"],
+    "availability": ["self-serve", "self serve", "sign up", "pilot", "pilots", "operated by", "available"],
+    "evidence_governance": ["public claim", "public claims", "claim ceiling", "evidence", "manifest", "ratified"],
+    "story_selection": ["story", "stories", "opportunity", "opportunities"]
+  }
+}

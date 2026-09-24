@@ -1,0 +1,24 @@
+{
+  "text": "ShortsOS classified 39 capabilities, found nine candidates and ratified exactly one for a public claim, with eight guardrails on how it may be described.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS classified 39 capabilities, found nine candidates and ratified exactly one for a public claim, with eight guardrails on how it may be described.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-05",
+        "ev-n2-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

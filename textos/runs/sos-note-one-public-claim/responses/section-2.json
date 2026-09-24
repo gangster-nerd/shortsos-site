@@ -1,0 +1,69 @@
+{
+  "text": "On 13 September 2026, ShortsOS amended that rule so a capability operated by the team for pilots could reach a public claim, matching the way the product was ratified to be sold: through a pilot request rather than a sign-up. The change came with conditions: such a capability qualifies only if its own wording avoids any customer-run framing and its list of prohibited claims already rules that framing out. Re-run against the nine candidates, the amended rule let exactly one through on its existing wording: the real produce, review and publish workflow. Two other capabilities were one wording edit away from qualifying, and the owner chose not to promote them, because they document individual suppliers behind the workflow rather than something a customer needs to hear about.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "On 13 September 2026, ShortsOS amended that rule so a capability operated by the team for pilots could reach a public claim, matching the way the product was ratified to be sold: through a pilot request rather than a sign-up.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The change came with conditions: such a capability qualifies only if its own wording avoids any customer-run framing and its list of prohibited claims already rules that framing out.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Re-run against the nine candidates, the amended rule let exactly one through on its existing wording: the real produce, review and publish workflow.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Two other capabilities were one wording edit away from qualifying, and the owner chose not to promote them, because they document individual suppliers behind the workflow rather than something a customer needs to hear about.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n2-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

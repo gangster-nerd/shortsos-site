@@ -1,0 +1,82 @@
+{
+  "contentSchemaVersion": "content-document@1",
+  "identity": {
+    "documentId": "shortsos:sos-answer-human-review",
+    "contentType": "ARTICLE",
+    "slug": "is-there-a-human-review-before-publication",
+    "language": "en-US",
+    "title": "In ShortsOS, a human review is a mandatory step before publication",
+    "description": "ShortsOS's one real end-to-end run went from source video through a mandatory human review to a live Instagram Reel; nothing was published automatically."
+  },
+  "editorial": {
+    "authorIds": [],
+    "reviewerIds": [],
+    "topicIds": []
+  },
+  "truth": {
+    "statusVocabulary": "geo-writer",
+    "statusVocabularyVersion": "geo-writer@0.2",
+    "sourceStatus": "truthCheck:pass",
+    "publicationStatus": "draft",
+    "allowedSurfaces": [
+      "reference"
+    ],
+    "claimIds": [],
+    "evidenceRefs": [
+      "ev-a1-02",
+      "ev-a1-01",
+      "ev-a1-06",
+      "ev-a1-03",
+      "ev-a1-04",
+      "ev-a1-09",
+      "ev-a1-05",
+      "ev-a1-07",
+      "ev-a1-08"
+    ],
+    "capabilityIds": []
+  },
+  "provenance": {
+    "sourceAuthority": "UNCERTIFIED",
+    "sourceEvidenceDigest": "64ee54f27247df7ec7b458416986f777ec2852175699ba21ec416d8af97d4f7f"
+  },
+  "body": [
+    {
+      "id": "lead",
+      "kind": "paragraph",
+      "data": {
+        "text": "When you hand your raw material to a production partner, the moment that matters is the last one: who approves what goes out under your name. With ShortsOS, that approval is a person, not a setting: the review step is a mandatory human checkpoint before anything is published."
+      }
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "data": {
+        "text": "Yes: in every real ShortsOS run to date, a person reviewed the short before it was published, and that review step is mandatory rather than optional. ShortsOS does not publish automatically without that human checkpoint. For pilots, the workflow is operated by the ShortsOS team, so the review happens inside an operated engagement rather than in a tool a customer runs alone."
+      }
+    },
+    {
+      "id": "section-1",
+      "kind": "paragraph",
+      "data": {
+        "text": "ShortsOS has completed a real end-to-end workflow that goes from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. The review comes after production and before publication, and it is a checkpoint a person has to clear, not a default that can be skipped. In that run, publication went through one Instagram account bound to the ShortsOS operator, not through an account a customer linked. For a brand, that means a person looks at the short before your audience does."
+      }
+    },
+    {
+      "id": "section-2",
+      "kind": "paragraph",
+      "data": {
+        "text": "ShortsOS has run this workflow once, end to end, for real, and that single documented run is the whole of its public proof. One run is not a load or reliability proof, and the defects found in the Instagram connection during it were fixed reactively, against that live run, not beforehand. The review is a checkpoint on what gets published, not a promise of creative quality, performance or virality. When you compare vendors, ask each one to show you its review step in a real run, not only in a diagram."
+      }
+    }
+  ],
+  "relationships": {
+    "relatedContentIds": []
+  },
+  "conversion": {
+    "conversionAllowed": false
+  },
+  "lifecycle": {},
+  "seo": {
+    "indexingIntent": "noindex"
+  }
+}

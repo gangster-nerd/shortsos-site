@@ -1,0 +1,39 @@
+{
+  "receiptVersion": 1,
+  "articleId": "sos-note-one-public-claim",
+  "textos": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
+  },
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "executionPlanHash": "f71c96f8464b40a8ddc638c4ef2516dddcc3606c960519d6af54362a5d4f5235",
+  "ctcHandoffHash": "b8aebdda2bb0db007f10a1170515ac346abb5879200a1a4d8a002acef26c140d",
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "c404c170fcc93e9a7d7fec918445f217150cfdd9b99036ffa709972f8ebc2166",
+  "truthCheckVerdict": "pass",
+  "publicationChannel": "controlled_preview",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+  "promptHashes": {
+    "title": "8af83b7ccf47b6990c6517d84331f5c7edf3f3b9b3ea7a1327c6ad73f176ea0c",
+    "meta": "dd21de14ad32c3d2774f6a6e346dd2565006b2d363ed2fedc3aa8feb782987f7",
+    "lead": "c9312851a99bbdac17796d36264ca301bb6fd453936b0c56a8534e4c41e6031a",
+    "answer": "ccd2da45e0332bfbe15f91fa2b0ca17cbf63b06964f1964b17c838c3bf70c842",
+    "section-1": "ecec68702c3a49c529d1e12b9587a68dac75607d8b9f96f27f9a4004c80f1b00",
+    "section-2": "4fd16958d592badd0cb94f9c9b126567a6db60a7a256eae5f75454e614021bff",
+    "section-3": "49060abcdc9ccb70090dcaeed5d13a4018d9f115dd240f3280ab33d74d382cf6"
+  },
+  "responseHashes": {
+    "title": "f2fb510b032d30fcd66d774ee84a74a2bd613d62142166c52310e20c890fe2a7",
+    "meta": "e695d79a98c65c6a08bf09ffdacdddbd09dc9d639531b7135419873cf2f4c530",
+    "lead": "1558f6a31e4160005d734068563986ade7c0bf43cb51256ac7713ceea56c043d",
+    "answer": "25e21ce09814b1816f8ee662d80df9ff41ec4094f2294c25325f6d34d9b9f0de",
+    "section-1": "60201370bc86de28166af8a8cd4cc692f5636552d486f118e5e9d4420aab3cf8",
+    "section-2": "5d6b4704d6cbb2c2343ab9deaa98787db8b85106ecbb268780d010639f64861c",
+    "section-3": "af9ddc678607af41c8576db982cd77ce7827ae54e9c8a52a8e9b39e9c7380bf0"
+  },
+  "contentDocumentSha256": "d7986c9a7a8ab7c031d18c323872b4b312f5960c9ca87275ae09ffdf5b557a66",
+  "resolvedSurfaceSha256": "a7749bd7bb264f0626bd9bf4aaa815b6d50a4f4439ad660c83b8ba3698a488ff",
+  "humanReview": "pending"
+}

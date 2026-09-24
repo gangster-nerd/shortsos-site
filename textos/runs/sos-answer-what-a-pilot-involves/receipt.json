@@ -1,0 +1,37 @@
+{
+  "receiptVersion": 1,
+  "articleId": "sos-answer-what-a-pilot-involves",
+  "textos": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
+  },
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "executionPlanHash": "c41ef498913cbde72dbfc55269f42e5c19c14cc352c651881718c8f317e95dbc",
+  "ctcHandoffHash": "6934d4c8c6363318da6ce73f51a1b11a60b35e99659e038d97688c9eb6ceecb8",
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "3bcf214b0cd415d5369570ec53c12e10395210770a4069884db17355ab8c6af9",
+  "truthCheckVerdict": "pass",
+  "publicationChannel": "public_web",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+  "promptHashes": {
+    "title": "662783ee9e2be0178d302b19d6e9ed4cde603d15ee327f891a476573cd894fd5",
+    "meta": "917a5c0fee42828564c9d2da22cc84e0366add95fda201df06dc6721d4d5a0ef",
+    "lead": "b10e94597fd1fb20de469a7e6bcc63f1b897daccef51e5083a6deefb1dbdc427",
+    "answer": "4bfb0cb67dc21abe343044434aad8a2476cc83d07cc9414184d30fbded527ba1",
+    "section-1": "fe97804f3f293f7151f3ef10b40b0292de7a4af9af50bf43e45ae2258a9f47ab",
+    "section-2": "418d2db6139f0bd12671badef2f8c37edde39508cb51564e6cba92de8e6a85b4"
+  },
+  "responseHashes": {
+    "title": "3c329c00f64259b55ac1b32274c5b0c0d8e400441807585fb68ead5c236bba01",
+    "meta": "05aa6df46a0a50b83506678552478a02c346a863622908711cc09a21d1348ac2",
+    "lead": "a0f0346845786928ff048e13bbb70679d91602a11f3f942d558655f2449ae430",
+    "answer": "5c873a0089e26a64a93dcea94201806144a58ed9138fb7cd0c47e278ef6cf467",
+    "section-1": "e11fab00ebbf1d0629efa3e5fc0734342043008ba721ee2a4a18fea731ee8311",
+    "section-2": "a45abc235c5ebb3aed0b27c78d313c468a1a7c19becaaaf82699c105f127cd57"
+  },
+  "contentDocumentSha256": "4320ae86f1c803f6ac60c479edb16d79343dd357437088732c83a223c259f615",
+  "resolvedSurfaceSha256": "dd598b7b3c80a07261c895c7b0407103837f7eacc2f39a4f05ca06c573c223d3",
+  "humanReview": "pending"
+}

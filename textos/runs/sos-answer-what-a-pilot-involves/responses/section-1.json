@@ -1,0 +1,70 @@
+{
+  "text": "For pilots, the ShortsOS team operates the workflow on the customer's behalf, from production through review to publication. In the one real run so far, publication went through a single Instagram account bound to the operating team. That run started from source video, went through a render and a human review, and ended with a live Instagram Reel whose permalink was captured. The workflow is not open for anyone to start alone: it runs as a pilot operated by the team.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "For pilots, the ShortsOS team operates the workflow on the customer's behalf, from production through review to publication.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-02",
+        "ev-a2-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "In the one real run so far, publication went through a single Instagram account bound to the operating team.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a2-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "That run started from source video, went through a render and a human review, and ended with a live Instagram Reel whose permalink was captured.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-a2-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "The workflow is not open for anyone to start alone: it runs as a pilot operated by the team.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

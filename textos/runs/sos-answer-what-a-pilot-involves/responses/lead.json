@@ -1,0 +1,34 @@
+{
+  "text": "Before you commit time to any production partner, you want to know who does the work and what you are actually buying. A ShortsOS pilot is operated by the ShortsOS team, and the workflow is not generally or instantly available to anyone who asks.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Before you commit time to any production partner, you want to know who does the work and what you are actually buying.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "A ShortsOS pilot is operated by the ShortsOS team, and the workflow is not generally or instantly available to anyone who asks.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

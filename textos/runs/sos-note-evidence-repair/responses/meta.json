@@ -1,0 +1,22 @@
+{
+  "text": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "ShortsOS repaired six evidence records that cited commits no longer in its code history, and left every public claim and status exactly as it was.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-01",
+        "ev-n1-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

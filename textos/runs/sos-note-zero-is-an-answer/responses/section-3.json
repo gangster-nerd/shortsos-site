@@ -1,0 +1,65 @@
+{
+  "text": "When a shoot produces several takes of the same moment, ShortsOS groups them rather than excluding any clip merely because it looks similar to another. All clips still appear in the results, and supporting evidence is counted by distinct group, so three takes of one moment do not pass for three separate proofs. The grouping relies on signals the system already recorded, uses no AI similarity model, and does not judge what two clips mean. Taken together, these fixes make the pipeline readier to say what it does not know.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "When a shoot produces several takes of the same moment, ShortsOS groups them rather than excluding any clip merely because it looks similar to another.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "All clips still appear in the results, and supporting evidence is counted by distinct group, so three takes of one moment do not pass for three separate proofs.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The grouping relies on signals the system already recorded, uses no AI similarity model, and does not judge what two clips mean.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "footage_input"
+      ],
+      "evidenceIds": [
+        "ev-n3-13"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Taken together, these fixes make the pipeline readier to say what it does not know.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

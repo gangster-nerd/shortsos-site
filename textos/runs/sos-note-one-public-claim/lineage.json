@@ -1,0 +1,181 @@
+{
+  "slotProvenance": [
+    {
+      "slotId": "title",
+      "role": "title",
+      "headingLevel": null,
+      "heading": null,
+      "text": "Why ShortsOS chose to make one public claim, not nine",
+      "statementIds": [
+        "stmt:5:title:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "meta",
+      "role": "meta_description",
+      "headingLevel": null,
+      "heading": null,
+      "text": "ShortsOS classified 39 capabilities, found nine candidates and ratified exactly one for a public claim, with eight guardrails on how it may be described.",
+      "statementIds": [
+        "stmt:4:meta:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-05",
+        "ev-n2-07"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-05",
+        "ev-n2-07"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "lead",
+      "role": "lead",
+      "headingLevel": null,
+      "heading": null,
+      "text": "It is tempting for a young product to present all it has built as something you can buy. The question a buyer needs answered is narrower: which of those things has been shown to work for real, and on what terms? In September 2026, ShortsOS answered that question for itself and ratified a single capability for a public claim.",
+      "statementIds": [
+        "stmt:4:lead:2:s1",
+        "stmt:4:lead:2:s2",
+        "stmt:4:lead:2:s3"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "answer",
+      "role": "answer",
+      "headingLevel": 2,
+      "heading": "Why only one public claim?",
+      "text": "When ShortsOS first classified its 39 finished capabilities against its own evidence, none of them qualified for a public claim, nine became candidates, 30 stayed internal and three concepts were blocked outright. The rule was then amended so that a capability the ShortsOS team operates for its clients could qualify, on the condition that it is not described as something customers run on their own. Of the nine candidates, exactly one already met that bar in its own wording, and the owner ratified it on 13 September 2026.",
+      "statementIds": [
+        "stmt:6:answer:2:s1",
+        "stmt:6:answer:2:s2",
+        "stmt:6:answer:2:s3"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-1",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "Four facts kept apart for each capability",
+      "text": "ShortsOS keeps four facts about each capability apart on purpose: whether it is built, how strongly a real run proves it, who can reach it today, and what may be said about it in public. The last of those four is never set by hand; it is derived, and any single failing condition keeps a capability below a public claim instead of being averaged away. Three concepts sit in a blocked column that no amount of evidence can lift: customers publishing to Instagram without the team, customers linking their own Google Drive, and general promises about creative quality.",
+      "statementIds": [
+        "stmt:9:section-1:2:s1",
+        "stmt:9:section-1:2:s2",
+        "stmt:9:section-1:2:s3"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-01",
+        "ev-n2-11",
+        "ev-n2-12",
+        "ev-n2-02",
+        "ev-n2-13"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-01",
+        "ev-n2-02",
+        "ev-n2-11",
+        "ev-n2-12",
+        "ev-n2-13"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-2",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "The rule change, and the one promotion",
+      "text": "On 13 September 2026, ShortsOS amended that rule so a capability operated by the team for pilots could reach a public claim, matching the way the product was ratified to be sold: through a pilot request rather than a sign-up. The change came with conditions: such a capability qualifies only if its own wording avoids any customer-run framing and its list of prohibited claims already rules that framing out. Re-run against the nine candidates, the amended rule let exactly one through on its existing wording: the real produce, review and publish workflow. Two other capabilities were one wording edit away from qualifying, and the owner chose not to promote them, because they document individual suppliers behind the workflow rather than something a customer needs to hear about.",
+      "statementIds": [
+        "stmt:9:section-2:2:s1",
+        "stmt:9:section-2:2:s2",
+        "stmt:9:section-2:2:s3",
+        "stmt:9:section-2:2:s4"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05",
+        "ev-n2-08"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-03",
+        "ev-n2-04",
+        "ev-n2-05",
+        "ev-n2-08"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-3",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "What was refused, in writing",
+      "text": "The owner rejected an earlier draft saying the team “runs your full pipeline for you”, judging it stronger than one real run can support. The ratified capability carries eight prohibited claims, among them any suggestion that a customer runs it alone, publishes directly, or receives guaranteed quality, performance or virality. Alongside the classification, ShortsOS added a rule that asks, whenever governed product code changes, whether the change has a public-content consequence and whether anyone said so on purpose. A governed change that arrives without such a record is treated as a hard failure, not as a warning. For a buyer, the useful sign is not how many claims a vendor makes, but whether each one can be traced to the evidence behind it.",
+      "statementIds": [
+        "stmt:9:section-3:2:s1",
+        "stmt:9:section-3:2:s2",
+        "stmt:9:section-3:2:s3",
+        "stmt:9:section-3:2:s4",
+        "stmt:9:section-3:2:s5"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n2-06",
+        "ev-n2-07",
+        "ev-n2-09",
+        "ev-n2-10"
+      ],
+      "usableEvidenceIds": [
+        "ev-n2-06",
+        "ev-n2-07",
+        "ev-n2-09",
+        "ev-n2-10"
+      ],
+      "excludedEvidence": []
+    }
+  ],
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "c404c170fcc93e9a7d7fec918445f217150cfdd9b99036ffa709972f8ebc2166",
+  "truthCheck": {
+    "verdict": "pass",
+    "contradictions": []
+  },
+  "planId": "why a vendor limits its public claims to what it has proven",
+  "planHash": "f71c96f8464b40a8ddc638c4ef2516dddcc3606c960519d6af54362a5d4f5235",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+}

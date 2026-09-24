@@ -1,0 +1,23 @@
+{
+  "text": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a2-01",
+        "ev-a2-02",
+        "ev-a2-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "text": "Anyone who has handed a pile of raw clips to a tool knows the risk: the tool finds something, whether or not it is really there. ShortsOS changed its own story search so that finding no strong story became an honest result rather than an error. Its register lists this work as internal engineering with no independent public claim, so read it as history, not as a feature list.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Anyone who has handed a pile of raw clips to a tool knows the risk: the tool finds something, whether or not it is really there.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "ShortsOS changed its own story search so that finding no strong story became an honest result rather than an error.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-01",
+        "ev-n3-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Its register lists this work as internal engineering with no independent public claim, so read it as history, not as a feature list.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n3-08",
+        "ev-n3-08b",
+        "ev-n3-08c"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "text": "When you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced. ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong. Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "When you evaluate a vendor, the useful question is whether its proof can be re-checked by someone who was not in the room when it was produced.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "ShortsOS reproduced this failure on an unmodified copy of its main code line before changing anything, rather than guessing at what had gone wrong.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Each repaired record now points at something that exists in the current code or in the register, where a fresh copy can find it.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n1-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

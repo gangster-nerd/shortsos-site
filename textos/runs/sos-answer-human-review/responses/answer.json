@@ -1,0 +1,54 @@
+{
+  "text": "Yes: in every real ShortsOS run to date, a person reviewed the short before it was published, and that review step is mandatory rather than optional. ShortsOS does not publish automatically without that human checkpoint. For pilots, the workflow is operated by the ShortsOS team, so the review happens inside an operated engagement rather than in a tool a customer runs alone.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Yes: in every real ShortsOS run to date, a person reviewed the short before it was published, and that review step is mandatory rather than optional.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "ShortsOS does not publish automatically without that human checkpoint.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-a1-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "For pilots, the workflow is operated by the ShortsOS team, so the review happens inside an operated engagement rather than in a tool a customer runs alone.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "availability"
+      ],
+      "evidenceIds": [
+        "ev-a1-03",
+        "ev-a1-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

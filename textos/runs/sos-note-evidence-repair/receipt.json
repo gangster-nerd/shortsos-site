@@ -1,0 +1,39 @@
+{
+  "receiptVersion": 1,
+  "articleId": "sos-note-evidence-repair",
+  "textos": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
+  },
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "executionPlanHash": "a85809383abdfb6fc833af02eb24394e1d6db4fa05f80d159ec0bf3d67749eae",
+  "ctcHandoffHash": "8876158ac8b9e48ed53b15baa7bab5e06766058b66fff4396921c0071b3dc98b",
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "dbbe7772b7f5e8f9292f9b4b6b0bafe34e2335c54afeeb09ba9b5d9088068eae",
+  "truthCheckVerdict": "pass",
+  "publicationChannel": "controlled_preview",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+  "promptHashes": {
+    "title": "d3104dd61b55904259ed60454a5200196a925472669b55e155a40c6dab2345e7",
+    "meta": "9915c8dc8a6e4da6b66dea0598f40ec1d87c87a3bcbcd0d67a29aedc47722a4f",
+    "lead": "03306f8e8376a717581ca4e493cd946a4aa4cdaaf241b1d8232da2dc6ff752ef",
+    "answer": "08a14b1fd15e2342a66a7a218dba907d5007c087e0b5f44ea479b0ffbd3592c6",
+    "section-1": "049af57b05ff73c58f402e99c503230394ac269c1b90e67ba81fac680d322728",
+    "section-2": "f72a037d09eccad89b6c420a9243f4e7156e5c92e3ce624c2b951118fdb6bb21",
+    "section-3": "dfe862df600f2b340178f717aab45c110c52c71eeefb367e6e39ed9a9060955b"
+  },
+  "responseHashes": {
+    "title": "09148104549c7a275e6a8c5b66f5d543cdabb337a8c91da6e12bf9cef7a73c02",
+    "meta": "956998c96c1ae4452459122db55174a95b164f9297b9380ed1ccb8b3e255adcc",
+    "lead": "f4cd455e50b4cb0bf61cc11d759c7b2708b85268637195509c624e5b045e47b1",
+    "answer": "3f7f3df5ec57e58a52ab6ef9b40b349169dc59140f0bb4ec6cc56dee757997e9",
+    "section-1": "27b4bf2dd1221bcd57d3fd34c428e5c1bf0d0b88fd6e597a4be84dd2aa110782",
+    "section-2": "f5f43a13c8bb2c558cc8b95688f424b898ec5d1b40bba33afba557836e4f579c",
+    "section-3": "a6d59a3a576f1742c08264cc2fe4df011b0b0dcb456b1f0d316015048ef53096"
+  },
+  "contentDocumentSha256": "02c03945ecf5b0ea3b213cf84a8b4f1b7c14c21f364d2929da8c833134f3a34f",
+  "resolvedSurfaceSha256": "2670b6ac0ed34a51858442ab7b2c7ece5c34623837a269f9d15a986b2bcdfd25",
+  "humanReview": "pending"
+}

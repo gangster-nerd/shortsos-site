@@ -1,0 +1,83 @@
+{
+  "contentSchemaVersion": "content-document@1",
+  "identity": {
+    "documentId": "shortsos:sos-answer-what-a-pilot-involves",
+    "contentType": "ARTICLE",
+    "slug": "what-a-shortsos-pilot-involves",
+    "language": "en-US",
+    "title": "What a ShortsOS pilot involves: a workflow operated by the ShortsOS team",
+    "description": "A ShortsOS pilot is operated by the ShortsOS team; its one real run went from source video to a reviewed, live Instagram Reel, and it is not open to everyone."
+  },
+  "editorial": {
+    "authorIds": [],
+    "reviewerIds": [],
+    "topicIds": []
+  },
+  "truth": {
+    "statusVocabulary": "geo-writer",
+    "statusVocabularyVersion": "geo-writer@0.2",
+    "sourceStatus": "truthCheck:pass",
+    "publicationStatus": "draft",
+    "allowedSurfaces": [
+      "reference"
+    ],
+    "claimIds": [],
+    "evidenceRefs": [
+      "ev-a2-02",
+      "ev-a2-01",
+      "ev-a2-05",
+      "ev-a2-08",
+      "ev-a2-03",
+      "ev-a2-04",
+      "ev-a2-06",
+      "ev-a2-07",
+      "ev-a2-09",
+      "ev-a2-10"
+    ],
+    "capabilityIds": []
+  },
+  "provenance": {
+    "sourceAuthority": "UNCERTIFIED",
+    "sourceEvidenceDigest": "3bcf214b0cd415d5369570ec53c12e10395210770a4069884db17355ab8c6af9"
+  },
+  "body": [
+    {
+      "id": "lead",
+      "kind": "paragraph",
+      "data": {
+        "text": "Before you commit time to any production partner, you want to know who does the work and what you are actually buying. A ShortsOS pilot is operated by the ShortsOS team, and the workflow is not generally or instantly available to anyone who asks."
+      }
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "data": {
+        "text": "In a ShortsOS pilot, the ShortsOS team operates the workflow; the one real run completed so far went from source video and render, through human review, to a live Instagram Reel with a captured publication permalink. The review step before publication is a mandatory human checkpoint. Customers do not link their own Instagram account or publish directly through this workflow."
+      }
+    },
+    {
+      "id": "section-1",
+      "kind": "paragraph",
+      "data": {
+        "text": "For pilots, the ShortsOS team operates the workflow on the customer's behalf, from production through review to publication. In the one real run so far, publication went through a single Instagram account bound to the operating team. That run started from source video, went through a render and a human review, and ended with a live Instagram Reel whose permalink was captured. The workflow is not open for anyone to start alone: it runs as a pilot operated by the team."
+      }
+    },
+    {
+      "id": "section-2",
+      "kind": "paragraph",
+      "data": {
+        "text": "ShortsOS does not offer this workflow as a generally or instantly available product. A pilot does not include linking your own Instagram account, and it does not let a customer publish directly. It also carries no proof of repeated volume: what has been shown is one documented real run. No pilot comes with a promise of creative quality, performance or virality. If a vendor promises you more than it can show, that gap is worth naming before any work starts."
+      }
+    }
+  ],
+  "relationships": {
+    "relatedContentIds": []
+  },
+  "conversion": {
+    "conversionAllowed": false
+  },
+  "lifecycle": {},
+  "seo": {
+    "indexingIntent": "noindex"
+  }
+}
