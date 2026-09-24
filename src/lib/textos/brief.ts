@@ -16,6 +16,12 @@ export const FLOW_SURFACE: Record<ArticleFlow, Surface> = {
   site_intelligence: "faq",
 };
 
+/** How each flow is named to a reader (article eyebrow, share image). */
+export const FLOW_LABEL: Record<ArticleFlow, string> = {
+  commit_to_content: "Engineering note",
+  site_intelligence: "Answer",
+};
+
 /** Every TextOS-produced article lives under /insights/ — the route is shared, the manifest
  *  surface (and so what the article may claim) is per flow, see FLOW_SURFACE. */
 export const INSIGHTS_ROUTE_PREFIX = "/insights/";

@@ -64,6 +64,11 @@ export const PIPELINE_NARRATIVE: { title: string; body: string; proven: boolean 
   },
 ];
 
+export const HOME_HERO = {
+  eyebrow: "Video production, evidence-first",
+  headline: "From raw footage to a published, reviewed short.",
+};
+
 export const HOME_INTRO =
   "ShortsOS turns a client's own raw footage into a produced, human-reviewed short — and, when " +
   "genuinely ready, gets it published with a captured permalink. The steps below are the shape " +
@@ -370,6 +375,16 @@ export const INSIGHTS_AUTHORSHIP: Record<"pending" | "done", string> = {
   done: "Drafted by an AI agent working for the ShortsOS team, then reviewed by a member of the team.",
 };
 
+/** The page shown for an address that does not exist (src/app/not-found.tsx). */
+export const NOT_FOUND_COPY = {
+  eyebrow: "404",
+  heading: "This page does not exist",
+  body: "The address may be mistyped, or the page may have moved. These pages are a good place to start.",
+};
+
+/** The closing line of every share image (src/app/og/[image]/route.tsx). */
+export const SHARE_IMAGE_LINE = "Operated by the ShortsOS team for pilots.";
+
 /** The site's default description (meta description, Open Graph, llms.txt). */
 export const SITE_DESCRIPTION =
   "ShortsOS turns raw footage into a reviewed, published short — with a real, proven " +
@@ -396,7 +411,7 @@ export const PILOT_CTA_COPY = {
 
 export const HOME_PAGE_COPY: CopySource = {
   id: "home-page",
-  text: [HOME_INTRO, ...PIPELINE_NARRATIVE.map((s) => `${s.title}: ${s.body}`)].join("\n"),
+  text: [HOME_HERO.eyebrow, HOME_HERO.headline, HOME_INTRO, ...PIPELINE_NARRATIVE.map((s) => `${s.title}: ${s.body}`)].join("\n"),
   relatedEntityIds: [M1_ENTITY_ID],
 };
 
@@ -466,9 +481,15 @@ export const PILOT_CTA_BLOCK_COPY: CopySource = {
   relatedEntityIds: [M1_ENTITY_ID],
 };
 
+export const NOT_FOUND_PAGE_COPY: CopySource = {
+  id: "not-found-page",
+  text: [NOT_FOUND_COPY.eyebrow, NOT_FOUND_COPY.heading, NOT_FOUND_COPY.body].join("\n"),
+  relatedEntityIds: [],
+};
+
 export const SITE_METADATA_COPY: CopySource = {
   id: "site-metadata",
-  text: SITE_DESCRIPTION,
+  text: [SITE_DESCRIPTION, SHARE_IMAGE_LINE].join("\n"),
   relatedEntityIds: [],
 };
 
@@ -483,5 +504,6 @@ export const SITE_COPY_SOURCES: CopySource[] = [
   GLOSSARY_COPY,
   REQUEST_PILOT_PAGE_COPY,
   PILOT_CTA_BLOCK_COPY,
+  NOT_FOUND_PAGE_COPY,
   INSIGHTS_COPY,
 ];

@@ -587,3 +587,14 @@ form.pilot-form textarea {
 .cta-band-action {
   margin-top: 28px;
 }
+
+/* ---- Not found ---- */
+.start-here {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  font-weight: 600;
+}

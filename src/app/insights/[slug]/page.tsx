@@ -5,7 +5,7 @@ import { INSIGHTS_AUTHORSHIP, INSIGHTS_NEXT_STEP_LABEL, INSIGHTS_NOTE_NOTICE, IN
 import { SITE_ORIGIN } from "@/lib/config/site-config";
 import { buildArticleJsonLd } from "@/lib/seo/json-ld";
 import { pageMetadata } from "@/lib/seo/page-metadata";
-import { STATUS_MEANING, getInsightArticle, headingBlockId, loadInsightArticles, type ArticleBlock } from "@/lib/textos/articles";
+import { FLOW_LABEL, STATUS_MEANING, getInsightArticle, headingBlockId, loadInsightArticles, type ArticleBlock } from "@/lib/textos/articles";
 
 // Static export: one page per published article, nothing resolved at request time.
 export const dynamicParams = false;
@@ -23,13 +23,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: article.description,
     type: "article",
     publishedTime: article.publishedOn,
+    shareImage: article.slug,
   });
 }
-
-const FLOW_LABEL = {
-  commit_to_content: "Engineering note",
-  site_intelligence: "Answer",
-} as const;
 
 // Each block carries the id the render-parity check looks for: the heading at the writer's level,
 // then the text, both exactly as written.
