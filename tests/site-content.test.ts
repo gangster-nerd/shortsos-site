@@ -21,7 +21,7 @@ import { getEntity } from "../src/lib/registries/capability-registry";
 describe("real synced manifest", () => {
   it("loads, verifies, and has exactly the ratified counts", () => {
     const { manifest, productRef } = loadSiteManifest();
-    expect(productRef).toBe("f01ac6110ec664aba31ee985a4c30d307de10b2f");
+    expect(productRef).toBe("22e31cd6f7146813a31d90bbaa03b1ae554e5cd6");
     expect(manifest.counts).toEqual({
       public_marketable: 1,
       candidate: 8,
