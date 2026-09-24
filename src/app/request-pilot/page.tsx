@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { REQUEST_PILOT_COPY } from "@/content/copy-sources";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "Request a pilot" };
+export const metadata: Metadata = pageMetadata({ path: "/request-pilot/", title: "Request a pilot" });
 
 const CONTACT_EMAIL = "pilots@shortsos.example";
 const DEFAULT_SUBJECT = "Pilot request";

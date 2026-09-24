@@ -3,8 +3,9 @@ import Link from "next/link";
 
 import { HOW_IT_WORKS_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "How it works" };
+export const metadata: Metadata = pageMetadata({ path: "/how-it-works/", title: "How it works" });
 
 export default function HowItWorksPage() {
   const m1 = getM1ForSurface("how_it_works");

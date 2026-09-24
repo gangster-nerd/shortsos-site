@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CTA_REGISTRY } from "@/lib/registries/cta-registry";
@@ -5,6 +6,9 @@ import { buildOrganizationJsonLd } from "@/lib/seo/json-ld";
 import { HOME_INTRO, PIPELINE_NARRATIVE } from "@/content/copy-sources";
 import { getM1ForSurface, splitM1Claim } from "@/lib/content/m1";
 import { SITE_ORIGIN } from "@/lib/config/site-config";
+import { pageMetadata } from "@/lib/seo/page-metadata";
+
+export const metadata: Metadata = pageMetadata({ path: "/" });
 
 export default function HomePage() {
   const requestPilot = CTA_REGISTRY.request_pilot;

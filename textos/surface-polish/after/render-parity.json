@@ -7,7 +7,7 @@
     "function": "evaluateRenderParity (A2R-SURFACE-SEAL-1)"
   },
   "observed": {
-    "siteCommit": "98f02181f0daf452c405bbaab333f9266ff8d178",
+    "siteCommit": "3791ce79384373476ffd266bf1c47071d50775bb",
     "siteCommitNote": "The checked build included uncommitted changes on top of siteCommit (the commit that lands them is the one carrying this receipt).",
     "layout": "static export (out/insights/<slug>/index.html)"
   },
@@ -20,7 +20,7 @@
     {
       "articleId": "sos-answer-human-review",
       "slug": "is-there-a-human-review-before-publication",
-      "htmlSha256": "3a8796901d01de914e0d96eaf8942c7e24f23145b87f62254559fc84a3c7647b",
+      "htmlSha256": "8638c43319cb733e8c46af692f1dd824989eead69188b117176cd1e3aa008ab8",
       "blocksInView": 7,
       "blocksChecked": 7,
       "passed": true,
@@ -32,7 +32,7 @@
     {
       "articleId": "sos-answer-what-a-pilot-involves",
       "slug": "what-a-shortsos-pilot-involves",
-      "htmlSha256": "4b7d9014c03639e6712db3060c9d6a0c98076336e4b0f20ae857d0c10eccf5ae",
+      "htmlSha256": "dcd41ee46fa3c40c7a0c1a9b22ba1a5b54e3b6c1c5e92b38516a3a94f6aae5a3",
       "blocksInView": 7,
       "blocksChecked": 7,
       "passed": true,
@@ -44,7 +44,7 @@
     {
       "articleId": "sos-note-evidence-repair",
       "slug": "keeping-the-proof-behind-a-public-claim-checkable",
-      "htmlSha256": "7e036d6e5dcdeb2ef0a26f1dfbade63ceee56d7cd3807c7010e250eaeaef872a",
+      "htmlSha256": "65333cde558b45d04eeee184259d1df68a29d501491a78b01109e418c2d346df",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
@@ -56,7 +56,7 @@
     {
       "articleId": "sos-note-one-public-claim",
       "slug": "why-shortsos-makes-one-public-claim",
-      "htmlSha256": "e86f4215df2827fcb76fffa9c1e5a0d69d465a80b4b19300d5c6775156b3c038",
+      "htmlSha256": "a83c6f439d1ae3778abc9c2568878fb9e5900f525cad8f9c29cfb7b4a4ae893f",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
@@ -68,7 +68,7 @@
     {
       "articleId": "sos-note-zero-is-an-answer",
       "slug": "why-no-strong-story-is-a-valid-answer",
-      "htmlSha256": "b406a86faa53fc3f5aa6138dada52c6609e821b9e781827c35c4f09c32cca474",
+      "htmlSha256": "c8accb5b30fd900d0b06c897bde94584b34ad13ace6b4633e80307354fd63f6e",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,

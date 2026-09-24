@@ -370,6 +370,11 @@ export const INSIGHTS_AUTHORSHIP: Record<"pending" | "done", string> = {
   done: "Drafted by an AI agent working for the ShortsOS team, then reviewed by a member of the team.",
 };
 
+/** The site's default description (meta description, Open Graph, llms.txt). */
+export const SITE_DESCRIPTION =
+  "ShortsOS turns raw footage into a reviewed, published short — with a real, proven " +
+  "Produce → Review → Publish run behind it, operated by the ShortsOS team for pilots.";
+
 export const REQUEST_PILOT_COPY = {
   intro:
     "There is no independent signup. Requesting a pilot starts a direct conversation with the " +
@@ -446,7 +451,14 @@ export const REQUEST_PILOT_PAGE_COPY: CopySource = {
   relatedEntityIds: [],
 };
 
+export const SITE_METADATA_COPY: CopySource = {
+  id: "site-metadata",
+  text: SITE_DESCRIPTION,
+  relatedEntityIds: [],
+};
+
 export const SITE_COPY_SOURCES: CopySource[] = [
+  SITE_METADATA_COPY,
   HOME_PAGE_COPY,
   HOW_IT_WORKS_COPY,
   METHODOLOGY_COPY,

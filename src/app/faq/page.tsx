@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { FAQ_ITEMS } from "@/content/copy-sources";
 import { getM1ForSurface } from "@/lib/content/m1";
 import { buildFaqPageJsonLd } from "@/lib/seo/json-ld";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "FAQ" };
+export const metadata: Metadata = pageMetadata({ path: "/faq/", title: "FAQ" });
 
 export default function FaqPage() {
   // Asserts the manifest actually authorizes M1's claim on the "faq" surface before this

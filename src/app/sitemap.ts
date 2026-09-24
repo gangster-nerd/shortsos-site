@@ -20,10 +20,13 @@ const ROUTES = [
   "/insights",
 ];
 
+// URLs end with "/" like the pages themselves (next.config trailingSlash), so no entry redirects.
+// Only articles carry a date: the one printed on them. Pages carry none rather than a fake one.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const articleRoutes = loadInsightArticles().map((a) => a.route.replace(/\/$/, ""));
-  return [...ROUTES, ...articleRoutes].map((route) => ({
-    url: `${SITE_ORIGIN}${route}`,
-    lastModified: new Date(0),
+  const pages = ROUTES.map((route) => ({ url: new URL(route === "/" ? "/" : `${route}/`, SITE_ORIGIN).toString() }));
+  const articles = loadInsightArticles().map((a) => ({
+    url: new URL(a.route, SITE_ORIGIN).toString(),
+    lastModified: a.publishedOn,
   }));
+  return [...pages, ...articles];
 }

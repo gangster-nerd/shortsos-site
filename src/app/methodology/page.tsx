@@ -3,8 +3,9 @@ import Link from "next/link";
 
 import { METHODOLOGY_INTRO, METHODOLOGY_STATUS_NOTE, METHODOLOGY_STAGES } from "@/content/copy-sources";
 import { loadSiteManifest } from "@/lib/manifest/site-manifest";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "Methodology" };
+export const metadata: Metadata = pageMetadata({ path: "/methodology/", title: "Methodology" });
 
 export default function MethodologyPage() {
   const { manifest } = loadSiteManifest();

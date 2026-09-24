@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { INSIGHTS_AUTHORSHIP, INSIGHTS_NEXT_STEP_LABEL, INSIGHTS_NOTE_NOTICE, INSIGHTS_PROVENANCE } from "@/content/copy-sources";
+import { SITE_ORIGIN } from "@/lib/config/site-config";
 import { buildArticleJsonLd } from "@/lib/seo/json-ld";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 import { STATUS_MEANING, getInsightArticle, headingBlockId, loadInsightArticles, type ArticleBlock } from "@/lib/textos/articles";
 
 // Static export: one page per published article, nothing resolved at request time.
@@ -15,7 +17,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const article = getInsightArticle(slug);
-  return { title: article.title, description: article.description };
+  return pageMetadata({
+    path: article.route,
+    title: article.title,
+    description: article.description,
+    type: "article",
+    publishedTime: article.publishedOn,
+  });
 }
 
 const FLOW_LABEL = {
@@ -44,6 +52,7 @@ export default async function InsightArticlePage({ params }: { params: Promise<{
     description: article.description,
     inLanguage: article.language,
     datePublished: article.publishedOn,
+    url: new URL(article.route, SITE_ORIGIN).toString(),
   });
 
   return (
