@@ -16,6 +16,7 @@
     "content:verify": "tsx scripts/content-verify.ts",
     "content:commits": "tsx scripts/content-commits.ts",
     "validate:jsonld": "tsx scripts/validate-jsonld.ts",
+    "check:live": "tsx scripts/check-live.ts",
     "textos": "tsx scripts/textos/run.ts"
   },
   "dependencies": {
