@@ -4,7 +4,7 @@
   "flow": "commit_to_content",
   "slug": "keeping-the-proof-behind-a-public-claim-checkable",
   "locale": "en-US",
-  "publicationChannel": "controlled_preview",
+  "publicationChannel": "public_web",
   "entityIds": [
     "M1-REAL-PRODUCE-REVIEW-PUBLISH"
   ],
@@ -38,7 +38,27 @@
     "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-09-24 to produce and publish articles from ShortsOS commits",
     "approvedAt": "2026-09-24"
   },
-  "clearances": [],
+  "clearances": [
+    {
+      "evidenceIds": [
+        "ev-n1-01",
+        "ev-n1-02",
+        "ev-n1-03",
+        "ev-n1-04",
+        "ev-n1-05",
+        "ev-n1-06",
+        "ev-n1-07",
+        "ev-n1-08",
+        "ev-n1-09"
+      ],
+      "decision": "APPROVE_PUBLIC_USE",
+      "clientValidation": "CLIENT_VALIDATE",
+      "actor": "Marc Prp, ShortsOS owner (recorded by operator:claude-code)",
+      "actorCapacity": "ShortsOS owner (T0). Decided in the operator session of 2026-09-24, after reviewing the published article, to allow public use of the evidence it quotes.",
+      "decidedAt": "2026-09-24",
+      "reason": "The owner authorized public use of the excerpts this engineering note quotes (product commit) so the note can be published for public_web and the site can be indexed. The note stays a historical record on the developer_note surface; no capability claim changes."
+    }
+  ],
   "evidence": [
     {
       "id": "ev-n1-01",
@@ -324,9 +344,9 @@
     "publishedOn": "2026-09-24",
     "mandate": "The ShortsOS owner's instruction of 2026-09-24 to produce and publish these articles on ShortsOS-site.",
     "humanReview": {
-      "status": "pending",
-      "reviewer": null,
-      "reviewedOn": null
+      "status": "done",
+      "reviewer": "Marc Prp",
+      "reviewedOn": "2026-09-24"
     }
   }
 }

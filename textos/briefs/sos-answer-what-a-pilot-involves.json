@@ -421,9 +421,9 @@
     "publishedOn": "2026-09-24",
     "mandate": "The ShortsOS owner's instruction of 2026-09-24 to produce and publish these articles on ShortsOS-site.",
     "humanReview": {
-      "status": "pending",
-      "reviewer": null,
-      "reviewedOn": null
+      "status": "done",
+      "reviewer": "Marc Prp",
+      "reviewedOn": "2026-09-24"
     }
   }
 }

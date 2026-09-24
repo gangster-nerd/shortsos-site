@@ -25,6 +25,25 @@ function sandbox(): string {
   return dir;
 }
 const sandboxes: string[] = [];
+
+/** In a sandbox, puts one article back on controlled_preview, consistently (brief, receipt, approvals). */
+function rollBackToPreview(dir: string, articleId: string): void {
+  const patch = (rel: string, change: (json: Record<string, unknown>) => void) => {
+    const file = join(dir, "textos", rel);
+    const json = JSON.parse(readFileSync(file, "utf8")) as Record<string, unknown>;
+    change(json);
+    writeFileSync(file, JSON.stringify(json));
+  };
+  patch(join("briefs", `${articleId}.json`), (b) => {
+    b.publicationChannel = "controlled_preview";
+  });
+  patch(join("runs", articleId, "receipt.json"), (r) => {
+    r.publicationChannel = "controlled_preview";
+  });
+  patch(join("runs", articleId, "intake.json"), (intake) => {
+    for (const ev of intake.evidence as { approvalScope: { channel: string } }[]) ev.approvalScope.channel = "controlled_preview";
+  });
+}
 afterAll(() => sandboxes.forEach((d) => rmSync(d, { recursive: true, force: true })));
 
 describe("TextOS-produced articles (SOS-NOTES-V1)", () => {
@@ -38,10 +57,13 @@ describe("TextOS-produced articles (SOS-NOTES-V1)", () => {
       expect(a.surface).toBe(FLOW_SURFACE[a.flow]);
       expect(a.route).toBe(`/insights/${a.slug}/`);
     }
-    // Commit-derived facts carry no human public-use clearance yet: preview channel only.
-    expect(articles.filter((a) => a.flow === "commit_to_content").every((a) => a.channel === "controlled_preview")).toBe(true);
-    // Answers rest only on ratified, client-validated wording: checked for public_web.
-    expect(articles.filter((a) => a.flow === "site_intelligence").every((a) => a.channel === "public_web")).toBe(true);
+    // Every published article is checked for public_web: the answers rest on ratified wording, and
+    // the owner cleared every piece of evidence the engineering notes quote (2026-09-24).
+    expect(articles.every((a) => a.channel === "public_web")).toBe(true);
+    for (const b of briefs.filter((x) => x.flow === "commit_to_content")) {
+      const cleared = new Set(b.clearances.flatMap((c) => (c.decision === "APPROVE_PUBLIC_USE" ? c.evidenceIds : [])));
+      expect(b.evidence.every((e) => cleared.has(e.id)), b.articleId).toBe(true);
+    }
   });
 
   it("answers only name capabilities that authorize a public claim on the faq surface", () => {
@@ -131,7 +153,12 @@ describe("integrity failures are refused, not rendered", () => {
   });
 
   it("refuses to let the site become indexable while a preview-only article is published", () => {
-    expect(() => loadArticle(brief, { ...ctx, indexingAllowed: true })).toThrow(/re-run it for public_web/);
+    const dir = sandbox();
+    sandboxes.push(dir);
+    rollBackToPreview(dir, brief.articleId);
+    const preview: ArticleBrief = { ...brief, publicationChannel: "controlled_preview" };
+    expect(() => loadArticle(preview, { ...ctx, root: dir, indexingAllowed: false })).not.toThrow();
+    expect(() => loadArticle(preview, { ...ctx, root: dir, indexingAllowed: true })).toThrow(/re-run it for public_web/);
   });
 
   it("refuses a developer note that restates a capability's claim ceiling", () => {
@@ -168,12 +195,13 @@ describe("integrity failures are refused, not rendered", () => {
   it("refuses a public_web answer whose next step is a preview-only note, even shown as it reads", () => {
     const dir = sandbox();
     sandboxes.push(dir);
+    rollBackToPreview(dir, brief.articleId);
     const note = articles.find((a) => a.articleId === brief.articleId)!;
     const file = join(dir, "textos", "runs", "sos-answer-human-review", "conversion-plan.json");
     const plan = JSON.parse(readFileSync(file, "utf8")) as { editorialNextStep: Record<string, string> };
     plan.editorialNextStep = { ...plan.editorialNextStep, targetArticleId: note.articleId, route: note.route, label: note.title, description: note.description };
     writeFileSync(file, JSON.stringify(plan));
-    expect(() => loadInsightArticles({ ...ctx, root: dir })).toThrow(/only for controlled_preview/);
+    expect(() => loadInsightArticles({ ...ctx, root: dir, indexingAllowed: false })).toThrow(/only for controlled_preview/);
   });
 
   it("refuses a next step that does not show its target as that article reads", () => {
