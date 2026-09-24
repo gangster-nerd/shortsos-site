@@ -16,13 +16,21 @@ export interface CtaDefinition {
   /** Hard switch. Only `request_pilot` is true in V1. */
   enabled: boolean;
   /**
-   * The manifest entity id (and derived publication status) that must be public_marketable
-   * before this CTA could ever be considered for activation. Purely descriptive/documentary
-   * for a disabled CTA today — `isCtaActivatable` is what actually checks it.
+   * The manifest entity that must back this CTA before it could ever be considered for
+   * activation: public_marketable, generally available (`availability: "public"`), and
+   * allowed on the `cta` surface. Purely descriptive/documentary for a disabled CTA today —
+   * `isCtaActivatable` is what actually checks it.
    */
   requiredManifestSignal: {
     entityId: string;
     requiredDerivedPublicationStatus: "public_marketable";
+    /**
+     * Mirrors the product's own rule (`entitySatisfiesCtaRequirement` in
+     * `src/public-truth/publication-policy.ts`): a self-serve CTA requires real, general
+     * public availability, proven separately. An operator_only entity can be
+     * public_marketable under a managed-service framing (M1 is), and that is never enough.
+     */
+    requiredAvailability: "public";
   } | null;
 }
 
@@ -44,6 +52,7 @@ export const CTA_REGISTRY: Record<CtaId, CtaDefinition> = {
     requiredManifestSignal: {
       entityId: "DRIVE-CONNECT-SELF-SERVE-V1",
       requiredDerivedPublicationStatus: "public_marketable",
+      requiredAvailability: "public",
     },
   },
   publish_to_instagram: {
@@ -54,6 +63,7 @@ export const CTA_REGISTRY: Record<CtaId, CtaDefinition> = {
     requiredManifestSignal: {
       entityId: "INSTAGRAM-SELF-SERVE-PUBLISH-V1",
       requiredDerivedPublicationStatus: "public_marketable",
+      requiredAvailability: "public",
     },
   },
   start_self_serve: {
@@ -64,6 +74,7 @@ export const CTA_REGISTRY: Record<CtaId, CtaDefinition> = {
     requiredManifestSignal: {
       entityId: "SELF-SERVE-ONBOARDING-V1",
       requiredDerivedPublicationStatus: "public_marketable",
+      requiredAvailability: "public",
     },
   },
 };
@@ -75,20 +86,27 @@ export const ACTIVE_CTA_IDS: CtaId[] = (Object.values(CTA_REGISTRY) as CtaDefini
 /**
  * Whether a CTA's `enabled` flag is actually justified by the manifest right now. For
  * `request_pilot` (no gate), always true. For every gated CTA, true only if the manifest
- * has an entity matching `requiredManifestSignal` whose `derivedPublicationStatus` equals
- * `requiredDerivedPublicationStatus`. This function does NOT flip `enabled` itself — it
- * exists so a test (and CI) can refuse a disabled CTA that was flipped to `enabled: true`
- * without the manifest actually backing it, catching a "copy-only" activation mistake.
+ * has a capability matching `requiredManifestSignal` that is public_marketable, generally
+ * available and allowed on the `cta` surface — every condition must hold. This function
+ * does NOT flip `enabled` itself — it exists so a test (and CI) can refuse a disabled CTA
+ * that was flipped to `enabled: true` without the manifest actually backing it, catching a
+ * "copy-only" activation mistake.
  */
 export function isCtaActivatable(cta: CtaDefinition, manifest: CapabilityManifest): boolean {
-  if (cta.requiredManifestSignal === null) {
+  const signal = cta.requiredManifestSignal;
+  if (signal === null) {
     return true;
   }
-  const entity = manifest.entities.find((e) => e.id === cta.requiredManifestSignal!.entityId);
+  const entity = manifest.entities.find((e) => e.id === signal.entityId);
   if (!entity) {
     return false;
   }
-  return entity.derivedPublicationStatus === cta.requiredManifestSignal.requiredDerivedPublicationStatus;
+  return (
+    entity.kind === "capability" &&
+    entity.derivedPublicationStatus === signal.requiredDerivedPublicationStatus &&
+    entity.availability === signal.requiredAvailability &&
+    entity.allowedSurfaces.includes("cta")
+  );
 }
 
 /**
