@@ -7,8 +7,8 @@
     "function": "evaluateRenderParity (A2R-SURFACE-SEAL-1)"
   },
   "observed": {
-    "siteCommit": "3791ce79384373476ffd266bf1c47071d50775bb",
-    "siteCommitNote": "The checked build included uncommitted changes on top of siteCommit (the commit that lands them is the one carrying this receipt).",
+    "siteCommit": "7761bb4149b00e25c6d9567626d325a4eebbcadc",
+    "siteCommitNote": "The checked build is exactly siteCommit.",
     "layout": "static export (out/insights/<slug>/index.html)"
   },
   "method": "Parity view of each committed ContentDocument: visible resolved blocks in render order, section headings as mdast headings at the writer's level, texts as mdast paragraphs. Non-vacuity: one word changed inside a checked block must be reported. The rendered h1 must equal the document title.",
@@ -20,7 +20,7 @@
     {
       "articleId": "sos-answer-human-review",
       "slug": "is-there-a-human-review-before-publication",
-      "htmlSha256": "8638c43319cb733e8c46af692f1dd824989eead69188b117176cd1e3aa008ab8",
+      "htmlSha256": "c2dbea48b2d04b73d85f5fe37d3a764fc9614f41d8f65fff5f8b7964a02744dc",
       "blocksInView": 7,
       "blocksChecked": 7,
       "passed": true,
@@ -32,7 +32,7 @@
     {
       "articleId": "sos-answer-what-a-pilot-involves",
       "slug": "what-a-shortsos-pilot-involves",
-      "htmlSha256": "dcd41ee46fa3c40c7a0c1a9b22ba1a5b54e3b6c1c5e92b38516a3a94f6aae5a3",
+      "htmlSha256": "c85190f3cbaa3dfee9ddc5199adfe8e08608e4b4e98e63067794842061bf2bb2",
       "blocksInView": 7,
       "blocksChecked": 7,
       "passed": true,
@@ -44,7 +44,7 @@
     {
       "articleId": "sos-note-evidence-repair",
       "slug": "keeping-the-proof-behind-a-public-claim-checkable",
-      "htmlSha256": "65333cde558b45d04eeee184259d1df68a29d501491a78b01109e418c2d346df",
+      "htmlSha256": "6be0edf05d16d30a02e19645544c3dc42007a21da8572b8ef92d137fa9918915",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
@@ -56,7 +56,7 @@
     {
       "articleId": "sos-note-one-public-claim",
       "slug": "why-shortsos-makes-one-public-claim",
-      "htmlSha256": "a83c6f439d1ae3778abc9c2568878fb9e5900f525cad8f9c29cfb7b4a4ae893f",
+      "htmlSha256": "6a547e7f69b9ad5b818f12a353f753a4bae1c98cbf8460056cb3adc78a549487",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
@@ -68,7 +68,7 @@
     {
       "articleId": "sos-note-zero-is-an-answer",
       "slug": "why-no-strong-story-is-a-valid-answer",
-      "htmlSha256": "c8accb5b30fd900d0b06c897bde94584b34ad13ace6b4633e80307354fd63f6e",
+      "htmlSha256": "50b3f54fec69d2469154f67f20a03103794eb8df73cb01614d916eb235d79f35",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
