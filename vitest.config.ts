@@ -3,7 +3,7 @@ import path from "node:path";
 
 export default defineConfig({
   test: {
-    include: ["tests/**/*.test.ts"],
+    include: ["tests/**/*.test.ts", "packages/*/test/**/*.test.ts"],
     environment: "node",
   },
   // Components are plain functions a test can call; Next compiles JSX for the app itself.
