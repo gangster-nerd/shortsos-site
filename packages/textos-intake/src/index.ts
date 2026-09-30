@@ -54,3 +54,4 @@ export {
   type SiteRules,
 } from "./site-kit";
 export { runIntakeCli, type IntakeCliOptions } from "./cli";
+export { MANIFEST_FILE, verifyPackageCopy, type PackageManifest } from "./manifest";
