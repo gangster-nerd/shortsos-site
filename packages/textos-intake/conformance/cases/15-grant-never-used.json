@@ -1,0 +1,243 @@
+{
+  "caseVersion": "textos-intake-conformance@1",
+  "id": "15-grant-never-used",
+  "description": "The grant is still active: no release used it.",
+  "expectations": {
+    "siteId": "example-site",
+    "workspaceId": "ws_example",
+    "locales": [
+      "fr-FR"
+    ],
+    "contentDocumentFingerprint": "4c631727a3062f6470bb1554b6dbb152153dbcbac3223df9eb0845c908aa4316",
+    "acceptedEngineShas": "any"
+  },
+  "evidence": {
+    "evidenceVersion": "textos-intake-evidence@1",
+    "collectedAt": "2026-10-01T10:06:00.000Z",
+    "principalIds": "sha256",
+    "job": {
+      "id": "job_1",
+      "workspaceId": "ws_example",
+      "principalId": "sha256:23d052cb049ecf0847d0462eb5c46af6988710e4f2f2df776522cc2cb22d2d88",
+      "capability": "textos.release_headless_delivery@1",
+      "status": "succeeded",
+      "requestHash": "4c64d360f74c46ad11e25c07ac1936fba0b426beb70578a0bcd3b1884e2a17c6",
+      "createdAt": "2026-10-01T10:04:00.000Z",
+      "updatedAt": "2026-10-01T10:05:00.000Z",
+      "artifactId": "artifact_out",
+      "receiptId": "receipt_1",
+      "revision": 3,
+      "attempt": 1,
+      "inputArtifactId": "artifact_in",
+      "outputArtifactId": "artifact_out",
+      "trustGrantId": "grant_1",
+      "actionEnvelopeHash": "e679a92e07fd606c8b8168804ba53151236f1c6547fd4b4dbdeb304777c8a6c1",
+      "reservedCostMicros": 0
+    },
+    "artifact": {
+      "id": "artifact_out",
+      "workspaceId": "ws_example",
+      "mediaType": "application/json",
+      "contract": "textos-headless-delivery@1",
+      "sha256": "ce1418891bbef1564b482d657c0d830e8e881f9d77832296db628494a58e5380",
+      "body": {
+        "schemaVersion": "textos-headless-delivery@1",
+        "destination": {
+          "kind": "headless_site",
+          "siteId": "example-site"
+        },
+        "workspaceId": "ws_example",
+        "locale": "fr-FR",
+        "source": {
+          "contentDraftId": "draft_1",
+          "briefId": "brief_1",
+          "writerMethodVersion": "geo-writer@0.2",
+          "structuredContentHash": "92b67c182cfa1d95aa365f2c11e540cb97914a844a573b4d0e73eee29291e8d5"
+        },
+        "truthCheck": {
+          "verdict": "pass",
+          "truthCheckId": "tc_1"
+        },
+        "contentContract": {
+          "version": "content-document@1",
+          "fingerprint": "4c631727a3062f6470bb1554b6dbb152153dbcbac3223df9eb0845c908aa4316"
+        },
+        "contentDocument": {
+          "contentSchemaVersion": "content-document@1",
+          "identity": {
+            "documentId": "draft_1",
+            "contentType": "product_article",
+            "slug": "exemple-de-guide",
+            "language": "fr-FR",
+            "title": "Exemple de guide",
+            "description": "Un document d'exemple pour les tests."
+          },
+          "editorial": {
+            "authorIds": [],
+            "reviewerIds": [],
+            "topicIds": [],
+            "audience": "Lecteur de test",
+            "funnelStage": "consideration"
+          },
+          "truth": {
+            "statusVocabulary": "geo-writer",
+            "statusVocabularyVersion": "geo-writer@0.2",
+            "sourceStatus": "ARTICLE_GUIDE",
+            "publicationStatus": "draft",
+            "allowedSurfaces": [
+              "reference",
+              "native"
+            ],
+            "claimIds": [
+              "stmt-1",
+              "stmt-2"
+            ],
+            "evidenceRefs": [
+              "ev-1"
+            ]
+          },
+          "provenance": {
+            "sourceAuthority": "UNCERTIFIED",
+            "sourceEvidenceDigest": "92b67c182cfa1d95aa365f2c11e540cb97914a844a573b4d0e73eee29291e8d5"
+          },
+          "body": [
+            {
+              "id": "answer-1",
+              "kind": "answer",
+              "slot": "short-answer",
+              "data": {
+                "text": "Une réponse courte."
+              }
+            },
+            {
+              "id": "why:heading",
+              "kind": "heading",
+              "level": 2,
+              "data": {
+                "text": "Pourquoi"
+              }
+            },
+            {
+              "id": "why:body",
+              "kind": "paragraph",
+              "data": {
+                "text": "Un paragraphe de corps."
+              }
+            }
+          ],
+          "relationships": {
+            "relatedContentIds": []
+          },
+          "conversion": {
+            "conversionAllowed": false
+          },
+          "lifecycle": {},
+          "seo": {
+            "indexingIntent": "noindex",
+            "targetQuery": "exemple de guide",
+            "searchIntent": "buyer_decision"
+          }
+        },
+        "statementLedger": [
+          {
+            "id": "stmt-1",
+            "text": "Une réponse courte.",
+            "kind": "factual",
+            "evidenceIds": [
+              "ev-1"
+            ]
+          },
+          {
+            "id": "stmt-2",
+            "text": "Un paragraphe de corps.",
+            "kind": "editorial",
+            "evidenceIds": []
+          }
+        ]
+      },
+      "createdAt": "2026-10-01T10:05:00.000Z"
+    },
+    "receipt": {
+      "version": "receipt@1",
+      "id": "receipt_1",
+      "workspaceId": "ws_example",
+      "principalId": "sha256:23d052cb049ecf0847d0462eb5c46af6988710e4f2f2df776522cc2cb22d2d88",
+      "jobId": "job_1",
+      "capability": "textos.release_headless_delivery@1",
+      "engineSha": "0123456789abcdef0123456789abcdef01234567",
+      "channel": "job",
+      "inputHash": "c7528d6762eb63293aa59337f5c6b10a312e8d4a6d007f04ad6cbabf98288db1",
+      "outputHash": "ce1418891bbef1564b482d657c0d830e8e881f9d77832296db628494a58e5380",
+      "actionEnvelopeHash": "e679a92e07fd606c8b8168804ba53151236f1c6547fd4b4dbdeb304777c8a6c1",
+      "trustOutcome": "REQUIRE_REVIEW",
+      "artifactId": "artifact_out",
+      "createdAt": "2026-10-01T10:05:00.000Z",
+      "traceId": "trace_job"
+    },
+    "decision": {
+      "id": "dec_1",
+      "workspaceId": "ws_example",
+      "capabilityId": "textos.release_headless_delivery@1",
+      "actionEnvelopeHash": "e679a92e07fd606c8b8168804ba53151236f1c6547fd4b4dbdeb304777c8a6c1",
+      "policyVersion": "trust-policy@1",
+      "policyOutcome": "REQUIRE_REVIEW",
+      "status": "approved",
+      "requiredRole": "human",
+      "createdAt": "2026-10-01T09:00:01.000Z",
+      "expiresAt": "2026-10-08T09:00:01.000Z",
+      "resolvedAt": "2026-10-01T10:00:00.000Z",
+      "resolvedByPrincipalId": "sha256:a2f4b622a143543d31c6ebacabb05eed796e5499475058c862d9e193ad349fb0"
+    },
+    "envelope": {
+      "id": "env_1",
+      "workspaceId": "ws_example",
+      "actionType": "release_headless_delivery",
+      "effect": "act",
+      "externality": "E1",
+      "reversibility": "R1",
+      "risk": "medium",
+      "target": {
+        "kind": "headless_site",
+        "ref": "example-site",
+        "protected": true
+      },
+      "truthVerdict": "pass",
+      "evidenceStatus": "complete",
+      "rollback": {
+        "kind": "discard",
+        "guaranteed": true
+      },
+      "proposedStateHash": "ce1418891bbef1564b482d657c0d830e8e881f9d77832296db628494a58e5380",
+      "traceId": "trace_env",
+      "createdAt": "2026-10-01T09:00:00.000Z"
+    },
+    "executionPayload": {
+      "contentDraftId": "draft_1",
+      "destination": {
+        "kind": "headless_site",
+        "siteId": "example-site"
+      }
+    },
+    "grant": {
+      "id": "grant_1",
+      "workspaceId": "ws_example",
+      "capabilityId": "textos.release_headless_delivery@1",
+      "actionEnvelopeHash": "e679a92e07fd606c8b8168804ba53151236f1c6547fd4b4dbdeb304777c8a6c1",
+      "source": "human_decision",
+      "sourceDecisionId": "dec_1",
+      "policyVersion": "trust-policy@1",
+      "policyOutcome": "REQUIRE_REVIEW",
+      "executionDisposition": "execute",
+      "status": "active",
+      "issuedAt": "2026-10-01T10:00:00.000Z",
+      "expiresAt": "2026-10-02T10:00:00.000Z",
+      "consumedAt": "2026-10-01T10:05:00.000Z"
+    }
+  },
+  "expected": {
+    "ok": false,
+    "codes": [
+      "grant_mismatch"
+    ]
+  }
+}

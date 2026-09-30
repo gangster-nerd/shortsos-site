@@ -1,0 +1,142 @@
+{
+  "caseVersion": "textos-intake-conformance@1",
+  "id": "06-article-review-is-not-a-release",
+  "description": "A consistent chain whose artifact is an Article Review result, not a release.",
+  "expectations": {
+    "siteId": "example-site",
+    "workspaceId": "ws_example",
+    "locales": [
+      "fr-FR"
+    ],
+    "contentDocumentFingerprint": "4c631727a3062f6470bb1554b6dbb152153dbcbac3223df9eb0845c908aa4316",
+    "acceptedEngineShas": "any"
+  },
+  "evidence": {
+    "evidenceVersion": "textos-intake-evidence@1",
+    "collectedAt": "2026-10-01T10:06:00.000Z",
+    "principalIds": "sha256",
+    "job": {
+      "id": "job_1",
+      "workspaceId": "ws_example",
+      "principalId": "sha256:23d052cb049ecf0847d0462eb5c46af6988710e4f2f2df776522cc2cb22d2d88",
+      "capability": "textos.prepare_article_review@1",
+      "status": "succeeded",
+      "requestHash": "4c64d360f74c46ad11e25c07ac1936fba0b426beb70578a0bcd3b1884e2a17c6",
+      "createdAt": "2026-10-01T10:04:00.000Z",
+      "updatedAt": "2026-10-01T10:05:00.000Z",
+      "artifactId": "artifact_out",
+      "receiptId": "receipt_1",
+      "revision": 3,
+      "attempt": 1,
+      "inputArtifactId": "artifact_in",
+      "outputArtifactId": "artifact_out",
+      "trustGrantId": "grant_1",
+      "actionEnvelopeHash": "3a291746da6207a028b0affc5f0864bd245817682a1b64f86071fcfefcb825ce",
+      "reservedCostMicros": 0
+    },
+    "artifact": {
+      "id": "artifact_out",
+      "workspaceId": "ws_example",
+      "mediaType": "application/json",
+      "contract": "textos-prepare-article-review-result@1",
+      "sha256": "3b167d59b953bedaf283da70522121922cd08e318c9fd4a67405f8b066e94ed9",
+      "body": {
+        "status": "article_ready",
+        "disposition": "created",
+        "contentDraftId": "draft_1",
+        "validationState": "pending_human_review",
+        "verdict": "pass",
+        "providerCallCount": 3,
+        "readingTimeMinutes": 4,
+        "title": "Exemple de guide",
+        "cmoV2Conformance": null,
+        "surfacePlan": null
+      },
+      "createdAt": "2026-10-01T10:05:00.000Z"
+    },
+    "receipt": {
+      "version": "receipt@1",
+      "id": "receipt_1",
+      "workspaceId": "ws_example",
+      "principalId": "sha256:23d052cb049ecf0847d0462eb5c46af6988710e4f2f2df776522cc2cb22d2d88",
+      "jobId": "job_1",
+      "capability": "textos.prepare_article_review@1",
+      "engineSha": "0123456789abcdef0123456789abcdef01234567",
+      "channel": "job",
+      "inputHash": "c7528d6762eb63293aa59337f5c6b10a312e8d4a6d007f04ad6cbabf98288db1",
+      "outputHash": "3b167d59b953bedaf283da70522121922cd08e318c9fd4a67405f8b066e94ed9",
+      "actionEnvelopeHash": "3a291746da6207a028b0affc5f0864bd245817682a1b64f86071fcfefcb825ce",
+      "trustOutcome": "REQUIRE_REVIEW",
+      "artifactId": "artifact_out",
+      "createdAt": "2026-10-01T10:05:00.000Z",
+      "traceId": "trace_job"
+    },
+    "decision": {
+      "id": "dec_1",
+      "workspaceId": "ws_example",
+      "capabilityId": "textos.prepare_article_review@1",
+      "actionEnvelopeHash": "3a291746da6207a028b0affc5f0864bd245817682a1b64f86071fcfefcb825ce",
+      "policyVersion": "trust-policy@1",
+      "policyOutcome": "REQUIRE_REVIEW",
+      "status": "approved",
+      "requiredRole": "human",
+      "createdAt": "2026-10-01T09:00:01.000Z",
+      "expiresAt": "2026-10-08T09:00:01.000Z",
+      "resolvedAt": "2026-10-01T10:00:00.000Z",
+      "resolvedByPrincipalId": "sha256:a2f4b622a143543d31c6ebacabb05eed796e5499475058c862d9e193ad349fb0"
+    },
+    "envelope": {
+      "id": "env_1",
+      "workspaceId": "ws_example",
+      "actionType": "release_headless_delivery",
+      "effect": "act",
+      "externality": "E1",
+      "reversibility": "R1",
+      "risk": "medium",
+      "target": {
+        "kind": "headless_site",
+        "ref": "example-site",
+        "protected": true
+      },
+      "truthVerdict": "pass",
+      "evidenceStatus": "complete",
+      "rollback": {
+        "kind": "discard",
+        "guaranteed": true
+      },
+      "proposedStateHash": "3b167d59b953bedaf283da70522121922cd08e318c9fd4a67405f8b066e94ed9",
+      "traceId": "trace_env",
+      "createdAt": "2026-10-01T09:00:00.000Z"
+    },
+    "executionPayload": {
+      "contentDraftId": "draft_1",
+      "destination": {
+        "kind": "headless_site",
+        "siteId": "example-site"
+      }
+    },
+    "grant": {
+      "id": "grant_1",
+      "workspaceId": "ws_example",
+      "capabilityId": "textos.prepare_article_review@1",
+      "actionEnvelopeHash": "3a291746da6207a028b0affc5f0864bd245817682a1b64f86071fcfefcb825ce",
+      "source": "human_decision",
+      "sourceDecisionId": "dec_1",
+      "policyVersion": "trust-policy@1",
+      "policyOutcome": "REQUIRE_REVIEW",
+      "executionDisposition": "execute",
+      "status": "consumed",
+      "issuedAt": "2026-10-01T10:00:00.000Z",
+      "expiresAt": "2026-10-02T10:00:00.000Z",
+      "consumedAt": "2026-10-01T10:05:00.000Z"
+    }
+  },
+  "expected": {
+    "ok": false,
+    "codes": [
+      "artifact_not_a_delivery",
+      "capability_mismatch",
+      "delivery_malformed"
+    ]
+  }
+}

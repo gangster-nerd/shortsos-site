@@ -74,6 +74,8 @@ export function syntheticDelivery(locale = "fr-FR"): HeadlessDelivery {
 
 export interface ReleaseOptions {
   delivery?: (d: HeadlessDelivery) => void;
+  /** Replaces the whole artifact body (e.g. with another capability's result). */
+  body?: (d: HeadlessDelivery) => unknown;
   payload?: (p: Record<string, unknown>) => void;
   envelope?: (e: ApiActionEnvelope) => void;
   decision?: (d: ApiDecision) => void;
@@ -88,7 +90,8 @@ export interface ReleaseOptions {
 export function buildReleaseRecords(options: ReleaseOptions = {}) {
   const delivery = syntheticDelivery(options.locale);
   options.delivery?.(delivery);
-  const bodyHash = hashCanonical(delivery);
+  const body: unknown = options.body ? options.body(delivery) : delivery;
+  const bodyHash = hashCanonical(body);
   const executionPayload: Record<string, unknown> = releasePayload({ siteId: SITE_ID, contentDraftId: "draft_1" });
   options.payload?.(executionPayload);
 
@@ -150,7 +153,7 @@ export function buildReleaseRecords(options: ReleaseOptions = {}) {
     mediaType: "application/json",
     contract: DELIVERY_CONTRACT,
     sha256: bodyHash,
-    body: delivery,
+    body,
     createdAt: "2026-10-01T10:05:00.000Z",
   };
   options.artifact?.(artifact);
