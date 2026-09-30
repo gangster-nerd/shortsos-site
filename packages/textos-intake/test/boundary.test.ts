@@ -1,27 +1,41 @@
 import { readFileSync, readdirSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join, relative, resolve } from "node:path";
 
 import { describe, expect, it } from "vitest";
 
 /**
- * The package is meant to be copied as-is into other sites (RepOS-site, …): it may import only
- * its own files and Node built-ins, and declares no dependency.
+ * The package is meant to be copied as-is into other sites (RepOS-site, textos-site…): it may
+ * import only its own files and Node built-ins (and vitest, in its tests), declares no
+ * dependency, and names no site outside its templates' placeholder.
  */
-const PACKAGE_DIR = join(import.meta.dirname, "..");
-const SRC_DIR = join(PACKAGE_DIR, "src");
+const PACKAGE_DIR = resolve(import.meta.dirname, "..");
+
+function tsFiles(dir: string): string[] {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) return entry.name === "node_modules" ? [] : tsFiles(full);
+    return entry.name.endsWith(".ts") ? [full] : [];
+  });
+}
 
 function importsOf(source: string): string[] {
   return [...source.matchAll(/(?:^|\n)\s*(?:import|export)\s[^;]*?from\s+"([^"]+)"/g)].map((m) => m[1]!);
 }
 
 describe("textos-intake stays site-agnostic", () => {
-  const files = readdirSync(SRC_DIR).filter((f) => f.endsWith(".ts"));
+  const files = tsFiles(PACKAGE_DIR);
 
-  it("imports only its own modules and node: built-ins", () => {
-    expect(files.length).toBeGreaterThan(0);
+  it("imports only its own modules, node: built-ins, and vitest in tests", () => {
+    expect(files.length).toBeGreaterThan(10);
     for (const file of files) {
-      for (const specifier of importsOf(readFileSync(join(SRC_DIR, file), "utf8"))) {
-        expect(specifier.startsWith("./") || specifier.startsWith("node:"), `${file} imports ${specifier}`).toBe(true);
+      const rel = relative(PACKAGE_DIR, file);
+      for (const specifier of importsOf(readFileSync(file, "utf8"))) {
+        if (specifier.startsWith("node:")) continue;
+        if (specifier === "vitest" && rel.startsWith("test/")) continue;
+        expect(specifier.startsWith("."), `${rel} imports ${specifier}`).toBe(true);
+        const target = relative(PACKAGE_DIR, resolve(dirname(file), specifier));
+        expect(target.startsWith(".."), `${rel} imports ${specifier}, outside the package`).toBe(false);
+        if (rel.startsWith("src/")) expect(specifier.startsWith("./"), `${rel}: src/ imports only src/`).toBe(true);
       }
     }
   });
@@ -32,9 +46,9 @@ describe("textos-intake stays site-agnostic", () => {
     expect(manifest.peerDependencies).toBeUndefined();
   });
 
-  it("names no site", () => {
-    for (const file of files) {
-      expect(readFileSync(join(SRC_DIR, file), "utf8"), file).not.toMatch(/shortsos|repos-site|jardiniers/i);
+  it("names no site in its code", () => {
+    for (const file of files.filter((f) => !relative(PACKAGE_DIR, f).startsWith("test/"))) {
+      expect(readFileSync(file, "utf8"), relative(PACKAGE_DIR, file)).not.toMatch(/shortsos|repos-site|jardiniers|textos-site/i);
     }
   });
 });

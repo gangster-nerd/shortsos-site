@@ -1,13 +1,17 @@
 {
-  "apiIntakeVersion": 1,
+  "configVersion": "textos-intake-config@1",
   "siteId": "shortsos-site",
   "workspaceId": null,
   "locales": ["en-US"],
+  "contentDocumentFingerprint": "4cefe8c6ed8917180870a37a3f3dbf5d2ff3d9395563dc683fc189b4e47b7e7b",
   "acceptedEngineShas": "any",
+  "releasesDir": "textos/api",
   "why": {
     "siteId": "The id TextOS addresses this site by: a release names it as its destination, and the approved action targets it. A release addressed to any other site is refused.",
     "workspaceId": "No TextOS workspace is assigned to ShortsOS yet. Until the owner records one here, the intake refuses to run and the build refuses any received release.",
     "locales": "The site publishes in English (en-US). fr-FR is added here when the French pages ship; until then a French release is refused rather than published where it does not belong.",
-    "acceptedEngineShas": "The API's engine changes with each TextOS deployment. Every release records the engine SHA it ran on (evidence.json, intake.json). Replace \"any\" with a list of SHAs to accept only engines that were reviewed."
+    "contentDocumentFingerprint": "The ContentDocument@1 schema this site renders against — the same pin as textos/tool.json (contentDocumentContract), which a test keeps equal.",
+    "acceptedEngineShas": "The API's engine changes with each TextOS deployment. Every release records the engine SHA it ran on (evidence.json, intake.json). Replace \"any\" with a list of SHAs to accept only engines that were reviewed.",
+    "releasesDir": "A received release lands in textos/api/<slug>/, next to this site's other TextOS artefacts."
   }
 }

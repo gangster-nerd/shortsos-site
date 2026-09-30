@@ -133,13 +133,15 @@ is packaged.
 
 The two flows above run TextOS from pinned local checkouts. The TextOS API is the other way in.
 A person approves a release in TextOS, and the site pulls it with its own service token. The door
-itself is generic and meant for other sites too: `packages/textos-intake`. ShortsOS's side is
-`src/lib/textos/api-intake.ts`, configured by `client/api-intake.json`.
+itself is generic and meant for other sites too: `packages/textos-intake`, including the command.
+ShortsOS supplies only its configuration (`client/api-intake.json`) and its own rules
+(`src/lib/textos/api-intake.ts`).
 
 ```bash
 npm run textos:intake -- request --content-draft <id>   # ask TextOS for a person's decision
 npm run textos:intake -- receive --decision <id>        # once approved: release, verify, write
 npm run textos:intake -- replay --evidence <file>       # the same, from evidence already collected
+npm run textos:intake -- check                          # re-verify every received release
 ```
 
 `request` and `receive` read `TEXTOS_API_BASE_URL` and `TEXTOS_API_TOKEN` from the environment.

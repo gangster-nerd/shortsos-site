@@ -34,5 +34,23 @@ export {
   type VerifyResult,
 } from "./verify";
 export { TextosApiError, createTextosApiClient, type TextosApiClient, type TextosApiClientOptions } from "./client";
-export { IntakeRefusedError, collectRelease, releasePayload, requestRelease, waitForJob } from "./collect";
+export { IntakeRefusedError, collectRelease, releasePayload, requestRelease, waitForJob, type WaitOptions } from "./collect";
 export { checkCommittedDelivery, receiveDelivery, repoPath, type FileAction, type IntakeReport, type PlannedFile, type SiteAdapter } from "./intake";
+export { combineRules, forbidPhrases, forbidText, noConversion, onlyBlockKinds, slugNotTaken, type ReleaseRule } from "./rules";
+export {
+  INTAKE_RECORD_VERSION,
+  RELEASE_EVIDENCE_FILE,
+  RELEASE_RECORD_FILE,
+  SITE_CONFIG_VERSION,
+  intakeRecord,
+  parseSiteConfig,
+  readSiteConfig,
+  releaseAdapter,
+  releaseFolder,
+  siteExpectations,
+  verifyCommittedReleases,
+  type ReceivedRelease,
+  type SiteIntakeConfig,
+  type SiteRules,
+} from "./site-kit";
+export { runIntakeCli, type IntakeCliOptions } from "./cli";

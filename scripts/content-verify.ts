@@ -17,7 +17,7 @@ import {
   parseProductCommitLedger,
 } from "../src/lib/commit-to-content/commit-ledger";
 import { runSyncEngine, type RawImpactRecordFile } from "../src/lib/commit-to-content/sync-engine";
-import { verifyCommittedReleases } from "../src/lib/textos/api-intake";
+import { verifyShortsosReleases } from "../src/lib/textos/api-intake";
 
 const REPO_ROOT = resolve(import.meta.dirname, "..");
 const BUNDLES_DIR = join(REPO_ROOT, "content-bundles");
@@ -114,7 +114,7 @@ function main(): void {
 
   // Releases received from the TextOS API: re-verified from their stored evidence (hash chain,
   // human approval, this site's rules) and compared byte for byte with what is committed.
-  const api = verifyCommittedReleases(REPO_ROOT);
+  const api = verifyShortsosReleases(REPO_ROOT);
   if (api.problems.length > 0) {
     fail(`received TextOS API releases failed re-verification:\n  ${api.problems.join("\n  ")}`);
   }
