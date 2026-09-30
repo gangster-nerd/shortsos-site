@@ -1,0 +1,13 @@
+{
+  "apiIntakeVersion": 1,
+  "siteId": "shortsos-site",
+  "workspaceId": null,
+  "locales": ["en-US"],
+  "acceptedEngineShas": "any",
+  "why": {
+    "siteId": "The id TextOS addresses this site by: a release names it as its destination, and the approved action targets it. A release addressed to any other site is refused.",
+    "workspaceId": "No TextOS workspace is assigned to ShortsOS yet. Until the owner records one here, the intake refuses to run and the build refuses any received release.",
+    "locales": "The site publishes in English (en-US). fr-FR is added here when the French pages ship; until then a French release is refused rather than published where it does not belong.",
+    "acceptedEngineShas": "The API's engine changes with each TextOS deployment. Every release records the engine SHA it ran on (evidence.json, intake.json). Replace \"any\" with a list of SHAs to accept only engines that were reviewed."
+  }
+}

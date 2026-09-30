@@ -129,6 +129,43 @@ is packaged.
 - a next step shows its target's own title and description, and a `public_web` answer never points
   to a note only checked for `controlled_preview`.
 
+## Receiving from the TextOS API (`api/`)
+
+The two flows above run TextOS from pinned local checkouts. The TextOS API is the other way in.
+A person approves a release in TextOS, and the site pulls it with its own service token. The door
+itself is generic and meant for other sites too: `packages/textos-intake`. ShortsOS's side is
+`src/lib/textos/api-intake.ts`, configured by `client/api-intake.json`.
+
+```bash
+npm run textos:intake -- request --content-draft <id>   # ask TextOS for a person's decision
+npm run textos:intake -- receive --decision <id>        # once approved: release, verify, write
+npm run textos:intake -- replay --evidence <file>       # the same, from evidence already collected
+```
+
+`request` and `receive` read `TEXTOS_API_BASE_URL` and `TEXTOS_API_TOKEN` from the environment.
+Instead of running them locally, run the "Receive a TextOS release" workflow with the decision id:
+it runs every gate and pushes a branch to review.
+
+A release lands in `api/<slug>/` as two files:
+
+- `evidence.json`: the API records it was verified from, with principal ids redacted;
+- `intake.json`: what was received, and which decision approved it and when.
+
+It is accepted only if the whole chain verifies: hashes, the person's approval of exactly that
+content for this site, the pinned ContentDocument@1 contract, a TruthCheck `pass`. The release
+must also pass this site's own rules: no self-serve wording, no taken slug, only blocks an
+insights page can show, and never the tool's name. `content:verify` re-verifies every release from
+its evidence and fails on any edit.
+
+Nothing can arrive yet, for three reasons:
+
+- no TextOS workspace is assigned (`client/api-intake.json`);
+- the API has no release capability for Git-published sites yet (the proposal is in
+  `packages/textos-intake/README.md`);
+- the site accepts `en-US`, and the API writes `fr-FR` only.
+
+A release that does arrive is verified and kept, but no page renders it yet.
+
 ## CMO surface polish
 
 Two generic parts of TextOS's CMO surface polish run on the published articles. The rest of that
