@@ -1,0 +1,122 @@
+{
+  "vectorsVersion": "textos-canonical-vectors@1",
+  "about": "Canonical JSON and its sha256, as the TextOS API computes them. Every value was run through TextOS's own implementation; scripts/canonical-vectors.ts recomputes them from a checkout at the pinned SHA.",
+  "computedWith": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a38a16a1b1edd04f7e55a340bf26e756717e68c5",
+    "file": "packages/api-foundation/src/integrity/canonical.ts",
+    "functions": [
+      "canonicalJson",
+      "hashCanonical"
+    ]
+  },
+  "vectors": [
+    {
+      "name": "null",
+      "value": null,
+      "canonical": "null",
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "name": "nested objects and arrays",
+      "value": {
+        "b": [
+          3,
+          {
+            "z": 1,
+            "a": "é"
+          }
+        ],
+        "a": {
+          "y": true,
+          "x": null
+        }
+      },
+      "canonical": "{\"a\":{\"x\":null,\"y\":true},\"b\":[3,{\"a\":\"é\",\"z\":1}]}",
+      "sha256": "96fc83bd877b66d5bb496cf7b5e319bc68afc0b98ae0884b747fe6a67c1478e3"
+    },
+    {
+      "name": "non-ASCII text is not escaped",
+      "value": {
+        "clé": "Soumis n'est pas publié — « guillemets »",
+        "emoji": "✓"
+      },
+      "canonical": "{\"clé\":\"Soumis n'est pas publié — « guillemets »\",\"emoji\":\"✓\"}",
+      "sha256": "382a56d4619f9e27c18e691969b973375addd34f14a3dadaaf66f6016d5777eb"
+    },
+    {
+      "name": "numbers",
+      "value": {
+        "int": 42,
+        "neg": -1.5,
+        "exp": 1e+21,
+        "small": 0.000001
+      },
+      "canonical": "{\"exp\":1e+21,\"int\":42,\"neg\":-1.5,\"small\":0.000001}",
+      "sha256": "d3be2c6b6179a88500a7fa9f4ee99798b6bb26a94d6d12617c32ab3dcca51c9e"
+    },
+    {
+      "name": "array order is kept",
+      "value": [
+        {
+          "b": 1,
+          "a": 2
+        },
+        "x",
+        [
+          2,
+          1
+        ]
+      ],
+      "canonical": "[{\"a\":2,\"b\":1},\"x\",[2,1]]",
+      "sha256": "656babfd2a99bd5c4c33c66c21938a4587efaf69a3c211c37b927f9ea2b897da"
+    },
+    {
+      "name": "empty containers",
+      "value": {
+        "o": {},
+        "a": []
+      },
+      "canonical": "{\"a\":[],\"o\":{}}",
+      "sha256": "9bee7ebfc94b459dacb8cbc72cb2900e61f0aa42189df18329f84f92568f4f89"
+    },
+    {
+      "name": "keys sort by UTF-16 code unit, not by locale",
+      "value": {
+        "é": 1,
+        "z": 2,
+        "B": 3,
+        "a": 4
+      },
+      "canonical": "{\"B\":3,\"a\":4,\"z\":2,\"é\":1}",
+      "sha256": "e3b46f6b36994feb0ee73e2f0dff6981b4346088872808dd547e5a9cdd8ec74f"
+    },
+    {
+      "name": "a key beyond U+FFFF sorts by its surrogates, before U+FFFF",
+      "value": {
+        "￿": 1,
+        "😀": 2
+      },
+      "canonical": "{\"😀\":2,\"￿\":1}",
+      "sha256": "48c5d098713870a7b88be7fc0ffc0a79e912d20f80ea8a4a5604426f49add103"
+    },
+    {
+      "name": "control characters and whitespace escapes",
+      "value": {
+        "s": "tab\tnewline\nnul-ish\u0001del"
+      },
+      "canonical": "{\"s\":\"tab\\tnewline\\nnul-ish\\u0001del\"}",
+      "sha256": "930fe98137af12a40a32fc9cf493c58111ff7ce1666351b6e40ec8fc6c1b054a"
+    },
+    {
+      "name": "small and fractional numbers use the shortest form",
+      "value": {
+        "tiny": 1e-7,
+        "sum": 0.30000000000000004,
+        "big": 123456789012345680000
+      },
+      "canonical": "{\"big\":123456789012345680000,\"sum\":0.30000000000000004,\"tiny\":1e-7}",
+      "sha256": "77b79d5d415342eff38421ff7419c6d33381015fcdc6fa4e2515be3de790dfb6"
+    }
+  ]
+}
