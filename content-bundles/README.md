@@ -23,7 +23,7 @@ artifact excluded by `.gitignore`.
     (kept separate from the human-facing `pin.json` above specifically so it carries no
     timestamp and `content:verify` never needs one).
   - `inputs/product-commits.json` — the commit ledger (`npm run content:commits`, SOS-NOTES-V1):
-    the product commits this site cites (changelog entries, TextOS briefs and their runs), plus
+    the product commits this site cites (its changelog entries), plus
     the pinned tip, each with author date and subject only. `content:commits` resolves every
     citation with `git` and refuses any commit that is not in the history of the pinned ref.
     This repository is public and the product repository is not, so the ledger carries no

@@ -11,4 +11,4 @@ import { runIntakeCli } from "../../packages/textos-intake/src/index";
 import { SHORTSOS_INTAKE_CONFIG, shortsosRules } from "../../src/lib/textos/api-intake";
 
 const root = resolve(import.meta.dirname, "..", "..");
-process.exitCode = await runIntakeCli(process.argv.slice(2), { root, configPath: SHORTSOS_INTAKE_CONFIG, rules: shortsosRules(root) });
+process.exitCode = await runIntakeCli(process.argv.slice(2), { root, configPath: SHORTSOS_INTAKE_CONFIG, rules: shortsosRules() });

@@ -15,7 +15,6 @@ const START_HERE: { href: string; label: string }[] = [
   { href: "/how-it-works/", label: "How it works" },
   { href: "/proof/", label: "Proof" },
   { href: "/faq/", label: "FAQ" },
-  { href: "/insights/", label: "Insights" },
 ];
 
 export default function NotFound() {

@@ -336,8 +336,6 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
   { term: "Operator-run / operator-bound", definition: "Run by the ShortsOS team on a client's behalf, on accounts and infrastructure the team controls — not operated directly by the client with their own credentials.", historicalClaimOnly: false },
   { term: "content:sync", definition: "The tool that reads the ratified manifest from the product repository and produces this site's own copy-safe content bundle.", historicalClaimOnly: false },
   { term: "Pilot", definition: "A direct, operator-run engagement with a client, requested through this site rather than started via independent signup.", historicalClaimOnly: false },
-  { term: "Insights", definition: "The section of this site for articles written from the product's own record: engineering notes from product commits, and answers built only on ratified public wording.", historicalClaimOnly: false },
-  { term: "Engineering note", definition: "An Insights article written from cited product commits. It records past engineering or governance work and makes no claim that a capability is available.", historicalClaimOnly: false },
   { term: "Commit ledger", definition: "The committed list of the product commits this site cites, each checked to be in the product history behind the current manifest pin. A citation that is not in it fails the build.", historicalClaimOnly: false },
   {
     term: "From Drive to Story (FDTS)",
@@ -370,34 +368,6 @@ export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
     historicalClaimOnly: true,
   },
 ];
-
-export const INSIGHTS_INTRO =
-  "Two kinds of article live here. Engineering notes are written from ShortsOS product commits: they " +
-  "record what was built or repaired, and when — history, not a feature list. Answers take a buyer " +
-  "question this site did not yet answer in depth, and answer it only with wording the ShortsOS owner " +
-  "has ratified for public use.";
-
-export const INSIGHTS_NOTE_NOTICE =
-  "Historical record, not an availability claim. This note describes engineering work, cited below by " +
-  "commit. What may be claimed about each capability it mentions is listed at the end of the page.";
-
-export const INSIGHTS_PROVENANCE: Record<"commit_to_content" | "site_intelligence", string> = {
-  commit_to_content:
-    "Written from the product commits listed above. Every sentence was declared against a quoted " +
-    "source — a commit message or a ratified record — and the article was checked for unsupported, " +
-    "overstated or undeclared statements before it was added to this site.",
-  site_intelligence:
-    "Chosen because a structural read of this site found no page that answered this question in depth. " +
-    "Every factual sentence rests on wording the ShortsOS owner ratified for public use, and the article " +
-    "was checked for unsupported, overstated or undeclared statements before it was added to this site.",
-};
-
-export const INSIGHTS_NEXT_STEP_LABEL = "Read next";
-
-export const INSIGHTS_AUTHORSHIP: Record<"pending" | "done", string> = {
-  pending: "Drafted by an AI agent working for the ShortsOS team. Human editorial review of this article is pending.",
-  done: "Drafted by an AI agent working for the ShortsOS team, then reviewed by a member of the team.",
-};
 
 /** The page shown for an address that does not exist (src/app/not-found.tsx). */
 export const NOT_FOUND_COPY = {
@@ -479,20 +449,6 @@ export const GLOSSARY_COPY: CopySource = {
   relatedEntityIds: [],
 };
 
-export const INSIGHTS_COPY: CopySource = {
-  id: "insights-pages",
-  text: [
-    INSIGHTS_INTRO,
-    INSIGHTS_NOTE_NOTICE,
-    INSIGHTS_PROVENANCE.commit_to_content,
-    INSIGHTS_PROVENANCE.site_intelligence,
-    INSIGHTS_AUTHORSHIP.pending,
-    INSIGHTS_AUTHORSHIP.done,
-    INSIGHTS_NEXT_STEP_LABEL,
-  ].join("\n"),
-  relatedEntityIds: [],
-};
-
 export const REQUEST_PILOT_PAGE_COPY: CopySource = {
   id: "request-pilot-page",
   text: [REQUEST_PILOT_COPY.intro, REQUEST_PILOT_COPY.mechanism].join("\n"),
@@ -529,5 +485,4 @@ export const SITE_COPY_SOURCES: CopySource[] = [
   REQUEST_PILOT_PAGE_COPY,
   PILOT_CTA_BLOCK_COPY,
   NOT_FOUND_PAGE_COPY,
-  INSIGHTS_COPY,
 ];

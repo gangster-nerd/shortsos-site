@@ -120,7 +120,7 @@ describe("the committed ledger (SOS-NOTES-V1)", () => {
   });
 
   it("holds exactly the product commits this site cites, plus the pinned tip", () => {
-    expect(() => assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations(REPO_ROOT))).not.toThrow();
+    expect(() => assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations())).not.toThrow();
   });
 
   it("resolves every product-repo changelog citation, on the date the entry claims", () => {

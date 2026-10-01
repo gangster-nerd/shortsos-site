@@ -8,8 +8,8 @@ import { CTA_REGISTRY } from "@/lib/registries/cta-registry";
 /**
  * The end-of-page pilot CTA. Its copy speaks to M1's commercial motion, so the manifest must
  * authorize M1 both on the `cta` surface and on the page hosting the block; a page outside
- * M1's allowed surfaces (Methodology, Insights) cannot carry it. Renders nothing while the
- * `request_pilot` CTA is switched off.
+ * M1's allowed surfaces (Methodology) cannot carry it. Renders nothing while the `request_pilot`
+ * CTA is switched off.
  */
 export function PilotCta({ host }: { host: Surface }) {
   const requestPilot = CTA_REGISTRY.request_pilot;

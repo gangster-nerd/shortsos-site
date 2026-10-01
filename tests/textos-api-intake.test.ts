@@ -7,24 +7,21 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { readSiteConfig, receiveDelivery, releaseAdapter, runIntakeCli, serializeEvidence, siteExpectations } from "../packages/textos-intake/src/index";
 import { EXPECTATIONS, SCHEMA_FINGERPRINT, SITE_ID, WORKSPACE_ID, buildRelease, type ReleaseOptions } from "../packages/textos-intake/test/fixtures";
 import { SHORTSOS_INTAKE_CONFIG, shortsosRules, verifyShortsosReleases } from "../src/lib/textos/api-intake";
-import { readBriefs } from "../src/lib/textos/articles";
 
 const REPO_ROOT = resolve(import.meta.dirname, "..");
 
 describe("the committed API intake configuration", () => {
-  it("names this site, serves its language, pins the tool's contract, and every committed release re-verifies", () => {
+  it("names this site, serves its language, and every committed release re-verifies", () => {
     const config = readSiteConfig(REPO_ROOT, SHORTSOS_INTAKE_CONFIG);
     expect(config.siteId).toBe("shortsos-site");
     expect(config.locales).toContain("en-US");
-    const tool = JSON.parse(readFileSync(join(REPO_ROOT, "textos", "tool.json"), "utf8")) as { contentDocumentContract: { fingerprint: string } };
-    expect(config.contentDocumentFingerprint).toBe(tool.contentDocumentContract.fingerprint);
     expect(verifyShortsosReleases(REPO_ROOT).problems).toEqual([]);
   });
 });
 
 /**
- * A copy of this site's textos/ folder with a workspace assigned — to the SYNTHETIC fixture
- * workspace, site id and schema fingerprint — so ShortsOS's rules run against the real briefs.
+ * A copy of this site's sources/ folder with a workspace assigned — to the SYNTHETIC fixture
+ * workspace, site id and schema fingerprint — so ShortsOS's rules run on a release.
  */
 let root: string;
 const configPath = () => join(root, SHORTSOS_INTAKE_CONFIG);
@@ -35,7 +32,7 @@ function assign(changes: Record<string, unknown>): void {
 
 beforeEach(() => {
   root = mkdtempSync(join(tmpdir(), "shortsos-api-intake-"));
-  cpSync(join(REPO_ROOT, "textos"), join(root, "textos"), { recursive: true });
+  cpSync(join(REPO_ROOT, "sources"), join(root, "sources"), { recursive: true });
   assign({ siteId: SITE_ID, workspaceId: WORKSPACE_ID, locales: ["en-US", "fr-FR"], contentDocumentFingerprint: SCHEMA_FINGERPRINT });
 });
 afterEach(() => {
@@ -44,7 +41,7 @@ afterEach(() => {
 
 function receive(options: ReleaseOptions = {}) {
   const config = readSiteConfig(root, SHORTSOS_INTAKE_CONFIG);
-  return receiveDelivery({ evidence: buildRelease(options), expectations: siteExpectations(config)!, adapter: releaseAdapter(config, shortsosRules(root)), root });
+  return receiveDelivery({ evidence: buildRelease(options), expectations: siteExpectations(config)!, adapter: releaseAdapter(config, shortsosRules()), root });
 }
 
 const releaseDir = () => join(root, "textos", "api", "exemple-de-guide");
@@ -90,7 +87,7 @@ describe("receiving a release into ShortsOS", () => {
     const evidenceFile = join(root, "release-evidence.json");
     writeFileSync(evidenceFile, serializeEvidence(buildRelease()));
     const lines: string[] = [];
-    const options = { root, configPath: SHORTSOS_INTAKE_CONFIG, rules: shortsosRules(root), stdout: (l: string) => lines.push(l), stderr: (l: string) => lines.push(l) };
+    const options = { root, configPath: SHORTSOS_INTAKE_CONFIG, rules: shortsosRules(), stdout: (l: string) => lines.push(l), stderr: (l: string) => lines.push(l) };
     expect(await runIntakeCli(["replay", "--evidence", evidenceFile], options)).toBe(0);
     expect(await runIntakeCli(["check"], options)).toBe(0);
     expect(lines).toContain("outcome: written");
@@ -105,12 +102,6 @@ describe("receiving a release into ShortsOS", () => {
     expect(existsSync(releaseDir())).toBe(false);
   });
 
-  it("refuses a slug that is already an insights article", () => {
-    const taken = readBriefs(root)[0]!.slug;
-    const report = receive({ delivery: (d) => (d.contentDocument.identity.slug = taken) });
-    expect(report.violations).toEqual([`slug ${taken} is already an insights article of this site`]);
-  });
-
   it("refuses self-serve wording, in either language", () => {
     const report = receive({ delivery: (d) => (d.contentDocument.identity.title = "Profitez d'un essai gratuit") });
     expect(report.outcome).toBe("refused");
@@ -122,7 +113,7 @@ describe("receiving a release into ShortsOS", () => {
     expect(report.violations).toEqual(["names the tool it was written with; pages never do"]);
   });
 
-  it("refuses blocks an insights page does not show, and any conversion", () => {
+  it("refuses blocks a page of this site does not show, and any conversion", () => {
     const report = receive({
       delivery: (d) => {
         d.contentDocument.body.push({ id: "cta", kind: "cta_slot", data: { intent: "book_demo" } });
@@ -130,8 +121,8 @@ describe("receiving a release into ShortsOS", () => {
       },
     });
     expect(report.violations).toEqual([
-      "block cta is a cta_slot, which an insights page does not show",
-      "the document allows conversion; insights pages carry no commercial slot",
+      "block cta is a cta_slot, which a page of this site does not show",
+      "the document allows conversion; this site's pages carry no commercial slot",
     ]);
   });
 });

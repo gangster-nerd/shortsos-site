@@ -46,7 +46,7 @@ const PREVIEW = "shortsos-site-git-some-branch-team.vercel.app";
 describe("security headers (vercel.json)", () => {
   it("sends the baseline headers on every path, previews included", () => {
     for (const host of [PRODUCTION, PREVIEW]) {
-      for (const path of ["/", "/insights/some-article/", "/og/site.png", "/llms.txt"]) {
+      for (const path of ["/", "/proof/", "/og/site.png", "/llms.txt"]) {
         expect(headersFor(path, host)).toMatchObject({
           "Strict-Transport-Security": expect.stringMatching(/^max-age=\d{8,}/),
           "X-Content-Type-Options": "nosniff",

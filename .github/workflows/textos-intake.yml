@@ -6,7 +6,7 @@ name: Receive a TextOS release
 # the link in the run summary and merges it: nothing reaches main without that review.
 #
 # Needs the repository secrets TEXTOS_API_BASE_URL and TEXTOS_API_TOKEN (a service token of this
-# site's TextOS workspace), and a workspace assigned in textos/client/api-intake.json.
+# site's TextOS workspace), and a workspace assigned in sources/textos.json.
 on:
   workflow_dispatch:
     inputs:

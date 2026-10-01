@@ -1,10 +1,9 @@
 import { HOME_HERO } from "../../content/copy-sources";
-import { FLOW_LABEL, loadInsightArticles } from "../textos/articles";
 
 /**
- * The 1200x630 images social networks and chat apps show when a page is shared, one per
- * article and one for the rest of the site. They are rendered at build time from the words the
- * pages already carry (src/app/og/[image]/route.tsx), so an image can never say more than its page.
+ * The 1200x630 image social networks and chat apps show when a page is shared. It is rendered
+ * at build time from words the pages already carry (src/app/og/[image]/route.tsx), so it can
+ * never say more than the site.
  */
 export interface ShareImage {
   id: string;
@@ -15,10 +14,7 @@ export interface ShareImage {
 export const SITE_SHARE_IMAGE_ID = "site";
 
 export function shareImages(): ShareImage[] {
-  return [
-    { id: SITE_SHARE_IMAGE_ID, eyebrow: HOME_HERO.eyebrow, headline: HOME_HERO.headline },
-    ...loadInsightArticles().map((a) => ({ id: a.slug, eyebrow: `Insights · ${FLOW_LABEL[a.flow]}`, headline: a.title })),
-  ];
+  return [{ id: SITE_SHARE_IMAGE_ID, eyebrow: HOME_HERO.eyebrow, headline: HOME_HERO.headline }];
 }
 
 export function getShareImage(id: string): ShareImage {

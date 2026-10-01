@@ -1,8 +1,7 @@
 /**
  * Single source of truth for the site's indexability. Both the robots meta tag (layout.tsx) and
  * robots.txt (app/robots.ts) read this same flag, so there is exactly one switch, not two that
- * could drift. Turned on by the owner on 2026-09-24, once every published article was reviewed
- * and cleared for public_web; the article loader refuses indexing while any article is not.
+ * could drift. Turned on by the owner on 2026-09-24.
  */
 export const SITE_ALLOWS_INDEXING: boolean = true;
 

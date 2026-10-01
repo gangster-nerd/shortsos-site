@@ -106,7 +106,7 @@ function main(): void {
   try {
     const ledger = parseProductCommitLedger(readFileSync(ledgerPath, "utf8"));
     assertLedgerMatchesPin(ledger, productRef);
-    assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations(REPO_ROOT));
+    assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations());
     commitCount = ledger.commitCount;
   } catch (err) {
     fail(`commit ledger failed re-verification: ${(err as Error).message}`);

@@ -1,17 +1,17 @@
 /**
- * Product commit ledger (SOS-NOTES-V1): the product commits this site CITES — changelog entries,
- * Insights sources, TextOS brief evidence — plus the pinned tip, each verified by `git` to be part
- * of the history reachable from the pinned product ref, as `git` itself reports it: sha, author
- * date, subject. Nothing else: this repository is public and the product repository is not, so no
- * commit bodies, no changed paths and no uncited commit ever land here.
+ * Product commit ledger (SOS-NOTES-V1): the product commits this site CITES — its changelog
+ * entries — plus the pinned tip, each verified by `git` to be part of the history reachable from
+ * the pinned product ref, as `git` itself reports it: sha, author date, subject. Nothing else:
+ * this repository is public and the product repository is not, so no commit bodies, no changed
+ * paths and no uncited commit ever land here.
  *
- * Why it exists: every piece of content on this site that cites a product commit (a
- * changelog entry, a developer note) must cite a commit that really exists in the product's
- * publishable history — not a SHA typed from memory, and not a commit that only ever existed
- * on one machine (the exact failure the product repo's own T0-PUBLIC-TRUTH-BASELINE-REPAIR,
- * 36122a2, had to clean up in its evidence bundles). `content:verify` and the test suite
- * resolve citations against this committed ledger with zero product-repo access and zero
- * network, the same sync/verify split `content:sync` already uses for the manifest.
+ * Why it exists: every piece of content on this site that cites a product commit (a changelog
+ * entry) must cite a commit that really exists in the product's publishable history — not a SHA
+ * typed from memory, and not a commit that only ever existed on one machine (the exact failure
+ * the product repo's own T0-PUBLIC-TRUTH-BASELINE-REPAIR, 36122a2, had to clean up in its
+ * evidence bundles). `content:verify` and the test suite resolve citations against this
+ * committed ledger with zero product-repo access and zero network, the same sync/verify split
+ * `content:sync` already uses for the manifest.
  *
  * Pure module: no filesystem, no process, no clock. `scripts/content-commits.ts` does the git
  * I/O; everything below is deterministic over its inputs.
