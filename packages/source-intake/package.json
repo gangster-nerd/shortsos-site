@@ -1,0 +1,10 @@
+{
+  "name": "source-intake",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Site-side door for content an external source releases through its API to a Git-published site: pulls the release, re-verifies every hash and the human approval, and writes it into the site through a site adapter. One configuration file per source. No dependencies, no site code, no source code.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "After you email us" };
+export const metadata: Metadata = pageMetadata({ path: "/request-pilot/received/", title: "After you email us" });
 
 export default function RequestPilotReceivedPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Request a pilot</p>

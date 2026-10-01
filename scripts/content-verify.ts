@@ -17,6 +17,7 @@ import {
   parseProductCommitLedger,
 } from "../src/lib/commit-to-content/commit-ledger";
 import { runSyncEngine, type RawImpactRecordFile } from "../src/lib/commit-to-content/sync-engine";
+import { verifyReceivedReleases } from "../src/lib/sources/intake";
 
 const REPO_ROOT = resolve(import.meta.dirname, "..");
 const BUNDLES_DIR = join(REPO_ROOT, "content-bundles");
@@ -105,10 +106,22 @@ function main(): void {
   try {
     const ledger = parseProductCommitLedger(readFileSync(ledgerPath, "utf8"));
     assertLedgerMatchesPin(ledger, productRef);
-    assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations(REPO_ROOT));
+    assertLedgerHoldsExactlyCitations(ledger, collectProductCommitCitations());
     commitCount = ledger.commitCount;
   } catch (err) {
     fail(`commit ledger failed re-verification: ${(err as Error).message}`);
+  }
+
+  // Releases received from a source's API: re-verified from their stored evidence (hash chain,
+  // human approval, this site's rules) and compared byte for byte with what is committed.
+  let api: ReturnType<typeof verifyReceivedReleases>;
+  try {
+    api = verifyReceivedReleases(REPO_ROOT);
+  } catch (err) {
+    fail(`source configurations failed to load: ${(err as Error).message}`);
+  }
+  if (api.problems.length > 0) {
+    fail(`received releases failed re-verification:\n  ${api.problems.join("\n  ")}`);
   }
 
   console.log("content-verify: OK");
@@ -116,6 +129,7 @@ function main(): void {
   console.log(`  manifest checksum:  ${output.manifestChecksum}`);
   console.log(`  candidate entities: ${output.bundle.candidateEntities.length}`);
   console.log(`  ledger commits:     ${commitCount} (cited commits and the pinned tip)`);
+  console.log(`  api releases:       ${api.releases.length} (re-verified from their evidence; not rendered yet)`);
 }
 
 main();

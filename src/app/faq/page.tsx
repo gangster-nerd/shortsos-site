@@ -3,8 +3,10 @@ import type { Metadata } from "next";
 import { FAQ_ITEMS } from "@/content/copy-sources";
 import { getM1ForSurface } from "@/lib/content/m1";
 import { buildFaqPageJsonLd } from "@/lib/seo/json-ld";
+import { pageMetadata } from "@/lib/seo/page-metadata";
+import { PilotCta } from "@/components/pilot-cta";
 
-export const metadata: Metadata = { title: "FAQ" };
+export const metadata: Metadata = pageMetadata({ path: "/faq/", title: "FAQ" });
 
 export default function FaqPage() {
   // Asserts the manifest actually authorizes M1's claim on the "faq" surface before this
@@ -14,7 +16,7 @@ export default function FaqPage() {
   const jsonLd = buildFaqPageJsonLd(FAQ_ITEMS);
 
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">FAQ</p>
@@ -32,6 +34,8 @@ export default function FaqPage() {
           ))}
         </div>
       </section>
+
+      <PilotCta host="faq" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     </main>

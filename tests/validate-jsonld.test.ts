@@ -68,6 +68,10 @@ describe("findForbiddenPhrasesInText", () => {
   it("finds nothing in clean text", () => {
     expect(findForbiddenPhrasesInText("A human reviews every produced short before publish.")).toEqual([]);
   });
+
+  it("finds French wording too", () => {
+    expect(findForbiddenPhrasesInText('{"name":"Démarrez gratuitement"}')).toEqual(["démarrez gratuitement"]);
+  });
 });
 
 describe("extractJsonLdBlocks", () => {

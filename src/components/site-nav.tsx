@@ -7,7 +7,6 @@ const NAV_LINKS: { href: string; label: string }[] = [
   { href: "/methodology", label: "Methodology" },
   { href: "/proof", label: "Proof" },
   { href: "/faq", label: "FAQ" },
-  { href: "/insights", label: "Insights" },
   { href: "/changelog", label: "Changelog" },
 ];
 
@@ -19,7 +18,7 @@ export function SiteNav() {
         <Link href="/" className="brand">
           ShortsOS
         </Link>
-        <nav className="nav-links">
+        <nav className="nav-links" aria-label="Main">
           {NAV_LINKS.map((link) => (
             <Link key={link.href} href={link.href}>
               {link.label}

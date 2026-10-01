@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 
 import { GLOSSARY_ENTRIES } from "@/content/copy-sources";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "Glossary" };
+export const metadata: Metadata = pageMetadata({ path: "/glossary/", title: "Glossary" });
 
 export default function GlossaryPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Glossary</p>

@@ -1,0 +1,79 @@
+name: Receive a release from a source
+
+# Manual only. Once a person approved a release decision at a source, run this with the source's
+# id and the decision id. It runs the release with this site's service token at that source,
+# verifies it (packages/source-intake), runs every gate CI runs, and pushes a branch with the
+# release. A person opens the pull request from the link in the run summary and merges it:
+# nothing reaches main without that review.
+#
+# For each source <id> — configured in sources/<id>.json, with a workspace assigned — the
+# repository secrets <ID>_API_BASE_URL and <ID>_API_TOKEN (the id in upper case): the address of
+# the source's API and a service token of this site's workspace there. For TextOS:
+# TEXTOS_API_BASE_URL and TEXTOS_API_TOKEN.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Id of the source (sources/<id>.json), e.g. textos"
+        required: true
+        type: string
+      decision_id:
+        description: "Id of the approved release decision"
+        required: true
+        type: string
+      job_id:
+        description: "Release job id — only to resume a release that already started"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: source-intake
+  cancel-in-progress: false
+
+jobs:
+  receive:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE: ${{ inputs.source }}
+      DECISION_ID: ${{ inputs.decision_id }}
+      JOB_ID: ${{ inputs.job_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - run: npm ci
+      - name: Receive and verify the release
+        env:
+          # Secret names are not case-sensitive: "<id>_API_TOKEN" finds <ID>_API_TOKEN.
+          API_BASE_URL: ${{ secrets[format('{0}_API_BASE_URL', inputs.source)] }}
+          API_TOKEN: ${{ secrets[format('{0}_API_TOKEN', inputs.source)] }}
+        run: |
+          prefix="$(printf '%s' "$SOURCE" | tr '[:lower:]' '[:upper:]')"
+          export "${prefix}_API_BASE_URL=$API_BASE_URL" "${prefix}_API_TOKEN=$API_TOKEN"
+          npm run intake -- receive --source "$SOURCE" --decision "$DECISION_ID" ${JOB_ID:+--job "$JOB_ID"}
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run build
+      - run: npm run content:verify
+      - run: npm run validate:jsonld
+      - name: Push a branch for review
+        run: |
+          releases_dir="$(node -p "JSON.parse(require('node:fs').readFileSync('sources/' + process.env.SOURCE + '.json', 'utf8')).releasesDir")"
+          if [ -z "$(git status --porcelain -- "$releases_dir")" ]; then
+            echo "Nothing new: this release is already in the site." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="intake/$SOURCE/$(printf '%s' "$DECISION_ID" | tr -c 'A-Za-z0-9._-' '-')"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -- "$releases_dir"
+          git commit -m "content($SOURCE): receive the release approved in decision $DECISION_ID"
+          git push origin "$branch"
+          echo "Review and open the pull request: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1" >> "$GITHUB_STEP_SUMMARY"

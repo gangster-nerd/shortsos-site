@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 
 import { CHANGELOG_INTRO, CHANGELOG_ENTRIES } from "@/content/copy-sources";
+import { pageMetadata } from "@/lib/seo/page-metadata";
 
-export const metadata: Metadata = { title: "Changelog" };
+export const metadata: Metadata = pageMetadata({ path: "/changelog/", title: "Changelog" });
 
 export default function ChangelogPage() {
   return (
-    <main>
+    <main id="main">
       <section className="section">
         <div className="shell">
           <p className="eyebrow">Changelog</p>

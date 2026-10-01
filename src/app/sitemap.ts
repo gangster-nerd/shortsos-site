@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 
 import { SITE_ORIGIN } from "@/lib/config/site-config";
-import { loadInsightArticles } from "@/lib/textos/articles";
 
 // Required for `output: "export"` — this route has no request-time dependency, so it can
 // (and must) be emitted as a fixed static file rather than a server route.
@@ -17,13 +16,10 @@ const ROUTES = [
   "/glossary",
   "/request-pilot",
   "/request-pilot/received",
-  "/insights",
 ];
 
+// URLs end with "/" like the pages themselves (next.config trailingSlash), so no entry redirects.
+// Pages carry no date rather than a fake one.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const articleRoutes = loadInsightArticles().map((a) => a.route.replace(/\/$/, ""));
-  return [...ROUTES, ...articleRoutes].map((route) => ({
-    url: `${SITE_ORIGIN}${route}`,
-    lastModified: new Date(0),
-  }));
+  return ROUTES.map((route) => ({ url: new URL(route === "/" ? "/" : `${route}/`, SITE_ORIGIN).toString() }));
 }

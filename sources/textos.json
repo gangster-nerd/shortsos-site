@@ -1,0 +1,25 @@
+{
+  "configVersion": "source-intake-config@1",
+  "source": "textos",
+  "siteId": "shortsos-site",
+  "workspaceId": null,
+  "release": {
+    "capability": "textos.release_headless_delivery@1",
+    "deliveryContract": "textos-headless-delivery@1",
+    "targetKind": "headless_site"
+  },
+  "locales": ["en-US"],
+  "contentDocumentFingerprint": "4cefe8c6ed8917180870a37a3f3dbf5d2ff3d9395563dc683fc189b4e47b7e7b",
+  "acceptedEngineShas": "any",
+  "releasesDir": "content/releases/textos",
+  "why": {
+    "source": "TextOS, reached through its API only (AGENTS.md). The command reads the API's address and token from TEXTOS_API_BASE_URL and TEXTOS_API_TOKEN.",
+    "siteId": "The id TextOS addresses this site by: a release names it as its destination, and the approved action targets it. A release addressed to any other site is refused.",
+    "workspaceId": "No TextOS workspace is assigned to ShortsOS yet (docs/api-gaps.md). Until the owner records one here, the intake refuses to run and the build refuses any received release.",
+    "release": "The capability and the contract ShortsOS asks TextOS for. The API does not serve them yet: a release to a Git-published site is a demand on the API (docs/api-gaps.md).",
+    "locales": "The site publishes in English (en-US). fr-FR is added here when the French pages ship; until then a French release is refused rather than published where it does not belong.",
+    "contentDocumentFingerprint": "The ContentDocument@1 schema this site renders against. A release validated against any other schema is refused.",
+    "acceptedEngineShas": "The API's engine changes with each TextOS deployment. Every release records the engine SHA it ran on (evidence.json, intake.json). Replace \"any\" with a list of SHAs to accept only engines that were reviewed.",
+    "releasesDir": "A received release lands in content/releases/textos/<slug>/."
+  }
+}

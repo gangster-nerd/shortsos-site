@@ -3,11 +3,11 @@
  * `npm run content:commits -- --product-ref <sha> [--product-repo-path <path>]`
  *
  * SOS-NOTES-V1: writes `content-bundles/inputs/product-commits.json`, the public commit ledger
- * (see `src/lib/commit-to-content/commit-ledger.ts`): the product commits this site cites —
- * changelog entries, TextOS briefs and their runs (`src/lib/commit-to-content/citations.ts`) —
- * plus the pinned tip. Run it after `content:sync`, against the same product ref and the same
- * checkout, and again whenever a citation is added: `content:verify` fails if the ledger and the
- * citations disagree in either direction.
+ * (see `src/lib/commit-to-content/commit-ledger.ts`): the product commits this site cites — its
+ * changelog entries (`src/lib/commit-to-content/citations.ts`) — plus the pinned tip. Run it
+ * after `content:sync`, against the same product ref and the same checkout, and again whenever a
+ * citation is added: `content:verify` fails if the ledger and the citations disagree in either
+ * direction.
  *
  * Every citation is resolved by `git` itself (an abbreviated SHA that is ambiguous in the full
  * history fails) and must be an ancestor of the pinned ref: a commit that exists only on another
@@ -105,7 +105,7 @@ function main(): void {
     );
   }
 
-  const citations = collectProductCommitCitations(REPO_ROOT);
+  const citations = collectProductCommitCitations();
   const commits = [
     readCitedCommit(productRepoPath, productRef, productRef, "the pinned product ref"),
     ...citations.map((c) => readCitedCommit(productRepoPath, productRef, c.sha, c.citedBy)),
