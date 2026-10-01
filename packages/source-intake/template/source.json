@@ -1,0 +1,25 @@
+{
+  "configVersion": "source-intake-config@1",
+  "source": "example",
+  "siteId": "my-site",
+  "workspaceId": null,
+  "release": {
+    "capability": "example.release_headless_delivery@1",
+    "deliveryContract": "example-headless-delivery@1",
+    "targetKind": "headless_site"
+  },
+  "locales": ["fr-FR"],
+  "contentDocumentFingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "acceptedEngineShas": "any",
+  "releasesDir": "content/releases/example",
+  "why": {
+    "source": "The source's id: lowercase letters and digits. This file is sources/<source>.json, and the source's API is read from <SOURCE>_API_BASE_URL and <SOURCE>_API_TOKEN (the id in upper case).",
+    "siteId": "The id the source addresses the site by. The source must list it as a destination of the workspace.",
+    "workspaceId": "Null until the source's workspace the site receives from is known. Nothing can be received before.",
+    "release": "How the source names a release to a Git-published site: the capability to request, the contract of what it releases, and the destination kind. Take them from the source's API documentation.",
+    "locales": "The languages the site publishes. A release in any other language is refused.",
+    "contentDocumentFingerprint": "sha256 of the ContentDocument@1 JSON Schema the site renders against. The value shipped here is the sha256 of nothing: it matches no schema, so every release is refused until it is replaced.",
+    "acceptedEngineShas": "\"any\" accepts and records the engine of each release. A list accepts only engines that were reviewed.",
+    "releasesDir": "Where received releases land, as <releasesDir>/<slug>/. Each source has its own folder."
+  }
+}

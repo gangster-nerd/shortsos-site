@@ -17,9 +17,9 @@
     "content:commits": "tsx scripts/content-commits.ts",
     "validate:jsonld": "tsx scripts/validate-jsonld.ts",
     "check:live": "tsx scripts/check-live.ts",
-    "textos:intake": "tsx scripts/textos/intake.ts",
-    "textos-intake:verify": "tsx packages/textos-intake/scripts/manifest.ts verify",
-    "textos-intake:manifest": "tsx packages/textos-intake/scripts/manifest.ts write"
+    "intake": "tsx scripts/intake.ts",
+    "source-intake:verify": "tsx packages/source-intake/scripts/manifest.ts verify",
+    "source-intake:manifest": "tsx packages/source-intake/scripts/manifest.ts write"
   },
   "dependencies": {
     "next": "15.5.25",

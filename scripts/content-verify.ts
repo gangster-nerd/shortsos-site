@@ -17,7 +17,7 @@ import {
   parseProductCommitLedger,
 } from "../src/lib/commit-to-content/commit-ledger";
 import { runSyncEngine, type RawImpactRecordFile } from "../src/lib/commit-to-content/sync-engine";
-import { verifyShortsosReleases } from "../src/lib/textos/api-intake";
+import { verifyReceivedReleases } from "../src/lib/sources/intake";
 
 const REPO_ROOT = resolve(import.meta.dirname, "..");
 const BUNDLES_DIR = join(REPO_ROOT, "content-bundles");
@@ -112,11 +112,16 @@ function main(): void {
     fail(`commit ledger failed re-verification: ${(err as Error).message}`);
   }
 
-  // Releases received from the TextOS API: re-verified from their stored evidence (hash chain,
+  // Releases received from a source's API: re-verified from their stored evidence (hash chain,
   // human approval, this site's rules) and compared byte for byte with what is committed.
-  const api = verifyShortsosReleases(REPO_ROOT);
+  let api: ReturnType<typeof verifyReceivedReleases>;
+  try {
+    api = verifyReceivedReleases(REPO_ROOT);
+  } catch (err) {
+    fail(`source configurations failed to load: ${(err as Error).message}`);
+  }
   if (api.problems.length > 0) {
-    fail(`received TextOS API releases failed re-verification:\n  ${api.problems.join("\n  ")}`);
+    fail(`received releases failed re-verification:\n  ${api.problems.join("\n  ")}`);
   }
 
   console.log("content-verify: OK");
