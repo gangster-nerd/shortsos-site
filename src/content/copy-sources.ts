@@ -192,6 +192,14 @@ export interface ChangelogEntry {
 
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
   {
+    date: "2026-10-01",
+    title: "Insights withdrawn",
+    body: "The five Insights articles were withdrawn, together with their section, share images and links. They had been produced by running the writing tool directly, outside its API. Articles now reach this site only through that API, and the site publishes none until the API can deliver them.",
+    repo: "shortsos-site",
+    sha: "29fdd57",
+    historicalClaimOnly: true,
+  },
+  {
     date: "2026-09-24",
     title: "Calls to action for customer-run access tied to general availability",
     body: "The site's rule for ever showing a call to action that would let a customer run a capability without the team was aligned with the product's own: that capability must be generally available, not only cleared for a public claim under a managed-service framing. No capability qualified at the time, and no such call to action was shown.",
