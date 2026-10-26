@@ -1,0 +1,87 @@
+{
+  "text": "No: in the product's own rules, approved and ready to publish are two different states. From approval, a short can only move on to ready to publish, or be archived. An approved short now carries the badge Approved · Not published. Once its package has been prepared, the badge reads Approved · Package ready · Not published. Both badges end with Not published, because publishing is a separate, later step.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "No: in the product's own rules, approved and ready to publish are two different states.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "From approval, a short can only move on to ready to publish, or be archived.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-12"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "An approved short now carries the badge Approved · Not published.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Once its package has been prepared, the badge reads Approved · Package ready · Not published.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "Both badges end with Not published, because publishing is a separate, later step.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-04",
+        "ev-n5-05",
+        "ev-n5-12"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

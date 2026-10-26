@@ -1,0 +1,85 @@
+{
+  "text": "In the build under review, two outcomes were hidden from the person running the analysis. When the analysis itself failed, the failure was silently dropped. When it worked but found no strong opportunity, the page looked the same as one that had never been analyzed. After the fix, a failed analysis sends the person back to the media page with a visible error message. A completed analysis with nothing strong to show gets its own message instead, saying that the analysis is complete and that no strong opportunities were found yet.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "In the build under review, two outcomes were hidden from the person running the analysis.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "When the analysis itself failed, the failure was silently dropped.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "When it worked but found no strong opportunity, the page looked the same as one that had never been analyzed.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "After the fix, a failed analysis sends the person back to the media page with a visible error message.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "A completed analysis with nothing strong to show gets its own message instead, saying that the analysis is complete and that no strong opportunities were found yet.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

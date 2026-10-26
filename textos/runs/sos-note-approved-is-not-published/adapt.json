@@ -1,0 +1,16 @@
+{
+  "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "planId": "does approved mean published in a video review workflow",
+  "executionPlanHash": "7b728116b5d2729708f9a90bb2162afc6c77a4e2f854a47dd3b19b4ea61feb0b",
+  "ctcHandoffHash": "1fff3e6565c7f452b2e4145f49a9b1e3d14709076ee009bca8ebc7496b14d937",
+  "promptHashes": {
+    "title": "23fba3dec8718fb91d80de9b193f6979f5120142663b5a0e663c235c2e7216b7",
+    "meta": "6b93edd5c3150f5f77b3c0262523bb521ec5d490beb5f1ea75603b0f1b5ec94d",
+    "lead": "0e1dfa6119ac17ab29a143b2908021d909464871963e5c9d72ecc398fd05124e",
+    "answer": "14bad1e6420513366c38e1e0ffaae3932ecc4ae13d17a1a1c30c8fe36103e8a2",
+    "section-1": "9f4bae616dcbdceed53d37ac4202116820df3b3ea3fe345c87c677be48d60221",
+    "section-2": "b04b606f6898e9448c02fa12b0b0d584df2ebb1f4fb9b664564722db4ca232c9",
+    "section-3": "53560cc81b3bdf44b8659165747b536cccc838bee15df41925d6eae3f160186c"
+  }
+}

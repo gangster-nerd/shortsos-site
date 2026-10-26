@@ -1,0 +1,23 @@
+{
+  "text": "A product review failed a ShortsOS build that hid two outcomes; the fix shows a failed analysis and a no-strong-story result apart.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "A product review failed a ShortsOS build that hid two outcomes; the fix shows a failed analysis and a no-strong-story result apart.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

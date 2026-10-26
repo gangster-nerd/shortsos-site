@@ -1,0 +1,23 @@
+{
+  "text": "After repeated failed calls in September 2026, ShortsOS pinned its AI model, limited its backup and recorded which model answered each call.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "After repeated failed calls in September 2026, ShortsOS pinned its AI model, limited its backup and recorded which model answered each call.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-01",
+        "ev-n6-03",
+        "ev-n6-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

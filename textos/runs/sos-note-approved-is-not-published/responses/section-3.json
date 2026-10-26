@@ -1,0 +1,61 @@
+{
+  "text": "On 8 September 2026, the production page crashed on an attempt to approve a short that had been sent back for regeneration, a move the product's own rules do not allow. Since that fix, the approve, reject and regenerate buttons appear only on a short that is waiting for review, the one state in which such a decision is allowed. A useful question for any vendor is whether its screens can offer a choice that its own system will then refuse. Labels and buttons that match the real state of the work look like small details, yet they are what a person relies on when signing off.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "On 8 September 2026, the production page crashed on an attempt to approve a short that had been sent back for regeneration, a move the product's own rules do not allow.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "Since that fix, the approve, reject and regenerate buttons appear only on a short that is waiting for review, the one state in which such a decision is allowed.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-11"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "A useful question for any vendor is whether its screens can offer a choice that its own system will then refuse.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Labels and buttons that match the real state of the work look like small details, yet they are what a person relies on when signing off.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

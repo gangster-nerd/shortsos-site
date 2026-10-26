@@ -141,7 +141,9 @@ ContentDocuments. The relation inputs the writer's bridge leaves empty are fille
 capabilities from `entityIds`, topic from `provenance.topicCluster`, and the publication record.
 `deriveResolvedConversionPlan` then runs with the commercial capability `"unconfigured"` and no CTA,
 so only the editorial next step can come out. The answers point to each other, and so do the two
-claim-governance notes. The footage note shares nothing with the others, so it gets no next step.
+claim-governance notes and the two footage-to-story notes. The review-state note points to the
+human-review answer (a preview note may point to a public answer, never the reverse). The AI-call
+note shares nothing with the others, so it gets no next step.
 
 **Render parity.** The oracle compares each block's semantic tree with the element marked
 `data-cse-block-id` in the exported page. The writer's bridge emits text-only blocks, and the

@@ -1,0 +1,49 @@
+{
+  "text": "A video service that relies on outside AI models can switch the model doing the work, or lose all trace of a call that failed, without anyone outside the team noticing. On 11 September 2026, ShortsOS's media analysis got the same high-demand error on four separate live attempts while calling a model through a moving latest alias. The team then changed how those calls are made and what each one leaves on record.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "A video service that relies on outside AI models can switch the model doing the work, or lose all trace of a call that failed, without anyone outside the team noticing.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "On 11 September 2026, ShortsOS's media analysis got the same high-demand error on four separate live attempts while calling a model through a moving latest alias.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The team then changed how those calls are made and what each one leaves on record.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

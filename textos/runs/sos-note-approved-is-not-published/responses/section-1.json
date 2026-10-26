@@ -1,0 +1,85 @@
+{
+  "text": "Before the fix, an approved short was headed Ready to publish. If a file survived from an earlier round, it was shown as the Final MP4, which read as if preparation for this round were complete when it was not. The queue that grouped these shorts was titled Approved & scheduled, yet the shorts in it were only approved or ready, with no future publishing time planned. Once a real publication exists, the screen shows that publication's own status, and the new badge does not replace it. The badge only fills the gap before anything has been published.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Before the fix, an approved short was headed Ready to publish.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "If a file survived from an earlier round, it was shown as the Final MP4, which read as if preparation for this round were complete when it was not.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The queue that grouped these shorts was titled Approved & scheduled, yet the shorts in it were only approved or ready, with no future publishing time planned.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Once a real publication exists, the screen shows that publication's own status, and the new badge does not replace it.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "The badge only fills the gap before anything has been published.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

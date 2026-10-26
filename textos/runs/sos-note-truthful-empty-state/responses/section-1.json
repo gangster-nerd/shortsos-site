@@ -1,0 +1,65 @@
+{
+  "text": "The team's working protocol includes a product-experience review with a blunt rule: output that is technically correct but perceptibly poor fails. This build received a fail verdict for what its screens told the person reading them: a failure that vanished, and an empty page that could not be told apart from an analysis that never ran. The record on this change reads one fail, one narrow fix and one pass, and only after the pass was the change released. Automated tests can confirm that code runs; it takes a person looking at the screen to notice that two very different answers look identical.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The team's working protocol includes a product-experience review with a blunt rule: output that is technically correct but perceptibly poor fails.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "This build received a fail verdict for what its screens told the person reading them: a failure that vanished, and an empty page that could not be told apart from an analysis that never ran.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The record on this change reads one fail, one narrow fix and one pass, and only after the pass was the change released.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Automated tests can confirm that code runs; it takes a person looking at the screen to notice that two very different answers look identical.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

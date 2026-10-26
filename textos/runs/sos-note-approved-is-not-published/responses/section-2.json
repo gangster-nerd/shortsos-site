@@ -1,0 +1,82 @@
+{
+  "text": "Each short keeps the last human decision made on it, and that record did not reset when a regenerated short came back for a new round of review. A short waiting for a fresh decision could therefore show an earlier round's decision with nothing to say it was from an earlier round. Since 8 September 2026, that earlier decision is prefixed with Previous review while the short waits for its new one. The same fix dealt with the preview itself, which had played muted and without controls, so the person deciding could not scrub, hear the sound or watch the whole short before choosing to approve, reject or regenerate it. A reviewer can only be as careful as the screen in front of them allows.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Each short keeps the last human decision made on it, and that record did not reset when a regenerated short came back for a new round of review.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "A short waiting for a fresh decision could therefore show an earlier round's decision with nothing to say it was from an earlier round.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-07",
+        "ev-n5-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Since 8 September 2026, that earlier decision is prefixed with Previous review while the short waits for its new one.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "The same fix dealt with the preview itself, which had played muted and without controls, so the person deciding could not scrub, hear the sound or watch the whole short before choosing to approve, reject or regenerate it.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "A reviewer can only be as careful as the screen in front of them allows.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

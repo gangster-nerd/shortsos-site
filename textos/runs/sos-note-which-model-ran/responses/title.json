@@ -1,0 +1,22 @@
+{
+  "text": "How ShortsOS records which AI model actually answered each analysis call",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "How ShortsOS records which AI model actually answered each analysis call",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

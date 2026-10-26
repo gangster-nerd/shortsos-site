@@ -1,0 +1,730 @@
+{
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "evidence-capture-2026-09-11",
+        "sourceCommits": [
+          "74ec2ac6b277a64e6b5311282f9b69348085def5"
+        ]
+      },
+      {
+        "groupId": "model-pin-2026-09-11",
+        "sourceCommits": [
+          "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52"
+        ]
+      },
+      {
+        "groupId": "provider-accounting-2026-09-11",
+        "sourceCommits": [
+          "e2c6f346a7ae8413def6419d15ac88475eb5d8bc"
+        ]
+      }
+    ],
+    "buyerQuestion": "If the AI model behind a video service fails or gets swapped, does the vendor keep a record of what actually ran?",
+    "targetQuery": "how to know which ai model a video service actually used",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "ai-call-accountability",
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+  },
+  "locale": "en-US",
+  "policy": {
+    "mode": "grounded_tracked_brand_authorized",
+    "trackedEntityId": "shortsos",
+    "trackedBrandNames": [
+      "ShortsOS"
+    ],
+    "forbiddenProductNames": []
+  },
+  "publicationContext": {
+    "channel": "controlled_preview",
+    "briefId": "sos-note-which-model-ran",
+    "locale": "en-US"
+  },
+  "claimProfile": {
+    "id": "shortsos-operated-short-form-video",
+    "version": "0.1",
+    "claimTypes": [
+      "publication",
+      "human_review",
+      "production",
+      "footage_input",
+      "availability",
+      "evidence_governance",
+      "story_selection"
+    ],
+    "lexicon": {
+      "publication": [
+        "publish",
+        "publishes",
+        "published",
+        "publishing",
+        "publication",
+        "instagram",
+        "reel",
+        "reels",
+        "permalink"
+      ],
+      "human_review": [
+        "human review",
+        "reviewed",
+        "reviews",
+        "review step",
+        "checkpoint"
+      ],
+      "production": [
+        "render",
+        "renders",
+        "rendered",
+        "caption",
+        "captions",
+        "captioned",
+        "voice",
+        "voiced"
+      ],
+      "footage_input": [
+        "raw footage",
+        "footage",
+        "source video"
+      ],
+      "availability": [
+        "self-serve",
+        "self serve",
+        "sign up",
+        "pilot",
+        "pilots",
+        "operated by",
+        "available"
+      ],
+      "evidence_governance": [
+        "public claim",
+        "public claims",
+        "claim ceiling",
+        "evidence",
+        "manifest",
+        "ratified"
+      ],
+      "story_selection": [
+        "story",
+        "stories",
+        "opportunity",
+        "opportunities"
+      ]
+    }
+  },
+  "roster": [
+    {
+      "name": "ShortsOS",
+      "aliases": [
+        "ShortsOS"
+      ],
+      "matchedTrackedEntityId": "shortsos",
+      "role": "tracked"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-n6-01",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 0e5e753: fix(gemini): pin configurable stable model, remove -latest capacity risk",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T12:07:27+02:00",
+      "contentHash": "bb91abad43e95b8a58a4a1d226598dc57f17fe6404c779049027f00f17c2a010",
+      "excerpt": "gemini-flash-latest hit sustained, real HTTP 503 UNAVAILABLE (\"high demand\") across 4 separate live attempts on 2026-09-11",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Commit message written by the product team; it reports failed calls, it records no analysis output."
+      ],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-02",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 0e5e753: fix(gemini): pin configurable stable model, remove -latest capacity risk",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T12:07:27+02:00",
+      "contentHash": "25e905808230c628d0989d506793a0bd89b9e254ad278e22983284e6aae48912",
+      "excerpt": "GEMINI_DEFAULT_MODEL is now the pinned \"gemini-3.8-flash\", configurable via ONE new env var (GEMINI_MEDIA_MODEL)",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-03",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 0e5e753: fix(gemini): pin configurable stable model, remove -latest capacity risk",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T12:07:27+02:00",
+      "contentHash": "78845f09bcb84e8cedd76d9cb096a900f4448490ee8cb1e6a5bf83367716576c",
+      "excerpt": "Adds ONE bounded capacity fallback to \"gemini-3.7-flash\" (a fixed code default, not independently configurable), triggered ONLY by GeminiTransientError -- a real 503/429 that survived the primary model's own retry budget.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-04",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 0e5e753: fix(gemini): pin configurable stable model, remove -latest capacity risk",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T12:07:27+02:00",
+      "contentHash": "529a80cc72e9b7479b374c1279303d004fc4d8c67a0517479fed11facb5b99f1",
+      "excerpt": "Schema errors, auth errors, malformed output and any other non-capacity failure propagate immediately with no fallback attempt; a fallback model can never silently paper over a request or output problem.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-05",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 0e5e753: fix(gemini): pin configurable stable model, remove -latest capacity risk",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T12:07:27+02:00",
+      "contentHash": "802bd57427323121cc62cec322a4730bb81aaff6b809c50e24b228434df05737",
+      "excerpt": "real per-call provenance, not a static config echo",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-06",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file src/providers/gemini/gemini-media-understanding-provider.ts at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "ce9d1d2f8646f977aedc4f1a51e70a885a491f865beca97012797ee2ad3efcec",
+      "excerpt": "requestedModel: this.model, actualModel, fallbackUsed,",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-07",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 74ec2ac: feat(trigger): capture real Gemini/B1 evidence before it can be lost to a throw",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T11:47:49+02:00",
+      "contentHash": "83825f4160b7bc1cd6e371eec9d58a43aee6f751f7f34d5dbbcb21e77c124e49",
+      "excerpt": "previously thrown as a bare Error that silently discarded this data.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-08",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 74ec2ac: feat(trigger): capture real Gemini/B1 evidence before it can be lost to a throw",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T11:47:49+02:00",
+      "contentHash": "ade690932a76551d4a6625ca73a5f09241047525980036cd1b2212914529e4ba",
+      "excerpt": "so the evidence exists on durable storage before B1 ever runs, and survives a B1 failure immediately afterwards.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-09",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 74ec2ac: feat(trigger): capture real Gemini/B1 evidence before it can be lost to a throw",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T11:47:49+02:00",
+      "contentHash": "8584f16fde3ef54022e22b482468018a9eeeee1f43ca2d052d79806941ea5c0f",
+      "excerpt": "Smallest possible observability change -- no B1 redesign, no threshold change, no fallback candidates, no creative-decision logic touched.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-10",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit e2c6f34: fix(provider-accounting): route opportunity/media-understanding calls through runProvider",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T15:49:06+02:00",
+      "contentHash": "7bca53e2d36b7721ce94ad6f72a75ef6b8c5b02b2c846f096eb62cdabf2105f3",
+      "excerpt": "closes the two confirmed bypasses of the canonical provider/cost accounting boundary (runProvider()/provider_runs).",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-11",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit e2c6f34: fix(provider-accounting): route opportunity/media-understanding calls through runProvider",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T15:49:06+02:00",
+      "contentHash": "8507c8305425822b6f71d3ed47dcca74cb7d243c20b791db8cadde8530d4ec98",
+      "excerpt": "a failed provider call produces a clean typed failure with a durable \"failed\" provider_runs receipt (not just the return shape).",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-12",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit e2c6f34: fix(provider-accounting): route opportunity/media-understanding calls through runProvider",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-11T15:49:06+02:00",
+      "contentHash": "ddbfd1e0db96e4b9b707d95e09ba0d7bbdf7facb61c48802d2748fe011d9661d",
+      "excerpt": "idempotent re-call skips the provider and reuses the cached provider_runs row",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-13",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS Public Truth manifest, GEMINI-MEDIA-UNDERSTANDING-V1.knownLimits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), ratified public-truth declaration",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "8f1e305df29a7195a7b8ffc3753063c9062ef0533c22c41bfe6bccc4eeaca391",
+      "excerpt": "Mock-first: real key use requires PROVIDER_TEST pre-authorization, per AGENTS.md section 16.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n6-14",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS Public Truth manifest, GEMINI-MEDIA-UNDERSTANDING-V1.prohibitedClaims",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), ratified public-truth declaration",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "ffff873c645c369b798ffbca258d392a63bcaac4ef24b40d7eeca2fdbe8fc00f",
+      "excerpt": "Any claim of proven real Gemini analysis output for a specific asset.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-which-model-ran"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change in plain words, as a grounded fact about ShortsOS: each AI analysis call now records which model actually answered.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: after repeated failed calls in September 2026, ShortsOS pinned its AI model, limited the backup, and kept a record of each call.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-03",
+        "ev-n6-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake: a service built on outside AI models can quietly change which model does the work, or lose the trace of a failed call. Then say ShortsOS hit repeated failed calls on 11 September 2026 and changed how those calls are made and recorded.",
+      "buyerIntent": "Would I ever find out which model handled my footage?",
+      "allowedEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What changed, and why?",
+      "writingObjective": "Answer directly: what went wrong with the moving model name, what replaced it, and what each call now records about the model it asked for and the model that answered.",
+      "buyerIntent": "What does the vendor now keep?",
+      "allowedEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-02",
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "A backup model, on a short leash",
+      "writingObjective": "Explain the single backup model: tried only when the main model is out of capacity, never to cover a bad request or a bad answer, and recorded when used.",
+      "buyerIntent": "Can a backup quietly hide a real problem?",
+      "allowedEvidenceIds": [
+        "ev-n6-03",
+        "ev-n6-04",
+        "ev-n6-06"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Keeping the record when a later step fails",
+      "writingObjective": "Describe the two record-keeping fixes: the analysis result is saved before the next step can fail and lose it, and two AI calls that skipped the shared call ledger now go through it, with a failed call leaving a durable failed entry and a repeated call reusing the earlier one.",
+      "buyerIntent": "What is left behind when something breaks?",
+      "allowedEvidenceIds": [
+        "ev-n6-07",
+        "ev-n6-08",
+        "ev-n6-09",
+        "ev-n6-10",
+        "ev-n6-11",
+        "ev-n6-12"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What this note does not claim",
+      "writingObjective": "State the limits plainly: real calls to the outside model need prior authorization, and ShortsOS's own record forbids claiming proven real analysis output for any specific asset. Close on what a buyer can ask any vendor about the models behind its work.",
+      "buyerIntent": "What should I not read into this?",
+      "allowedEvidenceIds": [
+        "ev-n6-13",
+        "ev-n6-14"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 1000,
+      "evidenceRequired": true
+    }
+  ]
+}

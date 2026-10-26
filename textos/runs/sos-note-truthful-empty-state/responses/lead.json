@@ -1,0 +1,61 @@
+{
+  "text": "An empty screen can mean three different things: the tool looked and found nothing worth making, it did not look at all, or it broke along the way. Each of those calls for a different next step, so a screen that blurs them leaves the reader guessing. On 12 September 2026, a product-experience review of a ShortsOS build found exactly that blur: a failed analysis was silently discarded, and an honest result of no strong opportunities looked the same as a page that had never been analyzed. The build was held back until a narrow fix passed a second review.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "An empty screen can mean three different things: the tool looked and found nothing worth making, it did not look at all, or it broke along the way.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "Each of those calls for a different next step, so a screen that blurs them leaves the reader guessing.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "On 12 September 2026, a product-experience review of a ShortsOS build found exactly that blur: a failed analysis was silently discarded, and an honest result of no strong opportunities looked the same as a page that had never been analyzed.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "The build was held back until a narrow fix passed a second review.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

@@ -1,0 +1,665 @@
+{
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "opportunity-caller-review-2026-09-12",
+        "sourceCommits": [
+          "77957613757b45b80adcf06a0dd1be923f90cb4b",
+          "bf8911400d168c282bedb541f7767a4c99c69831",
+          "d2268dc696f6c5eb5ed18025f0a62be8c48a77a2"
+        ]
+      },
+      {
+        "groupId": "show-me-why-2026-09-12",
+        "sourceCommits": [
+          "fd16d0762a6ba99fde99d85db38958e0f3b41473",
+          "fd558206033b49796fcdf47b74dd05e4bcba9812"
+        ]
+      }
+    ],
+    "buyerQuestion": "When an AI video tool finds nothing worth making from my footage, will it say so, or just show me an empty screen?",
+    "targetQuery": "how an ai video tool should report that it found no story in your footage",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "footage-to-story-engineering",
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+  },
+  "locale": "en-US",
+  "policy": {
+    "mode": "grounded_tracked_brand_authorized",
+    "trackedEntityId": "shortsos",
+    "trackedBrandNames": [
+      "ShortsOS"
+    ],
+    "forbiddenProductNames": []
+  },
+  "publicationContext": {
+    "channel": "controlled_preview",
+    "briefId": "sos-note-truthful-empty-state",
+    "locale": "en-US"
+  },
+  "claimProfile": {
+    "id": "shortsos-operated-short-form-video",
+    "version": "0.1",
+    "claimTypes": [
+      "publication",
+      "human_review",
+      "production",
+      "footage_input",
+      "availability",
+      "evidence_governance",
+      "story_selection"
+    ],
+    "lexicon": {
+      "publication": [
+        "publish",
+        "publishes",
+        "published",
+        "publishing",
+        "publication",
+        "instagram",
+        "reel",
+        "reels",
+        "permalink"
+      ],
+      "human_review": [
+        "human review",
+        "reviewed",
+        "reviews",
+        "review step",
+        "checkpoint"
+      ],
+      "production": [
+        "render",
+        "renders",
+        "rendered",
+        "caption",
+        "captions",
+        "captioned",
+        "voice",
+        "voiced"
+      ],
+      "footage_input": [
+        "raw footage",
+        "footage",
+        "source video"
+      ],
+      "availability": [
+        "self-serve",
+        "self serve",
+        "sign up",
+        "pilot",
+        "pilots",
+        "operated by",
+        "available"
+      ],
+      "evidence_governance": [
+        "public claim",
+        "public claims",
+        "claim ceiling",
+        "evidence",
+        "manifest",
+        "ratified"
+      ],
+      "story_selection": [
+        "story",
+        "stories",
+        "opportunity",
+        "opportunities"
+      ]
+    }
+  },
+  "roster": [
+    {
+      "name": "ShortsOS",
+      "aliases": [
+        "ShortsOS"
+      ],
+      "matchedTrackedEntityId": "shortsos",
+      "role": "tracked"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-n4-01",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 7795761: chore(governance): P2 FAIL on FDTS-OPPORTUNITY-CALLER-V1 - grant narrow write-set extension for truthful-outcome fix",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T17:40:33+02:00",
+      "contentHash": "f82e6e6badb267e92d90b30737aea61cb03c73432b4da52d634b0d0f678746ea",
+      "excerpt": "P2 review of candidate 40ec93a returned FAIL: the provider \"failed\" outcome is silently discarded, and a truthful zero-strong-opportunities result is indistinguishable from the destination page's \"not analyzed yet\" empty state.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Governance commit written by the product team about its own review; it records the verdict, it does not independently prove the defect."
+      ],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-02",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit bf89114: feat(content-inventory): wire generateOpportunities to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T17:50:56+02:00",
+      "contentHash": "cd4e0cc316bb72d3b284b06b556006ccc23d22453aadd83cb600a55832c7bc5d",
+      "excerpt": "a provider \"failed\" outcome now redirects to the Media tab with a visible error banner instead of being silently discarded",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-03",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit bf89114: feat(content-inventory): wire generateOpportunities to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T17:50:56+02:00",
+      "contentHash": "c38d93096c63f423d9ff576ba6a0bc0502ff429bf5a93f3b3515b9ce59e4f77e",
+      "excerpt": "now redirects to the Opportunities tab with distinct copy (\"Analysis complete -- no strong opportunities yet\") instead of being indistinguishable from the \"never analyzed\" empty state.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-04",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit bf89114: feat(content-inventory): wire generateOpportunities to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T17:50:56+02:00",
+      "contentHash": "a87bd2c71fa066dba4fb31da825e888d9d1954512ff6474909336408e0827bde",
+      "excerpt": "Closes a real, previously-unflagged idempotency gap: content_opportunities has no unique constraint and createOpportunity used no onConflictDoNothing, so calling generateOpportunities twice for the same client inserted a duplicate set of rows.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-05",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit bf89114: feat(content-inventory): wire generateOpportunities to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T17:50:56+02:00",
+      "contentHash": "dbad1918a1d11bf6a5a7728837fbd2b9c0c9fbee234accfea214daa9bc3d8a10",
+      "excerpt": "The new caller checks findSnapshotByHash + isSnapshotReferenced first and returns the existing opportunities (status: \"already_generated\") instead of regenerating.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-06",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit d2268dc: chore(governance): close FDTS-OPPORTUNITY-CALLER-V1 - published after P2 PASS, WAVE-006 fully closed",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T18:11:01+02:00",
+      "contentHash": "0f3d397bfa7f50f787096ee2bc3065bf35843dfc6746e85ab62de7c72fc7f588",
+      "excerpt": "gated on a P2 product-experience review (one FAIL, one narrow fix, one PASS) before publish per PROTOCOL.md §10.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-07",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file docs/multi-agent/PROTOCOL.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "8272a8d1eb104ea341edc756fcdadf41a7a1a635eb7ebc907f6946f4281d3e1c",
+      "excerpt": "Une sortie techniquement correcte mais perceptiblement médiocre échoue à P2.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Internal working protocol, in French; it states the rule the review applies, not the outcome of any particular review."
+      ],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-08",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit fd16d07: feat(content-inventory): show real evidence controls, capture-session identity, and a durable zero-story state (FDTS-SHOW-ME-WHY-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T18:31:38+02:00",
+      "contentHash": "726340968757f58456588d6ce9474f4bc2d553922778268b58151bc8f87bcebe",
+      "excerpt": "generateOpportunities now find-or-creates a client_strategy_snapshot on the no_strong_story_available path too (reusing the exact success-path mechanism via a shared helper), not only on success.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-09",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit fd16d07: feat(content-inventory): show real evidence controls, capture-session identity, and a durable zero-story state (FDTS-SHOW-ME-WHY-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T18:31:38+02:00",
+      "contentHash": "bd484a1d206c7c995eeacbc6dc5e9856e35ef946849fe440e58ff5c24ae859dd",
+      "excerpt": "This makes the truthful \"Analysis complete -- no strong opportunities yet\" empty state durable: it now survives a plain page revisit",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-10",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit fd16d07: feat(content-inventory): show real evidence controls, capture-session identity, and a durable zero-story state (FDTS-SHOW-ME-WHY-V1)",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-12T18:31:38+02:00",
+      "contentHash": "28762a8095173e83d75ceac41aef8615467e3d7056ba64b0fd1d743ff2bb79b8",
+      "excerpt": "no_candidates and failed outcomes are explicitly untouched -- no snapshot persisted for either, so they continue to read as \"not yet analyzed,\" never as a false \"we tried and found nothing.\"",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-11",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS Public Truth manifest, FDTS-SHOW-ME-WHY-V1.knownLimits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), ratified public-truth declaration",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "587303329f94c5587f09efe8e5edcf2c18d69a18a2e8d24cdb8c09e7ccd9b587",
+      "excerpt": "no_candidates is classified the same as 'never analyzed', a defensible but non-blocking ambiguity noted at P2.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n4-12",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS Public Truth manifest, FDTS-OPPORTUNITY-CALLER-V1.knownLimits",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), ratified public-truth declaration",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "954a9a9ac0396a936d44e849797597cc880034cc9c0479d18fc9c5755fb3a618",
+      "excerpt": "P2 pass notes the error banner surfaces a raw provider-generated reason string, developer-phrased — acceptable but not polished customer copy.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-truthful-empty-state"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change in plain words, as a grounded fact about ShortsOS: an empty result and a result of nothing found are now shown apart.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-03"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: a review failed a build that hid two outcomes, and the fix shows each one apart.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake: an empty screen can mean the tool looked and found nothing, or never looked, or broke. Then say that ShortsOS had this exact ambiguity and that a review caught it before release.",
+      "buyerIntent": "Will I be able to tell what an empty result means?",
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-06"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What was wrong, and what changed?",
+      "writingObjective": "Answer directly: which two outcomes were hidden, and what each one shows after the fix.",
+      "buyerIntent": "What exactly did the screen get wrong?",
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "A review that failed a working build",
+      "writingObjective": "Explain the product-experience review: its rule that technically correct but perceptibly poor output fails, and its record on this change (one fail, one narrow fix, one pass) before release.",
+      "buyerIntent": "Who checks what the operator actually sees?",
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-06",
+        "ev-n4-07"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Making the honest answer survive a revisit",
+      "writingObjective": "Describe the follow-up change: the nothing-found outcome is now recorded so it survives a revisit, while outcomes where nothing was really analyzed are deliberately not recorded that way.",
+      "buyerIntent": "Will the answer still be there tomorrow?",
+      "allowedEvidenceIds": [
+        "ev-n4-08",
+        "ev-n4-09",
+        "ev-n4-10"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What else was fixed, and what is still rough",
+      "writingObjective": "Report the duplicate-rows gap closed in the same change, then state plainly the two limits the review recorded as still open.",
+      "buyerIntent": "What does the vendor admit is not finished?",
+      "allowedEvidenceIds": [
+        "ev-n4-04",
+        "ev-n4-05",
+        "ev-n4-11",
+        "ev-n4-12"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "receiptVersion": 1,
+  "articleId": "sos-note-truthful-empty-state",
+  "textos": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
+  },
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "executionPlanHash": "5430a14766d18a5fdbe18eab27b604858d16a760094c59b93158c93c91322070",
+  "ctcHandoffHash": "4402869f2836e6ec27d181403b6c1e8f8fe4ef3a2aead13f1206ebc90a965a9a",
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "aa56845009092d55bb4e9702a31da3843cb50355973d1fbeaf7faaffcea5b2b5",
+  "truthCheckVerdict": "pass",
+  "publicationChannel": "controlled_preview",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+  "promptHashes": {
+    "title": "52b7067f2b672eb4a1f4f61f973b1a9ccced04d892ba7b538c9ea847e70be35d",
+    "meta": "7dc8bd7fef401b235682c654747a36658d59197a588d20aed99b9f926965af5d",
+    "lead": "8dad17c928c37154a89bf4715fdac3d412355b4224f48e04af716d16ea05c98b",
+    "answer": "d52cd4e4c9a3a0d23a98ffa95eb04eea4b4024fd3978da159d1387b2b866ce86",
+    "section-1": "505bce2405df753fa68c4633ee538a415c48aa7989bb2009968ac8541062aa7a",
+    "section-2": "72190d5ce0c8ff05f5308f3a50c8cecbb4559fb6034d6c7c884a7cee64e841cc",
+    "section-3": "3f1a4c004bc87c4031b0c97e0e752f3d46ad16784a6994a523a51f6d3e36e20b"
+  },
+  "responseHashes": {
+    "title": "fd971085ed9998482b72c5c7295ac3c5d9c9b442daa28d1d8a83852af0fbb328",
+    "meta": "62e497883aa9cb0468e69f2622da0048251603a07335357a2dc1f16f52baafa8",
+    "lead": "830663f48c59c0341634998f4d14ff9ac1d2e94f6d3156627a0788e6108bbfa8",
+    "answer": "307770d1b8b68e0ef4b5d8cb7feecb92e35e6314178d521315fc092b8aeccecb",
+    "section-1": "7a59c9a1ef2750d137024417a4182f7f1f76b74d17b2c5e205958dbd1acd7804",
+    "section-2": "9d7d282c3d2f66185e9430e8c6b6c0a1825f922791cc50033da352f1d32d6bb0",
+    "section-3": "3a77f02e56591e16e1b3c14e8e2e6331ef0d16f3d355dcbdfde3e75cda791b2d"
+  },
+  "contentDocumentSha256": "727c3d7139a8b9acaac3e51ee7ba2772f2a88ed51240d9f82b64eae7556c8ef1",
+  "resolvedSurfaceSha256": "d0af193c301ed08648767341a037f538c7c5e951da2e91ddfea834edab6c28b5",
+  "humanReview": "pending"
+}

@@ -1,0 +1,699 @@
+{
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "review-actions-2026-09-08",
+        "sourceCommits": [
+          "bf8c3e081483d0e58418eab1c086e1fc6b1412dc"
+        ]
+      },
+      {
+        "groupId": "review-surface-2026-09-08",
+        "sourceCommits": [
+          "2ca1c5ceb43dcee0906ced459eb75b5bf4ff79c3"
+        ]
+      },
+      {
+        "groupId": "publish-state-2026-09-08",
+        "sourceCommits": [
+          "d18387e0b8e583742105baf73dc0929aa0dca5ac"
+        ]
+      }
+    ],
+    "buyerQuestion": "When a video service tells me a short is approved, does that mean it has been published?",
+    "targetQuery": "does approved mean published in a video review workflow",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "review-state-honesty",
+    "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+  },
+  "locale": "en-US",
+  "policy": {
+    "mode": "grounded_tracked_brand_authorized",
+    "trackedEntityId": "shortsos",
+    "trackedBrandNames": [
+      "ShortsOS"
+    ],
+    "forbiddenProductNames": []
+  },
+  "publicationContext": {
+    "channel": "controlled_preview",
+    "briefId": "sos-note-approved-is-not-published",
+    "locale": "en-US"
+  },
+  "claimProfile": {
+    "id": "shortsos-operated-short-form-video",
+    "version": "0.1",
+    "claimTypes": [
+      "publication",
+      "human_review",
+      "production",
+      "footage_input",
+      "availability",
+      "evidence_governance",
+      "story_selection"
+    ],
+    "lexicon": {
+      "publication": [
+        "publish",
+        "publishes",
+        "published",
+        "publishing",
+        "publication",
+        "instagram",
+        "reel",
+        "reels",
+        "permalink"
+      ],
+      "human_review": [
+        "human review",
+        "reviewed",
+        "reviews",
+        "review step",
+        "checkpoint"
+      ],
+      "production": [
+        "render",
+        "renders",
+        "rendered",
+        "caption",
+        "captions",
+        "captioned",
+        "voice",
+        "voiced"
+      ],
+      "footage_input": [
+        "raw footage",
+        "footage",
+        "source video"
+      ],
+      "availability": [
+        "self-serve",
+        "self serve",
+        "sign up",
+        "pilot",
+        "pilots",
+        "operated by",
+        "available"
+      ],
+      "evidence_governance": [
+        "public claim",
+        "public claims",
+        "claim ceiling",
+        "evidence",
+        "manifest",
+        "ratified"
+      ],
+      "story_selection": [
+        "story",
+        "stories",
+        "opportunity",
+        "opportunities"
+      ]
+    }
+  },
+  "roster": [
+    {
+      "name": "ShortsOS",
+      "aliases": [
+        "ShortsOS"
+      ],
+      "matchedTrackedEntityId": "shortsos",
+      "role": "tracked"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-n5-01",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit d18387e: fix(publish): stop presenting approved as publish-ready",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T18:50:43+02:00",
+      "contentHash": "d675e923b13312c662e70a12b02c3c1bb91a00f04a6538adcc48bcbfd3d52feb",
+      "excerpt": "publishPackage existing is not readiness, and approved is not ready_to_publish",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Commit message written by the product team for its own fix; it describes the defect, it does not independently prove it."
+      ],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-02",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit d18387e: fix(publish): stop presenting approved as publish-ready",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T18:50:43+02:00",
+      "contentHash": "5ae30b04b97aa5e9e333d3a3f5e359d11dfe9b82eede6819ec3d899654f9c4d7",
+      "excerpt": "An `approved` item's header said \"Ready to publish\" and, if a package survived from a prior cycle, showed it as \"Final MP4\" -- both read as this cycle's preparation being complete when it was not.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-03",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit d18387e: fix(publish): stop presenting approved as publish-ready",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T18:50:43+02:00",
+      "contentHash": "91f38e40190e7e12b6aa724c8efedaad7ac08fd66b4de8da735cb8fb186ba80a",
+      "excerpt": "The Target queue's own section title, \"Approved & scheduled\", claimed a `scheduled` state (a real, distinct video_item status: a planned future publish time) for items that were merely `approved` or `ready_to_publish`.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-04",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file src/domain/publish/publish-state-presentation.ts at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "e246a0795a59facee71ee90890853fdf2494d91273ab5e17cf8049149dd543af",
+      "excerpt": "readinessBadge: \"✓ Approved · Not published\",",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-05",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file src/domain/publish/publish-state-presentation.ts at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "1d10b9c70b315550660751cb9674ef848994cb41cabbcb76fd1ba67ff126cb08",
+      "excerpt": "readinessBadge: \"✓ Approved · ✓ Package ready · Not published\",",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-06",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit d18387e: fix(publish): stop presenting approved as publish-ready",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T18:50:43+02:00",
+      "contentHash": "b3d91203b4df1cc1171ad21c1b1e2c898c1e74b47db5fdbcef1ddae000c43e84",
+      "excerpt": "A real publication's own provider status remains canonical and is never replaced by this badge -- it only fills in before any publication exists.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-07",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 2ca1c5c: fix(target): real review playback + stop mislabeling stale reviews as current",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T16:32:03+02:00",
+      "contentHash": "b0dd97303672d1dad4f1f290c34dbd8f1cbf47867220de2ee62ec40ff82f4c81",
+      "excerpt": "A card's latestReview is whatever the most recent human decision ever was; it does not reset when a regenerated short re-enters awaiting_review for a new cycle.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-08",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 2ca1c5c: fix(target): real review playback + stop mislabeling stale reviews as current",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T16:32:03+02:00",
+      "contentHash": "a145fe364f7efd4ecdc15502f060808445ab74a2e105c8385ff2630759fdd2ab",
+      "excerpt": "New pure helper describeLatestReview (src/domain/review/) prefixes a historical decision with \"Previous review: \" whenever the item is awaiting_review",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-09",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit 2ca1c5c: fix(target): real review playback + stop mislabeling stale reviews as current",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T16:32:03+02:00",
+      "contentHash": "5dd57ed0fd6f520d0b19ea774b45e6baa25b0d74bc57883367db1105d747309c",
+      "excerpt": "The awaiting_review preview was a silent, control-less <video> (muted, no controls) -- a director could not scrub, hear audio, or watch the full short before Approve/Reject/Regenerate.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-10",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit bf8c3e0: fix(review): stop offering Approve/Reject/Regenerate on needs_regeneration",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T00:10:37+02:00",
+      "contentHash": "1a5584cc2a674b7e1ab3869ffdfa5669bacaac6eb6951e6cb253add7771fcafb",
+      "excerpt": "Production crashed with \"Illegal video_item transition: needs_regeneration -> approved\" (500 on /target/clients/.../production).",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-11",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product commit bf8c3e0: fix(review): stop offering Approve/Reject/Regenerate on needs_regeneration",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-08T00:10:37+02:00",
+      "contentHash": "92fba77fbcb7759ffec0d70a3a156e0025ff5f7c2773aa75033fe61dae164074",
+      "excerpt": "Review actions now require status === \"awaiting_review\", the only canonical review-eligible state.",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-12",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file src/domain/video-item-state.ts at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "2228af6a05ae14929be4589283886f3a9add481ea3d27466f8d7e7408e7ed6f4",
+      "excerpt": "approved: [\"ready_to_publish\", \"archived\"],",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    },
+    {
+      "id": "ev-n5-13",
+      "kind": "official_brand_evidence",
+      "sourceUrl": null,
+      "sourceTitle": "ShortsOS product repository file docs/multi-agent/PROTOCOL.md at 22e31cd",
+      "sourcePublisher": "ShortsOS product repository (gangster-nerd/shortsos-v0), canonical main",
+      "retrievedAt": "2026-09-16T22:29:21+02:00",
+      "contentHash": "007b879222b0ab6ec46ea3ddf80a8e043e894dd79a3009969e1b265bc784e6b3",
+      "excerpt": "compréhension de l’état en moins de dix secondes",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Internal working protocol, in French; one item of what the product-experience review checks, not a measured result."
+      ],
+      "epistemicStatus": "operator_supplied",
+      "publicUse": "pending",
+      "approvedForGeneration": true,
+      "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+      "approvedAt": "2026-10-26",
+      "approvalScope": {
+        "briefIds": [
+          "sos-note-approved-is-not-published"
+        ],
+        "locale": "en-US",
+        "channel": "controlled_preview"
+      }
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change in plain words, as a grounded fact about ShortsOS: an approved short is no longer shown as ready to publish.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-02"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: three September 2026 fixes made the review and publishing screens say where a short really stands.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-04"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake: a status label is a promise about where a piece of content stands, and a reviewer should grasp it at a glance. Then say ShortsOS found its screens blurring approved, ready and scheduled.",
+      "buyerIntent": "Can I trust what a status label tells me?",
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-02",
+        "ev-n5-13"
+      ],
+      "requiredClaimTypes": [
+        "publication",
+        "human_review"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "Does approved mean published?",
+      "writingObjective": "Answer directly: no. Approval is one step, preparing the final file is the next, and publishing is separate again; say what the screens now show at each step.",
+      "buyerIntent": "Where does my short stand once it is approved?",
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-04",
+        "ev-n5-05",
+        "ev-n5-12"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Three labels that said too much",
+      "writingObjective": "Describe what the screens said before the fix: an approved item headed as ready, a leftover file shown as final, and a queue titled as scheduled when nothing was scheduled. Then say a real publication's own status still takes precedence over the new badge.",
+      "buyerIntent": "What exactly was misleading?",
+      "allowedEvidenceIds": [
+        "ev-n5-02",
+        "ev-n5-03",
+        "ev-n5-06"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "An old decision shown as the current one",
+      "writingObjective": "Explain the review-card fix: after a short was regenerated, the last decision from an earlier round appeared as if it applied now; it is now labelled as a previous review. Add that the preview could not be watched with sound before deciding, and was fixed the same day.",
+      "buyerIntent": "Does the reviewer see what they are actually deciding on?",
+      "allowedEvidenceIds": [
+        "ev-n5-07",
+        "ev-n5-08",
+        "ev-n5-09"
+      ],
+      "requiredClaimTypes": [
+        "human_review"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Buttons offered where no decision was possible",
+      "writingObjective": "Describe the crash: decision buttons were shown on shorts that could not legally be approved, and clicking one failed; decisions are now offered only on a short waiting for review. Close on what a buyer can ask any vendor about its status labels.",
+      "buyerIntent": "Can the screen offer a decision the system will refuse?",
+      "allowedEvidenceIds": [
+        "ev-n5-10",
+        "ev-n5-11"
+      ],
+      "requiredClaimTypes": [
+        "human_review"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 1000,
+      "evidenceRequired": true
+    }
+  ]
+}

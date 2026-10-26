@@ -1,0 +1,16 @@
+{
+  "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "planId": "how an ai video tool should report that it found no story in your footage",
+  "executionPlanHash": "5430a14766d18a5fdbe18eab27b604858d16a760094c59b93158c93c91322070",
+  "ctcHandoffHash": "4402869f2836e6ec27d181403b6c1e8f8fe4ef3a2aead13f1206ebc90a965a9a",
+  "promptHashes": {
+    "title": "52b7067f2b672eb4a1f4f61f973b1a9ccced04d892ba7b538c9ea847e70be35d",
+    "meta": "7dc8bd7fef401b235682c654747a36658d59197a588d20aed99b9f926965af5d",
+    "lead": "8dad17c928c37154a89bf4715fdac3d412355b4224f48e04af716d16ea05c98b",
+    "answer": "d52cd4e4c9a3a0d23a98ffa95eb04eea4b4024fd3978da159d1387b2b866ce86",
+    "section-1": "505bce2405df753fa68c4633ee538a415c48aa7989bb2009968ac8541062aa7a",
+    "section-2": "72190d5ce0c8ff05f5308f3a50c8cecbb4559fb6034d6c7c884a7cee64e841cc",
+    "section-3": "3f1a4c004bc87c4031b0c97e0e752f3d46ad16784a6994a523a51f6d3e36e20b"
+  }
+}

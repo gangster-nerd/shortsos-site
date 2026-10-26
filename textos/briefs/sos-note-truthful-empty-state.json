@@ -1,0 +1,380 @@
+{
+  "briefVersion": 1,
+  "articleId": "sos-note-truthful-empty-state",
+  "flow": "commit_to_content",
+  "slug": "nothing-found-is-not-the-same-as-not-analyzed",
+  "locale": "en-US",
+  "publicationChannel": "controlled_preview",
+  "entityIds": [
+    "FDTS-OPPORTUNITY-CALLER-V1",
+    "FDTS-SHOW-ME-WHY-V1"
+  ],
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "opportunity-caller-review-2026-09-12",
+        "sourceCommits": [
+          "77957613757b45b80adcf06a0dd1be923f90cb4b",
+          "bf8911400d168c282bedb541f7767a4c99c69831",
+          "d2268dc696f6c5eb5ed18025f0a62be8c48a77a2"
+        ]
+      },
+      {
+        "groupId": "show-me-why-2026-09-12",
+        "sourceCommits": [
+          "fd16d0762a6ba99fde99d85db38958e0f3b41473",
+          "fd558206033b49796fcdf47b74dd05e4bcba9812"
+        ]
+      }
+    ],
+    "buyerQuestion": "When an AI video tool finds nothing worth making from my footage, will it say so, or just show me an empty screen?",
+    "targetQuery": "how an ai video tool should report that it found no story in your footage",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "footage-to-story-engineering"
+  },
+  "siteObservation": null,
+  "approval": {
+    "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+    "approvedAt": "2026-10-26"
+  },
+  "clearances": [],
+  "evidence": [
+    {
+      "id": "ev-n4-01",
+      "source": {
+        "kind": "product_commit",
+        "sha": "77957613757b45b80adcf06a0dd1be923f90cb4b",
+        "quote": "P2 review of candidate 40ec93a returned FAIL: the provider \"failed\" outcome is silently discarded, and a truthful zero-strong-opportunities result is indistinguishable from the destination page's \"not analyzed yet\" empty state."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Governance commit written by the product team about its own review; it records the verdict, it does not independently prove the defect."
+      ]
+    },
+    {
+      "id": "ev-n4-02",
+      "source": {
+        "kind": "product_commit",
+        "sha": "bf8911400d168c282bedb541f7767a4c99c69831",
+        "quote": "a provider \"failed\" outcome now redirects to the Media tab with a visible error banner instead of being silently discarded"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-03",
+      "source": {
+        "kind": "product_commit",
+        "sha": "bf8911400d168c282bedb541f7767a4c99c69831",
+        "quote": "now redirects to the Opportunities tab with distinct copy (\"Analysis complete -- no strong opportunities yet\") instead of being indistinguishable from the \"never analyzed\" empty state."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-04",
+      "source": {
+        "kind": "product_commit",
+        "sha": "bf8911400d168c282bedb541f7767a4c99c69831",
+        "quote": "Closes a real, previously-unflagged idempotency gap: content_opportunities has no unique constraint and createOpportunity used no onConflictDoNothing, so calling generateOpportunities twice for the same client inserted a duplicate set of rows."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-05",
+      "source": {
+        "kind": "product_commit",
+        "sha": "bf8911400d168c282bedb541f7767a4c99c69831",
+        "quote": "The new caller checks findSnapshotByHash + isSnapshotReferenced first and returns the existing opportunities (status: \"already_generated\") instead of regenerating."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-06",
+      "source": {
+        "kind": "product_commit",
+        "sha": "d2268dc696f6c5eb5ed18025f0a62be8c48a77a2",
+        "quote": "gated on a P2 product-experience review (one FAIL, one narrow fix, one PASS) before publish per PROTOCOL.md §10."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-07",
+      "source": {
+        "kind": "product_file",
+        "path": "docs/multi-agent/PROTOCOL.md",
+        "quote": "Une sortie techniquement correcte mais perceptiblement médiocre échoue à P2."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Internal working protocol, in French; it states the rule the review applies, not the outcome of any particular review."
+      ]
+    },
+    {
+      "id": "ev-n4-08",
+      "source": {
+        "kind": "product_commit",
+        "sha": "fd16d0762a6ba99fde99d85db38958e0f3b41473",
+        "quote": "generateOpportunities now find-or-creates a client_strategy_snapshot on the no_strong_story_available path too (reusing the exact success-path mechanism via a shared helper), not only on success."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-09",
+      "source": {
+        "kind": "product_commit",
+        "sha": "fd16d0762a6ba99fde99d85db38958e0f3b41473",
+        "quote": "This makes the truthful \"Analysis complete -- no strong opportunities yet\" empty state durable: it now survives a plain page revisit"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-10",
+      "source": {
+        "kind": "product_commit",
+        "sha": "fd16d0762a6ba99fde99d85db38958e0f3b41473",
+        "quote": "no_candidates and failed outcomes are explicitly untouched -- no snapshot persisted for either, so they continue to read as \"not yet analyzed,\" never as a false \"we tried and found nothing.\""
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-11",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-SHOW-ME-WHY-V1",
+        "field": "knownLimits",
+        "quote": "no_candidates is classified the same as 'never analyzed', a defensible but non-blocking ambiguity noted at P2."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n4-12",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "FDTS-OPPORTUNITY-CALLER-V1",
+        "field": "knownLimits",
+        "quote": "P2 pass notes the error banner surfaces a raw provider-generated reason string, developer-phrased — acceptable but not polished customer copy."
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change in plain words, as a grounded fact about ShortsOS: an empty result and a result of nothing found are now shown apart.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-03"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: a review failed a build that hid two outcomes, and the fix shows each one apart.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake: an empty screen can mean the tool looked and found nothing, or never looked, or broke. Then say that ShortsOS had this exact ambiguity and that a review caught it before release.",
+      "buyerIntent": "Will I be able to tell what an empty result means?",
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-06"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What was wrong, and what changed?",
+      "writingObjective": "Answer directly: which two outcomes were hidden, and what each one shows after the fix.",
+      "buyerIntent": "What exactly did the screen get wrong?",
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "A review that failed a working build",
+      "writingObjective": "Explain the product-experience review: its rule that technically correct but perceptibly poor output fails, and its record on this change (one fail, one narrow fix, one pass) before release.",
+      "buyerIntent": "Who checks what the operator actually sees?",
+      "allowedEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-06",
+        "ev-n4-07"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Making the honest answer survive a revisit",
+      "writingObjective": "Describe the follow-up change: the nothing-found outcome is now recorded so it survives a revisit, while outcomes where nothing was really analyzed are deliberately not recorded that way.",
+      "buyerIntent": "Will the answer still be there tomorrow?",
+      "allowedEvidenceIds": [
+        "ev-n4-08",
+        "ev-n4-09",
+        "ev-n4-10"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What else was fixed, and what is still rough",
+      "writingObjective": "Report the duplicate-rows gap closed in the same change, then state plainly the two limits the review recorded as still open.",
+      "buyerIntent": "What does the vendor admit is not finished?",
+      "allowedEvidenceIds": [
+        "ev-n4-04",
+        "ev-n4-05",
+        "ev-n4-11",
+        "ev-n4-12"
+      ],
+      "requiredClaimTypes": [
+        "story_selection"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    }
+  ],
+  "publication": {
+    "publishedOn": "2026-10-26",
+    "mandate": "The ShortsOS owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site with the articles it produces.",
+    "humanReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedOn": null
+    }
+  }
+}

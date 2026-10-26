@@ -1,0 +1,39 @@
+{
+  "contentType": "ARTICLE",
+  "slotOrder": [
+    {
+      "slot": "short_answer",
+      "order": 0,
+      "present": true
+    },
+    {
+      "slot": "table_of_contents",
+      "order": 1,
+      "present": true
+    },
+    {
+      "slot": "body",
+      "order": 2,
+      "present": true
+    },
+    {
+      "slot": "related",
+      "order": 3,
+      "present": false
+    },
+    {
+      "slot": "editorial_next_step",
+      "order": 4,
+      "present": false
+    },
+    {
+      "slot": "cta",
+      "order": 5,
+      "present": false
+    }
+  ],
+  "readingTimeMinutes": {
+    "class": "POLICY_COMPUTED",
+    "value": 3
+  }
+}

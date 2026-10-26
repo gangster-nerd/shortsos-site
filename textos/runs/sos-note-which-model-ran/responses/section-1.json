@@ -1,0 +1,97 @@
+{
+  "text": "The change added exactly one backup model, gemini-3.7-flash, fixed in the code and not configurable on its own. It is tried only when the main model is out of capacity and has already used up its own retries. Any other failure, such as a schema error, an authorization error or malformed output, is reported straight away with no backup attempt. In the team's own words, a fallback model can never silently paper over a request or output problem. When the backup does answer, the record of that call says so. A backup that quietly covered for bad answers would make a failing system look healthy, which is the opposite of what a buyer needs to see.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The change added exactly one backup model, gemini-3.7-flash, fixed in the code and not configurable on its own.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "It is tried only when the main model is out of capacity and has already used up its own retries.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-03"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Any other failure, such as a schema error, an authorization error or malformed output, is reported straight away with no backup attempt.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "In the team's own words, a fallback model can never silently paper over a request or output problem.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "When the backup does answer, the record of that call says so.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s6",
+      "text": "A backup that quietly covered for bad answers would make a failing system look healthy, which is the opposite of what a buyer needs to see.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

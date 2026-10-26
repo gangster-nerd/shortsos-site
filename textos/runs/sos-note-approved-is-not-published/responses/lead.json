@@ -1,0 +1,50 @@
+{
+  "text": "A status label is a small promise about where a piece of work stands, and the person who reads it should be able to take it at face value. ShortsOS's internal product-experience review checks, among other things, that the state of an item can be understood in under ten seconds. In early September 2026, ShortsOS found its own screens treating an approved short as if it were ready to publish when it was not.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "A status label is a small promise about where a piece of work stands, and the person who reads it should be able to take it at face value.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "ShortsOS's internal product-experience review checks, among other things, that the state of an item can be understood in under ten seconds.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "evidenceIds": [
+        "ev-n5-13"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "In early September 2026, ShortsOS found its own screens treating an approved short as if it were ready to publish when it was not.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-01",
+        "ev-n5-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "briefVersion": 1,
+  "articleId": "sos-note-approved-is-not-published",
+  "flow": "commit_to_content",
+  "slug": "approved-is-not-published",
+  "locale": "en-US",
+  "publicationChannel": "controlled_preview",
+  "entityIds": [
+    "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+  ],
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "review-actions-2026-09-08",
+        "sourceCommits": [
+          "bf8c3e081483d0e58418eab1c086e1fc6b1412dc"
+        ]
+      },
+      {
+        "groupId": "review-surface-2026-09-08",
+        "sourceCommits": [
+          "2ca1c5ceb43dcee0906ced459eb75b5bf4ff79c3"
+        ]
+      },
+      {
+        "groupId": "publish-state-2026-09-08",
+        "sourceCommits": [
+          "d18387e0b8e583742105baf73dc0929aa0dca5ac"
+        ]
+      }
+    ],
+    "buyerQuestion": "When a video service tells me a short is approved, does that mean it has been published?",
+    "targetQuery": "does approved mean published in a video review workflow",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "review-state-honesty"
+  },
+  "siteObservation": null,
+  "approval": {
+    "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+    "approvedAt": "2026-10-26"
+  },
+  "clearances": [],
+  "evidence": [
+    {
+      "id": "ev-n5-01",
+      "source": {
+        "kind": "product_commit",
+        "sha": "d18387e0b8e583742105baf73dc0929aa0dca5ac",
+        "quote": "publishPackage existing is not readiness, and approved is not ready_to_publish"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Commit message written by the product team for its own fix; it describes the defect, it does not independently prove it."
+      ]
+    },
+    {
+      "id": "ev-n5-02",
+      "source": {
+        "kind": "product_commit",
+        "sha": "d18387e0b8e583742105baf73dc0929aa0dca5ac",
+        "quote": "An `approved` item's header said \"Ready to publish\" and, if a package survived from a prior cycle, showed it as \"Final MP4\" -- both read as this cycle's preparation being complete when it was not."
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-03",
+      "source": {
+        "kind": "product_commit",
+        "sha": "d18387e0b8e583742105baf73dc0929aa0dca5ac",
+        "quote": "The Target queue's own section title, \"Approved & scheduled\", claimed a `scheduled` state (a real, distinct video_item status: a planned future publish time) for items that were merely `approved` or `ready_to_publish`."
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-04",
+      "source": {
+        "kind": "product_file",
+        "path": "src/domain/publish/publish-state-presentation.ts",
+        "quote": "readinessBadge: \"✓ Approved · Not published\","
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-05",
+      "source": {
+        "kind": "product_file",
+        "path": "src/domain/publish/publish-state-presentation.ts",
+        "quote": "readinessBadge: \"✓ Approved · ✓ Package ready · Not published\","
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-06",
+      "source": {
+        "kind": "product_commit",
+        "sha": "d18387e0b8e583742105baf73dc0929aa0dca5ac",
+        "quote": "A real publication's own provider status remains canonical and is never replaced by this badge -- it only fills in before any publication exists."
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-07",
+      "source": {
+        "kind": "product_commit",
+        "sha": "2ca1c5ceb43dcee0906ced459eb75b5bf4ff79c3",
+        "quote": "A card's latestReview is whatever the most recent human decision ever was; it does not reset when a regenerated short re-enters awaiting_review for a new cycle."
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-08",
+      "source": {
+        "kind": "product_commit",
+        "sha": "2ca1c5ceb43dcee0906ced459eb75b5bf4ff79c3",
+        "quote": "New pure helper describeLatestReview (src/domain/review/) prefixes a historical decision with \"Previous review: \" whenever the item is awaiting_review"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-09",
+      "source": {
+        "kind": "product_commit",
+        "sha": "2ca1c5ceb43dcee0906ced459eb75b5bf4ff79c3",
+        "quote": "The awaiting_review preview was a silent, control-less <video> (muted, no controls) -- a director could not scrub, hear audio, or watch the full short before Approve/Reject/Regenerate."
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-10",
+      "source": {
+        "kind": "product_commit",
+        "sha": "bf8c3e081483d0e58418eab1c086e1fc6b1412dc",
+        "quote": "Production crashed with \"Illegal video_item transition: needs_regeneration -> approved\" (500 on /target/clients/.../production)."
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-11",
+      "source": {
+        "kind": "product_commit",
+        "sha": "bf8c3e081483d0e58418eab1c086e1fc6b1412dc",
+        "quote": "Review actions now require status === \"awaiting_review\", the only canonical review-eligible state."
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-12",
+      "source": {
+        "kind": "product_file",
+        "path": "src/domain/video-item-state.ts",
+        "quote": "approved: [\"ready_to_publish\", \"archived\"],"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n5-13",
+      "source": {
+        "kind": "product_file",
+        "path": "docs/multi-agent/PROTOCOL.md",
+        "quote": "compréhension de l’état en moins de dix secondes"
+      },
+      "claimTypes": [
+        "human_review"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Internal working protocol, in French; one item of what the product-experience review checks, not a measured result."
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change in plain words, as a grounded fact about ShortsOS: an approved short is no longer shown as ready to publish.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-02"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: three September 2026 fixes made the review and publishing screens say where a short really stands.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-04"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake: a status label is a promise about where a piece of content stands, and a reviewer should grasp it at a glance. Then say ShortsOS found its screens blurring approved, ready and scheduled.",
+      "buyerIntent": "Can I trust what a status label tells me?",
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-02",
+        "ev-n5-13"
+      ],
+      "requiredClaimTypes": [
+        "publication",
+        "human_review"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "Does approved mean published?",
+      "writingObjective": "Answer directly: no. Approval is one step, preparing the final file is the next, and publishing is separate again; say what the screens now show at each step.",
+      "buyerIntent": "Where does my short stand once it is approved?",
+      "allowedEvidenceIds": [
+        "ev-n5-01",
+        "ev-n5-04",
+        "ev-n5-05",
+        "ev-n5-12"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Three labels that said too much",
+      "writingObjective": "Describe what the screens said before the fix: an approved item headed as ready, a leftover file shown as final, and a queue titled as scheduled when nothing was scheduled. Then say a real publication's own status still takes precedence over the new badge.",
+      "buyerIntent": "What exactly was misleading?",
+      "allowedEvidenceIds": [
+        "ev-n5-02",
+        "ev-n5-03",
+        "ev-n5-06"
+      ],
+      "requiredClaimTypes": [
+        "publication"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "An old decision shown as the current one",
+      "writingObjective": "Explain the review-card fix: after a short was regenerated, the last decision from an earlier round appeared as if it applied now; it is now labelled as a previous review. Add that the preview could not be watched with sound before deciding, and was fixed the same day.",
+      "buyerIntent": "Does the reviewer see what they are actually deciding on?",
+      "allowedEvidenceIds": [
+        "ev-n5-07",
+        "ev-n5-08",
+        "ev-n5-09"
+      ],
+      "requiredClaimTypes": [
+        "human_review"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Buttons offered where no decision was possible",
+      "writingObjective": "Describe the crash: decision buttons were shown on shorts that could not legally be approved, and clicking one failed; decisions are now offered only on a short waiting for review. Close on what a buyer can ask any vendor about its status labels.",
+      "buyerIntent": "Can the screen offer a decision the system will refuse?",
+      "allowedEvidenceIds": [
+        "ev-n5-10",
+        "ev-n5-11"
+      ],
+      "requiredClaimTypes": [
+        "human_review"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 1000,
+      "evidenceRequired": true
+    }
+  ],
+  "publication": {
+    "publishedOn": "2026-10-26",
+    "mandate": "The ShortsOS owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site with the articles it produces.",
+    "humanReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedOn": null
+    }
+  }
+}

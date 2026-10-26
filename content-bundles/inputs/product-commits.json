@@ -1,7 +1,7 @@
 {
   "ledgerVersion": 1,
   "productRef": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
-  "commitCount": 17,
+  "commitCount": 26,
   "commits": [
     {
       "sha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
@@ -59,9 +59,24 @@
       "subject": "chore(governance): close FDTS-SHOW-ME-WHY-V1 - WAVE-007 published, first two-mission-review capability chain complete"
     },
     {
+      "sha": "fd16d0762a6ba99fde99d85db38958e0f3b41473",
+      "date": "2026-09-12T18:31:38+02:00",
+      "subject": "feat(content-inventory): show real evidence controls, capture-session identity, and a durable zero-story state (FDTS-SHOW-ME-WHY-V1)"
+    },
+    {
       "sha": "d2268dc696f6c5eb5ed18025f0a62be8c48a77a2",
       "date": "2026-09-12T18:11:01+02:00",
       "subject": "chore(governance): close FDTS-OPPORTUNITY-CALLER-V1 - published after P2 PASS, WAVE-006 fully closed"
+    },
+    {
+      "sha": "bf8911400d168c282bedb541f7767a4c99c69831",
+      "date": "2026-09-12T17:50:56+02:00",
+      "subject": "feat(content-inventory): wire generateOpportunities to a real production caller (FDTS-OPPORTUNITY-CALLER-V1)"
+    },
+    {
+      "sha": "77957613757b45b80adcf06a0dd1be923f90cb4b",
+      "date": "2026-09-12T17:40:33+02:00",
+      "subject": "chore(governance): P2 FAIL on FDTS-OPPORTUNITY-CALLER-V1 - grant narrow write-set extension for truthful-outcome fix"
     },
     {
       "sha": "5509dfc266a8fb82a7de94f5405459bbfd31e79b",
@@ -79,9 +94,39 @@
       "subject": "fix(capture-time-truth): stop conflating Drive modifiedTime with capturedAt (FDTS-CAPTURE-TIME-TRUTH-V1)"
     },
     {
+      "sha": "e2c6f346a7ae8413def6419d15ac88475eb5d8bc",
+      "date": "2026-09-11T15:49:06+02:00",
+      "subject": "fix(provider-accounting): route opportunity/media-understanding calls through runProvider"
+    },
+    {
       "sha": "3803d15e341391fbf3e67ee63bb5c061f7229199",
       "date": "2026-09-11T15:39:47+02:00",
       "subject": "fix(media-probe): tenant-scope and deterministic exact-duplicate lookup (FDTS-RETRIEVAL-SAFETY-V1)"
+    },
+    {
+      "sha": "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52",
+      "date": "2026-09-11T12:07:27+02:00",
+      "subject": "fix(gemini): pin configurable stable model, remove -latest capacity risk"
+    },
+    {
+      "sha": "74ec2ac6b277a64e6b5311282f9b69348085def5",
+      "date": "2026-09-11T11:47:49+02:00",
+      "subject": "feat(trigger): capture real Gemini/B1 evidence before it can be lost to a throw"
+    },
+    {
+      "sha": "d18387e0b8e583742105baf73dc0929aa0dca5ac",
+      "date": "2026-09-08T18:50:43+02:00",
+      "subject": "fix(publish): stop presenting approved as publish-ready"
+    },
+    {
+      "sha": "2ca1c5ceb43dcee0906ced459eb75b5bf4ff79c3",
+      "date": "2026-09-08T16:32:03+02:00",
+      "subject": "fix(target): real review playback + stop mislabeling stale reviews as current"
+    },
+    {
+      "sha": "bf8c3e081483d0e58418eab1c086e1fc6b1412dc",
+      "date": "2026-09-08T00:10:37+02:00",
+      "subject": "fix(review): stop offering Approve/Reject/Regenerate on needs_regeneration"
     },
     {
       "sha": "e476b1cab202d6dcd4798adbbc3a5bd900411e4e",

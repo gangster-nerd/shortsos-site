@@ -1,0 +1,101 @@
+{
+  "text": "Before this work, a failure in the planning step that follows the analysis was raised as a bare error that silently discarded the data already computed. The analysis result is now saved to durable storage before that next step even runs, so it survives a failure immediately afterwards. The team described this as the smallest possible change for visibility, with no redesign and no change to any threshold or creative decision. The same day, two AI calls that had bypassed the product's shared ledger of outside calls and their costs were routed through it. A failed call now leaves a durable failed entry in that ledger, not just an error in the moment. Repeating the same call reuses the stored entry instead of calling the model again.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Before this work, a failure in the planning step that follows the analysis was raised as a bare error that silently discarded the data already computed.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-07"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The analysis result is now saved to durable storage before that next step even runs, so it survives a failure immediately afterwards.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "The team described this as the smallest possible change for visibility, with no redesign and no change to any threshold or creative decision.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "The same day, two AI calls that had bypassed the product's shared ledger of outside calls and their costs were routed through it.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "A failed call now leaves a durable failed entry in that ledger, not just an error in the moment.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-11"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s6",
+      "text": "Repeating the same call reuses the stored entry instead of calling the model again.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-12"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

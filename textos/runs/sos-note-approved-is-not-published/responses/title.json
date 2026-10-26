@@ -1,0 +1,22 @@
+{
+  "text": "Why ShortsOS stopped calling an approved short ready to publish",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "Why ShortsOS stopped calling an approved short ready to publish",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "publication"
+      ],
+      "evidenceIds": [
+        "ev-n5-01",
+        "ev-n5-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

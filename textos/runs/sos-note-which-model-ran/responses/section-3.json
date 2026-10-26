@@ -1,0 +1,61 @@
+{
+  "text": "The analysis is built mock-first: it runs on a stand-in by default, and using a real key requires prior authorization under the team's working rules. The product's own record of what may be claimed in public forbids any claim of proven real Gemini analysis output for a specific asset. This note describes how calls are made and recorded; it says nothing about the quality of any analysis result. A fair question for any vendor built on outside AI models is which model handled a given job, and whether a backup stepped in.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The analysis is built mock-first: it runs on a stand-in by default, and using a real key requires prior authorization under the team's working rules.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-13"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The product's own record of what may be claimed in public forbids any claim of proven real Gemini analysis output for a specific asset.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-14"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "This note describes how calls are made and recorded; it says nothing about the quality of any analysis result.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "A fair question for any vendor built on outside AI models is which model handled a given job, and whether a backup stepped in.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

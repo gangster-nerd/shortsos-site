@@ -1,0 +1,86 @@
+{
+  "text": "The same change closed a gap nobody had flagged: asking for an analysis twice for the same client stored a second, duplicate set of results. A repeat request now returns the results already on file instead of running the analysis again. Two limits were recorded as still open. An analysis that had nothing to work with is still shown the same way as one that never ran, an ambiguity the review judged defensible and noted. The error message shows the raw reason returned by the analysis service, written for developers, which the review accepted but did not count as polished customer wording.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The same change closed a gap nobody had flagged: asking for an analysis twice for the same client stored a second, duplicate set of results.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-04"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "A repeat request now returns the results already on file instead of running the analysis again.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Two limits were recorded as still open.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-11",
+        "ev-n4-12"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "An analysis that had nothing to work with is still shown the same way as one that never ran, an ambiguity the review judged defensible and noted.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-11"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "The error message shows the raw reason returned by the analysis service, written for developers, which the review accepted but did not count as polished customer wording.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-12"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

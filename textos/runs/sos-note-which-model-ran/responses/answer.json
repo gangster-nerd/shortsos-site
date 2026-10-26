@@ -1,0 +1,69 @@
+{
+  "text": "The media analysis had been calling Gemini through a moving alias, gemini-flash-latest, and on 11 September 2026 that alias returned a high-demand error on four separate live attempts. The default is now one pinned model version, which can be changed through a single setting. Each analysis call now records the model it asked for, the model that actually answered, and whether a backup was used. That record is written for each call, not copied from a settings file.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "The media analysis had been calling Gemini through a moving alias, gemini-flash-latest, and on 11 September 2026 that alias returned a high-demand error on four separate live attempts.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-01"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "The default is now one pinned model version, which can be changed through a single setting.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-02"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Each analysis call now records the model it asked for, the model that actually answered, and whether a backup was used.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-06"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "That record is written for each call, not copied from a settings file.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "evidenceIds": [
+        "ev-n6-05"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

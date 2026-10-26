@@ -36,6 +36,15 @@
         ]
       },
       {
+        "documentId": "shortsos:sos-note-approved-is-not-published",
+        "slug": "approved-is-not-published",
+        "channel": "controlled_preview",
+        "primaryTopicId": "review-state-honesty",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
         "documentId": "shortsos:sos-note-evidence-repair",
         "slug": "keeping-the-proof-behind-a-public-claim-checkable",
         "channel": "controlled_preview",
@@ -59,6 +68,26 @@
         ]
       },
       {
+        "documentId": "shortsos:sos-note-truthful-empty-state",
+        "slug": "nothing-found-is-not-the-same-as-not-analyzed",
+        "channel": "controlled_preview",
+        "primaryTopicId": "footage-to-story-engineering",
+        "capabilityIds": [
+          "FDTS-OPPORTUNITY-CALLER-V1",
+          "FDTS-SHOW-ME-WHY-V1"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-which-model-ran",
+        "slug": "recording-which-ai-model-actually-ran",
+        "channel": "controlled_preview",
+        "primaryTopicId": "ai-call-accountability",
+        "capabilityIds": [
+          "GEMINI-MEDIA-UNDERSTANDING-V1",
+          "FDTS-PROVIDER-ACCOUNTING-V1"
+        ]
+      },
+      {
         "documentId": "shortsos:sos-note-zero-is-an-answer",
         "slug": "why-no-strong-story-is-a-valid-answer",
         "channel": "controlled_preview",
@@ -73,7 +102,21 @@
     ],
     "corpusNote": "The committed ContentDocuments, with capabilityIds, primaryTopicId/topicIds and publicationStatus filled from each brief (entityIds, provenance.topicCluster, publication record)."
   },
-  "related": [],
+  "related": [
+    {
+      "documentId": "shortsos:sos-note-truthful-empty-state",
+      "slug": "nothing-found-is-not-the-same-as-not-analyzed",
+      "title": "How a review kept ShortsOS from showing 'nothing found' as 'not analyzed yet'",
+      "description": "A product review failed a ShortsOS build that hid two outcomes; the fix shows a failed analysis and a no-strong-story result apart.",
+      "href": "/insights/nothing-found-is-not-the-same-as-not-analyzed",
+      "isDraft": false,
+      "reasons": [
+        "shared primary topic",
+        "1 shared topic"
+      ],
+      "score": 20
+    }
+  ],
   "excludedByChannel": [],
   "plan": {
     "commercial": {
@@ -82,10 +125,21 @@
       "contextual": null,
       "final": null
     },
-    "editorialNextStep": null,
+    "editorialNextStep": {
+      "label": "How a review kept ShortsOS from showing 'nothing found' as 'not analyzed yet'",
+      "href": "/insights/nothing-found-is-not-the-same-as-not-analyzed",
+      "description": "A product review failed a ShortsOS build that hid two outcomes; the fix shows a failed analysis and a no-strong-story result apart.",
+      "source": "computed-related"
+    },
     "retention": {
       "enabled": false
     }
   },
-  "editorialNextStep": null
+  "editorialNextStep": {
+    "targetArticleId": "sos-note-truthful-empty-state",
+    "route": "/insights/nothing-found-is-not-the-same-as-not-analyzed/",
+    "label": "How a review kept ShortsOS from showing 'nothing found' as 'not analyzed yet'",
+    "description": "A product review failed a ShortsOS build that hid two outcomes; the fix shows a failed analysis and a no-strong-story result apart.",
+    "source": "computed-related"
+  }
 }

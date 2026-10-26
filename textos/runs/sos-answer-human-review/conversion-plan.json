@@ -36,6 +36,15 @@
         ]
       },
       {
+        "documentId": "shortsos:sos-note-approved-is-not-published",
+        "slug": "approved-is-not-published",
+        "channel": "controlled_preview",
+        "primaryTopicId": "review-state-honesty",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
         "documentId": "shortsos:sos-note-evidence-repair",
         "slug": "keeping-the-proof-behind-a-public-claim-checkable",
         "channel": "controlled_preview",
@@ -56,6 +65,26 @@
           "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING",
           "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT",
           "PROHIBITED-CREATIVE-QUALITY-CLAIMS"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-truthful-empty-state",
+        "slug": "nothing-found-is-not-the-same-as-not-analyzed",
+        "channel": "controlled_preview",
+        "primaryTopicId": "footage-to-story-engineering",
+        "capabilityIds": [
+          "FDTS-OPPORTUNITY-CALLER-V1",
+          "FDTS-SHOW-ME-WHY-V1"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-which-model-ran",
+        "slug": "recording-which-ai-model-actually-ran",
+        "channel": "controlled_preview",
+        "primaryTopicId": "ai-call-accountability",
+        "capabilityIds": [
+          "GEMINI-MEDIA-UNDERSTANDING-V1",
+          "FDTS-PROVIDER-ACCOUNTING-V1"
         ]
       },
       {
@@ -89,6 +118,18 @@
       "score": 30
     },
     {
+      "documentId": "shortsos:sos-note-approved-is-not-published",
+      "slug": "approved-is-not-published",
+      "title": "Why ShortsOS stopped calling an approved short ready to publish",
+      "description": "In September 2026, ShortsOS fixed screens that blurred approved and ready to publish; an approved short is now marked as not published.",
+      "href": "/insights/approved-is-not-published",
+      "isDraft": false,
+      "reasons": [
+        "1 shared capability"
+      ],
+      "score": 10
+    },
+    {
       "documentId": "shortsos:sos-note-evidence-repair",
       "slug": "keeping-the-proof-behind-a-public-claim-checkable",
       "title": "How ShortsOS repaired evidence records that pointed at vanished commits",
@@ -114,6 +155,10 @@
     }
   ],
   "excludedByChannel": [
+    {
+      "documentId": "shortsos:sos-note-approved-is-not-published",
+      "reason": "only checked for controlled_preview: its title and description may not appear on a public_web article"
+    },
     {
       "documentId": "shortsos:sos-note-evidence-repair",
       "reason": "only checked for controlled_preview: its title and description may not appear on a public_web article"

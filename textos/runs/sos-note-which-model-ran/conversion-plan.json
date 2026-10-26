@@ -1,0 +1,120 @@
+{
+  "conversionPlanVersion": 1,
+  "articleId": "sos-note-which-model-ran",
+  "tool": {
+    "repository": "gangster-nerd/textos-site",
+    "sha": "bd8ae46bec43f734980a9baafa7331d32613bcbb",
+    "functions": [
+      "resolveRelatedContent",
+      "findSourceRelatedSection",
+      "deriveResolvedConversionPlan"
+    ]
+  },
+  "inputs": {
+    "contentDocumentSha256": "4c473c57785b3eedf0f4d0ca162b111aacb6d6d201d224e3b883373049125ebf",
+    "resolvedSurfaceSha256": "3213044bb1d0b77133161cf054bfc4049c8d26402e8ec6693020baeecc000055",
+    "commercialCapability": "unconfigured",
+    "cta": null,
+    "newsletterEnabled": false,
+    "corpus": [
+      {
+        "documentId": "shortsos:sos-answer-human-review",
+        "slug": "is-there-a-human-review-before-publication",
+        "channel": "public_web",
+        "primaryTopicId": "operated-pilot",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-answer-what-a-pilot-involves",
+        "slug": "what-a-shortsos-pilot-involves",
+        "channel": "public_web",
+        "primaryTopicId": "operated-pilot",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-approved-is-not-published",
+        "slug": "approved-is-not-published",
+        "channel": "controlled_preview",
+        "primaryTopicId": "review-state-honesty",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-evidence-repair",
+        "slug": "keeping-the-proof-behind-a-public-claim-checkable",
+        "channel": "controlled_preview",
+        "primaryTopicId": "public-claim-governance",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-one-public-claim",
+        "slug": "why-shortsos-makes-one-public-claim",
+        "channel": "controlled_preview",
+        "primaryTopicId": "public-claim-governance",
+        "capabilityIds": [
+          "M1-REAL-PRODUCE-REVIEW-PUBLISH",
+          "SUBMAGIC-LIVE-CONTRACT-FIX-V1",
+          "JSON2VIDEO-NATIVE-RENDER-V1",
+          "PROHIBITED-INSTAGRAM-SELF-SERVE-PUBLISHING",
+          "PROHIBITED-GOOGLE-DRIVE-SELF-SERVE-CONNECT",
+          "PROHIBITED-CREATIVE-QUALITY-CLAIMS"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-truthful-empty-state",
+        "slug": "nothing-found-is-not-the-same-as-not-analyzed",
+        "channel": "controlled_preview",
+        "primaryTopicId": "footage-to-story-engineering",
+        "capabilityIds": [
+          "FDTS-OPPORTUNITY-CALLER-V1",
+          "FDTS-SHOW-ME-WHY-V1"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-which-model-ran",
+        "slug": "recording-which-ai-model-actually-ran",
+        "channel": "controlled_preview",
+        "primaryTopicId": "ai-call-accountability",
+        "capabilityIds": [
+          "GEMINI-MEDIA-UNDERSTANDING-V1",
+          "FDTS-PROVIDER-ACCOUNTING-V1"
+        ]
+      },
+      {
+        "documentId": "shortsos:sos-note-zero-is-an-answer",
+        "slug": "why-no-strong-story-is-a-valid-answer",
+        "channel": "controlled_preview",
+        "primaryTopicId": "footage-to-story-engineering",
+        "capabilityIds": [
+          "FDTS-NARRATIVE-TRUTH-V1",
+          "FDTS-CAPTURE-TIME-TRUTH-V1",
+          "FDTS-RETRIEVAL-SAFETY-V1",
+          "FDTS-REPEATED-TAKE-INTELLIGENCE-V1"
+        ]
+      }
+    ],
+    "corpusNote": "The committed ContentDocuments, with capabilityIds, primaryTopicId/topicIds and publicationStatus filled from each brief (entityIds, provenance.topicCluster, publication record)."
+  },
+  "related": [],
+  "excludedByChannel": [],
+  "plan": {
+    "commercial": {
+      "enabled": false,
+      "header": null,
+      "contextual": null,
+      "final": null
+    },
+    "editorialNextStep": null,
+    "retention": {
+      "enabled": false
+    }
+  },
+  "editorialNextStep": null
+}

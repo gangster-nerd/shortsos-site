@@ -1,0 +1,16 @@
+{
+  "textosRef": "a0f6591057e01b97eda689bb83eddbf824007f0d",
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "planId": "how to know which ai model a video service actually used",
+  "executionPlanHash": "e88220a9b1e0a27c4e7786573b7b5db5164c9467b05a815838a95fdab9d95536",
+  "ctcHandoffHash": "a8b0c7fbaf3f5924862d707f103d4fc191b31824a49f54f076637e45c0f62348",
+  "promptHashes": {
+    "title": "aa8b973536b4e0b473ca03c254c20180e791db88f6eb0db34b4b7f58bfb227b2",
+    "meta": "1e2ea4f41522ca83b9f8d81cf2a2f13a4e73ba953708dc836ebbfc2e275b3b63",
+    "lead": "bf55a94a069dcd7500ca6ea938670a396eaa29997aecdb602a6cd7ecf343b498",
+    "answer": "978434404c173b107f53517d0e10651137a2eb107e08c1ae64041dd7a9c617b5",
+    "section-1": "29e50cf24be3ef3d50ce02eb2a9399db358a190510e3a7855eef21fdd50613ed",
+    "section-2": "6cb836756de3a742d6404499d4d8ae3e5c9a231825eed81a335fe5c739857212",
+    "section-3": "2cf9f0ea1157e69184ce66ff0fb26568aee50768fe30d10d91c2481036ffd9c4"
+  }
+}

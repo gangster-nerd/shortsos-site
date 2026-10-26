@@ -95,14 +95,19 @@ describe("CMO surface polish: conversion plan and next steps", () => {
       expect(plan.inputs.commercialCapability).toBe("unconfigured");
       expect(plan.plan.commercial.enabled).toBe(false);
     }
-    // The pinned ranking on this corpus: shared topic and capability pair the two answers and the
-    // two claim-governance notes; the footage note shares nothing, so it gets no next step.
+    // The pinned ranking on this corpus: shared topic and capability pair the two answers, the two
+    // claim-governance notes, and the two footage-to-story notes. The review-state note shares a
+    // capability with the human-review answer (a preview note may point to a public one, never the
+    // reverse). The AI-call note shares nothing, so it gets no next step.
     expect(Object.fromEntries(articles.map((a) => [a.articleId, a.nextStep?.targetArticleId ?? null]))).toEqual({
       "sos-answer-human-review": "sos-answer-what-a-pilot-involves",
       "sos-answer-what-a-pilot-involves": "sos-answer-human-review",
+      "sos-note-approved-is-not-published": "sos-answer-human-review",
       "sos-note-evidence-repair": "sos-note-one-public-claim",
       "sos-note-one-public-claim": "sos-note-evidence-repair",
-      "sos-note-zero-is-an-answer": null,
+      "sos-note-truthful-empty-state": "sos-note-zero-is-an-answer",
+      "sos-note-which-model-ran": null,
+      "sos-note-zero-is-an-answer": "sos-note-truthful-empty-state",
     });
   });
 

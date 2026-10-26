@@ -7,20 +7,20 @@
     "function": "evaluateRenderParity (A2R-SURFACE-SEAL-1)"
   },
   "observed": {
-    "siteCommit": "98f02181f0daf452c405bbaab333f9266ff8d178",
+    "siteCommit": "806753e96b6db05504fb33ec218bbf71f2901b14",
     "siteCommitNote": "The checked build included uncommitted changes on top of siteCommit (the commit that lands them is the one carrying this receipt).",
     "layout": "static export (out/insights/<slug>/index.html)"
   },
   "method": "Parity view of each committed ContentDocument: visible resolved blocks in render order, section headings as mdast headings at the writer's level, texts as mdast paragraphs. Non-vacuity: one word changed inside a checked block must be reported. The rendered h1 must equal the document title.",
   "summary": {
-    "articles": 5,
-    "passed": 5
+    "articles": 8,
+    "passed": 8
   },
   "articles": [
     {
       "articleId": "sos-answer-human-review",
       "slug": "is-there-a-human-review-before-publication",
-      "htmlSha256": "3a8796901d01de914e0d96eaf8942c7e24f23145b87f62254559fc84a3c7647b",
+      "htmlSha256": "fe6acddec2f476c58f1e87df9c617a719198f9ada2bc376d26e8397913d988f0",
       "blocksInView": 7,
       "blocksChecked": 7,
       "passed": true,
@@ -32,7 +32,7 @@
     {
       "articleId": "sos-answer-what-a-pilot-involves",
       "slug": "what-a-shortsos-pilot-involves",
-      "htmlSha256": "4b7d9014c03639e6712db3060c9d6a0c98076336e4b0f20ae857d0c10eccf5ae",
+      "htmlSha256": "642ea1a5a3e7aa3fe92fe15ccfa041e1bd9432768a5b149cacf6469d8e8e8197",
       "blocksInView": 7,
       "blocksChecked": 7,
       "passed": true,
@@ -42,9 +42,21 @@
       "titleMatches": true
     },
     {
+      "articleId": "sos-note-approved-is-not-published",
+      "slug": "approved-is-not-published",
+      "htmlSha256": "17b30d5b850de0b44c6076f05d07ca9af90b73470e7ea3149b22daa9bc21b03f",
+      "blocksInView": 9,
+      "blocksChecked": 9,
+      "passed": true,
+      "diffCount": 0,
+      "diffs": [],
+      "mutationCaught": true,
+      "titleMatches": true
+    },
+    {
       "articleId": "sos-note-evidence-repair",
       "slug": "keeping-the-proof-behind-a-public-claim-checkable",
-      "htmlSha256": "7e036d6e5dcdeb2ef0a26f1dfbade63ceee56d7cd3807c7010e250eaeaef872a",
+      "htmlSha256": "88c87623e67c16024529eab694f7fadbbe4c382a210cbdb0996a7aff5e246fdf",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
@@ -56,7 +68,31 @@
     {
       "articleId": "sos-note-one-public-claim",
       "slug": "why-shortsos-makes-one-public-claim",
-      "htmlSha256": "e86f4215df2827fcb76fffa9c1e5a0d69d465a80b4b19300d5c6775156b3c038",
+      "htmlSha256": "11a3b988b50d29cc35b82b9771bc30866ff4803ff86be346e35d764668adeaf9",
+      "blocksInView": 9,
+      "blocksChecked": 9,
+      "passed": true,
+      "diffCount": 0,
+      "diffs": [],
+      "mutationCaught": true,
+      "titleMatches": true
+    },
+    {
+      "articleId": "sos-note-truthful-empty-state",
+      "slug": "nothing-found-is-not-the-same-as-not-analyzed",
+      "htmlSha256": "ecb56c7e354abb660b8d15e4be7524c0a63a417bff41974812bc33b82ed8108c",
+      "blocksInView": 9,
+      "blocksChecked": 9,
+      "passed": true,
+      "diffCount": 0,
+      "diffs": [],
+      "mutationCaught": true,
+      "titleMatches": true
+    },
+    {
+      "articleId": "sos-note-which-model-ran",
+      "slug": "recording-which-ai-model-actually-ran",
+      "htmlSha256": "bc045e07784518ed86fca17f1c27b3bc7ae5ed4d9e70a61e30fe80a70d73a523",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,
@@ -68,7 +104,7 @@
     {
       "articleId": "sos-note-zero-is-an-answer",
       "slug": "why-no-strong-story-is-a-valid-answer",
-      "htmlSha256": "b406a86faa53fc3f5aa6138dada52c6609e821b9e781827c35c4f09c32cca474",
+      "htmlSha256": "e8eab3fa8939476ac358247051a196ff21c9a9de918d51d49e46c32b022738e0",
       "blocksInView": 9,
       "blocksChecked": 9,
       "passed": true,

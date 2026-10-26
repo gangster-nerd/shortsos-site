@@ -1,0 +1,39 @@
+{
+  "receiptVersion": 1,
+  "articleId": "sos-note-approved-is-not-published",
+  "textos": {
+    "repository": "gangster-nerd/textos-v0",
+    "sha": "a0f6591057e01b97eda689bb83eddbf824007f0d"
+  },
+  "adapterMethodVersion": "ctc-geo-writer-adapter@0.1",
+  "executionPlanHash": "7b728116b5d2729708f9a90bb2162afc6c77a4e2f854a47dd3b19b4ea61feb0b",
+  "ctcHandoffHash": "1fff3e6565c7f452b2e4145f49a9b1e3d14709076ee009bca8ebc7496b14d937",
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "af6fb12001b9c3dfc8c6e0f3abcf5adbeb6a72d2bbce7245af5962716fd0f4bb",
+  "truthCheckVerdict": "pass",
+  "publicationChannel": "controlled_preview",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6",
+  "promptHashes": {
+    "title": "23fba3dec8718fb91d80de9b193f6979f5120142663b5a0e663c235c2e7216b7",
+    "meta": "6b93edd5c3150f5f77b3c0262523bb521ec5d490beb5f1ea75603b0f1b5ec94d",
+    "lead": "0e1dfa6119ac17ab29a143b2908021d909464871963e5c9d72ecc398fd05124e",
+    "answer": "14bad1e6420513366c38e1e0ffaae3932ecc4ae13d17a1a1c30c8fe36103e8a2",
+    "section-1": "9f4bae616dcbdceed53d37ac4202116820df3b3ea3fe345c87c677be48d60221",
+    "section-2": "b04b606f6898e9448c02fa12b0b0d584df2ebb1f4fb9b664564722db4ca232c9",
+    "section-3": "53560cc81b3bdf44b8659165747b536cccc838bee15df41925d6eae3f160186c"
+  },
+  "responseHashes": {
+    "title": "091a61654875774d7bd9d72e56159fdc21892fcad99638b26a74f3cd24fb487c",
+    "meta": "c44cbabde6e72a5f6169303678186ab320759454a473c702a0e9caeb1799cb59",
+    "lead": "63b400d61b458504692ec4fbf32183e3572e54bfa30a5c49ea3431dfe76230b9",
+    "answer": "b1a4226a5b656e1bb1c024d3ffc2cfdae719d3217d51682463e68feffe63f55c",
+    "section-1": "4add59bf1e9647a3f6adfe3753f9b2a5fe6717ce4f0ef873f5782138936173e3",
+    "section-2": "6654bd8dd7790ec49bc64b7c6af10e498b48b304c42b8a72af2b532c7dab2013",
+    "section-3": "e10035d15255613cddca7e0919473226c3d0ef6e66d3081c7735865d64fdbb1b"
+  },
+  "contentDocumentSha256": "275611c98a1089765700565c6951d8e3374654d5e0438e66c9e7e7a565019ded",
+  "resolvedSurfaceSha256": "d0c6e9e4efa19462cb21a57927f202fba6f02830dddf67877e05552fcde76505",
+  "humanReview": "pending"
+}

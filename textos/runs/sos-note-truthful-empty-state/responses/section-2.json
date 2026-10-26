@@ -1,0 +1,81 @@
+{
+  "text": "A follow-up change the same day made the no-strong-opportunity message durable, so it now survives a plain revisit of the page. To do that, the result of a completed analysis is now recorded even when it finds nothing strong, with the same mechanism used for a successful one. Two other outcomes were deliberately kept out of that record: an analysis that had nothing to work with, and an analysis that failed. Both still read as not yet analyzed, never as a false report that an analysis was tried and found nothing. An empty result that was earned and an empty result by default are different answers, and only the first one deserves to be kept as an answer.",
+  "statements": [
+    {
+      "id": "s1",
+      "text": "A follow-up change the same day made the no-strong-opportunity message durable, so it now survives a plain revisit of the page.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-09"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s2",
+      "text": "To do that, the result of a completed analysis is now recorded even when it finds nothing strong, with the same mechanism used for a successful one.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-08"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s3",
+      "text": "Two other outcomes were deliberately kept out of that record: an analysis that had nothing to work with, and an analysis that failed.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s4",
+      "text": "Both still read as not yet analyzed, never as a false report that an analysis was tried and found nothing.",
+      "kind": "factual",
+      "subject": {
+        "kind": "tracked_brand",
+        "name": "ShortsOS"
+      },
+      "claimTypes": [
+        "story_selection"
+      ],
+      "evidenceIds": [
+        "ev-n4-10"
+      ],
+      "evidenceStrengthRequired": "descriptive"
+    },
+    {
+      "id": "s5",
+      "text": "An empty result that was earned and an empty result by default are different answers, and only the first one deserves to be kept as an answer.",
+      "kind": "editorial",
+      "subject": {
+        "kind": "general_domain",
+        "name": null
+      },
+      "claimTypes": [],
+      "evidenceIds": [],
+      "evidenceStrengthRequired": "descriptive"
+    }
+  ]
+}

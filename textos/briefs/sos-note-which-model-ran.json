@@ -1,0 +1,409 @@
+{
+  "briefVersion": 1,
+  "articleId": "sos-note-which-model-ran",
+  "flow": "commit_to_content",
+  "slug": "recording-which-ai-model-actually-ran",
+  "locale": "en-US",
+  "publicationChannel": "controlled_preview",
+  "entityIds": [
+    "GEMINI-MEDIA-UNDERSTANDING-V1",
+    "FDTS-PROVIDER-ACCOUNTING-V1"
+  ],
+  "provenance": {
+    "ctcSourceGroups": [
+      {
+        "groupId": "evidence-capture-2026-09-11",
+        "sourceCommits": [
+          "74ec2ac6b277a64e6b5311282f9b69348085def5"
+        ]
+      },
+      {
+        "groupId": "model-pin-2026-09-11",
+        "sourceCommits": [
+          "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52"
+        ]
+      },
+      {
+        "groupId": "provider-accounting-2026-09-11",
+        "sourceCommits": [
+          "e2c6f346a7ae8413def6419d15ac88475eb5d8bc"
+        ]
+      }
+    ],
+    "buyerQuestion": "If the AI model behind a video service fails or gets swapped, does the vendor keep a record of what actually ran?",
+    "targetQuery": "how to know which ai model a video service actually used",
+    "targetQueryProvenance": "HUMAN_CMO",
+    "demandEvidenceStatus": "NOT_MEASURED",
+    "demandEvidenceRefs": [],
+    "keywordVolumeStatus": "UNKNOWN",
+    "searchIntent": "informational",
+    "topicCluster": "ai-call-accountability"
+  },
+  "siteObservation": null,
+  "approval": {
+    "approvedBy": "operator:claude-code, acting as ShortsOS CTO/CMO under the owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site",
+    "approvedAt": "2026-10-26"
+  },
+  "clearances": [],
+  "evidence": [
+    {
+      "id": "ev-n6-01",
+      "source": {
+        "kind": "product_commit",
+        "sha": "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52",
+        "quote": "gemini-flash-latest hit sustained, real HTTP 503 UNAVAILABLE (\"high demand\") across 4 separate live attempts on 2026-09-11"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": [
+        "Commit message written by the product team; it reports failed calls, it records no analysis output."
+      ]
+    },
+    {
+      "id": "ev-n6-02",
+      "source": {
+        "kind": "product_commit",
+        "sha": "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52",
+        "quote": "GEMINI_DEFAULT_MODEL is now the pinned \"gemini-3.8-flash\", configurable via ONE new env var (GEMINI_MEDIA_MODEL)"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-03",
+      "source": {
+        "kind": "product_commit",
+        "sha": "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52",
+        "quote": "Adds ONE bounded capacity fallback to \"gemini-3.7-flash\" (a fixed code default, not independently configurable), triggered ONLY by GeminiTransientError -- a real 503/429 that survived the primary model's own retry budget."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-04",
+      "source": {
+        "kind": "product_commit",
+        "sha": "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52",
+        "quote": "Schema errors, auth errors, malformed output and any other non-capacity failure propagate immediately with no fallback attempt; a fallback model can never silently paper over a request or output problem."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-05",
+      "source": {
+        "kind": "product_commit",
+        "sha": "0e5e753ea5ce90ce799d5cdf40d08700fd4f9b52",
+        "quote": "real per-call provenance, not a static config echo"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-06",
+      "source": {
+        "kind": "product_file",
+        "path": "src/providers/gemini/gemini-media-understanding-provider.ts",
+        "quote": "requestedModel: this.model, actualModel, fallbackUsed,"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-07",
+      "source": {
+        "kind": "product_commit",
+        "sha": "74ec2ac6b277a64e6b5311282f9b69348085def5",
+        "quote": "previously thrown as a bare Error that silently discarded this data."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-08",
+      "source": {
+        "kind": "product_commit",
+        "sha": "74ec2ac6b277a64e6b5311282f9b69348085def5",
+        "quote": "so the evidence exists on durable storage before B1 ever runs, and survives a B1 failure immediately afterwards."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-09",
+      "source": {
+        "kind": "product_commit",
+        "sha": "74ec2ac6b277a64e6b5311282f9b69348085def5",
+        "quote": "Smallest possible observability change -- no B1 redesign, no threshold change, no fallback candidates, no creative-decision logic touched."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-10",
+      "source": {
+        "kind": "product_commit",
+        "sha": "e2c6f346a7ae8413def6419d15ac88475eb5d8bc",
+        "quote": "closes the two confirmed bypasses of the canonical provider/cost accounting boundary (runProvider()/provider_runs)."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-11",
+      "source": {
+        "kind": "product_commit",
+        "sha": "e2c6f346a7ae8413def6419d15ac88475eb5d8bc",
+        "quote": "a failed provider call produces a clean typed failure with a durable \"failed\" provider_runs receipt (not just the return shape)."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-12",
+      "source": {
+        "kind": "product_commit",
+        "sha": "e2c6f346a7ae8413def6419d15ac88475eb5d8bc",
+        "quote": "idempotent re-call skips the provider and reuses the cached provider_runs row"
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-13",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "GEMINI-MEDIA-UNDERSTANDING-V1",
+        "field": "knownLimits",
+        "quote": "Mock-first: real key use requires PROVIDER_TEST pre-authorization, per AGENTS.md section 16."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    },
+    {
+      "id": "ev-n6-14",
+      "source": {
+        "kind": "manifest_field",
+        "entityId": "GEMINI-MEDIA-UNDERSTANDING-V1",
+        "field": "prohibitedClaims",
+        "quote": "Any claim of proven real Gemini analysis output for a specific asset."
+      },
+      "claimTypes": [
+        "evidence_governance"
+      ],
+      "maxSupportStrength": "descriptive",
+      "limitations": []
+    }
+  ],
+  "slots": [
+    {
+      "id": "title",
+      "role": "title",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Name the change in plain words, as a grounded fact about ShortsOS: each AI analysis call now records which model actually answered.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 30,
+      "maxChars": 95,
+      "evidenceRequired": true
+    },
+    {
+      "id": "meta",
+      "role": "meta_description",
+      "blockKind": "single_line",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "One sentence a search result can show: after repeated failed calls in September 2026, ShortsOS pinned its AI model, limited the backup, and kept a record of each call.",
+      "buyerIntent": null,
+      "allowedEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-03",
+        "ev-n6-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 90,
+      "maxChars": 170,
+      "evidenceRequired": true
+    },
+    {
+      "id": "lead",
+      "role": "lead",
+      "blockKind": "paragraph",
+      "headingLevel": null,
+      "heading": null,
+      "writingObjective": "Open with the buyer's stake: a service built on outside AI models can quietly change which model does the work, or lose the trace of a failed call. Then say ShortsOS hit repeated failed calls on 11 September 2026 and changed how those calls are made and recorded.",
+      "buyerIntent": "Would I ever find out which model handled my footage?",
+      "allowedEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-05"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 150,
+      "maxChars": 600,
+      "evidenceRequired": false
+    },
+    {
+      "id": "answer",
+      "role": "answer",
+      "blockKind": "paragraph",
+      "headingLevel": 2,
+      "heading": "What changed, and why?",
+      "writingObjective": "Answer directly: what went wrong with the moving model name, what replaced it, and what each call now records about the model it asked for and the model that answered.",
+      "buyerIntent": "What does the vendor now keep?",
+      "allowedEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-02",
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 800,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-1",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "A backup model, on a short leash",
+      "writingObjective": "Explain the single backup model: tried only when the main model is out of capacity, never to cover a bad request or a bad answer, and recorded when used.",
+      "buyerIntent": "Can a backup quietly hide a real problem?",
+      "allowedEvidenceIds": [
+        "ev-n6-03",
+        "ev-n6-04",
+        "ev-n6-06"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-2",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "Keeping the record when a later step fails",
+      "writingObjective": "Describe the two record-keeping fixes: the analysis result is saved before the next step can fail and lose it, and two AI calls that skipped the shared call ledger now go through it, with a failed call leaving a durable failed entry and a repeated call reusing the earlier one.",
+      "buyerIntent": "What is left behind when something breaks?",
+      "allowedEvidenceIds": [
+        "ev-n6-07",
+        "ev-n6-08",
+        "ev-n6-09",
+        "ev-n6-10",
+        "ev-n6-11",
+        "ev-n6-12"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 250,
+      "maxChars": 1200,
+      "evidenceRequired": true
+    },
+    {
+      "id": "section-3",
+      "role": "section",
+      "blockKind": "multi_paragraph",
+      "headingLevel": 2,
+      "heading": "What this note does not claim",
+      "writingObjective": "State the limits plainly: real calls to the outside model need prior authorization, and ShortsOS's own record forbids claiming proven real analysis output for any specific asset. Close on what a buyer can ask any vendor about the models behind its work.",
+      "buyerIntent": "What should I not read into this?",
+      "allowedEvidenceIds": [
+        "ev-n6-13",
+        "ev-n6-14"
+      ],
+      "requiredClaimTypes": [
+        "evidence_governance"
+      ],
+      "unsupportedClaimTypes": [
+        "availability"
+      ],
+      "minChars": 200,
+      "maxChars": 1000,
+      "evidenceRequired": true
+    }
+  ],
+  "publication": {
+    "publishedOn": "2026-10-26",
+    "mandate": "The ShortsOS owner's instruction of 2026-10-26 to run a Commit-to-Content wave for ShortsOS and feed ShortsOS-site with the articles it produces.",
+    "humanReview": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedOn": null
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "slotProvenance": [
+    {
+      "slotId": "title",
+      "role": "title",
+      "headingLevel": null,
+      "heading": null,
+      "text": "How a review kept ShortsOS from showing 'nothing found' as 'not analyzed yet'",
+      "statementIds": [
+        "stmt:5:title:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-01",
+        "ev-n4-03"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-03"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "meta",
+      "role": "meta_description",
+      "headingLevel": null,
+      "heading": null,
+      "text": "A product review failed a ShortsOS build that hid two outcomes; the fix shows a failed analysis and a no-strong-story result apart.",
+      "statementIds": [
+        "stmt:4:meta:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "lead",
+      "role": "lead",
+      "headingLevel": null,
+      "heading": null,
+      "text": "An empty screen can mean three different things: the tool looked and found nothing worth making, it did not look at all, or it broke along the way. Each of those calls for a different next step, so a screen that blurs them leaves the reader guessing. On 12 September 2026, a product-experience review of a ShortsOS build found exactly that blur: a failed analysis was silently discarded, and an honest result of no strong opportunities looked the same as a page that had never been analyzed. The build was held back until a narrow fix passed a second review.",
+      "statementIds": [
+        "stmt:4:lead:2:s1",
+        "stmt:4:lead:2:s2",
+        "stmt:4:lead:2:s3",
+        "stmt:4:lead:2:s4"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-01",
+        "ev-n4-06"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-06"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "answer",
+      "role": "answer",
+      "headingLevel": 2,
+      "heading": "What was wrong, and what changed?",
+      "text": "In the build under review, two outcomes were hidden from the person running the analysis. When the analysis itself failed, the failure was silently dropped. When it worked but found no strong opportunity, the page looked the same as one that had never been analyzed. After the fix, a failed analysis sends the person back to the media page with a visible error message. A completed analysis with nothing strong to show gets its own message instead, saying that the analysis is complete and that no strong opportunities were found yet.",
+      "statementIds": [
+        "stmt:6:answer:2:s1",
+        "stmt:6:answer:2:s2",
+        "stmt:6:answer:2:s3",
+        "stmt:6:answer:2:s4",
+        "stmt:6:answer:2:s5"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-02",
+        "ev-n4-03"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-1",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "A review that failed a working build",
+      "text": "The team's working protocol includes a product-experience review with a blunt rule: output that is technically correct but perceptibly poor fails. This build received a fail verdict for what its screens told the person reading them: a failure that vanished, and an empty page that could not be told apart from an analysis that never ran. The record on this change reads one fail, one narrow fix and one pass, and only after the pass was the change released. Automated tests can confirm that code runs; it takes a person looking at the screen to notice that two very different answers look identical.",
+      "statementIds": [
+        "stmt:9:section-1:2:s1",
+        "stmt:9:section-1:2:s2",
+        "stmt:9:section-1:2:s3",
+        "stmt:9:section-1:2:s4"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-07",
+        "ev-n4-01",
+        "ev-n4-06"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-01",
+        "ev-n4-06",
+        "ev-n4-07"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-2",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "Making the honest answer survive a revisit",
+      "text": "A follow-up change the same day made the no-strong-opportunity message durable, so it now survives a plain revisit of the page. To do that, the result of a completed analysis is now recorded even when it finds nothing strong, with the same mechanism used for a successful one. Two other outcomes were deliberately kept out of that record: an analysis that had nothing to work with, and an analysis that failed. Both still read as not yet analyzed, never as a false report that an analysis was tried and found nothing. An empty result that was earned and an empty result by default are different answers, and only the first one deserves to be kept as an answer.",
+      "statementIds": [
+        "stmt:9:section-2:2:s1",
+        "stmt:9:section-2:2:s2",
+        "stmt:9:section-2:2:s3",
+        "stmt:9:section-2:2:s4",
+        "stmt:9:section-2:2:s5"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-09",
+        "ev-n4-08",
+        "ev-n4-10"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-08",
+        "ev-n4-09",
+        "ev-n4-10"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-3",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "What else was fixed, and what is still rough",
+      "text": "The same change closed a gap nobody had flagged: asking for an analysis twice for the same client stored a second, duplicate set of results. A repeat request now returns the results already on file instead of running the analysis again. Two limits were recorded as still open. An analysis that had nothing to work with is still shown the same way as one that never ran, an ambiguity the review judged defensible and noted. The error message shows the raw reason returned by the analysis service, written for developers, which the review accepted but did not count as polished customer wording.",
+      "statementIds": [
+        "stmt:9:section-3:2:s1",
+        "stmt:9:section-3:2:s2",
+        "stmt:9:section-3:2:s3",
+        "stmt:9:section-3:2:s4",
+        "stmt:9:section-3:2:s5"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n4-04",
+        "ev-n4-05",
+        "ev-n4-11",
+        "ev-n4-12"
+      ],
+      "usableEvidenceIds": [
+        "ev-n4-04",
+        "ev-n4-05",
+        "ev-n4-11",
+        "ev-n4-12"
+      ],
+      "excludedEvidence": []
+    }
+  ],
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "aa56845009092d55bb4e9702a31da3843cb50355973d1fbeaf7faaffcea5b2b5",
+  "truthCheck": {
+    "verdict": "pass",
+    "contradictions": []
+  },
+  "planId": "how an ai video tool should report that it found no story in your footage",
+  "planHash": "5430a14766d18a5fdbe18eab27b604858d16a760094c59b93158c93c91322070",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+}

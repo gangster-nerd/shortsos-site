@@ -1,0 +1,118 @@
+{
+  "authorship": {
+    "authorIds": [],
+    "reviewerIds": [],
+    "showAuthor": false,
+    "showReviewers": false
+  },
+  "blocks": [
+    {
+      "block": {
+        "data": {
+          "text": "A status label is a small promise about where a piece of work stands, and the person who reads it should be able to take it at face value. ShortsOS's internal product-experience review checks, among other things, that the state of an item can be understood in under ten seconds. In early September 2026, ShortsOS found its own screens treating an approved short as if it were ready to publish when it was not."
+        },
+        "id": "lead",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 0,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "No: in the product's own rules, approved and ready to publish are two different states. From approval, a short can only move on to ready to publish, or be archived. An approved short now carries the badge Approved · Not published. Once its package has been prepared, the badge reads Approved · Package ready · Not published. Both badges end with Not published, because publishing is a separate, later step."
+        },
+        "id": "answer",
+        "kind": "answer"
+      },
+      "hiddenReason": null,
+      "order": 1,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "Before the fix, an approved short was headed Ready to publish. If a file survived from an earlier round, it was shown as the Final MP4, which read as if preparation for this round were complete when it was not. The queue that grouped these shorts was titled Approved & scheduled, yet the shorts in it were only approved or ready, with no future publishing time planned. Once a real publication exists, the screen shows that publication's own status, and the new badge does not replace it. The badge only fills the gap before anything has been published."
+        },
+        "id": "section-1",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 2,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "Each short keeps the last human decision made on it, and that record did not reset when a regenerated short came back for a new round of review. A short waiting for a fresh decision could therefore show an earlier round's decision with nothing to say it was from an earlier round. Since 8 September 2026, that earlier decision is prefixed with Previous review while the short waits for its new one. The same fix dealt with the preview itself, which had played muted and without controls, so the person deciding could not scrub, hear the sound or watch the whole short before choosing to approve, reject or regenerate it. A reviewer can only be as careful as the screen in front of them allows."
+        },
+        "id": "section-2",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 3,
+      "region": null,
+      "visible": true
+    },
+    {
+      "block": {
+        "data": {
+          "text": "On 8 September 2026, the production page crashed on an attempt to approve a short that had been sent back for regeneration, a move the product's own rules do not allow. Since that fix, the approve, reject and regenerate buttons appear only on a short that is waiting for review, the one state in which such a decision is allowed. A useful question for any vendor is whether its screens can offer a choice that its own system will then refuse. Labels and buttons that match the real state of the work look like small details, yet they are what a person relies on when signing off."
+        },
+        "id": "section-3",
+        "kind": "paragraph"
+      },
+      "hiddenReason": null,
+      "order": 4,
+      "region": null,
+      "visible": true
+    }
+  ],
+  "compositionSignature": "content-document@1::shortsos:sos-note-approved-is-not-published::approved-is-not-published::draft::reference::surface-policy@1::shortsos-site.developer-note.v1::reference::0:lead:v|1:answer:v|2:section-1:v|3:section-2:v|4:section-3:v",
+  "contentSchemaVersion": "content-document@1",
+  "contentType": "ARTICLE",
+  "conversion": {
+    "ctaIntentId": null,
+    "ctaSuppressedReason": "document.conversionAllowed=false",
+    "effectiveCtaAllowed": false
+  },
+  "description": "In September 2026, ShortsOS fixed screens that blurred approved and ready to publish; an approved short is now marked as not published.",
+  "documentId": "shortsos:sos-note-approved-is-not-published",
+  "language": "en-US",
+  "metadata": {
+    "analyticsSurfaceTag": null,
+    "canonicalPath": null,
+    "effectiveIndexing": "noindex",
+    "emitSchemaOrg": true,
+    "indexingDowngraded": false,
+    "schemaType": "TechArticle"
+  },
+  "navigation": {
+    "relatedContentIds": [],
+    "showBreadcrumbs": true,
+    "showRelatedContent": false,
+    "showTableOfContents": false
+  },
+  "policyId": "shortsos-site.developer-note.v1",
+  "policyVersion": "surface-policy@1",
+  "readingTimeMinutes": 3,
+  "resolvedSchemaVersion": "resolved-content-surface@1",
+  "slug": "approved-is-not-published",
+  "surface": "reference",
+  "title": "Why ShortsOS stopped calling an approved short ready to publish",
+  "truth": {
+    "allowedSurfaces": [
+      "reference"
+    ],
+    "publicationStatus": "draft",
+    "sourceAuthority": "UNCERTIFIED"
+  },
+  "visibleBlockKinds": [
+    "paragraph",
+    "answer"
+  ]
+}

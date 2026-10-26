@@ -1,0 +1,182 @@
+{
+  "slotProvenance": [
+    {
+      "slotId": "title",
+      "role": "title",
+      "headingLevel": null,
+      "heading": null,
+      "text": "How ShortsOS records which AI model actually answered each analysis call",
+      "statementIds": [
+        "stmt:5:title:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "meta",
+      "role": "meta_description",
+      "headingLevel": null,
+      "heading": null,
+      "text": "After repeated failed calls in September 2026, ShortsOS pinned its AI model, limited its backup and recorded which model answered each call.",
+      "statementIds": [
+        "stmt:4:meta:2:s1"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-01",
+        "ev-n6-03",
+        "ev-n6-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-03",
+        "ev-n6-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "lead",
+      "role": "lead",
+      "headingLevel": null,
+      "heading": null,
+      "text": "A video service that relies on outside AI models can switch the model doing the work, or lose all trace of a call that failed, without anyone outside the team noticing. On 11 September 2026, ShortsOS's media analysis got the same high-demand error on four separate live attempts while calling a model through a moving latest alias. The team then changed how those calls are made and what each one leaves on record.",
+      "statementIds": [
+        "stmt:4:lead:2:s1",
+        "stmt:4:lead:2:s2",
+        "stmt:4:lead:2:s3"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-01",
+        "ev-n6-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-05"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "answer",
+      "role": "answer",
+      "headingLevel": 2,
+      "heading": "What changed, and why?",
+      "text": "The media analysis had been calling Gemini through a moving alias, gemini-flash-latest, and on 11 September 2026 that alias returned a high-demand error on four separate live attempts. The default is now one pinned model version, which can be changed through a single setting. Each analysis call now records the model it asked for, the model that actually answered, and whether a backup was used. That record is written for each call, not copied from a settings file.",
+      "statementIds": [
+        "stmt:6:answer:2:s1",
+        "stmt:6:answer:2:s2",
+        "stmt:6:answer:2:s3",
+        "stmt:6:answer:2:s4"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-01",
+        "ev-n6-02",
+        "ev-n6-06",
+        "ev-n6-05"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-01",
+        "ev-n6-02",
+        "ev-n6-05",
+        "ev-n6-06"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-1",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "A backup model, on a short leash",
+      "text": "The change added exactly one backup model, gemini-3.7-flash, fixed in the code and not configurable on its own. It is tried only when the main model is out of capacity and has already used up its own retries. Any other failure, such as a schema error, an authorization error or malformed output, is reported straight away with no backup attempt. In the team's own words, a fallback model can never silently paper over a request or output problem. When the backup does answer, the record of that call says so. A backup that quietly covered for bad answers would make a failing system look healthy, which is the opposite of what a buyer needs to see.",
+      "statementIds": [
+        "stmt:9:section-1:2:s1",
+        "stmt:9:section-1:2:s2",
+        "stmt:9:section-1:2:s3",
+        "stmt:9:section-1:2:s4",
+        "stmt:9:section-1:2:s5",
+        "stmt:9:section-1:2:s6"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-03",
+        "ev-n6-04",
+        "ev-n6-06"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-03",
+        "ev-n6-04",
+        "ev-n6-06"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-2",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "Keeping the record when a later step fails",
+      "text": "Before this work, a failure in the planning step that follows the analysis was raised as a bare error that silently discarded the data already computed. The analysis result is now saved to durable storage before that next step even runs, so it survives a failure immediately afterwards. The team described this as the smallest possible change for visibility, with no redesign and no change to any threshold or creative decision. The same day, two AI calls that had bypassed the product's shared ledger of outside calls and their costs were routed through it. A failed call now leaves a durable failed entry in that ledger, not just an error in the moment. Repeating the same call reuses the stored entry instead of calling the model again.",
+      "statementIds": [
+        "stmt:9:section-2:2:s1",
+        "stmt:9:section-2:2:s2",
+        "stmt:9:section-2:2:s3",
+        "stmt:9:section-2:2:s4",
+        "stmt:9:section-2:2:s5",
+        "stmt:9:section-2:2:s6"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-07",
+        "ev-n6-08",
+        "ev-n6-09",
+        "ev-n6-10",
+        "ev-n6-11",
+        "ev-n6-12"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-07",
+        "ev-n6-08",
+        "ev-n6-09",
+        "ev-n6-10",
+        "ev-n6-11",
+        "ev-n6-12"
+      ],
+      "excludedEvidence": []
+    },
+    {
+      "slotId": "section-3",
+      "role": "section",
+      "headingLevel": 2,
+      "heading": "What this note does not claim",
+      "text": "The analysis is built mock-first: it runs on a stand-in by default, and using a real key requires prior authorization under the team's working rules. The product's own record of what may be claimed in public forbids any claim of proven real Gemini analysis output for a specific asset. This note describes how calls are made and recorded; it says nothing about the quality of any analysis result. A fair question for any vendor built on outside AI models is which model handled a given job, and whether a backup stepped in.",
+      "statementIds": [
+        "stmt:9:section-3:2:s1",
+        "stmt:9:section-3:2:s2",
+        "stmt:9:section-3:2:s3",
+        "stmt:9:section-3:2:s4"
+      ],
+      "evidenceIdsUsed": [
+        "ev-n6-13",
+        "ev-n6-14"
+      ],
+      "usableEvidenceIds": [
+        "ev-n6-13",
+        "ev-n6-14"
+      ],
+      "excludedEvidence": []
+    }
+  ],
+  "writerMethodVersion": "geo-writer@0.2",
+  "slotProviderMethodVersion": "operator:claude-code|geo-writer-slot@0.3",
+  "derivationIdentity": "geo-writer@0.2::operator:claude-code|geo-writer-slot@0.3",
+  "structuredContentHash": "471a5897b98355c60e4cde1de243cab8ea5d00da5255b436bcf6ac792ce6d382",
+  "truthCheck": {
+    "verdict": "pass",
+    "contradictions": []
+  },
+  "planId": "how to know which ai model a video service actually used",
+  "planHash": "e88220a9b1e0a27c4e7786573b7b5db5164c9467b05a815838a95fdab9d95536",
+  "canonicalProductSha": "22e31cd6f7146813a31d90bbaa03b1ae554e5cd6"
+}
